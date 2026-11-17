@@ -1,0 +1,12 @@
+mdr-lens
+Copyright 2026 Brian Lehman
+
+This project is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Data: the clinical-trial tables come from the CDISC pilot study as packaged in
+pharmaversesdtm (https://github.com/pharmaverse/pharmaversesdtm), licensed under
+the Apache License, Version 2.0. Derived, aggregated JSON in this repository is
+computed from that public dataset. No other data source is used.
+
+Prior art referenced (no code copied): Gilead-Public/gsm (Apache-2.0),
+pharmaverse/teal, SafetyGraphics/safetyGraphics.
