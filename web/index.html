@@ -215,7 +215,9 @@
         <h3>Liver panel, adverse events, visits &amp; disposition — one time axis</h3>
         <p class="caption">
           Study day 0 = this subject's reference start date (the <abbr title="Study Data Tabulation Model">SDTM</abbr> DM domain's RFSTDTC). × ULN = result ÷ that lab's
-          own upper limit of normal for the test (see Methods). Hover any mark for exact values.
+          own upper limit of normal for the test (see Methods). Points are joined with straight lines, never a
+          smoothed curve — a gap between two points is a real gap in collection, not interpolated data. Hover
+          any mark for exact values.
         </p>
         <div class="chart-fig" id="patient-timeline-chart"></div>
         <div class="legend" id="patient-timeline-legend"></div>
@@ -307,8 +309,8 @@
           </table>
         </div>
         <p class="figure-note">
-          "Flag" = outside the 99.8%-ish funnel band (≈3 standard errors from the
-          study-wide rate), high or low. This is a first-pass screen, not a finding —
+          "Flag" = outside the approx. 99.8% funnel band (normal approximation: ≈3 standard
+          errors from the study-wide rate), high or low. This is a first-pass screen, not a finding —
           see Methods for what it does and doesn't account for.
         </p>
       </div>

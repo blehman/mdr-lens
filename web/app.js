@@ -86,11 +86,22 @@
 
     var right = document.createElement("div");
     right.style.flex = "1 1 280px";
+    var baselineDay = d3.min(t.lab_spikes.filter(function (s) { return s.baseline; }), function (s) { return s.day; });
+    var baselineRows = t.lab_spikes.filter(function (s) { return s.baseline && s.day === baselineDay; });
+    var baselineText = baselineRows.length
+      ? baselineRows.map(function (s) { return s.test + " " + fmtX(s.x_uln); }).join(", ")
+      : null;
+    var armNote = baselineText
+      ? " This subject is on " + t.arm + " (not an active-drug arm). The liver panel was already elevated " +
+        "before randomization, at the day " + dayLabel(baselineDay) + " baseline draw (" + baselineText +
+        " ULN) — a pre-existing elevation on placebo points away from a drug-induced injury, which is " +
+        "exactly why a lab-pattern flag needs a reviewer's context, not automatic action."
+      : "";
     var phlText = edishRow && edishRow.hy_flag
       ? "Peak ALT/AST " + fmtX(edishRow.peak_transaminase_xuln) + " ULN and peak total bilirubin " +
         fmtX(edishRow.peak_bili_xuln) + " ULN — meets the potential Hy's Law lab pattern (≥" +
         SUMMARY.hys_law_transaminase_threshold_x_uln + "× / ≥" + SUMMARY.hys_law_bili_threshold_x_uln + "×). " +
-        "This is a lab-pattern flag for review, not a diagnosis."
+        "This is a lab-pattern flag for review, not a diagnosis." + armNote
       : "This subject does not meet the potential Hy's Law lab pattern.";
     right.innerHTML = '<div class="phl-callout"><strong>eDISH screen:</strong> ' + phlText + '</div>';
     el.appendChild(right);
@@ -158,7 +169,11 @@
           Plot.ruleY([1], { stroke: COLORS.baseline, strokeDasharray: "2,3" }),
           Plot.text([{ x: d3.min(labs, function (d) { return d.day; }), y: 1 }],
             { x: "x", y: "y", text: ["ULN = 1×"], dx: 2, dy: -6, fill: COLORS.muted, fontSize: 11, textAnchor: "start" }),
-          Plot.line(labs, { x: "day", y: "x_uln", stroke: "test", strokeWidth: 2, curve: "catmull-rom" }),
+          // Straight segments between observed points only -- never a
+          // smoothed curve, which would visually imply trend data across
+          // gaps (e.g. the ~3-week stretch with no draws between the
+          // day -5 baseline and day 16) that was never actually collected.
+          Plot.line(labs, { x: "day", y: "x_uln", stroke: "test", strokeWidth: 2, curve: "linear" }),
           Plot.dot(labs, { x: "day", y: "x_uln", r: 4, fill: "test" }),
           Plot.ruleX(ae, {
             x: "start_day", stroke: function (d) { return SEVERITY_COLOR[d.severity] || COLORS.ink2; },
@@ -241,6 +256,12 @@
       clear(container);
       var width = widthOf(container);
       var side = Math.min(width, 560);
+      // Label anchor point for the protagonist, clear of both reference
+      // lines (x < 3x ULN threshold, comfortably away from the y = 2x ULN
+      // line too) and clear of the rest of the scatter in this dataset.
+      var leaderLine = mine.map(function (d) {
+        return { x1: d.peak_transaminase_xuln, y1: d.peak_bili_xuln, x2: 0.3, y2: 4.3 };
+      });
       var plot = Plot.plot({
         width: width,
         height: Math.max(side * 0.82, 360),
@@ -260,7 +281,21 @@
           }),
           Plot.dot(others, { x: "peak_transaminase_xuln", y: "peak_bili_xuln", r: 4, fill: COLORS.muted, fillOpacity: 0.55, stroke: "none" }),
           Plot.dot(mine, { x: "peak_transaminase_xuln", y: "peak_bili_xuln", r: 8, fill: COLORS.goldFill, stroke: COLORS.gold, strokeWidth: 2 }),
-          Plot.text(mine, { x: "peak_transaminase_xuln", y: "peak_bili_xuln", text: function (d) { return "Subject " + d.usubjid; }, dx: -14, dy: 4, textAnchor: "end", fontSize: 11.5, fontWeight: 700, fill: COLORS.gold }),
+          // The protagonist's dot sits right where the 3x ULN reference
+          // line is (both are near the top-right corner of the data), so a
+          // label placed close to the dot runs straight through that line
+          // regardless of which side it grows toward. Instead, park the
+          // label in the empty lower-left-of-threshold area with a short
+          // leader line back to the actual dot.
+          Plot.link(leaderLine, { x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: COLORS.gold, strokeWidth: 1 }),
+          Plot.dot(leaderLine, { x: "x2", y: "y2", r: 2, fill: COLORS.gold }),
+          Plot.text(leaderLine, {
+            x: "x2", y: "y2", text: function () { return "Subject " + mine[0].usubjid; },
+            // below the anchor dot, not back along the line's own
+            // approach direction (which runs up-and-right from here) --
+            // otherwise the leader line draws straight through the text
+            dy: 16, textAnchor: "middle", fontSize: 11.5, fontWeight: 700, fill: COLORS.gold
+          }),
           Plot.tip(all, Plot.pointer({
             x: "peak_transaminase_xuln", y: "peak_bili_xuln",
             title: function (d) {
@@ -384,13 +419,41 @@
         yDomain = [0, Math.max(yMax * 1.3, 1)];
       }
 
+      var MARGIN_LEFT = 46, MARGIN_RIGHT = 14, MARGIN_TOP = 26, MARGIN_BOTTOM = 36;
+
+      // Dodge overlapping flagged-site labels: two sites close together in
+      // both x (n) and y (rate) -- e.g. two small, nearby sites like 706
+      // and 711 -- get their labels stacked at increasing heights instead
+      // of drawn on top of each other. Both axes here are plain linear, so
+      // pixel position is computed directly from the same domains Plot
+      // will use, without needing to introspect the rendered scale.
+      var xDomain = d3.extent(opts.curve, function (c) { return c.x; });
+      var plotW = width - MARGIN_LEFT - MARGIN_RIGHT, plotH = 270 - MARGIN_TOP - MARGIN_BOTTOM;
+      function px(n) { return MARGIN_LEFT + ((n - xDomain[0]) / (xDomain[1] - xDomain[0])) * plotW; }
+      function py(rate) { return MARGIN_TOP + (1 - (rate - yDomain[0]) / (yDomain[1] - yDomain[0])) * plotH; }
+      var dodged = flagged.slice().sort(function (a, b) { return px(a.n) - px(b.n); });
+      var placed = []; // {pxX, pxY, bucket}
+      dodged.forEach(function (d) {
+        var bucket = 0;
+        var collides;
+        do {
+          collides = placed.some(function (p) {
+            return p.bucket === bucket && Math.abs(p.pxX - px(d.n)) < 34 && Math.abs(p.pxY - py(d.rate)) < 22;
+          });
+          if (collides) bucket++;
+        } while (collides && bucket < 6);
+        d._labelBucket = bucket;
+        placed.push({ pxX: px(d.n), pxY: py(d.rate), bucket: bucket });
+      });
+      var labelBuckets = d3.groups(flagged, function (d) { return d._labelBucket || 0; });
+
       var plot = Plot.plot({
         width: width,
         height: 270,
-        marginLeft: 46,
-        marginBottom: 36,
-        marginTop: 26,
-        marginRight: 14,
+        marginLeft: MARGIN_LEFT,
+        marginBottom: MARGIN_BOTTOM,
+        marginTop: MARGIN_TOP,
+        marginRight: MARGIN_RIGHT,
         style: { fontFamily: "inherit", fontSize: "12px" },
         x: { label: opts.xLabel, grid: false },
         y: { label: opts.yLabel, grid: true, tickFormat: yTickFormat, domain: yDomain },
@@ -399,10 +462,19 @@
           Plot.areaY(opts.curve, { x: "x", y1: "watch_lower", y2: "watch_upper", fill: COLORS.baseline, fillOpacity: 0.45 }),
           Plot.ruleY([opts.pooledRate], { stroke: COLORS.ink2, strokeDasharray: "2,2" }),
           Plot.dot(sites, { x: "n", y: "rate", r: 5.5, fill: function (d) { return flagColor(d.flag); }, stroke: COLORS.surface || "#fff", strokeWidth: 1 }),
-          Plot.text(flagged, {
-            x: "n", y: "rate", text: "site", dy: -10, fontSize: 11, fontWeight: 700, textAnchor: "middle",
-            fill: function (d) { return flagColor(d.flag); }
-          }),
+        ].concat(
+          // one Plot.text per collision "bucket" (dy is a constant option,
+          // not a per-datum channel, so overlapping labels are separated
+          // by rendering each stacked height as its own mark rather than
+          // by a per-row dy function)
+          labelBuckets.map(function (entry) {
+            var bucket = entry[0], rows = entry[1];
+            return Plot.text(rows, {
+              x: "n", y: "rate", text: "site", dy: -10 - bucket * 14, fontSize: 11, fontWeight: 700,
+              textAnchor: "middle", fill: function (d) { return flagColor(d.flag); }
+            });
+          })
+        ).concat([
           Plot.tip(sites, Plot.pointer({
             x: "n", y: "rate",
             title: function (d) {
@@ -411,7 +483,7 @@
                 "\n" + (d.flag ? "Flagged: " + d.flag : "Within funnel limits");
             }
           }))
-        ]
+        ])
       });
       container.el.appendChild(plot);
     }
@@ -453,8 +525,8 @@
       card.innerHTML = '<h3>' + def.title + '</h3>' +
         '<div class="chart-fig" id="funnel-' + def.key + '"></div>' +
         '<div class="legend">' +
-        '<span class="item"><span class="swatch" style="background:' + COLORS.baseline + '"></span>95%-ish "watch" band</span>' +
-        '<span class="item"><span class="swatch" style="background:' + COLORS.grid + '"></span>99.8%-ish "alarm" band</span>' +
+        '<span class="item"><span class="swatch" style="background:' + COLORS.baseline + '"></span>approx. 95% "watch" band (normal approximation)</span>' +
+        '<span class="item"><span class="swatch" style="background:' + COLORS.grid + '"></span>approx. 99.8% "alarm" band (normal approximation)</span>' +
         '<span class="item"><span class="swatch" style="background:' + COLORS.critical + '"></span>flagged high</span>' +
         '<span class="item"><span class="swatch" style="background:' + COLORS.serious + '"></span>flagged low</span>' +
         '</div>';

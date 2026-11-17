@@ -5142,203 +5142,240 @@ window.MDR_DATA = {
         "day": -5.0,
         "x_uln": 4.91,
         "value": 565.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": true
       },
       {
         "test": "ALT",
         "day": -5.0,
         "x_uln": 1.56,
         "value": 50.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": true
       },
       {
         "test": "AST",
         "day": -5.0,
         "x_uln": 1.59,
         "value": 54.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": true
+      },
+      {
+        "test": "BILI",
+        "day": -5.0,
+        "x_uln": 1.22,
+        "value": 25.65,
+        "unit": "umol/L",
+        "baseline": true
       },
       {
         "test": "GGT",
         "day": -5.0,
         "x_uln": 9.32,
         "value": 466.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": true
       },
       {
         "test": "ALP",
         "day": 16.0,
         "x_uln": 5.84,
         "value": 672.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALT",
         "day": 16.0,
         "x_uln": 3.25,
         "value": 104.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "AST",
         "day": 16.0,
         "x_uln": 3.47,
         "value": 118.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "BILI",
         "day": 16.0,
         "x_uln": 5.54,
         "value": 116.28,
-        "unit": "umol/L"
+        "unit": "umol/L",
+        "baseline": false
       },
       {
         "test": "GGT",
         "day": 16.0,
         "x_uln": 8.76,
         "value": 438.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALP",
         "day": 19.0,
         "x_uln": 5.23,
         "value": 601.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALT",
         "day": 19.0,
         "x_uln": 2.97,
         "value": 95.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "AST",
         "day": 19.0,
         "x_uln": 3.38,
         "value": 115.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "BILI",
         "day": 19.0,
         "x_uln": 5.94,
         "value": 124.83,
-        "unit": "umol/L"
+        "unit": "umol/L",
+        "baseline": false
       },
       {
         "test": "GGT",
         "day": 19.0,
         "x_uln": 8.04,
         "value": 402.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALP",
         "day": 22.0,
         "x_uln": 5.71,
         "value": 657.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALT",
         "day": 22.0,
         "x_uln": 3.34,
         "value": 107.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "AST",
         "day": 22.0,
         "x_uln": 3.97,
         "value": 135.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "BILI",
         "day": 22.0,
         "x_uln": 5.94,
         "value": 124.83,
-        "unit": "umol/L"
+        "unit": "umol/L",
+        "baseline": false
       },
       {
         "test": "GGT",
         "day": 22.0,
         "x_uln": 8.94,
         "value": 447.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALP",
         "day": 25.0,
         "x_uln": 5.66,
         "value": 651.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALT",
         "day": 25.0,
         "x_uln": 2.88,
         "value": 92.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "AST",
         "day": 25.0,
         "x_uln": 3.35,
         "value": 114.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "BILI",
         "day": 25.0,
         "x_uln": 4.72,
         "value": 99.17999999999999,
-        "unit": "umol/L"
+        "unit": "umol/L",
+        "baseline": false
       },
       {
         "test": "GGT",
         "day": 25.0,
         "x_uln": 8.16,
         "value": 408.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALP",
         "day": 31.0,
         "x_uln": 5.97,
         "value": 686.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "ALT",
         "day": 31.0,
         "x_uln": 2.28,
         "value": 73.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "AST",
         "day": 31.0,
         "x_uln": 2.71,
         "value": 92.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       },
       {
         "test": "BILI",
         "day": 31.0,
         "x_uln": 3.42,
         "value": 71.82,
-        "unit": "umol/L"
+        "unit": "umol/L",
+        "baseline": false
       },
       {
         "test": "GGT",
         "day": 31.0,
         "x_uln": 9.62,
         "value": 481.0,
-        "unit": "U/L"
+        "unit": "U/L",
+        "baseline": false
       }
     ],
     "visits": [
