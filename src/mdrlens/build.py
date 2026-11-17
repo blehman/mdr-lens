@@ -8,6 +8,7 @@ data/derived/*.json.
 from __future__ import annotations
 
 import dataclasses
+import datetime as dt
 import json
 import math
 from pathlib import Path
@@ -16,6 +17,19 @@ from typing import Any
 import pandas as pd
 import pyreadr
 
+from .cuts import (
+    CYCLE_EPOCH,
+    LAB_EXCURSION_X_ULN,
+    build_cut_calendar,
+    current_cut_index,
+    diff_ae,
+    diff_hy_flags,
+    diff_lab_excursions,
+    diff_site_flags,
+    enrollment_curve,
+    filter_to_cut,
+    review_meeting_cuts,
+)
 from .dataquality import build_data_quality
 from .funnel import funnel_curve
 from .hyslaw import PHL_BILI_X_ULN, PHL_TRANSAMINASE_X_ULN, build_liver_profiles
@@ -198,6 +212,135 @@ def build_study_summary(
     }
 
 
+CUT_DETAIL_CAP = 15
+
+
+def _ae_detail(ae: pd.DataFrame, keys: list[tuple]) -> list[dict]:
+    out = []
+    for usubjid, aeseq in keys:
+        match = ae[(ae["USUBJID"] == usubjid) & (ae["AESEQ"] == aeseq)]
+        if match.empty:
+            continue
+        row = match.iloc[0]
+        out.append(
+            {
+                "usubjid": usubjid,
+                "term": row["AETERM"],
+                "day": None if pd.isna(row["AESTDY"]) else float(row["AESTDY"]),
+            }
+        )
+    return out
+
+
+def _lab_excursion_detail(lb: pd.DataFrame, keys: list[tuple]) -> list[dict]:
+    from .uln import x_uln
+
+    out = []
+    for usubjid, lbseq in keys:
+        match = lb[(lb["USUBJID"] == usubjid) & (lb["LBSEQ"] == lbseq)]
+        if match.empty:
+            continue
+        row = match.iloc[0]
+        out.append(
+            {
+                "usubjid": usubjid,
+                "test": row["LBTESTCD"],
+                "day": None if pd.isna(row["LBDY"]) else float(row["LBDY"]),
+                "x_uln": round(x_uln(row["LBSTRESN"], row["LBSTNRHI"]) or 0.0, 2),
+            }
+        )
+    return out
+
+
+def build_study_in_flight(
+    dm: pd.DataFrame,
+    ae: pd.DataFrame,
+    lb: pd.DataFrame,
+    sv: pd.DataFrame,
+    ds: pd.DataFrame,
+    run_date: dt.date | None = None,
+) -> dict:
+    """The "study in flight" replay: this completed public study (see
+    README), replayed by deterministic monthly data cuts to show the kind
+    of screen a Real-Time Visual Analytics dashboard provides -- advancing
+    to First Patient In, cohort-style milestones, and a "what changed
+    since the last cut" view. Never presented on screen as a live study;
+    every screen built from this says plainly it replays a completed
+    public study by data cut.
+    """
+    if run_date is None:
+        run_date = dt.datetime.now(dt.timezone.utc).date()
+
+    cal = build_cut_calendar(dm, ae, lb, sv, ds)
+    cuts = cal["cuts"]
+    idx = current_cut_index(len(cuts), run_date)
+    enrollment = enrollment_curve(dm, cuts)
+    reviews = review_meeting_cuts(enrollment)
+
+    per_cut = []
+    prev_filtered = None
+    prev_hy_flagged: set[str] = set()
+    prev_site_kris: list = []
+    for i, cut_date in enumerate(cuts):
+        filtered = filter_to_cut(dm, ae, lb, sv, ds, cut_date)
+        profiles = build_liver_profiles(filtered["lb"], subjects=filtered["dm"]["USUBJID"].tolist())
+        hy_flagged = {p.usubjid for p in profiles if p.hy_flag}
+        site_kris = (
+            build_site_kris(filtered["dm"], filtered["ae"], filtered["lb"], filtered["sv"])
+            if len(filtered["dm"])
+            else []
+        )
+        n_sites_flagged = sum(1 for s in site_kris if s.ae_flag or s.missing_lab_flag or s.visit_oow_flag)
+
+        what_changed = None
+        if i > 0:
+            new_ae_keys = diff_ae(prev_filtered["ae"], filtered["ae"])
+            new_lab_keys = diff_lab_excursions(prev_filtered["lb"], filtered["lb"], x_uln_threshold=LAB_EXCURSION_X_ULN)
+            newly_hy = diff_hy_flags(prev_hy_flagged, hy_flagged)
+            newly_flagged_sites = diff_site_flags(prev_site_kris, site_kris)
+            what_changed = {
+                "n_new_ae": len(new_ae_keys),
+                "new_ae": _ae_detail(filtered["ae"], new_ae_keys[:CUT_DETAIL_CAP]),
+                "n_new_lab_excursions": len(new_lab_keys),
+                "new_lab_excursions": _lab_excursion_detail(filtered["lb"], new_lab_keys[:CUT_DETAIL_CAP]),
+                "newly_hy_flagged": sorted(newly_hy),
+                "newly_flagged_sites": newly_flagged_sites[:CUT_DETAIL_CAP],
+            }
+
+        per_cut.append(
+            {
+                "cut": cut_date.isoformat(),
+                "index": i,
+                "n_subjects": int(len(filtered["dm"])),
+                "n_ae": int(len(filtered["ae"])),
+                "n_lb": int(len(filtered["lb"])),
+                "n_potential_hys_law": len(hy_flagged),
+                "n_sites_flagged": n_sites_flagged,
+                "what_changed": what_changed,
+            }
+        )
+
+        prev_filtered = filtered
+        prev_hy_flagged = hy_flagged
+        prev_site_kris = site_kris
+
+    return {
+        "cycle_epoch": CYCLE_EPOCH.isoformat(),
+        "run_date": run_date.isoformat(),
+        "last_refresh_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "first_patient_in": cal["first_patient_in"].isoformat(),
+        "replay_window_end": cal["replay_window_end"].isoformat(),
+        "n_cuts": len(cuts),
+        "current_cut_index": idx,
+        "current_cut": cuts[idx].isoformat(),
+        "cycle_restarted": idx == 0,
+        "enrollment_curve": enrollment,
+        "review_meeting_cuts": reviews,
+        "per_cut": per_cut,
+        "lab_excursion_x_uln_threshold": LAB_EXCURSION_X_ULN,
+    }
+
+
 def main() -> None:
     data = load_all()
     dm, ae, lb, sv, ds = data["dm"], data["ae"], data["lb"], data["sv"], data["ds"]
@@ -212,6 +355,7 @@ def main() -> None:
     timeline = build_patient_timeline(protagonist, dm, ae, lb, sv, ds)
     ae_events = build_ae_events(ae, dm)
     summary = build_study_summary(dm, ae, lb, sv, ds, liver_profiles, protagonist)
+    study_in_flight = build_study_in_flight(dm, ae, lb, sv, ds)
 
     written = [
         _write_json("edish.json", edish),
@@ -221,6 +365,7 @@ def main() -> None:
         _write_json("patient_timeline.json", timeline),
         _write_json("ae_events.json", ae_events),
         _write_json("study_summary.json", summary),
+        _write_json("study_in_flight.json", study_in_flight),
     ]
     for p in written:
         print(f"wrote {p.relative_to(ROOT)}")
@@ -233,6 +378,10 @@ def main() -> None:
     print(f"protagonist: {protagonist}")
     print(f"potential Hy's Law subjects: {summary['n_potential_hys_law']} / {summary['n_subjects']}")
     print(f"sites flagged on at least one KRI: {n_flagged_sites} / {len(site_kris)}")
+    print(
+        f"study in flight: {study_in_flight['n_cuts']} cuts, FPI {study_in_flight['first_patient_in']}, "
+        f"current cut {study_in_flight['current_cut']} (index {study_in_flight['current_cut_index']})"
+    )
 
     pack_web_data()
 
@@ -253,9 +402,23 @@ def pack_web_data() -> Path:
         "patient_timeline",
         "ae_events",
         "study_summary",
+        "study_in_flight",
     ]:
         path = DERIVED_DIR / f"{name}.json"
         bundle[name] = json.loads(path.read_text())
+
+    # Live registry snapshot: written by scripts/fetch_registry.py, which
+    # talks to the network (this module never does). Bundled if present so
+    # the static page can show it; if it hasn't been fetched yet (e.g. a
+    # bare clone that only ran scripts/build.py), the registry section's
+    # own JS renders an explicit "not fetched yet" state instead of KeyError.
+    registry_path = DERIVED_DIR / "registry_summary.json"
+    if registry_path.exists():
+        bundle["registry_summary"] = json.loads(registry_path.read_text())
+    else:
+        bundle["registry_summary"] = None
+        print(f"NOTE: {registry_path.relative_to(ROOT)} not found -- run scripts/fetch_registry.py. "
+              "Bundling registry_summary=null so the page still builds.")
 
     WEB_DIR.mkdir(parents=True, exist_ok=True)
     out_path = WEB_DIR / "data.js"

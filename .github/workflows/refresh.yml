@@ -1,0 +1,81 @@
+name: Refresh live views and redeploy demo page
+
+# Daily refresh for the two live-data views (§01 study-in-flight cut
+# advance, §02 ClinicalTrials.gov registry fetch). Deliberately does NOT
+# commit anything to the repository: it fetches fresh data at build time,
+# rebuilds web/data.js in the runner's own workspace, and deploys that
+# freshly built web/ directory straight to Pages as a workflow artifact.
+# The "current cut" is recomputed from the run date inside build.py --
+# there is no stored pointer to drift or to commit.
+#
+# Failure mode (binding): if EITHER fetch step fails, the job fails before
+# the deploy step ever runs, so Pages keeps serving whatever it already
+# had -- the only "last good" state that matters here is the previous
+# Pages deployment, not a git commit.
+#
+# GitHub policy note: GitHub automatically disables a scheduled workflow
+# in a PUBLIC repository once no activity has occurred in the repo for 60
+# days (https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule).
+# Since this workflow deliberately makes no commits, a long stretch with
+# no other repo activity (manual pushes, PRs, etc.) could silently disable
+# it. Mitigation, since adding a daily commit here would violate the
+# no-commit design above: (1) re-enable manually in GitHub's UI
+# (Actions -> this workflow -> "Enable workflow") or via
+# `gh workflow enable refresh.yml` -- a one-time action, not a recurring
+# one; (2) in practice this repo sees other commits during active
+# development, which also resets the 60-day clock; (3) if the workflow
+# does go quiet, the last Pages deployment keeps serving the page exactly
+# as before -- nothing breaks, it just stops refreshing until re-enabled.
+# This tradeoff (manual re-enable vs. a daily no-op commit) is a judgment
+# call, not something this repo can fully automate around without
+# violating its own no-daily-commit rule.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Fetch pilot SDTM source (pharmaverse/pharmaversesdtm)
+        run: uv run python scripts/fetch_data.py
+
+      - name: Fetch live ClinicalTrials.gov registry snapshot
+        # Non-zero exit here fails the whole job -- the deploy steps below
+        # never run, and Pages keeps serving the previous deployment.
+        run: uv run python scripts/fetch_registry.py
+
+      - name: Build derived data + web/data.js (recomputes the current cut from today's date)
+        run: uv run python scripts/build.py
+
+      - name: Run tests against the freshly built data
+        run: uv run pytest
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web   # the freshly rebuilt directory, not a committed copy
+      - id: deployment
+        uses: actions/deploy-pages@v4

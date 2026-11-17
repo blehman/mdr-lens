@@ -151,6 +151,34 @@
   .table-scroll-hint{ font-size:11.5px; color: var(--ink-muted); margin-bottom:8px; }
   @media (min-width: 860px){ .table-scroll-hint{ display:none; } }
 
+  /* ---------- study-in-flight stepper ---------- */
+  .stepper-row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:4px; }
+  .stepper-btn{
+    font-size:13px; font-weight:700; padding:7px 16px; border-radius:8px; border:1px solid var(--grid);
+    background: var(--page); color: var(--ink); cursor:pointer;
+  }
+  .stepper-btn:hover:not(:disabled){ border-color: var(--baseline); }
+  .stepper-btn:disabled{ opacity:.4; cursor:not-allowed; }
+  .cut-input{ flex:1 1 160px; }
+  .cut-label{ font-size:13.5px; font-weight:700; min-width: 190px; text-align:center; }
+  .cycle-note{ font-size:12px; color: var(--ink-muted); margin-top:6px; }
+  .replay-badge{
+    display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:700;
+    padding:3px 9px; border-radius:999px; background:#eceae4; color: var(--ink-2); border:1px solid var(--grid);
+  }
+  .registry-badge{
+    display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:700;
+    padding:3px 9px; border-radius:999px; background:#e9f1fc; color:#184f95; border:1px solid #cfe0f6;
+  }
+  .changed-card ul{ margin:8px 0 0 18px; padding:0; font-size:13px; color: var(--ink-2); }
+  .changed-card li{ margin-top:4px; }
+  .changed-card h4{ font-size:12.5px; text-transform:uppercase; letter-spacing:.03em; color: var(--ink-muted); margin-top:14px; }
+  .changed-card h4:first-child{ margin-top:0; }
+  .milestone-row{ display:flex; flex-wrap:wrap; gap:16px; margin-top:4px; }
+  .milestone-row .m{ font-size:13px; }
+  .milestone-row .m .k{ color: var(--ink-muted); font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; }
+  .milestone-row .m .v{ font-weight:700; font-size:14.5px; }
+
   footer{ background: var(--surface-1); border-top:1px solid var(--grid); padding: 30px 0 60px; }
   footer h2{ font-size:18px; font-weight:800; }
   .glossary dt{ font-weight:700; margin-top:12px; font-size:13.5px; }
@@ -169,25 +197,29 @@
 
 <header class="hero" id="hero">
   <div class="wrap">
-    <div class="eyebrow">mdr-lens · static demo · public pilot data</div>
-    <h1>Medical Data Review views on one completed clinical trial</h1>
+    <div class="eyebrow">mdr-lens · Medical Data Review &amp; Real-Time Visual Analytics views</div>
+    <h1>One completed trial, replayed by data cut — plus a live public-registry view</h1>
     <p class="sub">
       A small set of views a Medical Data Review (clinical data review focused on patient
-      safety) analyst or a Risk-Based Quality Management (RBQM) lead might want: liver
-      safety screening, an adverse-event explorer with a one-patient timeline, site-level
-      risk indicators, and data-quality checks — all computed from one public, already-closed
-      clinical study.
+      safety) analyst or a Real-Time Visual Analytics / Risk-Based Quality Management (RBQM)
+      lead might want: a completed public clinical trial replayed month by month as if its data
+      cuts were arriving in real time, a live public-registry snapshot, liver safety screening,
+      an adverse-event explorer with a one-patient timeline, site-level risk indicators, and
+      data-quality checks.
     </p>
     <div class="warn">
-      This is a retrospective look at one finished (not live, not real-time) public
-      teaching dataset — see <a href="#methods">Data, limits &amp; what a real trial would add</a>.
+      §01 replays <strong>one completed public study by monthly data cut</strong> — it is not,
+      and is never presented as, a live study. §02 fetches the public ClinicalTrials.gov registry
+      fresh at build time. See <a href="#methods">Data, limits &amp; what a real trial would add</a>.
       No data here comes from any real patient or any employer's systems.
     </div>
     <nav class="jumplist">
-      <a href="#patient">01 · One patient</a>
-      <a href="#study">02 · Whole study</a>
-      <a href="#sites">03 · Sites</a>
-      <a href="#quality">04 · Data quality</a>
+      <a href="#inflight">01 · Study in flight</a>
+      <a href="#registry">02 · Live registry</a>
+      <a href="#patient">03 · One patient</a>
+      <a href="#study">04 · Whole study</a>
+      <a href="#sites">05 · Sites</a>
+      <a href="#quality">06 · Data quality</a>
       <a href="#methods">Methods &amp; glossary</a>
     </nav>
     <div class="stat-row" id="hero-stats"></div>
@@ -196,11 +228,109 @@
 
 <main>
 
-  <!-- ============== 01 ONE PATIENT ============== -->
+  <!-- ============== 01 STUDY IN FLIGHT ============== -->
+  <section class="view" id="inflight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">01 · replayed by data cut</div>
+        <h2>Study in flight: a completed public study, replayed by monthly data cut</h2>
+        <p class="dek">
+          The CDISC pilot study below (see §03–06, and Methods) finished years ago. To show the
+          kind of screen a Real-Time Visual Analytics dashboard provides — one that advances
+          through milestone data cuts as a trial actually enrolls — every record here is replayed
+          <strong>as if</strong> it arrived on its own SDTM date (DM.RFSTDTC, AE.AESTDTC, LB.LBDTC,
+          SV.SVSTDTC, DS.DSSTDTC), one monthly cut at a time. This is a completed public study
+          replayed by data cut — <strong>never a live study</strong>, and never presented as one.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Milestones</h3>
+        <div class="milestone-row" id="inflight-milestones"></div>
+        <p class="cycle-note" id="inflight-cycle-note"></p>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>Enrollment curve, with review-meeting-style milestone cuts</h3>
+        <p class="caption">
+          First Patient In (FPI) is the earliest DM.RFSTDTC across all subjects. The four marked
+          cuts are where cumulative enrollment first reaches 25/50/75/100% of its final total — a
+          deterministic stand-in for cohort reviews / safety data review committee meetings, since
+          this public dataset does not publish a real review schedule.
+        </p>
+        <div class="chart-fig" id="inflight-enrollment-chart"></div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>Data-cut stepper</h3>
+        <p class="caption">Step through every monthly cut, or jump straight to the current one.</p>
+        <div class="stepper-row">
+          <button class="stepper-btn" id="inflight-prev" type="button">← Prev cut</button>
+          <input class="cut-input" id="inflight-slider" type="range" min="0" max="0" value="0" step="1">
+          <button class="stepper-btn" id="inflight-next" type="button">Next cut →</button>
+          <button class="stepper-btn" id="inflight-jump-current" type="button">Jump to current cut</button>
+          <span class="cut-label" id="inflight-cut-label"></span>
+        </div>
+        <div class="stat-row" id="inflight-cut-stats" style="margin-top:16px;"></div>
+      </div>
+
+      <div class="card changed-card" style="margin-top:14px;" id="inflight-changed-card">
+        <h3>What changed since the last cut</h3>
+        <div id="inflight-changed-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 02 LIVE REGISTRY ============== -->
+  <section class="view" id="registry">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">02 · the live public registry</div>
+        <h2>Roche &amp; Genentech: public registry snapshot</h2>
+        <p class="dek">
+          Fetched fresh at build time from <a href="https://clinicaltrials.gov/api/v2/studies" target="_blank" rel="noopener">clinicaltrials.gov/api/v2/studies</a>
+          (the official public ClinicalTrials.gov API v2, no key required): every study with lead
+          sponsor "Hoffmann-La Roche" or "Genentech", Phase 1 or Phase 2, in an actively
+          enrolling-or-running status (recruiting, active-not-recruiting, not-yet-recruiting, or
+          enrolling-by-invitation). These are <strong>public registry records</strong>, not an
+          internal pipeline view — this page makes no statement about Roche's or Genentech's
+          internal development portfolio.
+        </p>
+      </div>
+
+      <div class="card" id="registry-fetch-card"></div>
+
+      <div class="grid-2" style="margin-top:14px;">
+        <div class="card">
+          <h3>Studies by status &amp; phase</h3>
+          <div class="chart-fig" id="registry-status-phase-chart"></div>
+        </div>
+        <div class="card">
+          <h3>Grouped by MeSH condition category</h3>
+          <p class="caption">
+            The registry has no therapeutic-area field, so every study is bucketed by matching its
+            MeSH (Medical Subject Headings) condition-tree ancestor terms against a fixed,
+            documented list (see Methods); a study with no MeSH terms gets its own explicit
+            bucket rather than a guess.
+          </p>
+          <div class="chart-fig" id="registry-mesh-chart"></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>Start → primary completion, by study (recruiting / active)</h3>
+        <p class="caption">Each line is one study's registered start date to its registered primary-completion date, colored by overall status.</p>
+        <div class="chart-fig" id="registry-timeline-chart"></div>
+        <div class="legend" id="registry-timeline-legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 03 ONE PATIENT ============== -->
   <section class="view" id="patient">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">01 · start with one atomic unit</div>
+        <div class="eyebrow">03 · start with one atomic unit</div>
         <h2>One patient's liver-safety story</h2>
         <p class="dek">
           Before looking at 306 subjects or 17 sites, look at one subject the way a
@@ -216,8 +346,8 @@
         <p class="caption">
           Study day 0 = this subject's reference start date (the <abbr title="Study Data Tabulation Model">SDTM</abbr> DM domain's RFSTDTC). × ULN = result ÷ that lab's
           own upper limit of normal for the test (see Methods). Points are joined with straight lines, never a
-          smoothed curve — a gap between two points is a real gap in collection, not interpolated data. Hover
-          any mark for exact values.
+          smoothed curve — the space between two points reflects an interval with no draw, not interpolated
+          data. Hover any mark for exact values.
         </p>
         <div class="chart-fig" id="patient-timeline-chart"></div>
         <div class="legend" id="patient-timeline-legend"></div>
@@ -225,11 +355,11 @@
     </div>
   </section>
 
-  <!-- ============== 02 WHOLE STUDY ============== -->
+  <!-- ============== 04 WHOLE STUDY ============== -->
   <section class="view" id="study">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">02 · now the whole study</div>
+        <div class="eyebrow">04 · now the whole study</div>
         <h2>eDISH: liver safety across every subject</h2>
         <p class="dek">
           eDISH (evaluation of Drug-Induced Serious Hepatotoxicity) plots peak liver-enzyme
@@ -274,11 +404,11 @@
     </div>
   </section>
 
-  <!-- ============== 03 SITES ============== -->
+  <!-- ============== 05 SITES ============== -->
   <section class="view" id="sites">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">03 · then the sites</div>
+        <div class="eyebrow">05 · then the sites</div>
         <h2>Site risk — key risk indicators (RBQM-style)</h2>
         <p class="dek">
           Risk-Based Quality Management (RBQM) watches a handful of key risk indicators
@@ -317,11 +447,11 @@
     </div>
   </section>
 
-  <!-- ============== 04 DATA QUALITY ============== -->
+  <!-- ============== 06 DATA QUALITY ============== -->
   <section class="view" id="quality">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">04 · and the data itself</div>
+        <div class="eyebrow">06 · and the data itself</div>
         <h2>Data quality, by domain</h2>
         <p class="dek">
           Nothing above is trustworthy if the underlying records aren't: missing required
@@ -355,23 +485,81 @@
         <a href="https://github.com/pharmaverse/pharmaversesdtm" target="_blank" rel="noopener">pharmaverse/pharmaversesdtm</a>
         package (Apache-2.0 license). It is a synthetic/anonymized teaching dataset used
         across the industry for exactly this kind of tooling, with nothing from any employer's
-        systems. The whole project — fetch script, metrics, tests, and this static page —
-        rebuilds from the public source with one command, and the page runs offline in any browser.
+        systems. §01 replays that completed study by monthly data cut; §02 adds a live fetch of
+        the public ClinicalTrials.gov registry. Everything else (fetch scripts, metrics, tests,
+        and this page) rebuilds from public sources with one command, and the page runs offline —
+        the only two things that ever reach the network are the pilot-data fetch and the registry
+        fetch, both at build time, never while the page itself is open in a browser.
       </p>
+    </div>
+
+    <div class="card">
+      <h3>How the study-in-flight replay works (§01)</h3>
+      <ul class="limits-list">
+        <li>Monthly data cuts run from First Patient In (FPI, the earliest DM.RFSTDTC across all
+          subjects) through the latest date seen in any domain, plus that exact end date as a
+          final cut. Each cut filters every domain to only the records dated on or before it —
+          exactly what a live extract would have shown that month.</li>
+        <li>The "current" cut advances one step per calendar day and cycles forever: once the
+          replay reaches its last cut, the next day's cut wraps back to cut 1 and the cycle
+          restarts on the date shown as "Cycle started" above. No commit or stored pointer marks
+          this — it is recomputed from the clock every time the page is built.</li>
+        <li>"What changed" compares consecutive cuts: new adverse events, new lab results
+          crossing ≥3× ULN (upper limit of normal), subjects newly meeting the potential Hy's Law
+          pattern, and sites newly outside a funnel-plot limit (§05 method) — never re-litigating
+          anything already shown at an earlier cut, since every domain only grows cut to cut.</li>
+        <li>Review-meeting cuts mark where cumulative enrollment first reaches 25/50/75/100% of
+          its final total — a deterministic stand-in for cohort reviews or safety data review
+          committee meetings, since this public dataset does not publish a real review calendar.</li>
+        <li>52 of 306 subjects in this study are recorded as screen failures with no DM.RFSTDTC
+          (they never reached a reference start date), and a further 26 AE / 225 LB records carry
+          no parseable onset or collection date. Both groups have no date to be cut against, so
+          they are correctly absent from every cut's enrolled/cumulative counts — while still
+          counted in the whole-study totals in §04–06 and the hero stats above.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>How the live registry view works (§02)</h3>
+      <ul class="limits-list">
+        <li>Query: lead sponsor (<code>query.lead</code>, which matches only the lead sponsor —
+          not <code>query.spons</code>, which also matches collaborators) is "Hoffmann-La Roche"
+          or "Genentech" (indexed on the registry as "Genentech, Inc."); filtered to Phase 1 or
+          Phase 2, in status RECRUITING, ACTIVE_NOT_RECRUITING, NOT_YET_RECRUITING, or
+          ENROLLING_BY_INVITATION.</li>
+        <li>The registry has no therapeutic-area field. Every study is bucketed by matching its
+          <code>derivedSection.conditionBrowseModule</code> MeSH (Medical Subject Headings)
+          ancestor/condition terms against this fixed, ordered list, first match wins: Neoplasms →
+          Oncology; Immune System Diseases → Immunology; Infections → Infectious Disease; Nervous
+          System Diseases → Neurology; Mental Disorders → Psychiatry; Eye Diseases → Ophthalmology;
+          Cardiovascular Diseases → Cardiovascular; Respiratory Tract Diseases → Respiratory; Skin
+          Diseases → Dermatology; Digestive System Diseases → Gastroenterology; Endocrine System
+          Diseases / Nutritional and Metabolic Diseases → Metabolic / Endocrine; Musculoskeletal
+          Diseases → Musculoskeletal; Hemic and Lymphatic Diseases → Hematology; Urogenital
+          Diseases → Urogenital / Renal; Genetic Diseases, Inborn / Congenital, Hereditary, and
+          Neonatal Diseases and Abnormalities → Genetic / Rare Disease; Wounds and Injuries →
+          Injury / Wounds. A study whose terms match none of these is bucketed "Other (MeSH
+          present)"; a study with no MeSH terms at all gets its own explicit "No MeSH category"
+          bucket — neither is ever a guess at a category.</li>
+        <li>This view reflects only what sponsors have posted to the public registry, as of the
+          fetch time shown — it makes no statement about, and is not, Roche's or Genentech's
+          internal development pipeline.</li>
+      </ul>
     </div>
 
     <div class="card">
       <h3>What a real trial would add</h3>
       <ul class="limits-list">
-        <li>A live Electronic Data Capture (EDC) / case report form (CRF) feed, refreshing
-          continuously, instead of one static, already-closed dataset — this page is not
-          real-time and never claims to be.</li>
+        <li>A live Electronic Data Capture (EDC) / case report form (CRF) feed integrated directly
+          into the dashboard, instead of a scheduled re-fetch of one public source replayed by
+          date — §01–02 refresh on a schedule, but neither is a continuous live connection into a
+          study's own EDC system.</li>
         <li>The EX (drug exposure) domain for real dosing dates, instead of the DM
           reference start/end dates used here as a stand-in for exposure duration.</li>
         <li>A published protocol visit schedule with real visit windows, instead of the
           ±7-day window around each visit's study-wide median day used here as a proxy.</li>
         <li>A query workflow — the loop of raising a data query against a site, tracking it
-          to resolution, and re-running these KRIs — which this static page has no mechanism for.</li>
+          to resolution, and re-running these KRIs — which this page has no mechanism for.</li>
         <li>Formal validation against a define.xml and the study's own CDISC conformance
           rules, not the hand-picked "required field" list used here.</li>
         <li>Exact (not normal-approximation) funnel limits, multiplicity correction across
@@ -390,17 +578,26 @@
           — Roche/Genentech's open-source clinical data exploration framework.</li>
         <li><a href="https://github.com/SafetyGraphics/safetyGraphics" target="_blank" rel="noopener">SafetyGraphics/safetyGraphics</a>
           — the eDISH / Hy's Law graphic convention this project's liver-safety view follows.</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API v2 documentation</a>
+          — the public registry API §02 queries.</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>How to run it</h3>
       <p class="caption" style="margin-top:8px; font-size:13.5px; color:var(--ink-2);">
-        <code>uv run python scripts/fetch_data.py &amp;&amp; uv run python scripts/build.py &amp;&amp; uv run pytest</code>
-        rebuilds every number on this page straight from the public source and re-runs
-        every check, including an independent recount of the headline numbers direct from
-        the raw tables (<code>tests/test_independent_recount.py</code>). Then open
-        <code>web/index.html</code> directly in a browser — no server, no network connection needed.
+        <code>uv run python scripts/fetch_data.py &amp;&amp; uv run python scripts/fetch_registry.py &amp;&amp;
+        uv run python scripts/build.py &amp;&amp; uv run pytest</code>
+        rebuilds every number on this page straight from the public pilot source and a fresh
+        registry fetch, and re-runs every check, including independent recounts of the headline
+        numbers direct from the raw tables (<code>tests/test_independent_recount.py</code>,
+        <code>tests/test_study_in_flight_recount.py</code>). Then open <code>web/index.html</code>
+        directly in a browser — no server needed, and no network calls happen while it's open.
+        A scheduled GitHub Action (<code>.github/workflows/refresh.yml</code>) runs the same four
+        commands daily and deploys the freshly built <code>web/</code> directory to Pages without
+        committing anything to the repository; if either fetch fails, the Action fails loudly and
+        Pages keeps serving the previous deployment (see that workflow file's comments for the
+        GitHub policy on scheduled workflows in a public repo, and how this one stays enabled).
       </p>
     </div>
 

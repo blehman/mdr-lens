@@ -85,7 +85,7 @@ def test_bili_day_minus5_is_present_but_below_spike_threshold():
     project's own timeline pipeline used to use for what counts as a
     plot-worthy "spike". mdrlens.timeline now always keeps the baseline
     (LBBLFL == "Y") draw regardless of that cutoff; this test pins why the
-    gap existed in the first place, straight from the raw table.
+    point was being dropped in the first place, straight from the raw table.
     """
     lb = _load_raw("lb")
     row = lb[
@@ -95,16 +95,16 @@ def test_bili_day_minus5_is_present_but_below_spike_threshold():
     assert row["LBSTRESN"] == pytest.approx(25.65)
     x_uln = row["LBSTRESN"] / row["LBSTNRHI"]
     assert x_uln == pytest.approx(1.2214285714285713, rel=1e-9)
-    assert x_uln < 1.5  # below the old spike-only cutoff -- that's the gap
+    assert x_uln < 1.5  # below the old spike-only cutoff -- why it was dropped
 
 
 def test_no_bili_record_at_all_between_day_minus5_and_day_16():
-    """Separately confirms there is a genuine ~3-week collection gap (no
-    BILI draw of any kind between day -5 and day 16) -- distinct from the
-    day -5 point itself, which is present. Both facts matter: the point at
-    day -5 was wrongly dropped by our own threshold; the gap after it is
-    real and should stay a straight line, never a smoothed curve implying
-    data that was never collected.
+    """Separately confirms there is a genuine ~3-week interval with no BILI
+    draw of any kind between day -5 and day 16 -- distinct from the day -5
+    point itself, which is present. Both facts matter: the point at day -5
+    was wrongly dropped by our own threshold; the interval after it is real
+    and should stay a straight line, never a smoothed curve implying data
+    that was never collected.
     """
     lb = _load_raw("lb")
     sub = lb[(lb["USUBJID"] == PROTAGONIST) & (lb["LBTESTCD"] == "BILI")]

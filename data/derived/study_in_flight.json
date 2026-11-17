@@ -1,0 +1,3184 @@
+{
+  "cycle_epoch": "2026-11-17",
+  "run_date": "2026-11-17",
+  "last_refresh_utc": "2026-11-17T10:47:34.971872+00:00",
+  "first_patient_in": "2012-07-09",
+  "replay_window_end": "2015-03-05",
+  "n_cuts": 34,
+  "current_cut_index": 0,
+  "current_cut": "2012-07-01",
+  "cycle_restarted": true,
+  "enrollment_curve": [
+    {
+      "cut": "2012-07-01",
+      "cumulative_subjects": 0
+    },
+    {
+      "cut": "2012-08-01",
+      "cumulative_subjects": 5
+    },
+    {
+      "cut": "2012-09-01",
+      "cumulative_subjects": 7
+    },
+    {
+      "cut": "2012-10-01",
+      "cumulative_subjects": 19
+    },
+    {
+      "cut": "2012-11-01",
+      "cumulative_subjects": 29
+    },
+    {
+      "cut": "2012-12-01",
+      "cumulative_subjects": 38
+    },
+    {
+      "cut": "2013-01-01",
+      "cumulative_subjects": 53
+    },
+    {
+      "cut": "2013-02-01",
+      "cumulative_subjects": 67
+    },
+    {
+      "cut": "2013-03-01",
+      "cumulative_subjects": 86
+    },
+    {
+      "cut": "2013-04-01",
+      "cumulative_subjects": 98
+    },
+    {
+      "cut": "2013-05-01",
+      "cumulative_subjects": 111
+    },
+    {
+      "cut": "2013-06-01",
+      "cumulative_subjects": 124
+    },
+    {
+      "cut": "2013-07-01",
+      "cumulative_subjects": 131
+    },
+    {
+      "cut": "2013-08-01",
+      "cumulative_subjects": 143
+    },
+    {
+      "cut": "2013-09-01",
+      "cumulative_subjects": 158
+    },
+    {
+      "cut": "2013-10-01",
+      "cumulative_subjects": 172
+    },
+    {
+      "cut": "2013-11-01",
+      "cumulative_subjects": 189
+    },
+    {
+      "cut": "2013-12-01",
+      "cumulative_subjects": 196
+    },
+    {
+      "cut": "2014-01-01",
+      "cumulative_subjects": 213
+    },
+    {
+      "cut": "2014-02-01",
+      "cumulative_subjects": 228
+    },
+    {
+      "cut": "2014-03-01",
+      "cumulative_subjects": 236
+    },
+    {
+      "cut": "2014-04-01",
+      "cumulative_subjects": 244
+    },
+    {
+      "cut": "2014-05-01",
+      "cumulative_subjects": 249
+    },
+    {
+      "cut": "2014-06-01",
+      "cumulative_subjects": 252
+    },
+    {
+      "cut": "2014-07-01",
+      "cumulative_subjects": 253
+    },
+    {
+      "cut": "2014-08-01",
+      "cumulative_subjects": 253
+    },
+    {
+      "cut": "2014-09-01",
+      "cumulative_subjects": 253
+    },
+    {
+      "cut": "2014-10-01",
+      "cumulative_subjects": 254
+    },
+    {
+      "cut": "2014-11-01",
+      "cumulative_subjects": 254
+    },
+    {
+      "cut": "2014-12-01",
+      "cumulative_subjects": 254
+    },
+    {
+      "cut": "2015-01-01",
+      "cumulative_subjects": 254
+    },
+    {
+      "cut": "2015-02-01",
+      "cumulative_subjects": 254
+    },
+    {
+      "cut": "2015-03-01",
+      "cumulative_subjects": 254
+    },
+    {
+      "cut": "2015-03-05",
+      "cumulative_subjects": 254
+    }
+  ],
+  "review_meeting_cuts": [
+    {
+      "cut": "2013-02-01",
+      "threshold": 0.25,
+      "cumulative_subjects": 67
+    },
+    {
+      "cut": "2013-07-01",
+      "threshold": 0.5,
+      "cumulative_subjects": 131
+    },
+    {
+      "cut": "2013-12-01",
+      "threshold": 0.75,
+      "cumulative_subjects": 196
+    },
+    {
+      "cut": "2014-10-01",
+      "threshold": 1.0,
+      "cumulative_subjects": 254
+    }
+  ],
+  "per_cut": [
+    {
+      "cut": "2012-07-01",
+      "index": 0,
+      "n_subjects": 0,
+      "n_ae": 0,
+      "n_lb": 0,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 0,
+      "what_changed": null
+    },
+    {
+      "cut": "2012-08-01",
+      "index": 1,
+      "n_subjects": 5,
+      "n_ae": 1,
+      "n_lb": 246,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 0,
+      "what_changed": {
+        "n_new_ae": 1,
+        "new_ae": [
+          {
+            "usubjid": "01-711-1036",
+            "term": "HEADACHE",
+            "day": 1.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2012-09-01",
+      "index": 2,
+      "n_subjects": 7,
+      "n_ae": 21,
+      "n_lb": 650,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 1,
+      "what_changed": {
+        "n_new_ae": 20,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1023",
+            "term": "ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1023",
+            "term": "ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1023",
+            "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1023",
+            "term": "ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "NASAL MUCOSA BIOPSY",
+            "day": 13.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "SECRETION DISCHARGE",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "ERYTHEMA",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "SECRETION DISCHARGE",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "ERYTHEMA",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-703-1258",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-703-1258",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-709-1007",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-709-1007",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-709-1007",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-709-1007",
+            "term": "DIARRHOEA",
+            "day": 31.0
+          }
+        ],
+        "n_new_lab_excursions": 5,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1023",
+            "test": "BASOLE",
+            "day": -14.0,
+            "x_uln": 25.0
+          },
+          {
+            "usubjid": "01-701-1023",
+            "test": "MONOLE",
+            "day": -14.0,
+            "x_uln": 3.57
+          },
+          {
+            "usubjid": "01-701-1023",
+            "test": "BASOLE",
+            "day": 23.0,
+            "x_uln": 5.0
+          },
+          {
+            "usubjid": "01-701-1023",
+            "test": "EOSLE",
+            "day": 23.0,
+            "x_uln": 5.0
+          },
+          {
+            "usubjid": "01-701-1023",
+            "test": "MONOLE",
+            "day": 23.0,
+            "x_uln": 6.43
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "709",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2012-10-01",
+      "index": 3,
+      "n_subjects": 19,
+      "n_ae": 57,
+      "n_lb": 1682,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 4,
+      "what_changed": {
+        "n_new_ae": 36,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1111",
+            "term": "ERYTHEMA",
+            "day": -5.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "PRURITUS",
+            "day": -5.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "LOCALISED INFECTION",
+            "day": -61.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "ERYTHEMA",
+            "day": -5.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "PRURITUS",
+            "day": -5.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "MICTURITION URGENCY",
+            "day": 1.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "ARTHRALGIA",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1111",
+            "term": "CELLULITIS",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "PNEUMONIA",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "MUSCULAR WEAKNESS",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "PNEUMONIA",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "MUSCULAR WEAKNESS",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-703-1086",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 12.0
+          },
+          {
+            "usubjid": "01-703-1086",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 12.0
+          },
+          {
+            "usubjid": "01-703-1086",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 12.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "701",
+            "kri": "ae_flag",
+            "flag": "high"
+          },
+          {
+            "site": "706",
+            "kri": "ae_flag",
+            "flag": "high"
+          },
+          {
+            "site": "706",
+            "kri": "visit_oow_flag",
+            "flag": "high"
+          },
+          {
+            "site": "710",
+            "kri": "ae_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2012-11-01",
+      "index": 4,
+      "n_subjects": 29,
+      "n_ae": 71,
+      "n_lb": 3212,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 3,
+      "what_changed": {
+        "n_new_ae": 14,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1324",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 21.0
+          },
+          {
+            "usubjid": "01-703-1086",
+            "term": "CHILLS",
+            "day": 38.0
+          },
+          {
+            "usubjid": "01-703-1086",
+            "term": "CHILLS",
+            "day": 38.0
+          },
+          {
+            "usubjid": "01-710-1070",
+            "term": "SUPRAVENTRICULAR EXTRASYSTOLES",
+            "day": 29.0
+          },
+          {
+            "usubjid": "01-710-1142",
+            "term": "DIZZINESS",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-710-1142",
+            "term": "HEADACHE",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-710-1142",
+            "term": "NAUSEA",
+            "day": 13.0
+          },
+          {
+            "usubjid": "01-710-1142",
+            "term": "MYOCARDIAL INFARCTION",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-710-1142",
+            "term": "SYNCOPE VASOVAGAL",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-713-1256",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 42.0
+          },
+          {
+            "usubjid": "01-713-1256",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 42.0
+          },
+          {
+            "usubjid": "01-718-1079",
+            "term": "CONFUSIONAL STATE",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-718-1079",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-718-1079",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 17.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "718",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2012-12-01",
+      "index": 5,
+      "n_subjects": 38,
+      "n_ae": 93,
+      "n_lb": 4763,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 2,
+      "what_changed": {
+        "n_new_ae": 22,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1211",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "JOINT DISLOCATION",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "SHOULDER PAIN",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "INCONTINENCE",
+            "day": 8.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-708-1216",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 14.0
+          },
+          {
+            "usubjid": "01-708-1216",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 14.0
+          },
+          {
+            "usubjid": "01-708-1216",
+            "term": "APPLICATION SITE SWELLING",
+            "day": 30.0
+          },
+          {
+            "usubjid": "01-708-1216",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 14.0
+          },
+          {
+            "usubjid": "01-710-1235",
+            "term": "COUGH",
+            "day": 58.0
+          },
+          {
+            "usubjid": "01-710-1271",
+            "term": "DYSPNOEA",
+            "day": 56.0
+          },
+          {
+            "usubjid": "01-710-1271",
+            "term": "MYOCARDIAL INFARCTION",
+            "day": 56.0
+          },
+          {
+            "usubjid": "01-710-1271",
+            "term": "ATRIAL FIBRILLATION",
+            "day": 56.0
+          },
+          {
+            "usubjid": "01-710-1271",
+            "term": "CARDIAC FAILURE CONGESTIVE",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-710-1271",
+            "term": "HYPONATRAEMIA",
+            "day": 57.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2013-01-01",
+      "index": 6,
+      "n_subjects": 53,
+      "n_ae": 138,
+      "n_lb": 7170,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 3,
+      "what_changed": {
+        "n_new_ae": 45,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1133",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 61.0
+          },
+          {
+            "usubjid": "01-701-1133",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 61.0
+          },
+          {
+            "usubjid": "01-701-1133",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 61.0
+          },
+          {
+            "usubjid": "01-701-1133",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 61.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 137.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 137.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 137.0
+          },
+          {
+            "usubjid": "01-701-1192",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 137.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "SKIN LACERATION",
+            "day": 25.0
+          }
+        ],
+        "n_new_lab_excursions": 1,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-709-1020",
+            "test": "CK",
+            "day": 15.0,
+            "x_uln": 3.56
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "701",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-02-01",
+      "index": 7,
+      "n_subjects": 67,
+      "n_ae": 203,
+      "n_lb": 9912,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 3,
+      "what_changed": {
+        "n_new_ae": 65,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1115",
+            "term": "FATIGUE",
+            "day": 46.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-701-1115",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "CONFUSIONAL STATE",
+            "day": 58.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "DYSPNOEA",
+            "day": 58.0
+          },
+          {
+            "usubjid": "01-701-1211",
+            "term": "SUDDEN DEATH",
+            "day": 61.0
+          },
+          {
+            "usubjid": "01-701-1341",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-701-1341",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-701-1341",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1341",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1341",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "SALIVARY HYPERSECRETION",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 15.0
+          }
+        ],
+        "n_new_lab_excursions": 1,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-708-1342",
+            "test": "CK",
+            "day": 15.0,
+            "x_uln": 3.17
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "704",
+            "kri": "ae_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-03-01",
+      "index": 8,
+      "n_subjects": 86,
+      "n_ae": 281,
+      "n_lb": 13159,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 4,
+      "what_changed": {
+        "n_new_ae": 78,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1047",
+            "term": "HIATUS HERNIA",
+            "day": 1.0
+          },
+          {
+            "usubjid": "01-701-1047",
+            "term": "HIATUS HERNIA",
+            "day": 1.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "VOMITING",
+            "day": 1.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "VOMITING",
+            "day": 1.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "MICTURITION URGENCY",
+            "day": 4.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "MICTURITION URGENCY",
+            "day": 4.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "ERYTHEMA",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "PRURITUS",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "ERYTHEMA",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "PRURITUS",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 4.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE PAIN",
+            "day": 4.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "APPLICATION SITE VESICLES",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-701-1444",
+            "term": "PARAESTHESIA",
+            "day": 35.0
+          }
+        ],
+        "n_new_lab_excursions": 6,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1047",
+            "test": "BASOLE",
+            "day": -21.0,
+            "x_uln": 20.0
+          },
+          {
+            "usubjid": "01-701-1047",
+            "test": "EOSLE",
+            "day": -21.0,
+            "x_uln": 10.0
+          },
+          {
+            "usubjid": "01-701-1047",
+            "test": "MONOLE",
+            "day": -21.0,
+            "x_uln": 6.43
+          },
+          {
+            "usubjid": "01-701-1047",
+            "test": "BASOLE",
+            "day": 14.0,
+            "x_uln": 17.5
+          },
+          {
+            "usubjid": "01-701-1047",
+            "test": "EOSLE",
+            "day": 14.0,
+            "x_uln": 7.5
+          },
+          {
+            "usubjid": "01-701-1047",
+            "test": "MONOLE",
+            "day": 14.0,
+            "x_uln": 4.29
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "715",
+            "kri": "ae_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-04-01",
+      "index": 9,
+      "n_subjects": 98,
+      "n_ae": 356,
+      "n_lb": 16686,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 4,
+      "what_changed": {
+        "n_new_ae": 75,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1047",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-701-1047",
+            "term": "BUNDLE BRANCH BLOCK LEFT",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "NASOPHARYNGITIS",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "APPLICATION SITE VESICLES",
+            "day": 36.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 36.0
+          },
+          {
+            "usubjid": "01-701-1180",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 36.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "URTICARIA",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "URTICARIA",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "APPLICATION SITE URTICARIA",
+            "day": 35.0
+          },
+          {
+            "usubjid": "01-701-1188",
+            "term": "URTICARIA",
+            "day": 35.0
+          },
+          {
+            "usubjid": "01-701-1203",
+            "term": "EYE LASER SURGERY",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1294",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": -2.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 48.0
+          }
+        ],
+        "n_new_lab_excursions": 2,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-703-1100",
+            "test": "TSH",
+            "day": -90.0,
+            "x_uln": 3.59
+          },
+          {
+            "usubjid": "01-703-1100",
+            "test": "TSH",
+            "day": -76.0,
+            "x_uln": 3.46
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2013-05-01",
+      "index": 10,
+      "n_subjects": 111,
+      "n_ae": 419,
+      "n_lb": 19818,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 5,
+      "what_changed": {
+        "n_new_ae": 63,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 68.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 68.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 68.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 24.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 24.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 24.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "CATARACT OPERATION",
+            "day": 44.0
+          },
+          {
+            "usubjid": "01-703-1210",
+            "term": "DISORIENTATION",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-705-1349",
+            "term": "NAUSEA",
+            "day": 30.0
+          },
+          {
+            "usubjid": "01-705-1349",
+            "term": "VOMITING",
+            "day": 33.0
+          },
+          {
+            "usubjid": "01-708-1297",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 68.0
+          },
+          {
+            "usubjid": "01-708-1297",
+            "term": "APPLICATION SITE SWELLING",
+            "day": 68.0
+          },
+          {
+            "usubjid": "01-708-1336",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 125.0
+          },
+          {
+            "usubjid": "01-708-1336",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 125.0
+          },
+          {
+            "usubjid": "01-708-1336",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 125.0
+          }
+        ],
+        "n_new_lab_excursions": 1,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-709-1020",
+            "test": "CK",
+            "day": 141.0,
+            "x_uln": 4.49
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "711",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-06-01",
+      "index": 11,
+      "n_subjects": 124,
+      "n_ae": 508,
+      "n_lb": 22974,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 89,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1146",
+            "term": "RASH",
+            "day": -4.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "RASH",
+            "day": -4.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 13.0
+          },
+          {
+            "usubjid": "01-701-1294",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1294",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1294",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1294",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "APPLICATION SITE VESICLES",
+            "day": 93.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 76.0
+          },
+          {
+            "usubjid": "01-703-1119",
+            "term": "PRURITUS",
+            "day": 74.0
+          },
+          {
+            "usubjid": "01-703-1119",
+            "term": "PRURITUS",
+            "day": 74.0
+          },
+          {
+            "usubjid": "01-703-1210",
+            "term": "DECREASED APPETITE",
+            "day": 50.0
+          },
+          {
+            "usubjid": "01-703-1210",
+            "term": "DECREASED APPETITE",
+            "day": 50.0
+          },
+          {
+            "usubjid": "01-704-1093",
+            "term": "RASH",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-704-1093",
+            "term": "PRURITUS",
+            "day": 51.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "709",
+            "kri": "ae_flag",
+            "flag": "high"
+          },
+          {
+            "site": "713",
+            "kri": "ae_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-07-01",
+      "index": 12,
+      "n_subjects": 131,
+      "n_ae": 585,
+      "n_lb": 25775,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 77,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1146",
+            "term": "FATIGUE",
+            "day": 15.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE PAIN",
+            "day": 34.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE VESICLES",
+            "day": 38.0
+          },
+          {
+            "usubjid": "01-701-1146",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 38.0
+          },
+          {
+            "usubjid": "01-701-1294",
+            "term": "RASH ERYTHEMATOUS",
+            "day": 79.0
+          },
+          {
+            "usubjid": "01-701-1363",
+            "term": "NAUSEA",
+            "day": 16.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "CHEST DISCOMFORT",
+            "day": 141.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "HEADACHE",
+            "day": 141.0
+          },
+          {
+            "usubjid": "01-704-1114",
+            "term": "INFLUENZA",
+            "day": 136.0
+          },
+          {
+            "usubjid": "01-705-1431",
+            "term": "RASH ERYTHEMATOUS",
+            "day": -1.0
+          },
+          {
+            "usubjid": "01-706-1049",
+            "term": "SYNCOPE",
+            "day": 21.0
+          }
+        ],
+        "n_new_lab_excursions": 2,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-709-1339",
+            "test": "ALP",
+            "day": 168.0,
+            "x_uln": 4.34
+          },
+          {
+            "usubjid": "01-709-1339",
+            "test": "ALP",
+            "day": 184.0,
+            "x_uln": 5.43
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "705",
+            "kri": "ae_flag",
+            "flag": "low"
+          },
+          {
+            "site": "716",
+            "kri": "ae_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-08-01",
+      "index": 13,
+      "n_subjects": 143,
+      "n_ae": 636,
+      "n_lb": 28397,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 51,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1028",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1363",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1383",
+            "term": "COUGH",
+            "day": 164.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "WHITE BLOOD CELL COUNT INCREASED",
+            "day": -19.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "NEUTROPHIL COUNT INCREASED",
+            "day": -19.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "URINE ANALYSIS ABNORMAL",
+            "day": -19.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "URINE ANALYSIS ABNORMAL",
+            "day": -19.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "WHITE BLOOD CELL COUNT INCREASED",
+            "day": -19.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "NEUTROPHIL COUNT INCREASED",
+            "day": -19.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "OEDEMA PERIPHERAL",
+            "day": 127.0
+          },
+          {
+            "usubjid": "01-703-1100",
+            "term": "OEDEMA PERIPHERAL",
+            "day": 127.0
+          },
+          {
+            "usubjid": "01-704-1323",
+            "term": "VIRAL INFECTION",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-705-1431",
+            "term": "ANXIETY",
+            "day": 12.0
+          },
+          {
+            "usubjid": "01-709-1309",
+            "term": "ALLERGIC GRANULOMATOUS ANGIITIS",
+            "day": 16.0
+          },
+          {
+            "usubjid": "01-709-1309",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 40.0
+          }
+        ],
+        "n_new_lab_excursions": 4,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1028",
+            "test": "BASOLE",
+            "day": -8.0,
+            "x_uln": 15.0
+          },
+          {
+            "usubjid": "01-701-1028",
+            "test": "EOSLE",
+            "day": -8.0,
+            "x_uln": 5.0
+          },
+          {
+            "usubjid": "01-701-1028",
+            "test": "BASOLE",
+            "day": 14.0,
+            "x_uln": 20.0
+          },
+          {
+            "usubjid": "01-701-1028",
+            "test": "EOSLE",
+            "day": 14.0,
+            "x_uln": 5.0
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2013-09-01",
+      "index": 14,
+      "n_subjects": 158,
+      "n_ae": 687,
+      "n_lb": 30990,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 9,
+      "what_changed": {
+        "n_new_ae": 51,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1028",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 21.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "DEPRESSED MOOD",
+            "day": -25.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "APPLICATION SITE PERSPIRATION",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "HYPERHIDROSIS",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "STOMACH DISCOMFORT",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "PAIN",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "NASAL CONGESTION",
+            "day": 4.0
+          },
+          {
+            "usubjid": "01-701-1360",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1360",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1360",
+            "term": "APPLICATION SITE VESICLES",
+            "day": 6.0
+          },
+          {
+            "usubjid": "01-704-1241",
+            "term": "RASH",
+            "day": -11.0
+          },
+          {
+            "usubjid": "01-704-1323",
+            "term": "RASH",
+            "day": 28.0
+          },
+          {
+            "usubjid": "01-704-1323",
+            "term": "PRURITUS",
+            "day": 28.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "713",
+            "kri": "ae_flag",
+            "flag": "low"
+          },
+          {
+            "site": "718",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-10-01",
+      "index": 15,
+      "n_subjects": 172,
+      "n_ae": 741,
+      "n_lb": 33370,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 6,
+      "what_changed": {
+        "n_new_ae": 54,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1302",
+            "term": "PHARYNGOLARYNGEAL PAIN",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "PRODUCTIVE COUGH",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "MALAISE",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "DIZZINESS",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "MYALGIA",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "DIZZINESS",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "CONTUSION",
+            "day": 8.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "HEADACHE",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "EPISTAXIS",
+            "day": 33.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "CONTUSION",
+            "day": 8.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "MALAISE",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "RECTAL HAEMORRHAGE",
+            "day": 39.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "RECTAL HAEMORRHAGE",
+            "day": 39.0
+          },
+          {
+            "usubjid": "01-702-1082",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 46.0
+          },
+          {
+            "usubjid": "01-704-1009",
+            "term": "FATIGUE",
+            "day": 10.0
+          }
+        ],
+        "n_new_lab_excursions": 1,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-709-1309",
+            "test": "GGT",
+            "day": 85.0,
+            "x_uln": 3.06
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2013-11-01",
+      "index": 16,
+      "n_subjects": 189,
+      "n_ae": 825,
+      "n_lb": 36451,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 6,
+      "what_changed": {
+        "n_new_ae": 84,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1148",
+            "term": "LOWER RESPIRATORY TRACT INFECTION",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "LOWER RESPIRATORY TRACT INFECTION",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-701-1153",
+            "term": "INCREASED APPETITE",
+            "day": 21.0
+          },
+          {
+            "usubjid": "01-701-1153",
+            "term": "INCREASED APPETITE",
+            "day": 21.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 48.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "RESPIRATORY TRACT CONGESTION",
+            "day": 56.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "RHINITIS",
+            "day": 56.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "FEELING ABNORMAL",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "LISTLESS",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1302",
+            "term": "LIBIDO DECREASED",
+            "day": 57.0
+          },
+          {
+            "usubjid": "01-701-1363",
+            "term": "BACK PAIN",
+            "day": 137.0
+          },
+          {
+            "usubjid": "01-701-1363",
+            "term": "BACK PAIN",
+            "day": 137.0
+          },
+          {
+            "usubjid": "01-701-1415",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 29.0
+          },
+          {
+            "usubjid": "01-701-1415",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 29.0
+          }
+        ],
+        "n_new_lab_excursions": 1,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1302",
+            "test": "CK",
+            "day": 41.0,
+            "x_uln": 9.39
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "702",
+            "kri": "visit_oow_flag",
+            "flag": "high"
+          },
+          {
+            "site": "718",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2013-12-01",
+      "index": 17,
+      "n_subjects": 196,
+      "n_ae": 873,
+      "n_lb": 39380,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 6,
+      "what_changed": {
+        "n_new_ae": 48,
+        "new_ae": [
+          {
+            "usubjid": "01-703-1076",
+            "term": "BIOPSY PROSTATE",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-703-1076",
+            "term": "BENIGN PROSTATIC HYPERPLASIA",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-703-1076",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 30.0
+          },
+          {
+            "usubjid": "01-703-1076",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 30.0
+          },
+          {
+            "usubjid": "01-703-1076",
+            "term": "HYPERHIDROSIS",
+            "day": 32.0
+          },
+          {
+            "usubjid": "01-703-1076",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 30.0
+          },
+          {
+            "usubjid": "01-703-1182",
+            "term": "SOMNOLENCE",
+            "day": 37.0
+          },
+          {
+            "usubjid": "01-703-1182",
+            "term": "SOMNOLENCE",
+            "day": 37.0
+          },
+          {
+            "usubjid": "01-704-1017",
+            "term": "RASH",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-704-1017",
+            "term": "PRURITUS",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-704-1017",
+            "term": "RASH",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-704-1017",
+            "term": "PRURITUS",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-704-1065",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-704-1065",
+            "term": "MALAISE",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-704-1065",
+            "term": "HYPERHIDROSIS",
+            "day": 17.0
+          }
+        ],
+        "n_new_lab_excursions": 3,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": -28.0,
+            "x_uln": 3.36
+          },
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": -17.0,
+            "x_uln": 3.46
+          },
+          {
+            "usubjid": "01-707-1206",
+            "test": "CK",
+            "day": 29.0,
+            "x_uln": 5.68
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "706",
+            "kri": "visit_oow_flag",
+            "flag": "high"
+          },
+          {
+            "site": "709",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2014-01-01",
+      "index": 18,
+      "n_subjects": 213,
+      "n_ae": 919,
+      "n_lb": 42479,
+      "n_potential_hys_law": 0,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 46,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1148",
+            "term": "FLANK PAIN",
+            "day": 115.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "CALCULUS URETHRAL",
+            "day": 117.0
+          },
+          {
+            "usubjid": "01-701-1181",
+            "term": "AGITATION",
+            "day": 5.0
+          },
+          {
+            "usubjid": "01-701-1415",
+            "term": "MICTURITION URGENCY",
+            "day": 71.0
+          },
+          {
+            "usubjid": "01-703-1175",
+            "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+            "day": -2.0
+          },
+          {
+            "usubjid": "01-703-1295",
+            "term": "ARTHRITIS",
+            "day": 38.0
+          },
+          {
+            "usubjid": "01-704-1065",
+            "term": "DIARRHOEA",
+            "day": 53.0
+          },
+          {
+            "usubjid": "01-704-1065",
+            "term": "SINUS BRADYCARDIA",
+            "day": 62.0
+          },
+          {
+            "usubjid": "01-704-1120",
+            "term": "RASH",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-704-1120",
+            "term": "NASOPHARYNGITIS",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-704-1120",
+            "term": "RASH",
+            "day": 22.0
+          },
+          {
+            "usubjid": "01-704-1120",
+            "term": "NASOPHARYNGITIS",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-704-1135",
+            "term": "RASH",
+            "day": 39.0
+          },
+          {
+            "usubjid": "01-704-1135",
+            "term": "RASH",
+            "day": 39.0
+          },
+          {
+            "usubjid": "01-704-1266",
+            "term": "ERYTHEMA",
+            "day": 55.0
+          }
+        ],
+        "n_new_lab_excursions": 6,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 15.0,
+            "x_uln": 3.39
+          },
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 28.0,
+            "x_uln": 3.32
+          },
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 42.0,
+            "x_uln": 3.29
+          },
+          {
+            "usubjid": "01-705-1310",
+            "test": "ALT",
+            "day": 55.0,
+            "x_uln": 4.03
+          },
+          {
+            "usubjid": "01-705-1310",
+            "test": "AST",
+            "day": 55.0,
+            "x_uln": 3.35
+          },
+          {
+            "usubjid": "01-705-1310",
+            "test": "GGT",
+            "day": 55.0,
+            "x_uln": 3.78
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "715",
+            "kri": "ae_flag",
+            "flag": "low"
+          },
+          {
+            "site": "716",
+            "kri": "ae_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2014-02-01",
+      "index": 19,
+      "n_subjects": 228,
+      "n_ae": 977,
+      "n_lb": 45697,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 58,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1015",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1015",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1015",
+            "term": "DIARRHOEA",
+            "day": 8.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "ERYTHEMA",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "EPISTAXIS",
+            "day": 134.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "ERYTHEMA",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "SKIN ODOUR ABNORMAL",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "PRURITUS",
+            "day": 3.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 10.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 10.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "ERYTHEMA",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1287",
+            "term": "SALIVARY HYPERSECRETION",
+            "day": 2.0
+          },
+          {
+            "usubjid": "01-701-1415",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 121.0
+          },
+          {
+            "usubjid": "01-701-1415",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 121.0
+          },
+          {
+            "usubjid": "01-701-1442",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 77.0
+          }
+        ],
+        "n_new_lab_excursions": 25,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1015",
+            "test": "BASOLE",
+            "day": -7.0,
+            "x_uln": 20.0
+          },
+          {
+            "usubjid": "01-701-1015",
+            "test": "EOSLE",
+            "day": -7.0,
+            "x_uln": 7.5
+          },
+          {
+            "usubjid": "01-701-1015",
+            "test": "MONOLE",
+            "day": -7.0,
+            "x_uln": 7.14
+          },
+          {
+            "usubjid": "01-701-1015",
+            "test": "BASOLE",
+            "day": 15.0,
+            "x_uln": 7.5
+          },
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 56.0,
+            "x_uln": 3.23
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "ALP",
+            "day": -5.0,
+            "x_uln": 4.91
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "GGT",
+            "day": -5.0,
+            "x_uln": 9.32
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "ALP",
+            "day": 16.0,
+            "x_uln": 5.84
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "ALT",
+            "day": 16.0,
+            "x_uln": 3.25
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "AST",
+            "day": 16.0,
+            "x_uln": 3.47
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "BILI",
+            "day": 16.0,
+            "x_uln": 5.54
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "GGT",
+            "day": 16.0,
+            "x_uln": 8.76
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "ALP",
+            "day": 19.0,
+            "x_uln": 5.23
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "AST",
+            "day": 19.0,
+            "x_uln": 3.38
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "BILI",
+            "day": 19.0,
+            "x_uln": 5.94
+          }
+        ],
+        "newly_hy_flagged": [
+          "01-705-1186"
+        ],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2014-03-01",
+      "index": 20,
+      "n_subjects": 236,
+      "n_ae": 1025,
+      "n_lb": 48427,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 6,
+      "what_changed": {
+        "n_new_ae": 48,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1097",
+            "term": "PRURITUS GENERALISED",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "APPLICATION SITE VESICLES",
+            "day": 51.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 52.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 52.0
+          },
+          {
+            "usubjid": "01-701-1148",
+            "term": "ACTINIC KERATOSIS",
+            "day": 174.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 41.0
+          },
+          {
+            "usubjid": "01-701-1239",
+            "term": "UPPER RESPIRATORY TRACT INFECTION",
+            "day": 41.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "NAUSEA",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "VOMITING",
+            "day": 17.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "ERYTHEMA",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "SALIVARY HYPERSECRETION",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "PAROSMIA",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "PRURITUS",
+            "day": 18.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "NAUSEA",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "ERYTHEMA",
+            "day": 18.0
+          }
+        ],
+        "n_new_lab_excursions": 7,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 90.0,
+            "x_uln": 3.26
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "ALP",
+            "day": 31.0,
+            "x_uln": 5.97
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "BILI",
+            "day": 31.0,
+            "x_uln": 3.42
+          },
+          {
+            "usubjid": "01-705-1186",
+            "test": "GGT",
+            "day": 31.0,
+            "x_uln": 9.62
+          },
+          {
+            "usubjid": "01-705-1292",
+            "test": "AST",
+            "day": 117.0,
+            "x_uln": 3.68
+          },
+          {
+            "usubjid": "01-708-1286",
+            "test": "ALT",
+            "day": 167.0,
+            "x_uln": 3.88
+          },
+          {
+            "usubjid": "01-708-1286",
+            "test": "AST",
+            "day": 167.0,
+            "x_uln": 4.94
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2014-04-01",
+      "index": 21,
+      "n_subjects": 244,
+      "n_ae": 1067,
+      "n_lb": 51171,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 42,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1097",
+            "term": "PRURITUS GENERALISED",
+            "day": 80.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "PRURITUS GENERALISED",
+            "day": 90.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "URINARY TRACT INFECTION",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "PYREXIA",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "URINARY TRACT INFECTION",
+            "day": 23.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "COUGH",
+            "day": 34.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "NASAL CONGESTION",
+            "day": 34.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "COUGH",
+            "day": 34.0
+          },
+          {
+            "usubjid": "01-701-1275",
+            "term": "NASAL CONGESTION",
+            "day": 34.0
+          },
+          {
+            "usubjid": "01-701-1287",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 44.0
+          },
+          {
+            "usubjid": "01-701-1387",
+            "term": "DIARRHOEA",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1387",
+            "term": "HYPERHIDROSIS",
+            "day": 7.0
+          },
+          {
+            "usubjid": "01-701-1415",
+            "term": "DIARRHOEA",
+            "day": 168.0
+          },
+          {
+            "usubjid": "01-703-1335",
+            "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+            "day": -2.0
+          },
+          {
+            "usubjid": "01-703-1335",
+            "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+            "day": -2.0
+          }
+        ],
+        "n_new_lab_excursions": 6,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1033",
+            "test": "EOSLE",
+            "day": -8.0,
+            "x_uln": 10.0
+          },
+          {
+            "usubjid": "01-701-1033",
+            "test": "MONOLE",
+            "day": -8.0,
+            "x_uln": 3.57
+          },
+          {
+            "usubjid": "01-701-1033",
+            "test": "BASOLE",
+            "day": 15.0,
+            "x_uln": 22.5
+          },
+          {
+            "usubjid": "01-701-1033",
+            "test": "MONOLE",
+            "day": 15.0,
+            "x_uln": 6.43
+          },
+          {
+            "usubjid": "01-701-1345",
+            "test": "CK",
+            "day": 162.0,
+            "x_uln": 9.21
+          },
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 113.0,
+            "x_uln": 3.3
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "706",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2014-05-01",
+      "index": 22,
+      "n_subjects": 249,
+      "n_ae": 1095,
+      "n_lb": 53248,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 28,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1097",
+            "term": "PRURITUS GENERALISED",
+            "day": 109.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "PHARYNGOLARYNGEAL PAIN",
+            "day": 109.0
+          },
+          {
+            "usubjid": "01-701-1097",
+            "term": "NASAL CONGESTION",
+            "day": 109.0
+          },
+          {
+            "usubjid": "01-703-1439",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 44.0
+          },
+          {
+            "usubjid": "01-703-1439",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 44.0
+          },
+          {
+            "usubjid": "01-705-1280",
+            "term": "PRURITUS",
+            "day": 94.0
+          },
+          {
+            "usubjid": "01-709-1081",
+            "term": "RASH",
+            "day": 80.0
+          },
+          {
+            "usubjid": "01-709-1081",
+            "term": "OEDEMA PERIPHERAL",
+            "day": 104.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "RASH",
+            "day": 77.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 77.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "RASH",
+            "day": 77.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 77.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "RASH",
+            "day": 77.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 77.0
+          },
+          {
+            "usubjid": "01-710-1154",
+            "term": "SKIN IRRITATION",
+            "day": 21.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "701",
+            "kri": "ae_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2014-06-01",
+      "index": 23,
+      "n_subjects": 252,
+      "n_ae": 1122,
+      "n_lb": 55065,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 27,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1130",
+            "term": "EYE SWELLING",
+            "day": 84.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "EYE ALLERGY",
+            "day": 84.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "EYE PRURITUS",
+            "day": 97.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "PRURITUS",
+            "day": 97.0
+          },
+          {
+            "usubjid": "01-701-1130",
+            "term": "NASAL CONGESTION",
+            "day": 97.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "ONYCHOMYCOSIS",
+            "day": -9.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "CYST",
+            "day": -9.0
+          },
+          {
+            "usubjid": "01-704-1325",
+            "term": "RASH",
+            "day": 31.0
+          },
+          {
+            "usubjid": "01-709-1088",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 27.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 91.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "DRUG ERUPTION",
+            "day": 107.0
+          },
+          {
+            "usubjid": "01-709-1306",
+            "term": "APPLICATION SITE IRRITATION",
+            "day": 91.0
+          },
+          {
+            "usubjid": "01-709-1312",
+            "term": "APPLICATION SITE DERMATITIS",
+            "day": 28.0
+          },
+          {
+            "usubjid": "01-710-1027",
+            "term": "HAEMOPTYSIS",
+            "day": 71.0
+          },
+          {
+            "usubjid": "01-710-1027",
+            "term": "RALES",
+            "day": 85.0
+          }
+        ],
+        "n_new_lab_excursions": 1,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-703-1295",
+            "test": "ALP",
+            "day": 180.0,
+            "x_uln": 3.14
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "706",
+            "kri": "visit_oow_flag",
+            "flag": "high"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2014-07-01",
+      "index": 24,
+      "n_subjects": 253,
+      "n_ae": 1132,
+      "n_lb": 56411,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 10,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1317",
+            "term": "APPLICATION SITE ERYTHEMA",
+            "day": 33.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 33.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "APPLICATION SITE URTICARIA",
+            "day": 33.0
+          },
+          {
+            "usubjid": "01-708-1406",
+            "term": "OEDEMA PERIPHERAL",
+            "day": 173.0
+          },
+          {
+            "usubjid": "01-708-1406",
+            "term": "OEDEMA PERIPHERAL",
+            "day": 173.0
+          },
+          {
+            "usubjid": "01-714-1035",
+            "term": "SUPRAVENTRICULAR EXTRASYSTOLES",
+            "day": 49.0
+          },
+          {
+            "usubjid": "01-714-1035",
+            "term": "ELECTROCARDIOGRAM ST SEGMENT DEPRESSION",
+            "day": 49.0
+          },
+          {
+            "usubjid": "01-714-1035",
+            "term": "SUPRAVENTRICULAR EXTRASYSTOLES",
+            "day": 49.0
+          },
+          {
+            "usubjid": "01-717-1004",
+            "term": "WOUND",
+            "day": 141.0
+          },
+          {
+            "usubjid": "01-717-1004",
+            "term": "WOUND",
+            "day": 141.0
+          }
+        ],
+        "n_new_lab_excursions": 3,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1034",
+            "test": "BASOLE",
+            "day": -7.0,
+            "x_uln": 22.5
+          },
+          {
+            "usubjid": "01-701-1034",
+            "test": "EOSLE",
+            "day": -7.0,
+            "x_uln": 3.75
+          },
+          {
+            "usubjid": "01-701-1034",
+            "test": "MONOLE",
+            "day": -7.0,
+            "x_uln": 4.29
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2014-08-01",
+      "index": 25,
+      "n_subjects": 253,
+      "n_ae": 1153,
+      "n_lb": 57508,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 7,
+      "what_changed": {
+        "n_new_ae": 21,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1287",
+            "term": "RHINORRHOEA",
+            "day": 166.0
+          },
+          {
+            "usubjid": "01-701-1287",
+            "term": "RHINORRHOEA",
+            "day": 166.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "DEPRESSED MOOD",
+            "day": 44.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "DEPRESSED MOOD",
+            "day": 44.0
+          },
+          {
+            "usubjid": "01-704-1010",
+            "term": "VOMITING",
+            "day": 135.0
+          },
+          {
+            "usubjid": "01-704-1010",
+            "term": "DIARRHOEA",
+            "day": 135.0
+          },
+          {
+            "usubjid": "01-704-1010",
+            "term": "EXCORIATION",
+            "day": 136.0
+          },
+          {
+            "usubjid": "01-704-1010",
+            "term": "SKIN LACERATION",
+            "day": 136.0
+          },
+          {
+            "usubjid": "01-704-1010",
+            "term": "ARTHRALGIA",
+            "day": 136.0
+          },
+          {
+            "usubjid": "01-704-1010",
+            "term": "CONTUSION",
+            "day": 136.0
+          },
+          {
+            "usubjid": "01-704-1325",
+            "term": "PRURITUS",
+            "day": 73.0
+          },
+          {
+            "usubjid": "01-713-1073",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 107.0
+          },
+          {
+            "usubjid": "01-713-1269",
+            "term": "RASH",
+            "day": 165.0
+          },
+          {
+            "usubjid": "01-713-1269",
+            "term": "RASH",
+            "day": 165.0
+          },
+          {
+            "usubjid": "01-714-1035",
+            "term": "BRONCHITIS",
+            "day": 93.0
+          }
+        ],
+        "n_new_lab_excursions": 3,
+        "new_lab_excursions": [
+          {
+            "usubjid": "01-701-1034",
+            "test": "BASOLE",
+            "day": 15.0,
+            "x_uln": 12.5
+          },
+          {
+            "usubjid": "01-701-1034",
+            "test": "EOSLE",
+            "day": 15.0,
+            "x_uln": 3.75
+          },
+          {
+            "usubjid": "01-701-1034",
+            "test": "MONOLE",
+            "day": 15.0,
+            "x_uln": 3.57
+          }
+        ],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2014-09-01",
+      "index": 26,
+      "n_subjects": 253,
+      "n_ae": 1159,
+      "n_lb": 58135,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 6,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1034",
+            "term": "APPLICATION SITE PRURITUS",
+            "day": 58.0
+          },
+          {
+            "usubjid": "01-709-1088",
+            "term": "RASH",
+            "day": 113.0
+          },
+          {
+            "usubjid": "01-716-1026",
+            "term": "EAR INFECTION",
+            "day": 136.0
+          },
+          {
+            "usubjid": "01-716-1103",
+            "term": "BLISTER",
+            "day": 151.0
+          },
+          {
+            "usubjid": "01-716-1103",
+            "term": "BLISTER",
+            "day": 151.0
+          },
+          {
+            "usubjid": "01-716-1311",
+            "term": "ULCER",
+            "day": 81.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": [
+          {
+            "site": "709",
+            "kri": "visit_oow_flag",
+            "flag": "low"
+          }
+        ]
+      }
+    },
+    {
+      "cut": "2014-10-01",
+      "index": 27,
+      "n_subjects": 254,
+      "n_ae": 1161,
+      "n_lb": 58719,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 2,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1317",
+            "term": "FATIGUE",
+            "day": 114.0
+          },
+          {
+            "usubjid": "01-716-1177",
+            "term": "ERYTHEMA",
+            "day": -9.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2014-11-01",
+      "index": 28,
+      "n_subjects": 254,
+      "n_ae": 1163,
+      "n_lb": 59031,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 2,
+        "new_ae": [
+          {
+            "usubjid": "01-704-1445",
+            "term": "COMPLETED SUICIDE",
+            "day": 174.0
+          },
+          {
+            "usubjid": "01-709-1312",
+            "term": "ELECTROCARDIOGRAM ST SEGMENT DEPRESSION",
+            "day": 183.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2014-12-01",
+      "index": 29,
+      "n_subjects": 254,
+      "n_ae": 1165,
+      "n_lb": 59163,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 2,
+        "new_ae": [
+          {
+            "usubjid": "01-701-1034",
+            "term": "FATIGUE",
+            "day": 125.0
+          },
+          {
+            "usubjid": "01-701-1317",
+            "term": "DYSPHONIA",
+            "day": 166.0
+          }
+        ],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2015-01-01",
+      "index": 30,
+      "n_subjects": 254,
+      "n_ae": 1165,
+      "n_lb": 59260,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 0,
+        "new_ae": [],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2015-02-01",
+      "index": 31,
+      "n_subjects": 254,
+      "n_ae": 1165,
+      "n_lb": 59290,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 0,
+        "new_ae": [],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2015-03-01",
+      "index": 32,
+      "n_subjects": 254,
+      "n_ae": 1165,
+      "n_lb": 59325,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 0,
+        "new_ae": [],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    },
+    {
+      "cut": "2015-03-05",
+      "index": 33,
+      "n_subjects": 254,
+      "n_ae": 1165,
+      "n_lb": 59355,
+      "n_potential_hys_law": 1,
+      "n_sites_flagged": 8,
+      "what_changed": {
+        "n_new_ae": 0,
+        "new_ae": [],
+        "n_new_lab_excursions": 0,
+        "new_lab_excursions": [],
+        "newly_hy_flagged": [],
+        "newly_flagged_sites": []
+      }
+    }
+  ],
+  "lab_excursion_x_uln_threshold": 3.0
+}

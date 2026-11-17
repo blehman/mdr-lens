@@ -66,7 +66,255 @@
     });
   }
 
-  // ================= 01 PATIENT =================
+  // ================= 01 STUDY IN FLIGHT =================
+  function renderStudyInFlight() {
+    var SIF = DATA.study_in_flight;
+    var perCut = SIF.per_cut;
+    var state = { idx: SIF.current_cut_index };
+
+    function fmtUtc(iso) { return iso.slice(0, 16).replace("T", " ") + " UTC"; }
+    function metaBlock(k, v) { return '<div class="m"><div class="k">' + k + '</div><div class="v">' + v + '</div></div>'; }
+
+    var milestonesEl = document.getElementById("inflight-milestones");
+    milestonesEl.innerHTML =
+      metaBlock("First Patient In (FPI)", SIF.first_patient_in) +
+      metaBlock("Replay length", SIF.n_cuts + " monthly cuts") +
+      metaBlock("Cycle started", SIF.cycle_epoch) +
+      metaBlock("Last refresh", fmtUtc(SIF.last_refresh_utc));
+
+    document.getElementById("inflight-cycle-note").textContent =
+      "The replay advances one cut per day and loops forever: after cut " + SIF.n_cuts +
+      " it restarts at cut 1, re-beginning the cycle on " + SIF.cycle_epoch + ". This build's " +
+      "current cut is #" + (SIF.current_cut_index + 1) + " of " + SIF.n_cuts + " (" + SIF.current_cut +
+      "), computed for run date " + SIF.run_date + ".";
+
+    var enrollContainer = document.getElementById("inflight-enrollment-chart");
+    function drawEnrollment() {
+      clear(enrollContainer);
+      var width = widthOf(enrollContainer);
+      var curve = SIF.enrollment_curve;
+      var reviews = SIF.review_meeting_cuts;
+      var plot = Plot.plot({
+        width: width,
+        height: 260,
+        marginLeft: 48,
+        marginRight: 16,
+        marginTop: 22,
+        marginBottom: 36,
+        style: { fontFamily: "inherit", fontSize: "12px" },
+        x: { label: "Data cut", type: "utc" },
+        y: { label: "Cumulative subjects enrolled", grid: true },
+        marks: [
+          Plot.areaY(curve, { x: function (d) { return new Date(d.cut); }, y: "cumulative_subjects", fill: COLORS.grid, fillOpacity: 0.6, curve: "step-after" }),
+          Plot.lineY(curve, { x: function (d) { return new Date(d.cut); }, y: "cumulative_subjects", stroke: COLORS.blue, strokeWidth: 2, curve: "step-after" }),
+          Plot.ruleX([new Date(perCut[state.idx].cut)], { stroke: COLORS.ink2, strokeDasharray: "3,2" }),
+          Plot.dot(reviews, { x: function (d) { return new Date(d.cut); }, y: "cumulative_subjects", r: 5.5, fill: COLORS.goldFill, stroke: COLORS.gold, strokeWidth: 1.5 }),
+          Plot.text(reviews, {
+            x: function (d) { return new Date(d.cut); }, y: "cumulative_subjects",
+            text: function (d) { return fmtPct0(d.threshold); }, dy: -10, fontSize: 11, fontWeight: 700, fill: COLORS.gold
+          }),
+          Plot.tip(reviews, Plot.pointer({
+            x: function (d) { return new Date(d.cut); }, y: "cumulative_subjects",
+            title: function (d) { return fmtPct0(d.threshold) + " enrollment milestone — cut " + d.cut + " — " + d.cumulative_subjects + " subjects"; }
+          }))
+        ]
+      });
+      enrollContainer.appendChild(plot);
+    }
+    onResize(drawEnrollment);
+
+    var slider = document.getElementById("inflight-slider");
+    slider.max = String(perCut.length - 1);
+    var prevBtn = document.getElementById("inflight-prev");
+    var nextBtn = document.getElementById("inflight-next");
+    var jumpBtn = document.getElementById("inflight-jump-current");
+    var cutLabel = document.getElementById("inflight-cut-label");
+    var statsEl = document.getElementById("inflight-cut-stats");
+    var changedBody = document.getElementById("inflight-changed-body");
+
+    function renderCut() {
+      var c = perCut[state.idx];
+      cutLabel.textContent = "Cut " + (state.idx + 1) + " / " + perCut.length + " — " + c.cut +
+        (state.idx === SIF.current_cut_index ? " (current)" : "");
+      prevBtn.disabled = state.idx === 0;
+      nextBtn.disabled = state.idx === perCut.length - 1;
+      slider.value = String(state.idx);
+
+      clear(statsEl);
+      [
+        { label: "Subjects enrolled", value: fmtInt(c.n_subjects), note: "as of this cut" },
+        { label: "AEs recorded", value: fmtInt(c.n_ae), note: "cumulative" },
+        { label: "Lab results", value: fmtInt(c.n_lb), note: "cumulative" },
+        { label: "Potential Hy's Law", value: fmtInt(c.n_potential_hys_law), note: "subjects flagged" },
+        { label: "Sites flagged", value: fmtInt(c.n_sites_flagged), note: "on ≥1 KRI" }
+      ].forEach(function (t) {
+        var d = document.createElement("div");
+        d.className = "stat-tile";
+        d.innerHTML = '<div class="label">' + t.label + '</div><div class="value">' + t.value + '</div><div class="note">' + t.note + '</div>';
+        statsEl.appendChild(d);
+      });
+
+      if (!c.what_changed) {
+        changedBody.innerHTML = '<p class="caption">First cut of this replay cycle (cycle started ' + SIF.cycle_epoch +
+          ') — no earlier cut in this cycle to compare against.</p>';
+      } else {
+        var wc = c.what_changed;
+        function section(title, n, items, renderItem) {
+          var body = items.length
+            ? ("<ul>" + items.map(renderItem).join("") + "</ul>")
+            : '<p class="caption" style="margin:4px 0 0;">None.</p>';
+          return "<h4>" + title + " (" + fmtInt(n) + ")</h4>" + body;
+        }
+        changedBody.innerHTML =
+          section("New adverse events", wc.n_new_ae, wc.new_ae, function (a) {
+            return "<li>" + a.usubjid + " — " + a.term.toLowerCase() + " (day " + dayLabel(a.day) + ")</li>";
+          }) +
+          section("New lab excursions ≥3× ULN", wc.n_new_lab_excursions, wc.new_lab_excursions, function (l) {
+            return "<li>" + l.usubjid + " — " + l.test + " " + fmtX(l.x_uln) + " (day " + dayLabel(l.day) + ")</li>";
+          }) +
+          section("Newly flagged potential Hy's Law", wc.newly_hy_flagged.length, wc.newly_hy_flagged, function (s) {
+            return "<li>" + s + "</li>";
+          }) +
+          section("Sites newly outside a funnel limit", wc.newly_flagged_sites.length, wc.newly_flagged_sites, function (s) {
+            return "<li>Site " + s.site + " — " + s.kri.replace("_flag", "") + " flagged " + s.flag + "</li>";
+          });
+      }
+      drawEnrollment();
+    }
+
+    prevBtn.addEventListener("click", function () { if (state.idx > 0) { state.idx--; renderCut(); } });
+    nextBtn.addEventListener("click", function () { if (state.idx < perCut.length - 1) { state.idx++; renderCut(); } });
+    jumpBtn.addEventListener("click", function () { state.idx = SIF.current_cut_index; renderCut(); });
+    slider.addEventListener("input", function () { state.idx = parseInt(slider.value, 10); renderCut(); });
+
+    renderCut();
+  }
+
+  // ================= 02 LIVE REGISTRY =================
+  function renderRegistry() {
+    var REG = DATA.registry_summary;
+    var card = document.getElementById("registry-fetch-card");
+    if (!REG) {
+      card.innerHTML = '<p class="caption">Registry snapshot not fetched for this build — run <code>scripts/fetch_registry.py</code>.</p>';
+      return;
+    }
+    var fetchedAt = new Date(REG.fetched_at_utc);
+    card.innerHTML =
+      '<span class="registry-badge">● live fetch</span> &nbsp;<strong>' + fmtInt(REG.total_studies) + '</strong> studies — ' +
+      'public ClinicalTrials.gov registry records as of <strong>' + fetchedAt.toISOString().slice(0, 16).replace("T", " ") + ' UTC</strong>. ' +
+      'Source: <a href="' + REG.source_url + '" target="_blank" rel="noopener">' + REG.source_url + '</a>. ' +
+      'Lead sponsor "Hoffmann-La Roche": ' + fmtInt(REG.per_sponsor_counts["Hoffmann-La Roche"] || 0) + '. ' +
+      'Lead sponsor "Genentech": ' + fmtInt(REG.per_sponsor_counts["Genentech"] || 0) + '.';
+
+    var statusPhaseRows = [];
+    Object.keys(REG.status_phase_counts).forEach(function (status) {
+      Object.keys(REG.status_phase_counts[status]).forEach(function (phase) {
+        statusPhaseRows.push({ status: status.replace(/_/g, " ").toLowerCase(), phase: phase, n: REG.status_phase_counts[status][phase] });
+      });
+    });
+    var statusContainer = document.getElementById("registry-status-phase-chart");
+    function drawStatusPhase() {
+      clear(statusContainer);
+      var width = widthOf(statusContainer);
+      var plot = Plot.plot({
+        width: width,
+        height: 220,
+        marginLeft: 160,
+        marginRight: 20,
+        marginTop: 10,
+        marginBottom: 34,
+        style: { fontFamily: "inherit", fontSize: "12px" },
+        x: { label: "Studies", grid: true },
+        y: { label: null },
+        color: { domain: ["PHASE1", "PHASE2"], range: [COLORS.blue, COLORS.aqua], legend: true },
+        marks: [
+          Plot.barX(statusPhaseRows, { x: "n", y: "status", fill: "phase", sort: { y: "x", reverse: true } }),
+          Plot.ruleX([0], { stroke: COLORS.baseline })
+        ]
+      });
+      statusContainer.appendChild(plot);
+    }
+    drawStatusPhase();
+    onResize(drawStatusPhase);
+
+    var meshRows = Object.keys(REG.mesh_categories)
+      .map(function (k) { return { category: k, n: REG.mesh_categories[k] }; })
+      .sort(function (a, b) { return b.n - a.n; });
+    var meshContainer = document.getElementById("registry-mesh-chart");
+    function drawMesh() {
+      clear(meshContainer);
+      var width = widthOf(meshContainer);
+      var plot = Plot.plot({
+        width: width,
+        height: Math.max(meshRows.length * 26, 160),
+        marginLeft: 180,
+        marginRight: 40,
+        marginTop: 10,
+        marginBottom: 30,
+        style: { fontFamily: "inherit", fontSize: "12px" },
+        x: { label: "Studies", grid: true },
+        y: { label: null },
+        marks: [
+          Plot.barX(meshRows, { x: "n", y: "category", fill: COLORS.blue, sort: { y: "x", reverse: true } }),
+          Plot.text(meshRows, { x: "n", y: "category", text: "n", dx: 6, textAnchor: "start", fill: COLORS.ink2, fontSize: 11 }),
+          Plot.ruleX([0], { stroke: COLORS.baseline })
+        ]
+      });
+      meshContainer.appendChild(plot);
+    }
+    drawMesh();
+    onResize(drawMesh);
+
+    var STATUS_COLOR = {
+      RECRUITING: COLORS.aqua, ACTIVE_NOT_RECRUITING: COLORS.blue,
+      NOT_YET_RECRUITING: COLORS.yellow, ENROLLING_BY_INVITATION: COLORS.magenta
+    };
+    var timelineRows = REG.timeline_recruiting_or_active.filter(function (r) { return r.start_date && r.primary_completion_date; });
+    var timelineContainer = document.getElementById("registry-timeline-chart");
+    function drawTimeline() {
+      clear(timelineContainer);
+      var width = widthOf(timelineContainer);
+      var sorted = timelineRows.slice().sort(function (a, b) { return new Date(a.start_date) - new Date(b.start_date); });
+      var plot = Plot.plot({
+        width: width,
+        height: Math.max(sorted.length * 6.5, 200),
+        marginLeft: 16,
+        marginRight: 16,
+        marginTop: 10,
+        marginBottom: 34,
+        style: { fontFamily: "inherit", fontSize: "11px" },
+        x: { label: "Registered start → primary completion", type: "utc" },
+        y: { axis: null },
+        marks: [
+          Plot.ruleY(sorted, {
+            x1: function (d) { return new Date(d.start_date); },
+            x2: function (d) { return new Date(d.primary_completion_date); },
+            y: function (d, i) { return i; },
+            stroke: function (d) { return STATUS_COLOR[d.overall_status] || COLORS.muted; },
+            strokeWidth: 3,
+            title: function (d) {
+              return d.nct_id + " — " + d.brief_title + "\n" + d.overall_status + " — " + (d.phases || []).join("/") +
+                "\n" + d.start_date + " → " + d.primary_completion_date;
+            }
+          })
+        ]
+      });
+      timelineContainer.appendChild(plot);
+    }
+    drawTimeline();
+    onResize(drawTimeline);
+
+    var legendEl = document.getElementById("registry-timeline-legend");
+    clear(legendEl);
+    Object.keys(STATUS_COLOR).forEach(function (status) {
+      var item = document.createElement("span");
+      item.className = "item";
+      item.innerHTML = '<span class="swatch" style="background:' + STATUS_COLOR[status] + '"></span>' + status.replace(/_/g, " ").toLowerCase();
+      legendEl.appendChild(item);
+    });
+  }
+
+  // ================= 03 PATIENT =================
   function renderPatientSummary() {
     var t = DATA.patient_timeline;
     var edishRow = DATA.edish.filter(function (r) { return r.usubjid === PROTAGONIST; })[0];
@@ -233,7 +481,7 @@
     onResize(draw);
   }
 
-  // ================= 02 WHOLE STUDY: eDISH =================
+  // ================= 04 WHOLE STUDY: eDISH =================
   function renderEdish() {
     var container = document.getElementById("edish-chart");
     var all = DATA.edish.filter(function (r) { return r.peak_transaminase_xuln != null && r.peak_bili_xuln != null; });
@@ -259,8 +507,8 @@
       // Label sits just left of the gold point, at the same height, ending
       // at x=2.6 -- short of the 3x ULN rule at x=3 -- so it never crosses
       // that line regardless of chart width. No connecting line needed: a
-      // short gap at the same y as the dot, in a color used nowhere else
-      // on this chart, reads as attached without one.
+      // short, consistent spacing at the same y as the dot, in a color used
+      // nowhere else on this chart, reads as attached without one.
       var LABEL_X = 2.6;
       var labelPoint = mine.map(function (d) {
         return { x: LABEL_X, y: d.peak_bili_xuln, usubjid: d.usubjid };
@@ -305,7 +553,7 @@
     onResize(draw);
   }
 
-  // ================= 02 WHOLE STUDY: AE explorer =================
+  // ================= 04 WHOLE STUDY: AE explorer =================
   function renderAEExplorer() {
     var events = DATA.ae_events;
     var severities = ["MILD", "MODERATE", "SEVERE"];
@@ -381,7 +629,7 @@
     renderTable();
   }
 
-  // ================= 03 SITES =================
+  // ================= 05 SITES =================
   function flagColor(flag) {
     if (flag === "high") return COLORS.critical;
     if (flag === "low") return COLORS.serious;
@@ -572,7 +820,7 @@
     tbody.appendChild(frag);
   }
 
-  // ================= 04 DATA QUALITY =================
+  // ================= 06 DATA QUALITY =================
   function renderDataQuality() {
     var dq = DATA.data_quality;
     var domains = ["dm", "ae", "lb", "sv", "ds"];
@@ -635,7 +883,7 @@
   // ================= GLOSSARY =================
   function renderGlossary() {
     var terms = [
-      ["RVA — Real-Time Visual Analytics", "the live dashboards this kind of role builds for ongoing trials. This project is explicitly the opposite: a static, offline look at one already-finished study, built to show the underlying skills."],
+      ["RVA — Real-Time Visual Analytics", "the interactive, study-level dashboards this kind of role builds for ongoing trials, refreshed to milestones like First Patient In, cohort reviews, and safety data review committee meetings. §01 of this page replays that workflow on one completed public study, by data cut — never presented as a live study — and §02 adds a live public-registry fetch, both refreshed on a schedule (see Methods)."],
       ["MDR — Medical Data Review", "the clinical review of incoming trial data for safety issues and data problems."],
       ["RBQM — Risk-Based Quality Management", "monitoring trial conduct by watching a handful of quantitative risk indicators continuously, instead of relying only on periodic full on-site reviews."],
       ["KRI — key risk indicator", "one of those quantitative metrics, e.g. the adverse-event reporting rate at a site."],
@@ -659,6 +907,8 @@
 
   // ================= init =================
   renderHeroStats();
+  renderStudyInFlight();
+  renderRegistry();
   renderPatientSummary();
   renderPatientTimeline();
   renderEdish();

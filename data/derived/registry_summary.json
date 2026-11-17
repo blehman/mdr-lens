@@ -1,0 +1,1447 @@
+{
+  "total_studies": 125,
+  "status_phase_counts": {
+    "ACTIVE_NOT_RECRUITING": {
+      "PHASE2": 42,
+      "PHASE1": 39,
+      "PHASE3": 2
+    },
+    "NOT_YET_RECRUITING": {
+      "PHASE1": 5,
+      "PHASE2": 2
+    },
+    "RECRUITING": {
+      "PHASE2": 32,
+      "PHASE1": 28,
+      "PHASE3": 1
+    }
+  },
+  "mesh_categories": {
+    "Neurology": 13,
+    "Oncology": 54,
+    "Metabolic / Endocrine": 6,
+    "No MeSH category": 26,
+    "Immunology": 15,
+    "Hematology": 2,
+    "Ophthalmology": 3,
+    "Urogenital / Renal": 1,
+    "Respiratory": 1,
+    "Other (MeSH present)": 1,
+    "Gastroenterology": 2,
+    "Cardiovascular": 1
+  },
+  "timeline_recruiting_or_active": [
+    {
+      "nct_id": "NCT00781612",
+      "brief_title": "A Safety Extension Study of Trastuzumab Emtansine in Participants Previously Treated With Trastuzumab Emtansine Alone or in Combination With Other Anti-Cancer Therapy in One of the Parent Studies",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2008-10-16",
+      "primary_completion_date": "2027-06-30"
+    },
+    {
+      "nct_id": "NCT02286089",
+      "brief_title": "Safety and Efficacy Study of OpRegen for Treatment of Advanced Dry-Form Age-Related Macular Degeneration",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2015-04-01",
+      "primary_completion_date": "2021-12-31"
+    },
+    {
+      "nct_id": "NCT02568267",
+      "brief_title": "Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2015-11-19",
+      "primary_completion_date": "2027-06-30"
+    },
+    {
+      "nct_id": "NCT02650401",
+      "brief_title": "Study Of Entrectinib (Rxdx-101) in Children and Adolescents With Locally Advanced Or Metastatic Solid Or Primary CNS Tumors And/Or Who Have No Satisfactory Treatment Options",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2016-05-03",
+      "primary_completion_date": "2027-06-30"
+    },
+    {
+      "nct_id": "NCT03006172",
+      "brief_title": "To Evaluate the Safety, Tolerability, and Pharmacokinetics of Inavolisib Single Agent in Participants With Solid Tumors and in Combination With Endocrine and Targeted Therapies in Participants With Breast Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2016-12-13",
+      "primary_completion_date": "2026-12-31"
+    },
+    {
+      "nct_id": "NCT03075696",
+      "brief_title": "A Dose Escalation Study of Glofitamab (RO7082859) as a Single Agent and in Combination With Obinutuzumab, Administered After a Fixed, Single Pre-treatment Dose of Obinutuzumab in Participants With Relapsed/Refractory B-cell Non-hodgkin's Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2017-02-21",
+      "primary_completion_date": "2029-03-30"
+    },
+    {
+      "nct_id": "NCT03100149",
+      "brief_title": "A Study to Evaluate the Efficacy of Prasinezumab (RO7046015/PRX002) in Participants With Early Parkinson's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2017-06-27",
+      "primary_completion_date": "2019-11-27"
+    },
+    {
+      "nct_id": "NCT03178552",
+      "brief_title": "A Study to Evaluate the Efficacy and Safety of Multiple Targeted Therapies as Treatments for Participants With Non-Small Cell Lung Cancer (NSCLC)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2017-09-22",
+      "primary_completion_date": "2027-06-30"
+    },
+    {
+      "nct_id": "NCT03332797",
+      "brief_title": "A Study of GDC-9545 Alone or in Combination With Palbociclib and/or Luteinizing Hormone-Releasing Hormone (LHRH) Agonist in Locally Advanced or Metastatic Estrogen Receptor-Positive Breast Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2017-11-24",
+      "primary_completion_date": "2027-07-31"
+    },
+    {
+      "nct_id": "NCT03424005",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2018-03-30",
+      "primary_completion_date": "2030-09-30"
+    },
+    {
+      "nct_id": "NCT03448042",
+      "brief_title": "A Study of Runimotamab in Participants With Locally Advanced or Metastatic HER2-Expressing Cancers",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2018-06-06",
+      "primary_completion_date": "2027-04-30"
+    },
+    {
+      "nct_id": "NCT03671018",
+      "brief_title": "A Study to Evaluate the Safety and Efficacy of Mosunetuzumab (BTCT4465A) in Combination With Polatuzumab Vedotin in B-Cell Non-Hodgkin Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2018-09-25",
+      "primary_completion_date": "2024-01-30"
+    },
+    {
+      "nct_id": "NCT03779334",
+      "brief_title": "A Study of Risdiplam in Infants With Genetically Diagnosed and Presymptomatic Spinal Muscular Atrophy",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2019-08-07",
+      "primary_completion_date": "2023-02-20"
+    },
+    {
+      "nct_id": "NCT04077723",
+      "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics and Preliminary Anti-Tumor Activity of Englumafusp Alfa in Combination With Obinutuzumab and in Combination With Glofitamab Following a Pre-Treatment Dose of Obinutuzumab in Participants With Relapsed/Refractory B-Cell Non-Hodgkin's Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2019-08-13",
+      "primary_completion_date": "2026-12-28"
+    },
+    {
+      "nct_id": "NCT04140500",
+      "brief_title": "Dose Escalation Study of a PD1-LAG3 Bispecific Antibody in Patients With Advanced and/or Metastatic Solid Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2019-11-11",
+      "primary_completion_date": "2027-06-30"
+    },
+    {
+      "nct_id": "NCT04075266",
+      "brief_title": "A Study of Ocrelizumab in Children and Adolescents With Relapsing-Remitting Multiple Sclerosis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2020-01-09",
+      "primary_completion_date": "2023-10-05"
+    },
+    {
+      "nct_id": "NCT04191499",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Inavolisib + Palbociclib + Fulvestrant vs Placebo + Palbociclib + Fulvestrant in Participants With PIK3CA-Mutant, Hormone Receptor-Positive, HER2-Negative, Locally Advanced or Metastatic Breast Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2020-01-29",
+      "primary_completion_date": "2023-09-29"
+    },
+    {
+      "nct_id": "NCT04449874",
+      "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of GDC-6036 Alone or in Combination in Participants With Advanced or Metastatic Solid Tumors With a KRAS G12C Mutation",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2020-07-29",
+      "primary_completion_date": "2027-12-31"
+    },
+    {
+      "nct_id": "NCT04246086",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Efficacy of Mosunetuzumab + Lenalidomide (+Len), and the Safety, Tolerability, and Pharmacokinetics of SC Versus IV Mosunetuzumab + Len in Participants With Follicular Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2020-08-12",
+      "primary_completion_date": "2030-09-06"
+    },
+    {
+      "nct_id": "NCT05593094",
+      "brief_title": "A Phase 1 Trial of ZN-A-1041 Enteric Capsules or Combination in Participants With Human Epidermal Growth Factor Receptor 2 (HER2)-Positive Advanced Solid Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2020-09-03",
+      "primary_completion_date": "2027-08-31"
+    },
+    {
+      "nct_id": "NCT04524871",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Multiple Immunotherapy-Based Treatment Combinations in Patients With Advanced Liver Cancers (Morpheus-Liver)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2020-11-01",
+      "primary_completion_date": "2027-07-30"
+    },
+    {
+      "nct_id": "NCT04302025",
+      "brief_title": "A Study of Multiple Therapies in Biomarker-selected Participants With Resectable Stages IB-III Non-small Cell Lung Cancer (NSCLC)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2020-11-06",
+      "primary_completion_date": "2026-11-30"
+    },
+    {
+      "nct_id": "NCT04576455",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Giredestrant Compared With Physician's Choice of Endocrine Monotherapy in Participants With Previously Treated Estrogen Receptor-Positive, HER2-Negative Locally Advanced or Metastatic Breast Cancer (acelERA Breast Cancer)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2020-11-27",
+      "primary_completion_date": "2022-02-18"
+    },
+    {
+      "nct_id": "NCT04589845",
+      "brief_title": "Tumor-agnostic Precision Immuno-oncology and Somatic Targeting Rational for You (TAPISTRY) Platform Study",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-01-18",
+      "primary_completion_date": "2032-09-25"
+    },
+    {
+      "nct_id": "NCT04639050",
+      "brief_title": "Brainshuttle AD: A Multiple Ascending Dose Study to Investigate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7126209 Following Intravenous Infusion in Participants With Prodromal or Mild to Moderate Alzheimer's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-03-15",
+      "primary_completion_date": "2027-07-31"
+    },
+    {
+      "nct_id": "NCT04777331",
+      "brief_title": "A Study to Evaluate the Efficacy and Safety of Intravenous Prasinezumab in Participants With Early Parkinson's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-05-05",
+      "primary_completion_date": "2024-09-11"
+    },
+    {
+      "nct_id": "NCT04835805",
+      "brief_title": "A Study to Evaluate the Safety and Activity of Belvarafenib as a Single Agent and in Combination With Either Cobimetinib or Cobimetinib Plus Nivolumab in Patients With NRAS-mutant Advanced Melanoma.",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2021-05-13",
+      "primary_completion_date": "2026-12-31"
+    },
+    {
+      "nct_id": "NCT04802759",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Participants With Breast Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-06-22",
+      "primary_completion_date": "2029-05-30"
+    },
+    {
+      "nct_id": "NCT04910568",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Activity of Cevostamab in Participants With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2021-07-26",
+      "primary_completion_date": "2028-12-21"
+    },
+    {
+      "nct_id": "NCT05704361",
+      "brief_title": "A Study to Investigate the Safety, Tolerability, and Processing by the Body of Intravenous and Subcutaneous RO7121932 Administration in Participants With Multiple Sclerosis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-08-11",
+      "primary_completion_date": "2027-07-08"
+    },
+    {
+      "nct_id": "NCT04774718",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Efficacy of Alectinib in Pediatric Participants With ALK Fusion-Positive Solid or CNS Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-09-14",
+      "primary_completion_date": "2032-02-28"
+    },
+    {
+      "nct_id": "NCT04931342",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Biomarker-Driven Therapies in Patients With Persistent or Recurrent Rare Epithelial Ovarian Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-10-07",
+      "primary_completion_date": "2028-02-28"
+    },
+    {
+      "nct_id": "NCT04929223",
+      "brief_title": "A Study Evaluating the Safety and Efficacy of Targeted Therapies in Subpopulations of Patients With Metastatic Colorectal Cancer (INTRINSIC)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2021-10-22",
+      "primary_completion_date": "2030-08-31"
+    },
+    {
+      "nct_id": "NCT05207670",
+      "brief_title": "A Study Evaluating the Safety, Efficacy, and Pharmacokinetics of Mosunetuzumab Monotherapy in Participants With Select B-Cell Malignancies",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2022-02-01",
+      "primary_completion_date": "2027-07-31"
+    },
+    {
+      "nct_id": "NCT05119569",
+      "brief_title": "A Study to Investigate the Efficacy of Fenebrutinib in Relapsing Multiple Sclerosis (RMS)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-03-01",
+      "primary_completion_date": "2023-03-29"
+    },
+    {
+      "nct_id": "NCT05091424",
+      "brief_title": "A Study Evaluating the Safety, Efficacy, and Pharmacokinetics of Mosunetuzumab and a Combined Regimen of Mosunetuzumab and Venetoclax in Participants With Relapsed or Refractory Chronic Lymphocytic Leukemia",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-03-07",
+      "primary_completion_date": "2031-02-10"
+    },
+    {
+      "nct_id": "NCT05009069",
+      "brief_title": "A Study of Atezolizumab With or Without Tiragolumab Following Neoadjuvant Chemoradiotherapy in Participants With Locally Advanced Rectal Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-03-18",
+      "primary_completion_date": "2023-11-21"
+    },
+    {
+      "nct_id": "NCT04980222",
+      "brief_title": "A Study to Evaluate the Safety and Efficacy of Glofitamab in Combination With Rituximab (R) Plus Cyclophosphamide, Doxorubicin, Vincristine, and Prednisone (CHOP) in Circulating Tumor (ct)DNA High-Risk Patients With Untreated Diffuse Large B-Cell Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-03-22",
+      "primary_completion_date": "2024-10-24"
+    },
+    {
+      "nct_id": "NCT05039619",
+      "brief_title": "A Study to Evaluate the Efficacy, Safety, and Pharmacokinetics of Obinutuzumab in Adolescents With Active Class III or IV Lupus Nephritis and the Safety and PK of Obinutuzumab in Pediatric Participants",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-05-12",
+      "primary_completion_date": "2028-06-15"
+    },
+    {
+      "nct_id": "NCT05535244",
+      "brief_title": "A Study Evaluating the Efficacy and Safety of Cevostamab in Prior B Cell Maturation Antigen (BCMA)-Exposed Participants With Relapsed/Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-10-17",
+      "primary_completion_date": "2027-02-26"
+    },
+    {
+      "nct_id": "NCT05581004",
+      "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of Enzelkitug as a Single Agent and in Combination With Checkpoint Inhibitor in Participants With Locally Advanced or Metastatic Solid Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2022-10-20",
+      "primary_completion_date": "2028-07-31"
+    },
+    {
+      "nct_id": "NCT05169515",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Efficacy of Mosunetuzumab or Glofitamab in Combination With CC-220 and/or CC-99282 in Participants With B-Cell Non-Hodgkin Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-10-26",
+      "primary_completion_date": "2029-04-30"
+    },
+    {
+      "nct_id": "NCT05533775",
+      "brief_title": "A Study to Evaluate Glofitamab Monotherapy and Glofitamab + Chemoimmunotherapy in Pediatric and Young Adult Participants With Relapsed/Refractory Mature B-Cell Non-Hodgkin Lymphoma",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2022-11-16",
+      "primary_completion_date": "2029-11-30"
+    },
+    {
+      "nct_id": "NCT06847854",
+      "brief_title": "A Study to Investigate the Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of RO7497372 in Participants With Diabetic Macular Edema (DME)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2022-12-08",
+      "primary_completion_date": "2026-11-16"
+    },
+    {
+      "nct_id": "NCT05686551",
+      "brief_title": "GENERATION HD2. A Study to Evaluate the Safety, Biomarkers, and Efficacy of Tominersen Compared With Placebo in Participants With Prodromal and Early Manifest Huntington's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-02-03",
+      "primary_completion_date": "2026-05-14"
+    },
+    {
+      "nct_id": "NCT05646836",
+      "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of XmAb24306 in Combination With Cevostamab in Participants With Relapsed/Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2023-03-21",
+      "primary_completion_date": "2026-11-18"
+    },
+    {
+      "nct_id": "NCT05626114",
+      "brief_title": "A Study to Optimize Subretinal Surgical Delivery and to Evaluate Safety and Activity of Opregen in Participants With Geographic Atrophy Secondary to Age-Related Macular Degeneration (GAlette); Adaptive Optics (AO) Retinal Imaging Substudy in Association With Study GR44251",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2023-03-23",
+      "primary_completion_date": "2031-03-01"
+    },
+    {
+      "nct_id": "NCT05645692",
+      "brief_title": "A Study Evaluating Different Immunotherapies (LAG-3 and PD-1 With or Without TIGIT, Compared to PD-L1 Alone) in Participants With Untreated Locally Advanced Metastatic Urothelial Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-04-13",
+      "primary_completion_date": "2026-12-31"
+    },
+    {
+      "nct_id": "NCT05800665",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Activity of RO7656594 In Participants With Advanced or Metastatic Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2023-05-02",
+      "primary_completion_date": "2027-06-30"
+    },
+    {
+      "nct_id": "NCT05789082",
+      "brief_title": "A Study Evaluating the Safety, Activity, and Pharmacokinetics of Divarasib as a Single Agent or in Combination With Other Anti-Cancer Therapies in Participants With Previously Untreated Advanced or Metastatic Non-Small Cell Lung Cancer With a KRAS G12C Mutation",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-06-20",
+      "primary_completion_date": "2032-01-29"
+    },
+    {
+      "nct_id": "NCT05910528",
+      "brief_title": "Afimkibart (RO7790121) for the Treatment of Moderate to Severe Active Crohn's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-07-24",
+      "primary_completion_date": "2026-12-31"
+    },
+    {
+      "nct_id": "NCT05927571",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Activity of the Combination of Cevostamab and Elranatamab in Participants With Relapsed or Refractory Multiple Myeloma (R/R MM)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2023-08-10",
+      "primary_completion_date": "2027-07-31"
+    },
+    {
+      "nct_id": "NCT05987449",
+      "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Efficacy of NXT007 in Persons With Severe or Moderate Hemophilia A",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-09-21",
+      "primary_completion_date": "2033-12-11"
+    },
+    {
+      "nct_id": "NCT05968326",
+      "brief_title": "A Study of the Efficacy and Safety of Adjuvant Autogene Cevumeran Plus Atezolizumab and mFOLFIRINOX Versus mFOLFIRINOX Alone in Participants With Resected PDAC",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2023-10-18",
+      "primary_completion_date": "2031-01-01"
+    },
+    {
+      "nct_id": "NCT05583617",
+      "brief_title": "A Study Evaluating the Safety and Efficacy of Multiple Treatments in Participants With Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-11-14",
+      "primary_completion_date": "2028-07-31"
+    },
+    {
+      "nct_id": "NCT06031441",
+      "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of RO7566802 as a Single Agent and in Combination With Atezolizumab in Participants With Locally Advanced or Metastatic Solid Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2023-11-27",
+      "primary_completion_date": "2028-03-01"
+    },
+    {
+      "nct_id": "NCT06128564",
+      "brief_title": "A Gene Delivery Study to Evaluate the Safety and Expression of Delandistrogene Moxeparvovec in Participants Under the Age of Four With Duchenne Muscular Dystrophy (DMD)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-11-29",
+      "primary_completion_date": "2026-03-04"
+    },
+    {
+      "nct_id": "NCT06496568",
+      "brief_title": "A Study Evaluating Single-agent Inavolisib, Inavolisib Plus Atezolizumab in PIK3CA-Mutated Cancers",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-12-11",
+      "primary_completion_date": "2027-07-21"
+    },
+    {
+      "nct_id": "NCT05835986",
+      "brief_title": "A First-in-Human Study to Investigate the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of RO7507062 in Participants With Systemic Lupus Erythematosus",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2023-12-18",
+      "primary_completion_date": "2027-11-30"
+    },
+    {
+      "nct_id": "NCT06402838",
+      "brief_title": "A Study to Evaluate the Safety and Biomarker Effects of RO7269162 in Participants at Risk for or at the Prodromal Stage of Alzheimer's Disease (AD)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2024-05-02",
+      "primary_completion_date": "2026-11-19"
+    },
+    {
+      "nct_id": "NCT06096779",
+      "brief_title": "A Study Evaluating Atezolizumab, With or Without Bevacizumab, in Participants With Unresectable Hepatocellular Carcinoma and Child-pugh B7 and B8 Cirrhosis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2024-07-15",
+      "primary_completion_date": "2027-07-30"
+    },
+    {
+      "nct_id": "NCT06524375",
+      "brief_title": "A Study to Evaluate the Effect of Venetoclax on Participants Receiving a Covalent Bruton's Tyrosine Kinase Inhibitor (cBTKi) for First-line Chronic Lymphocytic Leukemia (1L CLL) to Achieve Deep Durable Remissions to Allow Off-treatment Period",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2024-08-09",
+      "primary_completion_date": "2026-10-28"
+    },
+    {
+      "nct_id": "NCT06537310",
+      "brief_title": "A Dose-escalation Study of RO7567132 as Single Agent and in Combination With Atezolizumab in Participants With Advanced Solid Tumors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2024-09-16",
+      "primary_completion_date": "2027-05-12"
+    },
+    {
+      "nct_id": "NCT06619587",
+      "brief_title": "A Study to Evaluate Safety, Pharmacokinetics, and Activity of GDC-7035 as a Single Agent and in Combination in Patients With Advanced Solid Tumors",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2024-11-14",
+      "primary_completion_date": "2028-05-31"
+    },
+    {
+      "nct_id": "NCT06534983",
+      "brief_title": "A Study to Evaluate the Efficacy and Safety of Autogene Cevumeran With Nivolumab Versus Nivolumab Alone in Participants With High-risk Muscle-invasive Urothelial Carcinoma (MIUC)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2024-12-09",
+      "primary_completion_date": "2027-11-10"
+    },
+    {
+      "nct_id": "NCT07667322",
+      "brief_title": "A Study to Investigate the Safety, Tolerability, Pharmacokinetics, Immunogenicity, and Pharmacodynamics of a New Subcutaneous Formulation of Ocrelizumab in Participants With Multiple Sclerosis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2024-12-17",
+      "primary_completion_date": "2026-09-01"
+    },
+    {
+      "nct_id": "NCT06826612",
+      "brief_title": "A Randomized Study of SPK-10001 Gene Therapy in Participants With Huntington's Disease",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-02-21",
+      "primary_completion_date": "2035-01-12"
+    },
+    {
+      "nct_id": "NCT06806033",
+      "brief_title": "Evaluate Optimization of CRS Profile for Glofit Monotherapy and Glofit+GemOx in R/R Aggressive B-NHL",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-03-05",
+      "primary_completion_date": "2029-07-31"
+    },
+    {
+      "nct_id": "NCT06863961",
+      "brief_title": "A Study to Assess the Efficacy and Safety of Afimkibart (RO7790121) in Participants With Moderate to Severe Atopic Dermatitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-04-01",
+      "primary_completion_date": "2026-07-22"
+    },
+    {
+      "nct_id": "NCT06450639",
+      "brief_title": "A Study to Assess the Efficacy and Safety of Satralizumab in Duchenne Muscular Dystrophy (DMD)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-04-04",
+      "primary_completion_date": "2026-11-18"
+    },
+    {
+      "nct_id": "NCT06903065",
+      "brief_title": "A Study to Assess the Safety, Pharmacokinetics, and Activity of RO7790121 in Participants With Advanced MASH Liver Fibrosis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-04-14",
+      "primary_completion_date": "2026-09-24"
+    },
+    {
+      "nct_id": "NCT06624085",
+      "brief_title": "A Study Evaluating the Safety and Efficacy of Glofitamab + Gemcitabine + Oxaliplatin in U.S. Patients With Relapsed or Refractory Diffuse Large B-Cell Lymphoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-04-28",
+      "primary_completion_date": "2027-03-22"
+    },
+    {
+      "nct_id": "NCT06884618",
+      "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics (PK) and Preliminary Clinical Activity of RO7673396 in Participants With Advanced Solid Tumors Harboring Rat Sarcoma Viral Oncogene Homolog (RAS) Mutation(s)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-04-30",
+      "primary_completion_date": "2028-08-31"
+    },
+    {
+      "nct_id": "NCT06965413",
+      "brief_title": "A Study to Assess Efficacy, Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of RO7204239 in Combination With Tirzepatide in Participants With Obesity or Overweight With At Least One Weight-related Comorbidity",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-05-05",
+      "primary_completion_date": "2026-09-03"
+    },
+    {
+      "nct_id": "NCT06934044",
+      "brief_title": "A Study Evaluating the Pharmacokinetics, Safety, and Efficacy of Cevostamab in Chinese Participants With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-05-13",
+      "primary_completion_date": "2028-11-15"
+    },
+    {
+      "nct_id": "NCT06982131",
+      "brief_title": "A Study Investigating the Safety of RO7795081 and the Effect of RO7795081 on How the Body Processes Pitavastatin and Rosuvastatin in Otherwise Healthy Overweight or Obese Adult Participants",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-06-04",
+      "primary_completion_date": "2026-12-07"
+    },
+    {
+      "nct_id": "NCT07112872",
+      "brief_title": "A Study to Compare Different Doses of Tifeglipron (RO7795081) With Placebo or Semaglutide in People With Type 2 Diabetes",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-08-19",
+      "primary_completion_date": "2028-02-05"
+    },
+    {
+      "nct_id": "NCT07054190",
+      "brief_title": "A Study to Test Inavolisib Treatments in Participants With Early-Stage, PIK3CA-Mutated Breast Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-09-09",
+      "primary_completion_date": "2027-07-31"
+    },
+    {
+      "nct_id": "NCT06979336",
+      "brief_title": "A Study to Evaluate the Efficacy, Safety, and Pharmacokinetics (PK) of RO7837195 in Participants With Moderately to Severely Active Ulcerative Colitis (UC)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2025-09-29",
+      "primary_completion_date": "2027-08-25"
+    },
+    {
+      "nct_id": "NCT07137585",
+      "brief_title": "A Study to Evaluate the Effect of RO7204239 on Insulin Sensitivity and Muscle Composition in Participants With Type 2 Diabetes Mellitus (T2DM) and Overweight or Obesity",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-09-30",
+      "primary_completion_date": "2026-09-14"
+    },
+    {
+      "nct_id": "NCT07161258",
+      "brief_title": "A Pharmacokinetics (PK), Pharmacodynamics (PD), Safety and Tolerability Study of Fenebrutinib in Children and Adolescents With Relapsing Multiple Sclerosis (RMS)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-10-06",
+      "primary_completion_date": "2027-06-08"
+    },
+    {
+      "nct_id": "NCT07100106",
+      "brief_title": "A Study to Evaluate the Effect of GDC-4198 Alone and in Combination With Giredestrant Versus Abemaciclib and Giredestrant in Participants With Locally Advanced or Metastatic Estrogen Receptor-Positive (ER+), Human Epidermal Growth Factor Receptor-Negative (HER2-) Breast Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2025-10-07",
+      "primary_completion_date": "2028-08-31"
+    },
+    {
+      "nct_id": "NCT07008378",
+      "brief_title": "A Study to Evaluate the Safety, Tolerability, Cellular Kinetics, and Pharmacodynamics of P-CD19CD20-ALLO1 in Participants With Multiple Sclerosis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2025-10-15",
+      "primary_completion_date": "2032-08-31"
+    },
+    {
+      "nct_id": "NCT07074886",
+      "brief_title": "A Study to Assess Bioequivalence of Two Subcutaneous (SC) Formulations of Ocrelizumab in Participants With Multiple Sclerosis (MS)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-11-13",
+      "primary_completion_date": "2026-09-17"
+    },
+    {
+      "nct_id": "NCT07246941",
+      "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RG6496 in Huntington's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-11-19",
+      "primary_completion_date": "2026-12-01"
+    },
+    {
+      "nct_id": "NCT07137598",
+      "brief_title": "A Study to Assess the Efficacy and Safety of RO7790121 in Participants With Moderate to Severe Rheumatoid Arthritis Who Have Not Responded to or Who Cannot Tolerate Tumor Necrosis Factor (TNF) and/or Janus Kinase (JAK Inhibitors)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-12-05",
+      "primary_completion_date": "2027-04-17"
+    },
+    {
+      "nct_id": "NCT07271693",
+      "brief_title": "A Study to Determine the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7806881 in Healthy Participants",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2025-12-22",
+      "primary_completion_date": "2027-05-11"
+    },
+    {
+      "nct_id": "NCT07223697",
+      "brief_title": "A Long Term Extension Study to Evaluate the Safety and Efficacy of Afimkibart (RO7790121) in Participants With Atopic Dermatitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-01-08",
+      "primary_completion_date": "2033-03-01"
+    },
+    {
+      "nct_id": "NCT07234942",
+      "brief_title": "A Study to Investigate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7812653 in Participants With Early Symptomatic Alzheimer's Disease (eAD)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-01-27",
+      "primary_completion_date": "2027-03-31"
+    },
+    {
+      "nct_id": "NCT07368998",
+      "brief_title": "To Study the Effect of Inavolisib in Combination With Fulvestrant in Participants With Breast Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-02-18",
+      "primary_completion_date": "2028-10-31"
+    },
+    {
+      "nct_id": "NCT07282574",
+      "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, Pharmacodynamics, and Efficacy of RO7268489 as Add-on Therapy to Ocrelizumab, in Participants With Progressive Forms of Multiple Sclerosis (MS)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-03-10",
+      "primary_completion_date": "2028-05-30"
+    },
+    {
+      "nct_id": "NCT07287150",
+      "brief_title": "A Study to Test Inavolisib Treatment in Participants With Metastatic Castration-Resistant Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-03-11",
+      "primary_completion_date": "2028-03-31"
+    },
+    {
+      "nct_id": "NCT07342114",
+      "brief_title": "A Clinical Study to Evaluate the Effects of RO7875913 in Healthy Participants and of RO7875913 With Cevostamab in Participants With Relapsed/Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-03-11",
+      "primary_completion_date": "2030-06-17"
+    },
+    {
+      "nct_id": "NCT07499050",
+      "brief_title": "A Study of Multiple Doses of Orally Administered RO7795081 in Otherwise Healthy Chinese Adult Participants With Obesity or Overweight",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-03-30",
+      "primary_completion_date": "2027-01-09"
+    },
+    {
+      "nct_id": "NCT07495813",
+      "brief_title": "A Study to See How RO7763505 Works and How Safe it is When Given to Healthy People and People With Stable Heart Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-03-31",
+      "primary_completion_date": "2026-10-30"
+    },
+    {
+      "nct_id": "NCT07405801",
+      "brief_title": "A Phase II Study Evaluating the Efficacy and Safety of Inavolisib Plus Ribociclib Plus Fulvestrant Versus Placebo Plus Ribociclib Plus Fulvestrant in Participants With Advanced Breast Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-04-07",
+      "primary_completion_date": "2028-12-19"
+    },
+    {
+      "nct_id": "NCT07425522",
+      "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacodynamics, and Pharmacokinetics of RO7823653 in Participants With Diabetic Macular Edema (DME)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-04-21",
+      "primary_completion_date": "2028-11-17"
+    },
+    {
+      "nct_id": "NCT07567846",
+      "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Preliminary Activity of GDC-1261 in Participants With Advanced or Metastatic Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-04-29",
+      "primary_completion_date": "2027-11-30"
+    },
+    {
+      "nct_id": "NCT07413939",
+      "brief_title": "RO7771950 Versus Tucatinib in Combination With Trastuzumab and Capecitabine in People With Locally Advanced or Metastatic Breast Cancer That is Human Epidermal Growth Factor Receptor 2 (HER2)-Positive",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-05-21",
+      "primary_completion_date": "2029-05-01"
+    },
+    {
+      "nct_id": "NCT07598396",
+      "brief_title": "A Study to Evaluate Mosunetuzumab in Participants With Systemic Lupus Erythematosus With or Without Active Lupus Nephritis",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-05-25",
+      "primary_completion_date": "2028-08-11"
+    },
+    {
+      "nct_id": "NCT07620392",
+      "brief_title": "An Extension Study to Assess Long-Term Safety and Efficacy of Afimkibart in Participants With Rheumatoid Arthritis",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-06-03",
+      "primary_completion_date": "2033-07-08"
+    },
+    {
+      "nct_id": "NCT07448038",
+      "brief_title": "A Study to Evaluate the Efficacy, Safety, Pharmacodynamics (PD), and Pharmacokinetics (PK) of Selnoflast in Reducing Vascular Inflammation in Participants With Atherosclerosis at Risk for Major Adverse Cardiac Events",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-06-05",
+      "primary_completion_date": "2028-01-31"
+    },
+    {
+      "nct_id": "NCT07588100",
+      "brief_title": "A Study to Investigate the Safety, Tolerability, and Pharmacokinetics of RO7663498 Following Intravitreal Administration in Participants With Diabetic Retinopathy",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-06-18",
+      "primary_completion_date": "2028-01-20"
+    },
+    {
+      "nct_id": "NCT07558915",
+      "brief_title": "A Study to Evaluate RO7851624 in Participants With Relapsed/Refractory Multiple Myeloma (RRMM)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-06-23",
+      "primary_completion_date": "2030-07-01"
+    },
+    {
+      "nct_id": "NCT07665723",
+      "brief_title": "An Early-Stage Study in Multiple Clinics of How Afimkibart May Affect the Body's Processing of Medicines That Rely on Cytochrome P450 Enzymes in Participants With Ulcerative Colitis",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-06-29",
+      "primary_completion_date": "2027-07-31"
+    },
+    {
+      "nct_id": "NCT07626515",
+      "brief_title": "A Study to Evaluate Safety, Tolerability, and Pharmacokinetics of Enicepatide in Generally Healthy Adult Chinese Participants",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-07-02",
+      "primary_completion_date": "2027-04-08"
+    },
+    {
+      "nct_id": "NCT07797478",
+      "brief_title": "A Study of RO7890597 in Healthy Adult Volunteers",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-08-28",
+      "primary_completion_date": "2027-06-08"
+    },
+    {
+      "nct_id": "NCT07226206",
+      "brief_title": "A Gene Therapy Study of SPK-8011QQ in Adults With Severe or Moderately Severe Hemophilia A",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-09-08",
+      "primary_completion_date": "2032-04-30"
+    },
+    {
+      "nct_id": "NCT07741604",
+      "brief_title": "A Study Investigating the Safety of RO7795081 and How the Body Processes RO7795081 in People With Normal or Decreased Kidney Functions",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-09-09",
+      "primary_completion_date": "2028-02-01"
+    },
+    {
+      "nct_id": "NCT07416552",
+      "brief_title": "A Study to Investigate CEA-PRIT 2.0 in Participants With Metastatic Colorectal Cancer (mCRC)",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-10-13",
+      "primary_completion_date": "2034-02-12"
+    },
+    {
+      "nct_id": "NCT07822334",
+      "brief_title": "A Study of RO7830698 in Healthy Participants and Participants With Chronic Obstructive Pulmonary Disease",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-10-28",
+      "primary_completion_date": "2028-10-11"
+    },
+    {
+      "nct_id": "NCT07503340",
+      "brief_title": "A Study to Evaluate Pharmacokinetics, Safety, Tolerability, Immunogenicity and Pharmacodynamic Effects of Subcutaneous Ocrelizumab Administration in Children and Adolescents With Relapsing-remitting Multiple Sclerosis (RRMS)",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-10-30",
+      "primary_completion_date": "2029-08-31"
+    },
+    {
+      "nct_id": "NCT07629583",
+      "brief_title": "To Evaluate the Effects of Cevostamab in Participants With Systemic Lupus Erythematosus With or Without Active Lupus Nephritis",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-11-02",
+      "primary_completion_date": "2030-03-29"
+    },
+    {
+      "nct_id": "NCT07825064",
+      "brief_title": "Cevostamab in Combination With Pomalidomide and Dexamethasone After BCMA- Targeting CAR T-Cell Therapy in Participants With Previously Treated Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-03",
+      "primary_completion_date": "2029-04-13"
+    },
+    {
+      "nct_id": "NCT07835243",
+      "brief_title": "A Study to Assess the Effect of Subcutaneous Injection Site on the Pharmacokinetics of Pegozafermin in Healthy Participants",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-05",
+      "primary_completion_date": "2027-03-02"
+    },
+    {
+      "nct_id": "NCT07781657",
+      "brief_title": "Study to Test Effects and Safety of RO7568282 in Early Symptomatic Alzheimer's Disease",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-10",
+      "primary_completion_date": "2029-11-01"
+    },
+    {
+      "nct_id": "NCT07883577",
+      "brief_title": "A Study of RO7821657 in Participants With Solid Tumors",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-10",
+      "primary_completion_date": "2030-05-31"
+    },
+    {
+      "nct_id": "NCT07781644",
+      "brief_title": "Study to Test Effects and Safety of RO7568282 in Early Parkinson's Disease",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-11",
+      "primary_completion_date": "2028-12-15"
+    },
+    {
+      "nct_id": "NCT07589686",
+      "brief_title": "A Dose-Finding Study of Petrelintide With Enicepatide (RO7795068) in Adults With Obesity or Overweight",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-30",
+      "primary_completion_date": "2027-11-12"
+    },
+    {
+      "nct_id": "NCT07748208",
+      "brief_title": "A Study Evaluating the Safety of Inavolisib and Fulvestrant With or Without Palbociclib in Participants With Advanced Breast Cancer (ABC) and Type 2 Diabetes",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-11-30",
+      "primary_completion_date": "2029-06-15"
+    },
+    {
+      "nct_id": "NCT07859085",
+      "brief_title": "A Study to Evaluate the Safety and Activity of GDC-7035 With Anti-Cancer Therapies in Participants With KRAS G12D-Mutated Unresectable Advanced or Metastatic Colorectal Cancer or Pancreatic Ductal Adenocarcinoma",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-11-30",
+      "primary_completion_date": "2029-03-30"
+    },
+    {
+      "nct_id": "NCT07749157",
+      "brief_title": "A Study of Subcutaneously Administered RO7845860 in Participants With Relapsing Multiple Sclerosis",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-12-14",
+      "primary_completion_date": "2031-02-28"
+    },
+    {
+      "nct_id": "NCT07867262",
+      "brief_title": "A Study to Evaluate the Effects of GDC-4198 in Combination With Letrozole, Fulvestrant, or Giredestrant in Participants With Locally Advanced or Metastatic Hormone Receptor-Positive, HER2-Negatve Breast Cancer",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2026-12-15",
+      "primary_completion_date": "2030-08-15"
+    },
+    {
+      "nct_id": "NCT07905924",
+      "brief_title": "A Study to Evaluate the Safety and Effectiveness of Different Doses of RO7836748 Alone or in Combination With Other Cancer Therapies in People With Solid Tumors With a Rat Sarcoma Viral Oncogene Homolog Glycine 12 Valine (RAS G12V) Mutation",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "lead_sponsor": "Hoffmann-La Roche",
+      "start_date": "2026-12-31",
+      "primary_completion_date": "2032-03-30"
+    },
+    {
+      "nct_id": "NCT07851259",
+      "brief_title": "A Study to Assess the Efficacy and Safety of RO7965032 in Participants With Geographic Atrophy Secondary to Age-Related Macular Degeneration",
+      "overall_status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "lead_sponsor": "Genentech, Inc.",
+      "start_date": "2027-01-08",
+      "primary_completion_date": "2030-08-21"
+    }
+  ],
+  "fetched_at_utc": "2026-11-17T10:46:18.591118+00:00",
+  "source_url": "https://clinicaltrials.gov/api/v2/studies",
+  "lead_sponsors_queried": [
+    "Hoffmann-La Roche",
+    "Genentech"
+  ],
+  "per_sponsor_counts": {
+    "Hoffmann-La Roche": 92,
+    "Genentech": 33
+  },
+  "note": "Public ClinicalTrials.gov registry records as of the fetch time above. This reflects only what sponsors have posted to the public registry -- it is not, and does not represent, Roche's or Genentech's internal development pipeline."
+}

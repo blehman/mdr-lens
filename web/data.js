@@ -18558,5 +18558,4636 @@ window.MDR_DATA = {
     "hys_law_bili_threshold_x_uln": 2.0,
     "protagonist_usubjid": "01-705-1186",
     "source": "pharmaverse/pharmaversesdtm CDISC pilot study (Apache-2.0)"
+  },
+  "study_in_flight": {
+    "cycle_epoch": "2026-11-17",
+    "run_date": "2026-11-17",
+    "last_refresh_utc": "2026-11-17T10:47:34.971872+00:00",
+    "first_patient_in": "2012-07-09",
+    "replay_window_end": "2015-03-05",
+    "n_cuts": 34,
+    "current_cut_index": 0,
+    "current_cut": "2012-07-01",
+    "cycle_restarted": true,
+    "enrollment_curve": [
+      {
+        "cut": "2012-07-01",
+        "cumulative_subjects": 0
+      },
+      {
+        "cut": "2012-08-01",
+        "cumulative_subjects": 5
+      },
+      {
+        "cut": "2012-09-01",
+        "cumulative_subjects": 7
+      },
+      {
+        "cut": "2012-10-01",
+        "cumulative_subjects": 19
+      },
+      {
+        "cut": "2012-11-01",
+        "cumulative_subjects": 29
+      },
+      {
+        "cut": "2012-12-01",
+        "cumulative_subjects": 38
+      },
+      {
+        "cut": "2013-01-01",
+        "cumulative_subjects": 53
+      },
+      {
+        "cut": "2013-02-01",
+        "cumulative_subjects": 67
+      },
+      {
+        "cut": "2013-03-01",
+        "cumulative_subjects": 86
+      },
+      {
+        "cut": "2013-04-01",
+        "cumulative_subjects": 98
+      },
+      {
+        "cut": "2013-05-01",
+        "cumulative_subjects": 111
+      },
+      {
+        "cut": "2013-06-01",
+        "cumulative_subjects": 124
+      },
+      {
+        "cut": "2013-07-01",
+        "cumulative_subjects": 131
+      },
+      {
+        "cut": "2013-08-01",
+        "cumulative_subjects": 143
+      },
+      {
+        "cut": "2013-09-01",
+        "cumulative_subjects": 158
+      },
+      {
+        "cut": "2013-10-01",
+        "cumulative_subjects": 172
+      },
+      {
+        "cut": "2013-11-01",
+        "cumulative_subjects": 189
+      },
+      {
+        "cut": "2013-12-01",
+        "cumulative_subjects": 196
+      },
+      {
+        "cut": "2014-01-01",
+        "cumulative_subjects": 213
+      },
+      {
+        "cut": "2014-02-01",
+        "cumulative_subjects": 228
+      },
+      {
+        "cut": "2014-03-01",
+        "cumulative_subjects": 236
+      },
+      {
+        "cut": "2014-04-01",
+        "cumulative_subjects": 244
+      },
+      {
+        "cut": "2014-05-01",
+        "cumulative_subjects": 249
+      },
+      {
+        "cut": "2014-06-01",
+        "cumulative_subjects": 252
+      },
+      {
+        "cut": "2014-07-01",
+        "cumulative_subjects": 253
+      },
+      {
+        "cut": "2014-08-01",
+        "cumulative_subjects": 253
+      },
+      {
+        "cut": "2014-09-01",
+        "cumulative_subjects": 253
+      },
+      {
+        "cut": "2014-10-01",
+        "cumulative_subjects": 254
+      },
+      {
+        "cut": "2014-11-01",
+        "cumulative_subjects": 254
+      },
+      {
+        "cut": "2014-12-01",
+        "cumulative_subjects": 254
+      },
+      {
+        "cut": "2015-01-01",
+        "cumulative_subjects": 254
+      },
+      {
+        "cut": "2015-02-01",
+        "cumulative_subjects": 254
+      },
+      {
+        "cut": "2015-03-01",
+        "cumulative_subjects": 254
+      },
+      {
+        "cut": "2015-03-05",
+        "cumulative_subjects": 254
+      }
+    ],
+    "review_meeting_cuts": [
+      {
+        "cut": "2013-02-01",
+        "threshold": 0.25,
+        "cumulative_subjects": 67
+      },
+      {
+        "cut": "2013-07-01",
+        "threshold": 0.5,
+        "cumulative_subjects": 131
+      },
+      {
+        "cut": "2013-12-01",
+        "threshold": 0.75,
+        "cumulative_subjects": 196
+      },
+      {
+        "cut": "2014-10-01",
+        "threshold": 1.0,
+        "cumulative_subjects": 254
+      }
+    ],
+    "per_cut": [
+      {
+        "cut": "2012-07-01",
+        "index": 0,
+        "n_subjects": 0,
+        "n_ae": 0,
+        "n_lb": 0,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 0,
+        "what_changed": null
+      },
+      {
+        "cut": "2012-08-01",
+        "index": 1,
+        "n_subjects": 5,
+        "n_ae": 1,
+        "n_lb": 246,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 0,
+        "what_changed": {
+          "n_new_ae": 1,
+          "new_ae": [
+            {
+              "usubjid": "01-711-1036",
+              "term": "HEADACHE",
+              "day": 1.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2012-09-01",
+        "index": 2,
+        "n_subjects": 7,
+        "n_ae": 21,
+        "n_lb": 650,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 1,
+        "what_changed": {
+          "n_new_ae": 20,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1023",
+              "term": "ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1023",
+              "term": "ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1023",
+              "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1023",
+              "term": "ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "NASAL MUCOSA BIOPSY",
+              "day": 13.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "SECRETION DISCHARGE",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "ERYTHEMA",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "SECRETION DISCHARGE",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "ERYTHEMA",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-703-1258",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-703-1258",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-709-1007",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-709-1007",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-709-1007",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-709-1007",
+              "term": "DIARRHOEA",
+              "day": 31.0
+            }
+          ],
+          "n_new_lab_excursions": 5,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1023",
+              "test": "BASOLE",
+              "day": -14.0,
+              "x_uln": 25.0
+            },
+            {
+              "usubjid": "01-701-1023",
+              "test": "MONOLE",
+              "day": -14.0,
+              "x_uln": 3.57
+            },
+            {
+              "usubjid": "01-701-1023",
+              "test": "BASOLE",
+              "day": 23.0,
+              "x_uln": 5.0
+            },
+            {
+              "usubjid": "01-701-1023",
+              "test": "EOSLE",
+              "day": 23.0,
+              "x_uln": 5.0
+            },
+            {
+              "usubjid": "01-701-1023",
+              "test": "MONOLE",
+              "day": 23.0,
+              "x_uln": 6.43
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "709",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2012-10-01",
+        "index": 3,
+        "n_subjects": 19,
+        "n_ae": 57,
+        "n_lb": 1682,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 4,
+        "what_changed": {
+          "n_new_ae": 36,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1111",
+              "term": "ERYTHEMA",
+              "day": -5.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "PRURITUS",
+              "day": -5.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "LOCALISED INFECTION",
+              "day": -61.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "ERYTHEMA",
+              "day": -5.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "PRURITUS",
+              "day": -5.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "MICTURITION URGENCY",
+              "day": 1.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "ARTHRALGIA",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1111",
+              "term": "CELLULITIS",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "PNEUMONIA",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "MUSCULAR WEAKNESS",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "PNEUMONIA",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "MUSCULAR WEAKNESS",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-703-1086",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 12.0
+            },
+            {
+              "usubjid": "01-703-1086",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 12.0
+            },
+            {
+              "usubjid": "01-703-1086",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 12.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "701",
+              "kri": "ae_flag",
+              "flag": "high"
+            },
+            {
+              "site": "706",
+              "kri": "ae_flag",
+              "flag": "high"
+            },
+            {
+              "site": "706",
+              "kri": "visit_oow_flag",
+              "flag": "high"
+            },
+            {
+              "site": "710",
+              "kri": "ae_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2012-11-01",
+        "index": 4,
+        "n_subjects": 29,
+        "n_ae": 71,
+        "n_lb": 3212,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 3,
+        "what_changed": {
+          "n_new_ae": 14,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1324",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 21.0
+            },
+            {
+              "usubjid": "01-703-1086",
+              "term": "CHILLS",
+              "day": 38.0
+            },
+            {
+              "usubjid": "01-703-1086",
+              "term": "CHILLS",
+              "day": 38.0
+            },
+            {
+              "usubjid": "01-710-1070",
+              "term": "SUPRAVENTRICULAR EXTRASYSTOLES",
+              "day": 29.0
+            },
+            {
+              "usubjid": "01-710-1142",
+              "term": "DIZZINESS",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-710-1142",
+              "term": "HEADACHE",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-710-1142",
+              "term": "NAUSEA",
+              "day": 13.0
+            },
+            {
+              "usubjid": "01-710-1142",
+              "term": "MYOCARDIAL INFARCTION",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-710-1142",
+              "term": "SYNCOPE VASOVAGAL",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-713-1256",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 42.0
+            },
+            {
+              "usubjid": "01-713-1256",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 42.0
+            },
+            {
+              "usubjid": "01-718-1079",
+              "term": "CONFUSIONAL STATE",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-718-1079",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-718-1079",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 17.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "718",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2012-12-01",
+        "index": 5,
+        "n_subjects": 38,
+        "n_ae": 93,
+        "n_lb": 4763,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 2,
+        "what_changed": {
+          "n_new_ae": 22,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1211",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "JOINT DISLOCATION",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "SHOULDER PAIN",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "INCONTINENCE",
+              "day": 8.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-708-1216",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 14.0
+            },
+            {
+              "usubjid": "01-708-1216",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 14.0
+            },
+            {
+              "usubjid": "01-708-1216",
+              "term": "APPLICATION SITE SWELLING",
+              "day": 30.0
+            },
+            {
+              "usubjid": "01-708-1216",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 14.0
+            },
+            {
+              "usubjid": "01-710-1235",
+              "term": "COUGH",
+              "day": 58.0
+            },
+            {
+              "usubjid": "01-710-1271",
+              "term": "DYSPNOEA",
+              "day": 56.0
+            },
+            {
+              "usubjid": "01-710-1271",
+              "term": "MYOCARDIAL INFARCTION",
+              "day": 56.0
+            },
+            {
+              "usubjid": "01-710-1271",
+              "term": "ATRIAL FIBRILLATION",
+              "day": 56.0
+            },
+            {
+              "usubjid": "01-710-1271",
+              "term": "CARDIAC FAILURE CONGESTIVE",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-710-1271",
+              "term": "HYPONATRAEMIA",
+              "day": 57.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2013-01-01",
+        "index": 6,
+        "n_subjects": 53,
+        "n_ae": 138,
+        "n_lb": 7170,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 3,
+        "what_changed": {
+          "n_new_ae": 45,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1133",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 61.0
+            },
+            {
+              "usubjid": "01-701-1133",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 61.0
+            },
+            {
+              "usubjid": "01-701-1133",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 61.0
+            },
+            {
+              "usubjid": "01-701-1133",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 61.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 137.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 137.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 137.0
+            },
+            {
+              "usubjid": "01-701-1192",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 137.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "SKIN LACERATION",
+              "day": 25.0
+            }
+          ],
+          "n_new_lab_excursions": 1,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-709-1020",
+              "test": "CK",
+              "day": 15.0,
+              "x_uln": 3.56
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "701",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-02-01",
+        "index": 7,
+        "n_subjects": 67,
+        "n_ae": 203,
+        "n_lb": 9912,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 3,
+        "what_changed": {
+          "n_new_ae": 65,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1115",
+              "term": "FATIGUE",
+              "day": 46.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-701-1115",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "CONFUSIONAL STATE",
+              "day": 58.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "DYSPNOEA",
+              "day": 58.0
+            },
+            {
+              "usubjid": "01-701-1211",
+              "term": "SUDDEN DEATH",
+              "day": 61.0
+            },
+            {
+              "usubjid": "01-701-1341",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-701-1341",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-701-1341",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1341",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1341",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "SALIVARY HYPERSECRETION",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 15.0
+            }
+          ],
+          "n_new_lab_excursions": 1,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-708-1342",
+              "test": "CK",
+              "day": 15.0,
+              "x_uln": 3.17
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "704",
+              "kri": "ae_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-03-01",
+        "index": 8,
+        "n_subjects": 86,
+        "n_ae": 281,
+        "n_lb": 13159,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 4,
+        "what_changed": {
+          "n_new_ae": 78,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1047",
+              "term": "HIATUS HERNIA",
+              "day": 1.0
+            },
+            {
+              "usubjid": "01-701-1047",
+              "term": "HIATUS HERNIA",
+              "day": 1.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "VOMITING",
+              "day": 1.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "VOMITING",
+              "day": 1.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "MICTURITION URGENCY",
+              "day": 4.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "MICTURITION URGENCY",
+              "day": 4.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "ERYTHEMA",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "PRURITUS",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "ERYTHEMA",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "PRURITUS",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 4.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE PAIN",
+              "day": 4.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "APPLICATION SITE VESICLES",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-701-1444",
+              "term": "PARAESTHESIA",
+              "day": 35.0
+            }
+          ],
+          "n_new_lab_excursions": 6,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1047",
+              "test": "BASOLE",
+              "day": -21.0,
+              "x_uln": 20.0
+            },
+            {
+              "usubjid": "01-701-1047",
+              "test": "EOSLE",
+              "day": -21.0,
+              "x_uln": 10.0
+            },
+            {
+              "usubjid": "01-701-1047",
+              "test": "MONOLE",
+              "day": -21.0,
+              "x_uln": 6.43
+            },
+            {
+              "usubjid": "01-701-1047",
+              "test": "BASOLE",
+              "day": 14.0,
+              "x_uln": 17.5
+            },
+            {
+              "usubjid": "01-701-1047",
+              "test": "EOSLE",
+              "day": 14.0,
+              "x_uln": 7.5
+            },
+            {
+              "usubjid": "01-701-1047",
+              "test": "MONOLE",
+              "day": 14.0,
+              "x_uln": 4.29
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "715",
+              "kri": "ae_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-04-01",
+        "index": 9,
+        "n_subjects": 98,
+        "n_ae": 356,
+        "n_lb": 16686,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 4,
+        "what_changed": {
+          "n_new_ae": 75,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1047",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-701-1047",
+              "term": "BUNDLE BRANCH BLOCK LEFT",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "NASOPHARYNGITIS",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "APPLICATION SITE VESICLES",
+              "day": 36.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 36.0
+            },
+            {
+              "usubjid": "01-701-1180",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 36.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "URTICARIA",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "URTICARIA",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "APPLICATION SITE URTICARIA",
+              "day": 35.0
+            },
+            {
+              "usubjid": "01-701-1188",
+              "term": "URTICARIA",
+              "day": 35.0
+            },
+            {
+              "usubjid": "01-701-1203",
+              "term": "EYE LASER SURGERY",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1294",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": -2.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 48.0
+            }
+          ],
+          "n_new_lab_excursions": 2,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-703-1100",
+              "test": "TSH",
+              "day": -90.0,
+              "x_uln": 3.59
+            },
+            {
+              "usubjid": "01-703-1100",
+              "test": "TSH",
+              "day": -76.0,
+              "x_uln": 3.46
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2013-05-01",
+        "index": 10,
+        "n_subjects": 111,
+        "n_ae": 419,
+        "n_lb": 19818,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 5,
+        "what_changed": {
+          "n_new_ae": 63,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 68.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 68.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 68.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 24.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 24.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 24.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "CATARACT OPERATION",
+              "day": 44.0
+            },
+            {
+              "usubjid": "01-703-1210",
+              "term": "DISORIENTATION",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-705-1349",
+              "term": "NAUSEA",
+              "day": 30.0
+            },
+            {
+              "usubjid": "01-705-1349",
+              "term": "VOMITING",
+              "day": 33.0
+            },
+            {
+              "usubjid": "01-708-1297",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 68.0
+            },
+            {
+              "usubjid": "01-708-1297",
+              "term": "APPLICATION SITE SWELLING",
+              "day": 68.0
+            },
+            {
+              "usubjid": "01-708-1336",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 125.0
+            },
+            {
+              "usubjid": "01-708-1336",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 125.0
+            },
+            {
+              "usubjid": "01-708-1336",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 125.0
+            }
+          ],
+          "n_new_lab_excursions": 1,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-709-1020",
+              "test": "CK",
+              "day": 141.0,
+              "x_uln": 4.49
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "711",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-06-01",
+        "index": 11,
+        "n_subjects": 124,
+        "n_ae": 508,
+        "n_lb": 22974,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 89,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1146",
+              "term": "RASH",
+              "day": -4.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "RASH",
+              "day": -4.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 13.0
+            },
+            {
+              "usubjid": "01-701-1294",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1294",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1294",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1294",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "APPLICATION SITE VESICLES",
+              "day": 93.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 76.0
+            },
+            {
+              "usubjid": "01-703-1119",
+              "term": "PRURITUS",
+              "day": 74.0
+            },
+            {
+              "usubjid": "01-703-1119",
+              "term": "PRURITUS",
+              "day": 74.0
+            },
+            {
+              "usubjid": "01-703-1210",
+              "term": "DECREASED APPETITE",
+              "day": 50.0
+            },
+            {
+              "usubjid": "01-703-1210",
+              "term": "DECREASED APPETITE",
+              "day": 50.0
+            },
+            {
+              "usubjid": "01-704-1093",
+              "term": "RASH",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-704-1093",
+              "term": "PRURITUS",
+              "day": 51.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "709",
+              "kri": "ae_flag",
+              "flag": "high"
+            },
+            {
+              "site": "713",
+              "kri": "ae_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-07-01",
+        "index": 12,
+        "n_subjects": 131,
+        "n_ae": 585,
+        "n_lb": 25775,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 77,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1146",
+              "term": "FATIGUE",
+              "day": 15.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE PAIN",
+              "day": 34.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE VESICLES",
+              "day": 38.0
+            },
+            {
+              "usubjid": "01-701-1146",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 38.0
+            },
+            {
+              "usubjid": "01-701-1294",
+              "term": "RASH ERYTHEMATOUS",
+              "day": 79.0
+            },
+            {
+              "usubjid": "01-701-1363",
+              "term": "NAUSEA",
+              "day": 16.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "CHEST DISCOMFORT",
+              "day": 141.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "HEADACHE",
+              "day": 141.0
+            },
+            {
+              "usubjid": "01-704-1114",
+              "term": "INFLUENZA",
+              "day": 136.0
+            },
+            {
+              "usubjid": "01-705-1431",
+              "term": "RASH ERYTHEMATOUS",
+              "day": -1.0
+            },
+            {
+              "usubjid": "01-706-1049",
+              "term": "SYNCOPE",
+              "day": 21.0
+            }
+          ],
+          "n_new_lab_excursions": 2,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-709-1339",
+              "test": "ALP",
+              "day": 168.0,
+              "x_uln": 4.34
+            },
+            {
+              "usubjid": "01-709-1339",
+              "test": "ALP",
+              "day": 184.0,
+              "x_uln": 5.43
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "705",
+              "kri": "ae_flag",
+              "flag": "low"
+            },
+            {
+              "site": "716",
+              "kri": "ae_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-08-01",
+        "index": 13,
+        "n_subjects": 143,
+        "n_ae": 636,
+        "n_lb": 28397,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 51,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1028",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1363",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1383",
+              "term": "COUGH",
+              "day": 164.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "WHITE BLOOD CELL COUNT INCREASED",
+              "day": -19.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "NEUTROPHIL COUNT INCREASED",
+              "day": -19.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "URINE ANALYSIS ABNORMAL",
+              "day": -19.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "URINE ANALYSIS ABNORMAL",
+              "day": -19.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "WHITE BLOOD CELL COUNT INCREASED",
+              "day": -19.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "NEUTROPHIL COUNT INCREASED",
+              "day": -19.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "OEDEMA PERIPHERAL",
+              "day": 127.0
+            },
+            {
+              "usubjid": "01-703-1100",
+              "term": "OEDEMA PERIPHERAL",
+              "day": 127.0
+            },
+            {
+              "usubjid": "01-704-1323",
+              "term": "VIRAL INFECTION",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-705-1431",
+              "term": "ANXIETY",
+              "day": 12.0
+            },
+            {
+              "usubjid": "01-709-1309",
+              "term": "ALLERGIC GRANULOMATOUS ANGIITIS",
+              "day": 16.0
+            },
+            {
+              "usubjid": "01-709-1309",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 40.0
+            }
+          ],
+          "n_new_lab_excursions": 4,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1028",
+              "test": "BASOLE",
+              "day": -8.0,
+              "x_uln": 15.0
+            },
+            {
+              "usubjid": "01-701-1028",
+              "test": "EOSLE",
+              "day": -8.0,
+              "x_uln": 5.0
+            },
+            {
+              "usubjid": "01-701-1028",
+              "test": "BASOLE",
+              "day": 14.0,
+              "x_uln": 20.0
+            },
+            {
+              "usubjid": "01-701-1028",
+              "test": "EOSLE",
+              "day": 14.0,
+              "x_uln": 5.0
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2013-09-01",
+        "index": 14,
+        "n_subjects": 158,
+        "n_ae": 687,
+        "n_lb": 30990,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 9,
+        "what_changed": {
+          "n_new_ae": 51,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1028",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 21.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "DEPRESSED MOOD",
+              "day": -25.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "APPLICATION SITE PERSPIRATION",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "HYPERHIDROSIS",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "STOMACH DISCOMFORT",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "PAIN",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "NASAL CONGESTION",
+              "day": 4.0
+            },
+            {
+              "usubjid": "01-701-1360",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1360",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1360",
+              "term": "APPLICATION SITE VESICLES",
+              "day": 6.0
+            },
+            {
+              "usubjid": "01-704-1241",
+              "term": "RASH",
+              "day": -11.0
+            },
+            {
+              "usubjid": "01-704-1323",
+              "term": "RASH",
+              "day": 28.0
+            },
+            {
+              "usubjid": "01-704-1323",
+              "term": "PRURITUS",
+              "day": 28.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "713",
+              "kri": "ae_flag",
+              "flag": "low"
+            },
+            {
+              "site": "718",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-10-01",
+        "index": 15,
+        "n_subjects": 172,
+        "n_ae": 741,
+        "n_lb": 33370,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 6,
+        "what_changed": {
+          "n_new_ae": 54,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1302",
+              "term": "PHARYNGOLARYNGEAL PAIN",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "PRODUCTIVE COUGH",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "MALAISE",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "DIZZINESS",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "MYALGIA",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "DIZZINESS",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "CONTUSION",
+              "day": 8.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "HEADACHE",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "EPISTAXIS",
+              "day": 33.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "CONTUSION",
+              "day": 8.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "MALAISE",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "RECTAL HAEMORRHAGE",
+              "day": 39.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "RECTAL HAEMORRHAGE",
+              "day": 39.0
+            },
+            {
+              "usubjid": "01-702-1082",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 46.0
+            },
+            {
+              "usubjid": "01-704-1009",
+              "term": "FATIGUE",
+              "day": 10.0
+            }
+          ],
+          "n_new_lab_excursions": 1,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-709-1309",
+              "test": "GGT",
+              "day": 85.0,
+              "x_uln": 3.06
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2013-11-01",
+        "index": 16,
+        "n_subjects": 189,
+        "n_ae": 825,
+        "n_lb": 36451,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 6,
+        "what_changed": {
+          "n_new_ae": 84,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1148",
+              "term": "LOWER RESPIRATORY TRACT INFECTION",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "LOWER RESPIRATORY TRACT INFECTION",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-701-1153",
+              "term": "INCREASED APPETITE",
+              "day": 21.0
+            },
+            {
+              "usubjid": "01-701-1153",
+              "term": "INCREASED APPETITE",
+              "day": 21.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 48.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "RESPIRATORY TRACT CONGESTION",
+              "day": 56.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "RHINITIS",
+              "day": 56.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "FEELING ABNORMAL",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "LISTLESS",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1302",
+              "term": "LIBIDO DECREASED",
+              "day": 57.0
+            },
+            {
+              "usubjid": "01-701-1363",
+              "term": "BACK PAIN",
+              "day": 137.0
+            },
+            {
+              "usubjid": "01-701-1363",
+              "term": "BACK PAIN",
+              "day": 137.0
+            },
+            {
+              "usubjid": "01-701-1415",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 29.0
+            },
+            {
+              "usubjid": "01-701-1415",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 29.0
+            }
+          ],
+          "n_new_lab_excursions": 1,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1302",
+              "test": "CK",
+              "day": 41.0,
+              "x_uln": 9.39
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "702",
+              "kri": "visit_oow_flag",
+              "flag": "high"
+            },
+            {
+              "site": "718",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2013-12-01",
+        "index": 17,
+        "n_subjects": 196,
+        "n_ae": 873,
+        "n_lb": 39380,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 6,
+        "what_changed": {
+          "n_new_ae": 48,
+          "new_ae": [
+            {
+              "usubjid": "01-703-1076",
+              "term": "BIOPSY PROSTATE",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-703-1076",
+              "term": "BENIGN PROSTATIC HYPERPLASIA",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-703-1076",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 30.0
+            },
+            {
+              "usubjid": "01-703-1076",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 30.0
+            },
+            {
+              "usubjid": "01-703-1076",
+              "term": "HYPERHIDROSIS",
+              "day": 32.0
+            },
+            {
+              "usubjid": "01-703-1076",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 30.0
+            },
+            {
+              "usubjid": "01-703-1182",
+              "term": "SOMNOLENCE",
+              "day": 37.0
+            },
+            {
+              "usubjid": "01-703-1182",
+              "term": "SOMNOLENCE",
+              "day": 37.0
+            },
+            {
+              "usubjid": "01-704-1017",
+              "term": "RASH",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-704-1017",
+              "term": "PRURITUS",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-704-1017",
+              "term": "RASH",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-704-1017",
+              "term": "PRURITUS",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-704-1065",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-704-1065",
+              "term": "MALAISE",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-704-1065",
+              "term": "HYPERHIDROSIS",
+              "day": 17.0
+            }
+          ],
+          "n_new_lab_excursions": 3,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": -28.0,
+              "x_uln": 3.36
+            },
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": -17.0,
+              "x_uln": 3.46
+            },
+            {
+              "usubjid": "01-707-1206",
+              "test": "CK",
+              "day": 29.0,
+              "x_uln": 5.68
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "706",
+              "kri": "visit_oow_flag",
+              "flag": "high"
+            },
+            {
+              "site": "709",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2014-01-01",
+        "index": 18,
+        "n_subjects": 213,
+        "n_ae": 919,
+        "n_lb": 42479,
+        "n_potential_hys_law": 0,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 46,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1148",
+              "term": "FLANK PAIN",
+              "day": 115.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "CALCULUS URETHRAL",
+              "day": 117.0
+            },
+            {
+              "usubjid": "01-701-1181",
+              "term": "AGITATION",
+              "day": 5.0
+            },
+            {
+              "usubjid": "01-701-1415",
+              "term": "MICTURITION URGENCY",
+              "day": 71.0
+            },
+            {
+              "usubjid": "01-703-1175",
+              "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+              "day": -2.0
+            },
+            {
+              "usubjid": "01-703-1295",
+              "term": "ARTHRITIS",
+              "day": 38.0
+            },
+            {
+              "usubjid": "01-704-1065",
+              "term": "DIARRHOEA",
+              "day": 53.0
+            },
+            {
+              "usubjid": "01-704-1065",
+              "term": "SINUS BRADYCARDIA",
+              "day": 62.0
+            },
+            {
+              "usubjid": "01-704-1120",
+              "term": "RASH",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-704-1120",
+              "term": "NASOPHARYNGITIS",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-704-1120",
+              "term": "RASH",
+              "day": 22.0
+            },
+            {
+              "usubjid": "01-704-1120",
+              "term": "NASOPHARYNGITIS",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-704-1135",
+              "term": "RASH",
+              "day": 39.0
+            },
+            {
+              "usubjid": "01-704-1135",
+              "term": "RASH",
+              "day": 39.0
+            },
+            {
+              "usubjid": "01-704-1266",
+              "term": "ERYTHEMA",
+              "day": 55.0
+            }
+          ],
+          "n_new_lab_excursions": 6,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 15.0,
+              "x_uln": 3.39
+            },
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 28.0,
+              "x_uln": 3.32
+            },
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 42.0,
+              "x_uln": 3.29
+            },
+            {
+              "usubjid": "01-705-1310",
+              "test": "ALT",
+              "day": 55.0,
+              "x_uln": 4.03
+            },
+            {
+              "usubjid": "01-705-1310",
+              "test": "AST",
+              "day": 55.0,
+              "x_uln": 3.35
+            },
+            {
+              "usubjid": "01-705-1310",
+              "test": "GGT",
+              "day": 55.0,
+              "x_uln": 3.78
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "715",
+              "kri": "ae_flag",
+              "flag": "low"
+            },
+            {
+              "site": "716",
+              "kri": "ae_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2014-02-01",
+        "index": 19,
+        "n_subjects": 228,
+        "n_ae": 977,
+        "n_lb": 45697,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 58,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1015",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1015",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1015",
+              "term": "DIARRHOEA",
+              "day": 8.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "ERYTHEMA",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "EPISTAXIS",
+              "day": 134.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "ERYTHEMA",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "SKIN ODOUR ABNORMAL",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "PRURITUS",
+              "day": 3.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 10.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 10.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "ERYTHEMA",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1287",
+              "term": "SALIVARY HYPERSECRETION",
+              "day": 2.0
+            },
+            {
+              "usubjid": "01-701-1415",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 121.0
+            },
+            {
+              "usubjid": "01-701-1415",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 121.0
+            },
+            {
+              "usubjid": "01-701-1442",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 77.0
+            }
+          ],
+          "n_new_lab_excursions": 25,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1015",
+              "test": "BASOLE",
+              "day": -7.0,
+              "x_uln": 20.0
+            },
+            {
+              "usubjid": "01-701-1015",
+              "test": "EOSLE",
+              "day": -7.0,
+              "x_uln": 7.5
+            },
+            {
+              "usubjid": "01-701-1015",
+              "test": "MONOLE",
+              "day": -7.0,
+              "x_uln": 7.14
+            },
+            {
+              "usubjid": "01-701-1015",
+              "test": "BASOLE",
+              "day": 15.0,
+              "x_uln": 7.5
+            },
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 56.0,
+              "x_uln": 3.23
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "ALP",
+              "day": -5.0,
+              "x_uln": 4.91
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "GGT",
+              "day": -5.0,
+              "x_uln": 9.32
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "ALP",
+              "day": 16.0,
+              "x_uln": 5.84
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "ALT",
+              "day": 16.0,
+              "x_uln": 3.25
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "AST",
+              "day": 16.0,
+              "x_uln": 3.47
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "BILI",
+              "day": 16.0,
+              "x_uln": 5.54
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "GGT",
+              "day": 16.0,
+              "x_uln": 8.76
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "ALP",
+              "day": 19.0,
+              "x_uln": 5.23
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "AST",
+              "day": 19.0,
+              "x_uln": 3.38
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "BILI",
+              "day": 19.0,
+              "x_uln": 5.94
+            }
+          ],
+          "newly_hy_flagged": [
+            "01-705-1186"
+          ],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2014-03-01",
+        "index": 20,
+        "n_subjects": 236,
+        "n_ae": 1025,
+        "n_lb": 48427,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 6,
+        "what_changed": {
+          "n_new_ae": 48,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1097",
+              "term": "PRURITUS GENERALISED",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "APPLICATION SITE VESICLES",
+              "day": 51.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 52.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 52.0
+            },
+            {
+              "usubjid": "01-701-1148",
+              "term": "ACTINIC KERATOSIS",
+              "day": 174.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 41.0
+            },
+            {
+              "usubjid": "01-701-1239",
+              "term": "UPPER RESPIRATORY TRACT INFECTION",
+              "day": 41.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "NAUSEA",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "VOMITING",
+              "day": 17.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "ERYTHEMA",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "SALIVARY HYPERSECRETION",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "PAROSMIA",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "PRURITUS",
+              "day": 18.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "NAUSEA",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "ERYTHEMA",
+              "day": 18.0
+            }
+          ],
+          "n_new_lab_excursions": 7,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 90.0,
+              "x_uln": 3.26
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "ALP",
+              "day": 31.0,
+              "x_uln": 5.97
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "BILI",
+              "day": 31.0,
+              "x_uln": 3.42
+            },
+            {
+              "usubjid": "01-705-1186",
+              "test": "GGT",
+              "day": 31.0,
+              "x_uln": 9.62
+            },
+            {
+              "usubjid": "01-705-1292",
+              "test": "AST",
+              "day": 117.0,
+              "x_uln": 3.68
+            },
+            {
+              "usubjid": "01-708-1286",
+              "test": "ALT",
+              "day": 167.0,
+              "x_uln": 3.88
+            },
+            {
+              "usubjid": "01-708-1286",
+              "test": "AST",
+              "day": 167.0,
+              "x_uln": 4.94
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2014-04-01",
+        "index": 21,
+        "n_subjects": 244,
+        "n_ae": 1067,
+        "n_lb": 51171,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 42,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1097",
+              "term": "PRURITUS GENERALISED",
+              "day": 80.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "PRURITUS GENERALISED",
+              "day": 90.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "URINARY TRACT INFECTION",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "PYREXIA",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "URINARY TRACT INFECTION",
+              "day": 23.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "COUGH",
+              "day": 34.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "NASAL CONGESTION",
+              "day": 34.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "COUGH",
+              "day": 34.0
+            },
+            {
+              "usubjid": "01-701-1275",
+              "term": "NASAL CONGESTION",
+              "day": 34.0
+            },
+            {
+              "usubjid": "01-701-1287",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 44.0
+            },
+            {
+              "usubjid": "01-701-1387",
+              "term": "DIARRHOEA",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1387",
+              "term": "HYPERHIDROSIS",
+              "day": 7.0
+            },
+            {
+              "usubjid": "01-701-1415",
+              "term": "DIARRHOEA",
+              "day": 168.0
+            },
+            {
+              "usubjid": "01-703-1335",
+              "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+              "day": -2.0
+            },
+            {
+              "usubjid": "01-703-1335",
+              "term": "ATRIOVENTRICULAR BLOCK SECOND DEGREE",
+              "day": -2.0
+            }
+          ],
+          "n_new_lab_excursions": 6,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1033",
+              "test": "EOSLE",
+              "day": -8.0,
+              "x_uln": 10.0
+            },
+            {
+              "usubjid": "01-701-1033",
+              "test": "MONOLE",
+              "day": -8.0,
+              "x_uln": 3.57
+            },
+            {
+              "usubjid": "01-701-1033",
+              "test": "BASOLE",
+              "day": 15.0,
+              "x_uln": 22.5
+            },
+            {
+              "usubjid": "01-701-1033",
+              "test": "MONOLE",
+              "day": 15.0,
+              "x_uln": 6.43
+            },
+            {
+              "usubjid": "01-701-1345",
+              "test": "CK",
+              "day": 162.0,
+              "x_uln": 9.21
+            },
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 113.0,
+              "x_uln": 3.3
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "706",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2014-05-01",
+        "index": 22,
+        "n_subjects": 249,
+        "n_ae": 1095,
+        "n_lb": 53248,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 28,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1097",
+              "term": "PRURITUS GENERALISED",
+              "day": 109.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "PHARYNGOLARYNGEAL PAIN",
+              "day": 109.0
+            },
+            {
+              "usubjid": "01-701-1097",
+              "term": "NASAL CONGESTION",
+              "day": 109.0
+            },
+            {
+              "usubjid": "01-703-1439",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 44.0
+            },
+            {
+              "usubjid": "01-703-1439",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 44.0
+            },
+            {
+              "usubjid": "01-705-1280",
+              "term": "PRURITUS",
+              "day": 94.0
+            },
+            {
+              "usubjid": "01-709-1081",
+              "term": "RASH",
+              "day": 80.0
+            },
+            {
+              "usubjid": "01-709-1081",
+              "term": "OEDEMA PERIPHERAL",
+              "day": 104.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "RASH",
+              "day": 77.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 77.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "RASH",
+              "day": 77.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 77.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "RASH",
+              "day": 77.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 77.0
+            },
+            {
+              "usubjid": "01-710-1154",
+              "term": "SKIN IRRITATION",
+              "day": 21.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "701",
+              "kri": "ae_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2014-06-01",
+        "index": 23,
+        "n_subjects": 252,
+        "n_ae": 1122,
+        "n_lb": 55065,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 27,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1130",
+              "term": "EYE SWELLING",
+              "day": 84.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "EYE ALLERGY",
+              "day": 84.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "EYE PRURITUS",
+              "day": 97.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "PRURITUS",
+              "day": 97.0
+            },
+            {
+              "usubjid": "01-701-1130",
+              "term": "NASAL CONGESTION",
+              "day": 97.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "ONYCHOMYCOSIS",
+              "day": -9.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "CYST",
+              "day": -9.0
+            },
+            {
+              "usubjid": "01-704-1325",
+              "term": "RASH",
+              "day": 31.0
+            },
+            {
+              "usubjid": "01-709-1088",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 27.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 91.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "DRUG ERUPTION",
+              "day": 107.0
+            },
+            {
+              "usubjid": "01-709-1306",
+              "term": "APPLICATION SITE IRRITATION",
+              "day": 91.0
+            },
+            {
+              "usubjid": "01-709-1312",
+              "term": "APPLICATION SITE DERMATITIS",
+              "day": 28.0
+            },
+            {
+              "usubjid": "01-710-1027",
+              "term": "HAEMOPTYSIS",
+              "day": 71.0
+            },
+            {
+              "usubjid": "01-710-1027",
+              "term": "RALES",
+              "day": 85.0
+            }
+          ],
+          "n_new_lab_excursions": 1,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-703-1295",
+              "test": "ALP",
+              "day": 180.0,
+              "x_uln": 3.14
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "706",
+              "kri": "visit_oow_flag",
+              "flag": "high"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2014-07-01",
+        "index": 24,
+        "n_subjects": 253,
+        "n_ae": 1132,
+        "n_lb": 56411,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 10,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1317",
+              "term": "APPLICATION SITE ERYTHEMA",
+              "day": 33.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 33.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "APPLICATION SITE URTICARIA",
+              "day": 33.0
+            },
+            {
+              "usubjid": "01-708-1406",
+              "term": "OEDEMA PERIPHERAL",
+              "day": 173.0
+            },
+            {
+              "usubjid": "01-708-1406",
+              "term": "OEDEMA PERIPHERAL",
+              "day": 173.0
+            },
+            {
+              "usubjid": "01-714-1035",
+              "term": "SUPRAVENTRICULAR EXTRASYSTOLES",
+              "day": 49.0
+            },
+            {
+              "usubjid": "01-714-1035",
+              "term": "ELECTROCARDIOGRAM ST SEGMENT DEPRESSION",
+              "day": 49.0
+            },
+            {
+              "usubjid": "01-714-1035",
+              "term": "SUPRAVENTRICULAR EXTRASYSTOLES",
+              "day": 49.0
+            },
+            {
+              "usubjid": "01-717-1004",
+              "term": "WOUND",
+              "day": 141.0
+            },
+            {
+              "usubjid": "01-717-1004",
+              "term": "WOUND",
+              "day": 141.0
+            }
+          ],
+          "n_new_lab_excursions": 3,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1034",
+              "test": "BASOLE",
+              "day": -7.0,
+              "x_uln": 22.5
+            },
+            {
+              "usubjid": "01-701-1034",
+              "test": "EOSLE",
+              "day": -7.0,
+              "x_uln": 3.75
+            },
+            {
+              "usubjid": "01-701-1034",
+              "test": "MONOLE",
+              "day": -7.0,
+              "x_uln": 4.29
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2014-08-01",
+        "index": 25,
+        "n_subjects": 253,
+        "n_ae": 1153,
+        "n_lb": 57508,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 7,
+        "what_changed": {
+          "n_new_ae": 21,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1287",
+              "term": "RHINORRHOEA",
+              "day": 166.0
+            },
+            {
+              "usubjid": "01-701-1287",
+              "term": "RHINORRHOEA",
+              "day": 166.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "DEPRESSED MOOD",
+              "day": 44.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "DEPRESSED MOOD",
+              "day": 44.0
+            },
+            {
+              "usubjid": "01-704-1010",
+              "term": "VOMITING",
+              "day": 135.0
+            },
+            {
+              "usubjid": "01-704-1010",
+              "term": "DIARRHOEA",
+              "day": 135.0
+            },
+            {
+              "usubjid": "01-704-1010",
+              "term": "EXCORIATION",
+              "day": 136.0
+            },
+            {
+              "usubjid": "01-704-1010",
+              "term": "SKIN LACERATION",
+              "day": 136.0
+            },
+            {
+              "usubjid": "01-704-1010",
+              "term": "ARTHRALGIA",
+              "day": 136.0
+            },
+            {
+              "usubjid": "01-704-1010",
+              "term": "CONTUSION",
+              "day": 136.0
+            },
+            {
+              "usubjid": "01-704-1325",
+              "term": "PRURITUS",
+              "day": 73.0
+            },
+            {
+              "usubjid": "01-713-1073",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 107.0
+            },
+            {
+              "usubjid": "01-713-1269",
+              "term": "RASH",
+              "day": 165.0
+            },
+            {
+              "usubjid": "01-713-1269",
+              "term": "RASH",
+              "day": 165.0
+            },
+            {
+              "usubjid": "01-714-1035",
+              "term": "BRONCHITIS",
+              "day": 93.0
+            }
+          ],
+          "n_new_lab_excursions": 3,
+          "new_lab_excursions": [
+            {
+              "usubjid": "01-701-1034",
+              "test": "BASOLE",
+              "day": 15.0,
+              "x_uln": 12.5
+            },
+            {
+              "usubjid": "01-701-1034",
+              "test": "EOSLE",
+              "day": 15.0,
+              "x_uln": 3.75
+            },
+            {
+              "usubjid": "01-701-1034",
+              "test": "MONOLE",
+              "day": 15.0,
+              "x_uln": 3.57
+            }
+          ],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2014-09-01",
+        "index": 26,
+        "n_subjects": 253,
+        "n_ae": 1159,
+        "n_lb": 58135,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 6,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1034",
+              "term": "APPLICATION SITE PRURITUS",
+              "day": 58.0
+            },
+            {
+              "usubjid": "01-709-1088",
+              "term": "RASH",
+              "day": 113.0
+            },
+            {
+              "usubjid": "01-716-1026",
+              "term": "EAR INFECTION",
+              "day": 136.0
+            },
+            {
+              "usubjid": "01-716-1103",
+              "term": "BLISTER",
+              "day": 151.0
+            },
+            {
+              "usubjid": "01-716-1103",
+              "term": "BLISTER",
+              "day": 151.0
+            },
+            {
+              "usubjid": "01-716-1311",
+              "term": "ULCER",
+              "day": 81.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": [
+            {
+              "site": "709",
+              "kri": "visit_oow_flag",
+              "flag": "low"
+            }
+          ]
+        }
+      },
+      {
+        "cut": "2014-10-01",
+        "index": 27,
+        "n_subjects": 254,
+        "n_ae": 1161,
+        "n_lb": 58719,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 2,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1317",
+              "term": "FATIGUE",
+              "day": 114.0
+            },
+            {
+              "usubjid": "01-716-1177",
+              "term": "ERYTHEMA",
+              "day": -9.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2014-11-01",
+        "index": 28,
+        "n_subjects": 254,
+        "n_ae": 1163,
+        "n_lb": 59031,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 2,
+          "new_ae": [
+            {
+              "usubjid": "01-704-1445",
+              "term": "COMPLETED SUICIDE",
+              "day": 174.0
+            },
+            {
+              "usubjid": "01-709-1312",
+              "term": "ELECTROCARDIOGRAM ST SEGMENT DEPRESSION",
+              "day": 183.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2014-12-01",
+        "index": 29,
+        "n_subjects": 254,
+        "n_ae": 1165,
+        "n_lb": 59163,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 2,
+          "new_ae": [
+            {
+              "usubjid": "01-701-1034",
+              "term": "FATIGUE",
+              "day": 125.0
+            },
+            {
+              "usubjid": "01-701-1317",
+              "term": "DYSPHONIA",
+              "day": 166.0
+            }
+          ],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2015-01-01",
+        "index": 30,
+        "n_subjects": 254,
+        "n_ae": 1165,
+        "n_lb": 59260,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 0,
+          "new_ae": [],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2015-02-01",
+        "index": 31,
+        "n_subjects": 254,
+        "n_ae": 1165,
+        "n_lb": 59290,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 0,
+          "new_ae": [],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2015-03-01",
+        "index": 32,
+        "n_subjects": 254,
+        "n_ae": 1165,
+        "n_lb": 59325,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 0,
+          "new_ae": [],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      },
+      {
+        "cut": "2015-03-05",
+        "index": 33,
+        "n_subjects": 254,
+        "n_ae": 1165,
+        "n_lb": 59355,
+        "n_potential_hys_law": 1,
+        "n_sites_flagged": 8,
+        "what_changed": {
+          "n_new_ae": 0,
+          "new_ae": [],
+          "n_new_lab_excursions": 0,
+          "new_lab_excursions": [],
+          "newly_hy_flagged": [],
+          "newly_flagged_sites": []
+        }
+      }
+    ],
+    "lab_excursion_x_uln_threshold": 3.0
+  },
+  "registry_summary": {
+    "total_studies": 125,
+    "status_phase_counts": {
+      "ACTIVE_NOT_RECRUITING": {
+        "PHASE2": 42,
+        "PHASE1": 39,
+        "PHASE3": 2
+      },
+      "NOT_YET_RECRUITING": {
+        "PHASE1": 5,
+        "PHASE2": 2
+      },
+      "RECRUITING": {
+        "PHASE2": 32,
+        "PHASE1": 28,
+        "PHASE3": 1
+      }
+    },
+    "mesh_categories": {
+      "Neurology": 13,
+      "Oncology": 54,
+      "Metabolic / Endocrine": 6,
+      "No MeSH category": 26,
+      "Immunology": 15,
+      "Hematology": 2,
+      "Ophthalmology": 3,
+      "Urogenital / Renal": 1,
+      "Respiratory": 1,
+      "Other (MeSH present)": 1,
+      "Gastroenterology": 2,
+      "Cardiovascular": 1
+    },
+    "timeline_recruiting_or_active": [
+      {
+        "nct_id": "NCT00781612",
+        "brief_title": "A Safety Extension Study of Trastuzumab Emtansine in Participants Previously Treated With Trastuzumab Emtansine Alone or in Combination With Other Anti-Cancer Therapy in One of the Parent Studies",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2008-10-16",
+        "primary_completion_date": "2027-06-30"
+      },
+      {
+        "nct_id": "NCT02286089",
+        "brief_title": "Safety and Efficacy Study of OpRegen for Treatment of Advanced Dry-Form Age-Related Macular Degeneration",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2015-04-01",
+        "primary_completion_date": "2021-12-31"
+      },
+      {
+        "nct_id": "NCT02568267",
+        "brief_title": "Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2015-11-19",
+        "primary_completion_date": "2027-06-30"
+      },
+      {
+        "nct_id": "NCT02650401",
+        "brief_title": "Study Of Entrectinib (Rxdx-101) in Children and Adolescents With Locally Advanced Or Metastatic Solid Or Primary CNS Tumors And/Or Who Have No Satisfactory Treatment Options",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2016-05-03",
+        "primary_completion_date": "2027-06-30"
+      },
+      {
+        "nct_id": "NCT03006172",
+        "brief_title": "To Evaluate the Safety, Tolerability, and Pharmacokinetics of Inavolisib Single Agent in Participants With Solid Tumors and in Combination With Endocrine and Targeted Therapies in Participants With Breast Cancer",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2016-12-13",
+        "primary_completion_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT03075696",
+        "brief_title": "A Dose Escalation Study of Glofitamab (RO7082859) as a Single Agent and in Combination With Obinutuzumab, Administered After a Fixed, Single Pre-treatment Dose of Obinutuzumab in Participants With Relapsed/Refractory B-cell Non-hodgkin's Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2017-02-21",
+        "primary_completion_date": "2029-03-30"
+      },
+      {
+        "nct_id": "NCT03100149",
+        "brief_title": "A Study to Evaluate the Efficacy of Prasinezumab (RO7046015/PRX002) in Participants With Early Parkinson's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2017-06-27",
+        "primary_completion_date": "2019-11-27"
+      },
+      {
+        "nct_id": "NCT03178552",
+        "brief_title": "A Study to Evaluate the Efficacy and Safety of Multiple Targeted Therapies as Treatments for Participants With Non-Small Cell Lung Cancer (NSCLC)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2",
+          "PHASE3"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2017-09-22",
+        "primary_completion_date": "2027-06-30"
+      },
+      {
+        "nct_id": "NCT03332797",
+        "brief_title": "A Study of GDC-9545 Alone or in Combination With Palbociclib and/or Luteinizing Hormone-Releasing Hormone (LHRH) Agonist in Locally Advanced or Metastatic Estrogen Receptor-Positive Breast Cancer",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2017-11-24",
+        "primary_completion_date": "2027-07-31"
+      },
+      {
+        "nct_id": "NCT03424005",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2018-03-30",
+        "primary_completion_date": "2030-09-30"
+      },
+      {
+        "nct_id": "NCT03448042",
+        "brief_title": "A Study of Runimotamab in Participants With Locally Advanced or Metastatic HER2-Expressing Cancers",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2018-06-06",
+        "primary_completion_date": "2027-04-30"
+      },
+      {
+        "nct_id": "NCT03671018",
+        "brief_title": "A Study to Evaluate the Safety and Efficacy of Mosunetuzumab (BTCT4465A) in Combination With Polatuzumab Vedotin in B-Cell Non-Hodgkin Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2018-09-25",
+        "primary_completion_date": "2024-01-30"
+      },
+      {
+        "nct_id": "NCT03779334",
+        "brief_title": "A Study of Risdiplam in Infants With Genetically Diagnosed and Presymptomatic Spinal Muscular Atrophy",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2019-08-07",
+        "primary_completion_date": "2023-02-20"
+      },
+      {
+        "nct_id": "NCT04077723",
+        "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics and Preliminary Anti-Tumor Activity of Englumafusp Alfa in Combination With Obinutuzumab and in Combination With Glofitamab Following a Pre-Treatment Dose of Obinutuzumab in Participants With Relapsed/Refractory B-Cell Non-Hodgkin's Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2019-08-13",
+        "primary_completion_date": "2026-12-28"
+      },
+      {
+        "nct_id": "NCT04140500",
+        "brief_title": "Dose Escalation Study of a PD1-LAG3 Bispecific Antibody in Patients With Advanced and/or Metastatic Solid Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2019-11-11",
+        "primary_completion_date": "2027-06-30"
+      },
+      {
+        "nct_id": "NCT04075266",
+        "brief_title": "A Study of Ocrelizumab in Children and Adolescents With Relapsing-Remitting Multiple Sclerosis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2020-01-09",
+        "primary_completion_date": "2023-10-05"
+      },
+      {
+        "nct_id": "NCT04191499",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Inavolisib + Palbociclib + Fulvestrant vs Placebo + Palbociclib + Fulvestrant in Participants With PIK3CA-Mutant, Hormone Receptor-Positive, HER2-Negative, Locally Advanced or Metastatic Breast Cancer",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2",
+          "PHASE3"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2020-01-29",
+        "primary_completion_date": "2023-09-29"
+      },
+      {
+        "nct_id": "NCT04449874",
+        "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of GDC-6036 Alone or in Combination in Participants With Advanced or Metastatic Solid Tumors With a KRAS G12C Mutation",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2020-07-29",
+        "primary_completion_date": "2027-12-31"
+      },
+      {
+        "nct_id": "NCT04246086",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Efficacy of Mosunetuzumab + Lenalidomide (+Len), and the Safety, Tolerability, and Pharmacokinetics of SC Versus IV Mosunetuzumab + Len in Participants With Follicular Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2020-08-12",
+        "primary_completion_date": "2030-09-06"
+      },
+      {
+        "nct_id": "NCT05593094",
+        "brief_title": "A Phase 1 Trial of ZN-A-1041 Enteric Capsules or Combination in Participants With Human Epidermal Growth Factor Receptor 2 (HER2)-Positive Advanced Solid Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2020-09-03",
+        "primary_completion_date": "2027-08-31"
+      },
+      {
+        "nct_id": "NCT04524871",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Multiple Immunotherapy-Based Treatment Combinations in Patients With Advanced Liver Cancers (Morpheus-Liver)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2020-11-01",
+        "primary_completion_date": "2027-07-30"
+      },
+      {
+        "nct_id": "NCT04302025",
+        "brief_title": "A Study of Multiple Therapies in Biomarker-selected Participants With Resectable Stages IB-III Non-small Cell Lung Cancer (NSCLC)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2020-11-06",
+        "primary_completion_date": "2026-11-30"
+      },
+      {
+        "nct_id": "NCT04576455",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Giredestrant Compared With Physician's Choice of Endocrine Monotherapy in Participants With Previously Treated Estrogen Receptor-Positive, HER2-Negative Locally Advanced or Metastatic Breast Cancer (acelERA Breast Cancer)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2020-11-27",
+        "primary_completion_date": "2022-02-18"
+      },
+      {
+        "nct_id": "NCT04589845",
+        "brief_title": "Tumor-agnostic Precision Immuno-oncology and Somatic Targeting Rational for You (TAPISTRY) Platform Study",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-01-18",
+        "primary_completion_date": "2032-09-25"
+      },
+      {
+        "nct_id": "NCT04639050",
+        "brief_title": "Brainshuttle AD: A Multiple Ascending Dose Study to Investigate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7126209 Following Intravenous Infusion in Participants With Prodromal or Mild to Moderate Alzheimer's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-03-15",
+        "primary_completion_date": "2027-07-31"
+      },
+      {
+        "nct_id": "NCT04777331",
+        "brief_title": "A Study to Evaluate the Efficacy and Safety of Intravenous Prasinezumab in Participants With Early Parkinson's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-05-05",
+        "primary_completion_date": "2024-09-11"
+      },
+      {
+        "nct_id": "NCT04835805",
+        "brief_title": "A Study to Evaluate the Safety and Activity of Belvarafenib as a Single Agent and in Combination With Either Cobimetinib or Cobimetinib Plus Nivolumab in Patients With NRAS-mutant Advanced Melanoma.",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2021-05-13",
+        "primary_completion_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT04802759",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Participants With Breast Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-06-22",
+        "primary_completion_date": "2029-05-30"
+      },
+      {
+        "nct_id": "NCT04910568",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Activity of Cevostamab in Participants With Relapsed or Refractory Multiple Myeloma",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2021-07-26",
+        "primary_completion_date": "2028-12-21"
+      },
+      {
+        "nct_id": "NCT05704361",
+        "brief_title": "A Study to Investigate the Safety, Tolerability, and Processing by the Body of Intravenous and Subcutaneous RO7121932 Administration in Participants With Multiple Sclerosis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-08-11",
+        "primary_completion_date": "2027-07-08"
+      },
+      {
+        "nct_id": "NCT04774718",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Efficacy of Alectinib in Pediatric Participants With ALK Fusion-Positive Solid or CNS Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-09-14",
+        "primary_completion_date": "2032-02-28"
+      },
+      {
+        "nct_id": "NCT04931342",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Biomarker-Driven Therapies in Patients With Persistent or Recurrent Rare Epithelial Ovarian Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-10-07",
+        "primary_completion_date": "2028-02-28"
+      },
+      {
+        "nct_id": "NCT04929223",
+        "brief_title": "A Study Evaluating the Safety and Efficacy of Targeted Therapies in Subpopulations of Patients With Metastatic Colorectal Cancer (INTRINSIC)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2021-10-22",
+        "primary_completion_date": "2030-08-31"
+      },
+      {
+        "nct_id": "NCT05207670",
+        "brief_title": "A Study Evaluating the Safety, Efficacy, and Pharmacokinetics of Mosunetuzumab Monotherapy in Participants With Select B-Cell Malignancies",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2022-02-01",
+        "primary_completion_date": "2027-07-31"
+      },
+      {
+        "nct_id": "NCT05119569",
+        "brief_title": "A Study to Investigate the Efficacy of Fenebrutinib in Relapsing Multiple Sclerosis (RMS)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-03-01",
+        "primary_completion_date": "2023-03-29"
+      },
+      {
+        "nct_id": "NCT05091424",
+        "brief_title": "A Study Evaluating the Safety, Efficacy, and Pharmacokinetics of Mosunetuzumab and a Combined Regimen of Mosunetuzumab and Venetoclax in Participants With Relapsed or Refractory Chronic Lymphocytic Leukemia",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-03-07",
+        "primary_completion_date": "2031-02-10"
+      },
+      {
+        "nct_id": "NCT05009069",
+        "brief_title": "A Study of Atezolizumab With or Without Tiragolumab Following Neoadjuvant Chemoradiotherapy in Participants With Locally Advanced Rectal Cancer",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-03-18",
+        "primary_completion_date": "2023-11-21"
+      },
+      {
+        "nct_id": "NCT04980222",
+        "brief_title": "A Study to Evaluate the Safety and Efficacy of Glofitamab in Combination With Rituximab (R) Plus Cyclophosphamide, Doxorubicin, Vincristine, and Prednisone (CHOP) in Circulating Tumor (ct)DNA High-Risk Patients With Untreated Diffuse Large B-Cell Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-03-22",
+        "primary_completion_date": "2024-10-24"
+      },
+      {
+        "nct_id": "NCT05039619",
+        "brief_title": "A Study to Evaluate the Efficacy, Safety, and Pharmacokinetics of Obinutuzumab in Adolescents With Active Class III or IV Lupus Nephritis and the Safety and PK of Obinutuzumab in Pediatric Participants",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-05-12",
+        "primary_completion_date": "2028-06-15"
+      },
+      {
+        "nct_id": "NCT05535244",
+        "brief_title": "A Study Evaluating the Efficacy and Safety of Cevostamab in Prior B Cell Maturation Antigen (BCMA)-Exposed Participants With Relapsed/Refractory Multiple Myeloma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-10-17",
+        "primary_completion_date": "2027-02-26"
+      },
+      {
+        "nct_id": "NCT05581004",
+        "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of Enzelkitug as a Single Agent and in Combination With Checkpoint Inhibitor in Participants With Locally Advanced or Metastatic Solid Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2022-10-20",
+        "primary_completion_date": "2028-07-31"
+      },
+      {
+        "nct_id": "NCT05169515",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Efficacy of Mosunetuzumab or Glofitamab in Combination With CC-220 and/or CC-99282 in Participants With B-Cell Non-Hodgkin Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-10-26",
+        "primary_completion_date": "2029-04-30"
+      },
+      {
+        "nct_id": "NCT05533775",
+        "brief_title": "A Study to Evaluate Glofitamab Monotherapy and Glofitamab + Chemoimmunotherapy in Pediatric and Young Adult Participants With Relapsed/Refractory Mature B-Cell Non-Hodgkin Lymphoma",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2022-11-16",
+        "primary_completion_date": "2029-11-30"
+      },
+      {
+        "nct_id": "NCT06847854",
+        "brief_title": "A Study to Investigate the Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of RO7497372 in Participants With Diabetic Macular Edema (DME)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2022-12-08",
+        "primary_completion_date": "2026-11-16"
+      },
+      {
+        "nct_id": "NCT05686551",
+        "brief_title": "GENERATION HD2. A Study to Evaluate the Safety, Biomarkers, and Efficacy of Tominersen Compared With Placebo in Participants With Prodromal and Early Manifest Huntington's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-02-03",
+        "primary_completion_date": "2026-05-14"
+      },
+      {
+        "nct_id": "NCT05646836",
+        "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of XmAb24306 in Combination With Cevostamab in Participants With Relapsed/Refractory Multiple Myeloma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2023-03-21",
+        "primary_completion_date": "2026-11-18"
+      },
+      {
+        "nct_id": "NCT05626114",
+        "brief_title": "A Study to Optimize Subretinal Surgical Delivery and to Evaluate Safety and Activity of Opregen in Participants With Geographic Atrophy Secondary to Age-Related Macular Degeneration (GAlette); Adaptive Optics (AO) Retinal Imaging Substudy in Association With Study GR44251",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2023-03-23",
+        "primary_completion_date": "2031-03-01"
+      },
+      {
+        "nct_id": "NCT05645692",
+        "brief_title": "A Study Evaluating Different Immunotherapies (LAG-3 and PD-1 With or Without TIGIT, Compared to PD-L1 Alone) in Participants With Untreated Locally Advanced Metastatic Urothelial Cancer",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-04-13",
+        "primary_completion_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT05800665",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Activity of RO7656594 In Participants With Advanced or Metastatic Prostate Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2023-05-02",
+        "primary_completion_date": "2027-06-30"
+      },
+      {
+        "nct_id": "NCT05789082",
+        "brief_title": "A Study Evaluating the Safety, Activity, and Pharmacokinetics of Divarasib as a Single Agent or in Combination With Other Anti-Cancer Therapies in Participants With Previously Untreated Advanced or Metastatic Non-Small Cell Lung Cancer With a KRAS G12C Mutation",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-06-20",
+        "primary_completion_date": "2032-01-29"
+      },
+      {
+        "nct_id": "NCT05910528",
+        "brief_title": "Afimkibart (RO7790121) for the Treatment of Moderate to Severe Active Crohn's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-07-24",
+        "primary_completion_date": "2026-12-31"
+      },
+      {
+        "nct_id": "NCT05927571",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Activity of the Combination of Cevostamab and Elranatamab in Participants With Relapsed or Refractory Multiple Myeloma (R/R MM)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2023-08-10",
+        "primary_completion_date": "2027-07-31"
+      },
+      {
+        "nct_id": "NCT05987449",
+        "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Efficacy of NXT007 in Persons With Severe or Moderate Hemophilia A",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-09-21",
+        "primary_completion_date": "2033-12-11"
+      },
+      {
+        "nct_id": "NCT05968326",
+        "brief_title": "A Study of the Efficacy and Safety of Adjuvant Autogene Cevumeran Plus Atezolizumab and mFOLFIRINOX Versus mFOLFIRINOX Alone in Participants With Resected PDAC",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2023-10-18",
+        "primary_completion_date": "2031-01-01"
+      },
+      {
+        "nct_id": "NCT05583617",
+        "brief_title": "A Study Evaluating the Safety and Efficacy of Multiple Treatments in Participants With Multiple Myeloma",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-11-14",
+        "primary_completion_date": "2028-07-31"
+      },
+      {
+        "nct_id": "NCT06031441",
+        "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, and Activity of RO7566802 as a Single Agent and in Combination With Atezolizumab in Participants With Locally Advanced or Metastatic Solid Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2023-11-27",
+        "primary_completion_date": "2028-03-01"
+      },
+      {
+        "nct_id": "NCT06128564",
+        "brief_title": "A Gene Delivery Study to Evaluate the Safety and Expression of Delandistrogene Moxeparvovec in Participants Under the Age of Four With Duchenne Muscular Dystrophy (DMD)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-11-29",
+        "primary_completion_date": "2026-03-04"
+      },
+      {
+        "nct_id": "NCT06496568",
+        "brief_title": "A Study Evaluating Single-agent Inavolisib, Inavolisib Plus Atezolizumab in PIK3CA-Mutated Cancers",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-12-11",
+        "primary_completion_date": "2027-07-21"
+      },
+      {
+        "nct_id": "NCT05835986",
+        "brief_title": "A First-in-Human Study to Investigate the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of RO7507062 in Participants With Systemic Lupus Erythematosus",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2023-12-18",
+        "primary_completion_date": "2027-11-30"
+      },
+      {
+        "nct_id": "NCT06402838",
+        "brief_title": "A Study to Evaluate the Safety and Biomarker Effects of RO7269162 in Participants at Risk for or at the Prodromal Stage of Alzheimer's Disease (AD)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2024-05-02",
+        "primary_completion_date": "2026-11-19"
+      },
+      {
+        "nct_id": "NCT06096779",
+        "brief_title": "A Study Evaluating Atezolizumab, With or Without Bevacizumab, in Participants With Unresectable Hepatocellular Carcinoma and Child-pugh B7 and B8 Cirrhosis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2024-07-15",
+        "primary_completion_date": "2027-07-30"
+      },
+      {
+        "nct_id": "NCT06524375",
+        "brief_title": "A Study to Evaluate the Effect of Venetoclax on Participants Receiving a Covalent Bruton's Tyrosine Kinase Inhibitor (cBTKi) for First-line Chronic Lymphocytic Leukemia (1L CLL) to Achieve Deep Durable Remissions to Allow Off-treatment Period",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2024-08-09",
+        "primary_completion_date": "2026-10-28"
+      },
+      {
+        "nct_id": "NCT06537310",
+        "brief_title": "A Dose-escalation Study of RO7567132 as Single Agent and in Combination With Atezolizumab in Participants With Advanced Solid Tumors",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2024-09-16",
+        "primary_completion_date": "2027-05-12"
+      },
+      {
+        "nct_id": "NCT06619587",
+        "brief_title": "A Study to Evaluate Safety, Pharmacokinetics, and Activity of GDC-7035 as a Single Agent and in Combination in Patients With Advanced Solid Tumors",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2024-11-14",
+        "primary_completion_date": "2028-05-31"
+      },
+      {
+        "nct_id": "NCT06534983",
+        "brief_title": "A Study to Evaluate the Efficacy and Safety of Autogene Cevumeran With Nivolumab Versus Nivolumab Alone in Participants With High-risk Muscle-invasive Urothelial Carcinoma (MIUC)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2024-12-09",
+        "primary_completion_date": "2027-11-10"
+      },
+      {
+        "nct_id": "NCT07667322",
+        "brief_title": "A Study to Investigate the Safety, Tolerability, Pharmacokinetics, Immunogenicity, and Pharmacodynamics of a New Subcutaneous Formulation of Ocrelizumab in Participants With Multiple Sclerosis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2024-12-17",
+        "primary_completion_date": "2026-09-01"
+      },
+      {
+        "nct_id": "NCT06826612",
+        "brief_title": "A Randomized Study of SPK-10001 Gene Therapy in Participants With Huntington's Disease",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-02-21",
+        "primary_completion_date": "2035-01-12"
+      },
+      {
+        "nct_id": "NCT06806033",
+        "brief_title": "Evaluate Optimization of CRS Profile for Glofit Monotherapy and Glofit+GemOx in R/R Aggressive B-NHL",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-03-05",
+        "primary_completion_date": "2029-07-31"
+      },
+      {
+        "nct_id": "NCT06863961",
+        "brief_title": "A Study to Assess the Efficacy and Safety of Afimkibart (RO7790121) in Participants With Moderate to Severe Atopic Dermatitis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-04-01",
+        "primary_completion_date": "2026-07-22"
+      },
+      {
+        "nct_id": "NCT06450639",
+        "brief_title": "A Study to Assess the Efficacy and Safety of Satralizumab in Duchenne Muscular Dystrophy (DMD)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-04-04",
+        "primary_completion_date": "2026-11-18"
+      },
+      {
+        "nct_id": "NCT06903065",
+        "brief_title": "A Study to Assess the Safety, Pharmacokinetics, and Activity of RO7790121 in Participants With Advanced MASH Liver Fibrosis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-04-14",
+        "primary_completion_date": "2026-09-24"
+      },
+      {
+        "nct_id": "NCT06624085",
+        "brief_title": "A Study Evaluating the Safety and Efficacy of Glofitamab + Gemcitabine + Oxaliplatin in U.S. Patients With Relapsed or Refractory Diffuse Large B-Cell Lymphoma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-04-28",
+        "primary_completion_date": "2027-03-22"
+      },
+      {
+        "nct_id": "NCT06884618",
+        "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics (PK) and Preliminary Clinical Activity of RO7673396 in Participants With Advanced Solid Tumors Harboring Rat Sarcoma Viral Oncogene Homolog (RAS) Mutation(s)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-04-30",
+        "primary_completion_date": "2028-08-31"
+      },
+      {
+        "nct_id": "NCT06965413",
+        "brief_title": "A Study to Assess Efficacy, Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of RO7204239 in Combination With Tirzepatide in Participants With Obesity or Overweight With At Least One Weight-related Comorbidity",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-05-05",
+        "primary_completion_date": "2026-09-03"
+      },
+      {
+        "nct_id": "NCT06934044",
+        "brief_title": "A Study Evaluating the Pharmacokinetics, Safety, and Efficacy of Cevostamab in Chinese Participants With Relapsed or Refractory Multiple Myeloma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-05-13",
+        "primary_completion_date": "2028-11-15"
+      },
+      {
+        "nct_id": "NCT06982131",
+        "brief_title": "A Study Investigating the Safety of RO7795081 and the Effect of RO7795081 on How the Body Processes Pitavastatin and Rosuvastatin in Otherwise Healthy Overweight or Obese Adult Participants",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-06-04",
+        "primary_completion_date": "2026-12-07"
+      },
+      {
+        "nct_id": "NCT07112872",
+        "brief_title": "A Study to Compare Different Doses of Tifeglipron (RO7795081) With Placebo or Semaglutide in People With Type 2 Diabetes",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-08-19",
+        "primary_completion_date": "2028-02-05"
+      },
+      {
+        "nct_id": "NCT07054190",
+        "brief_title": "A Study to Test Inavolisib Treatments in Participants With Early-Stage, PIK3CA-Mutated Breast Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-09-09",
+        "primary_completion_date": "2027-07-31"
+      },
+      {
+        "nct_id": "NCT06979336",
+        "brief_title": "A Study to Evaluate the Efficacy, Safety, and Pharmacokinetics (PK) of RO7837195 in Participants With Moderately to Severely Active Ulcerative Colitis (UC)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2025-09-29",
+        "primary_completion_date": "2027-08-25"
+      },
+      {
+        "nct_id": "NCT07137585",
+        "brief_title": "A Study to Evaluate the Effect of RO7204239 on Insulin Sensitivity and Muscle Composition in Participants With Type 2 Diabetes Mellitus (T2DM) and Overweight or Obesity",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-09-30",
+        "primary_completion_date": "2026-09-14"
+      },
+      {
+        "nct_id": "NCT07161258",
+        "brief_title": "A Pharmacokinetics (PK), Pharmacodynamics (PD), Safety and Tolerability Study of Fenebrutinib in Children and Adolescents With Relapsing Multiple Sclerosis (RMS)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-10-06",
+        "primary_completion_date": "2027-06-08"
+      },
+      {
+        "nct_id": "NCT07100106",
+        "brief_title": "A Study to Evaluate the Effect of GDC-4198 Alone and in Combination With Giredestrant Versus Abemaciclib and Giredestrant in Participants With Locally Advanced or Metastatic Estrogen Receptor-Positive (ER+), Human Epidermal Growth Factor Receptor-Negative (HER2-) Breast Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2025-10-07",
+        "primary_completion_date": "2028-08-31"
+      },
+      {
+        "nct_id": "NCT07008378",
+        "brief_title": "A Study to Evaluate the Safety, Tolerability, Cellular Kinetics, and Pharmacodynamics of P-CD19CD20-ALLO1 in Participants With Multiple Sclerosis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2025-10-15",
+        "primary_completion_date": "2032-08-31"
+      },
+      {
+        "nct_id": "NCT07074886",
+        "brief_title": "A Study to Assess Bioequivalence of Two Subcutaneous (SC) Formulations of Ocrelizumab in Participants With Multiple Sclerosis (MS)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-11-13",
+        "primary_completion_date": "2026-09-17"
+      },
+      {
+        "nct_id": "NCT07246941",
+        "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RG6496 in Huntington's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-11-19",
+        "primary_completion_date": "2026-12-01"
+      },
+      {
+        "nct_id": "NCT07137598",
+        "brief_title": "A Study to Assess the Efficacy and Safety of RO7790121 in Participants With Moderate to Severe Rheumatoid Arthritis Who Have Not Responded to or Who Cannot Tolerate Tumor Necrosis Factor (TNF) and/or Janus Kinase (JAK Inhibitors)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-12-05",
+        "primary_completion_date": "2027-04-17"
+      },
+      {
+        "nct_id": "NCT07271693",
+        "brief_title": "A Study to Determine the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7806881 in Healthy Participants",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2025-12-22",
+        "primary_completion_date": "2027-05-11"
+      },
+      {
+        "nct_id": "NCT07223697",
+        "brief_title": "A Long Term Extension Study to Evaluate the Safety and Efficacy of Afimkibart (RO7790121) in Participants With Atopic Dermatitis",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-01-08",
+        "primary_completion_date": "2033-03-01"
+      },
+      {
+        "nct_id": "NCT07234942",
+        "brief_title": "A Study to Investigate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7812653 in Participants With Early Symptomatic Alzheimer's Disease (eAD)",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-01-27",
+        "primary_completion_date": "2027-03-31"
+      },
+      {
+        "nct_id": "NCT07368998",
+        "brief_title": "To Study the Effect of Inavolisib in Combination With Fulvestrant in Participants With Breast Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-02-18",
+        "primary_completion_date": "2028-10-31"
+      },
+      {
+        "nct_id": "NCT07282574",
+        "brief_title": "A Study to Evaluate the Safety, Pharmacokinetics, Pharmacodynamics, and Efficacy of RO7268489 as Add-on Therapy to Ocrelizumab, in Participants With Progressive Forms of Multiple Sclerosis (MS)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-03-10",
+        "primary_completion_date": "2028-05-30"
+      },
+      {
+        "nct_id": "NCT07287150",
+        "brief_title": "A Study to Test Inavolisib Treatment in Participants With Metastatic Castration-Resistant Prostate Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-03-11",
+        "primary_completion_date": "2028-03-31"
+      },
+      {
+        "nct_id": "NCT07342114",
+        "brief_title": "A Clinical Study to Evaluate the Effects of RO7875913 in Healthy Participants and of RO7875913 With Cevostamab in Participants With Relapsed/Refractory Multiple Myeloma",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-03-11",
+        "primary_completion_date": "2030-06-17"
+      },
+      {
+        "nct_id": "NCT07499050",
+        "brief_title": "A Study of Multiple Doses of Orally Administered RO7795081 in Otherwise Healthy Chinese Adult Participants With Obesity or Overweight",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-03-30",
+        "primary_completion_date": "2027-01-09"
+      },
+      {
+        "nct_id": "NCT07495813",
+        "brief_title": "A Study to See How RO7763505 Works and How Safe it is When Given to Healthy People and People With Stable Heart Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-03-31",
+        "primary_completion_date": "2026-10-30"
+      },
+      {
+        "nct_id": "NCT07405801",
+        "brief_title": "A Phase II Study Evaluating the Efficacy and Safety of Inavolisib Plus Ribociclib Plus Fulvestrant Versus Placebo Plus Ribociclib Plus Fulvestrant in Participants With Advanced Breast Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-04-07",
+        "primary_completion_date": "2028-12-19"
+      },
+      {
+        "nct_id": "NCT07425522",
+        "brief_title": "A Study to Evaluate the Safety, Tolerability, Pharmacodynamics, and Pharmacokinetics of RO7823653 in Participants With Diabetic Macular Edema (DME)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-04-21",
+        "primary_completion_date": "2028-11-17"
+      },
+      {
+        "nct_id": "NCT07567846",
+        "brief_title": "A Study Evaluating the Safety, Pharmacokinetics, and Preliminary Activity of GDC-1261 in Participants With Advanced or Metastatic Prostate Cancer",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-04-29",
+        "primary_completion_date": "2027-11-30"
+      },
+      {
+        "nct_id": "NCT07413939",
+        "brief_title": "RO7771950 Versus Tucatinib in Combination With Trastuzumab and Capecitabine in People With Locally Advanced or Metastatic Breast Cancer That is Human Epidermal Growth Factor Receptor 2 (HER2)-Positive",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2",
+          "PHASE3"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-05-21",
+        "primary_completion_date": "2029-05-01"
+      },
+      {
+        "nct_id": "NCT07598396",
+        "brief_title": "A Study to Evaluate Mosunetuzumab in Participants With Systemic Lupus Erythematosus With or Without Active Lupus Nephritis",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-05-25",
+        "primary_completion_date": "2028-08-11"
+      },
+      {
+        "nct_id": "NCT07620392",
+        "brief_title": "An Extension Study to Assess Long-Term Safety and Efficacy of Afimkibart in Participants With Rheumatoid Arthritis",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-06-03",
+        "primary_completion_date": "2033-07-08"
+      },
+      {
+        "nct_id": "NCT07448038",
+        "brief_title": "A Study to Evaluate the Efficacy, Safety, Pharmacodynamics (PD), and Pharmacokinetics (PK) of Selnoflast in Reducing Vascular Inflammation in Participants With Atherosclerosis at Risk for Major Adverse Cardiac Events",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-06-05",
+        "primary_completion_date": "2028-01-31"
+      },
+      {
+        "nct_id": "NCT07588100",
+        "brief_title": "A Study to Investigate the Safety, Tolerability, and Pharmacokinetics of RO7663498 Following Intravitreal Administration in Participants With Diabetic Retinopathy",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-06-18",
+        "primary_completion_date": "2028-01-20"
+      },
+      {
+        "nct_id": "NCT07558915",
+        "brief_title": "A Study to Evaluate RO7851624 in Participants With Relapsed/Refractory Multiple Myeloma (RRMM)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-06-23",
+        "primary_completion_date": "2030-07-01"
+      },
+      {
+        "nct_id": "NCT07665723",
+        "brief_title": "An Early-Stage Study in Multiple Clinics of How Afimkibart May Affect the Body's Processing of Medicines That Rely on Cytochrome P450 Enzymes in Participants With Ulcerative Colitis",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-06-29",
+        "primary_completion_date": "2027-07-31"
+      },
+      {
+        "nct_id": "NCT07626515",
+        "brief_title": "A Study to Evaluate Safety, Tolerability, and Pharmacokinetics of Enicepatide in Generally Healthy Adult Chinese Participants",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-07-02",
+        "primary_completion_date": "2027-04-08"
+      },
+      {
+        "nct_id": "NCT07797478",
+        "brief_title": "A Study of RO7890597 in Healthy Adult Volunteers",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-08-28",
+        "primary_completion_date": "2027-06-08"
+      },
+      {
+        "nct_id": "NCT07226206",
+        "brief_title": "A Gene Therapy Study of SPK-8011QQ in Adults With Severe or Moderately Severe Hemophilia A",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-09-08",
+        "primary_completion_date": "2032-04-30"
+      },
+      {
+        "nct_id": "NCT07741604",
+        "brief_title": "A Study Investigating the Safety of RO7795081 and How the Body Processes RO7795081 in People With Normal or Decreased Kidney Functions",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-09-09",
+        "primary_completion_date": "2028-02-01"
+      },
+      {
+        "nct_id": "NCT07416552",
+        "brief_title": "A Study to Investigate CEA-PRIT 2.0 in Participants With Metastatic Colorectal Cancer (mCRC)",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-10-13",
+        "primary_completion_date": "2034-02-12"
+      },
+      {
+        "nct_id": "NCT07822334",
+        "brief_title": "A Study of RO7830698 in Healthy Participants and Participants With Chronic Obstructive Pulmonary Disease",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-10-28",
+        "primary_completion_date": "2028-10-11"
+      },
+      {
+        "nct_id": "NCT07503340",
+        "brief_title": "A Study to Evaluate Pharmacokinetics, Safety, Tolerability, Immunogenicity and Pharmacodynamic Effects of Subcutaneous Ocrelizumab Administration in Children and Adolescents With Relapsing-remitting Multiple Sclerosis (RRMS)",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-10-30",
+        "primary_completion_date": "2029-08-31"
+      },
+      {
+        "nct_id": "NCT07629583",
+        "brief_title": "To Evaluate the Effects of Cevostamab in Participants With Systemic Lupus Erythematosus With or Without Active Lupus Nephritis",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-11-02",
+        "primary_completion_date": "2030-03-29"
+      },
+      {
+        "nct_id": "NCT07825064",
+        "brief_title": "Cevostamab in Combination With Pomalidomide and Dexamethasone After BCMA- Targeting CAR T-Cell Therapy in Participants With Previously Treated Multiple Myeloma",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-03",
+        "primary_completion_date": "2029-04-13"
+      },
+      {
+        "nct_id": "NCT07835243",
+        "brief_title": "A Study to Assess the Effect of Subcutaneous Injection Site on the Pharmacokinetics of Pegozafermin in Healthy Participants",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-05",
+        "primary_completion_date": "2027-03-02"
+      },
+      {
+        "nct_id": "NCT07781657",
+        "brief_title": "Study to Test Effects and Safety of RO7568282 in Early Symptomatic Alzheimer's Disease",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-10",
+        "primary_completion_date": "2029-11-01"
+      },
+      {
+        "nct_id": "NCT07883577",
+        "brief_title": "A Study of RO7821657 in Participants With Solid Tumors",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-10",
+        "primary_completion_date": "2030-05-31"
+      },
+      {
+        "nct_id": "NCT07781644",
+        "brief_title": "Study to Test Effects and Safety of RO7568282 in Early Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-11",
+        "primary_completion_date": "2028-12-15"
+      },
+      {
+        "nct_id": "NCT07589686",
+        "brief_title": "A Dose-Finding Study of Petrelintide With Enicepatide (RO7795068) in Adults With Obesity or Overweight",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-30",
+        "primary_completion_date": "2027-11-12"
+      },
+      {
+        "nct_id": "NCT07748208",
+        "brief_title": "A Study Evaluating the Safety of Inavolisib and Fulvestrant With or Without Palbociclib in Participants With Advanced Breast Cancer (ABC) and Type 2 Diabetes",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-30",
+        "primary_completion_date": "2029-06-15"
+      },
+      {
+        "nct_id": "NCT07859085",
+        "brief_title": "A Study to Evaluate the Safety and Activity of GDC-7035 With Anti-Cancer Therapies in Participants With KRAS G12D-Mutated Unresectable Advanced or Metastatic Colorectal Cancer or Pancreatic Ductal Adenocarcinoma",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-11-30",
+        "primary_completion_date": "2029-03-30"
+      },
+      {
+        "nct_id": "NCT07749157",
+        "brief_title": "A Study of Subcutaneously Administered RO7845860 in Participants With Relapsing Multiple Sclerosis",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-12-14",
+        "primary_completion_date": "2031-02-28"
+      },
+      {
+        "nct_id": "NCT07867262",
+        "brief_title": "A Study to Evaluate the Effects of GDC-4198 in Combination With Letrozole, Fulvestrant, or Giredestrant in Participants With Locally Advanced or Metastatic Hormone Receptor-Positive, HER2-Negatve Breast Cancer",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2026-12-15",
+        "primary_completion_date": "2030-08-15"
+      },
+      {
+        "nct_id": "NCT07905924",
+        "brief_title": "A Study to Evaluate the Safety and Effectiveness of Different Doses of RO7836748 Alone or in Combination With Other Cancer Therapies in People With Solid Tumors With a Rat Sarcoma Viral Oncogene Homolog Glycine 12 Valine (RAS G12V) Mutation",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE1"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-12-31",
+        "primary_completion_date": "2032-03-30"
+      },
+      {
+        "nct_id": "NCT07851259",
+        "brief_title": "A Study to Assess the Efficacy and Safety of RO7965032 in Participants With Geographic Atrophy Secondary to Age-Related Macular Degeneration",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Genentech, Inc.",
+        "start_date": "2027-01-08",
+        "primary_completion_date": "2030-08-21"
+      }
+    ],
+    "fetched_at_utc": "2026-11-17T10:46:18.591118+00:00",
+    "source_url": "https://clinicaltrials.gov/api/v2/studies",
+    "lead_sponsors_queried": [
+      "Hoffmann-La Roche",
+      "Genentech"
+    ],
+    "per_sponsor_counts": {
+      "Hoffmann-La Roche": 92,
+      "Genentech": 33
+    },
+    "note": "Public ClinicalTrials.gov registry records as of the fetch time above. This reflects only what sponsors have posted to the public registry -- it is not, and does not represent, Roche's or Genentech's internal development pipeline."
   }
 };
