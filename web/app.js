@@ -256,11 +256,14 @@
       clear(container);
       var width = widthOf(container);
       var side = Math.min(width, 560);
-      // Label anchor point for the protagonist, clear of both reference
-      // lines (x < 3x ULN threshold, comfortably away from the y = 2x ULN
-      // line too) and clear of the rest of the scatter in this dataset.
-      var leaderLine = mine.map(function (d) {
-        return { x1: d.peak_transaminase_xuln, y1: d.peak_bili_xuln, x2: 0.3, y2: 4.3 };
+      // Label sits just left of the gold point, at the same height, ending
+      // at x=2.6 -- short of the 3x ULN rule at x=3 -- so it never crosses
+      // that line regardless of chart width. No connecting line needed: a
+      // short gap at the same y as the dot, in a color used nowhere else
+      // on this chart, reads as attached without one.
+      var LABEL_X = 2.6;
+      var labelPoint = mine.map(function (d) {
+        return { x: LABEL_X, y: d.peak_bili_xuln, usubjid: d.usubjid };
       });
       var plot = Plot.plot({
         width: width,
@@ -281,20 +284,9 @@
           }),
           Plot.dot(others, { x: "peak_transaminase_xuln", y: "peak_bili_xuln", r: 4, fill: COLORS.muted, fillOpacity: 0.55, stroke: "none" }),
           Plot.dot(mine, { x: "peak_transaminase_xuln", y: "peak_bili_xuln", r: 8, fill: COLORS.goldFill, stroke: COLORS.gold, strokeWidth: 2 }),
-          // The protagonist's dot sits right where the 3x ULN reference
-          // line is (both are near the top-right corner of the data), so a
-          // label placed close to the dot runs straight through that line
-          // regardless of which side it grows toward. Instead, park the
-          // label in the empty lower-left-of-threshold area with a short
-          // leader line back to the actual dot.
-          Plot.link(leaderLine, { x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: COLORS.gold, strokeWidth: 1 }),
-          Plot.dot(leaderLine, { x: "x2", y: "y2", r: 2, fill: COLORS.gold }),
-          Plot.text(leaderLine, {
-            x: "x2", y: "y2", text: function () { return "Subject " + mine[0].usubjid; },
-            // below the anchor dot, not back along the line's own
-            // approach direction (which runs up-and-right from here) --
-            // otherwise the leader line draws straight through the text
-            dy: 16, textAnchor: "middle", fontSize: 11.5, fontWeight: 700, fill: COLORS.gold
+          Plot.text(labelPoint, {
+            x: "x", y: "y", text: function (d) { return "Subject " + d.usubjid; },
+            dx: -2, textAnchor: "end", fontSize: 11.5, fontWeight: 700, fill: COLORS.gold
           }),
           Plot.tip(all, Plot.pointer({
             x: "peak_transaminase_xuln", y: "peak_bili_xuln",
@@ -437,9 +429,17 @@
         var bucket = 0;
         var collides;
         do {
-          collides = placed.some(function (p) {
-            return p.bucket === bucket && Math.abs(p.pxX - px(d.n)) < 34 && Math.abs(p.pxY - py(d.rate)) < 22;
-          });
+          var labelY = py(d.rate) - 10 - bucket * 14;
+          collides =
+            placed.some(function (p) {
+              return p.bucket === bucket && Math.abs(p.pxX - px(d.n)) < 34 && Math.abs(p.pxY - py(d.rate)) < 22;
+            }) ||
+            // also dodge away from any OTHER site's plain dot, flagged or
+            // not -- a label floating next to an unrelated grey dot reads
+            // as if it belongs to that dot too
+            sites.some(function (s) {
+              return s !== d && Math.abs(px(s.n) - px(d.n)) < 16 && Math.abs(py(s.rate) - labelY) < 12;
+            });
           if (collides) bucket++;
         } while (collides && bucket < 6);
         d._labelBucket = bucket;
