@@ -16,6 +16,8 @@ from __future__ import annotations
 import math
 from typing import Optional
 
+import pandas as pd
+
 
 def x_uln(value: Optional[float], uln: Optional[float]) -> Optional[float]:
     """Return value / uln, or None if either input is missing/non-positive.
@@ -47,3 +49,27 @@ def peak_x_uln(records: list[tuple[Optional[float], Optional[float]]]) -> Option
     if not ratios:
         return None
     return max(ratios)
+
+
+def peak_x_uln_by_test(lb: pd.DataFrame, subjects: list, tests: list[str]) -> list[dict]:
+    """Peak x ULN per subject per lab test code -- the same `peak_x_uln`
+    arithmetic mdrlens.hyslaw.build_liver_profiles uses for ALT/AST/BILI,
+    generalized to any list of LBTESTCD values.
+
+    This is the one reusable primitive mdrlens.second_study plugs a
+    different SDTM study's LB (laboratory test results) domain into: a
+    study whose LB domain doesn't carry one of `tests` (e.g. no BILI
+    draws at all) simply yields no rows for that test, never a fabricated
+    value. See mdrlens.studyconfig.StudyConfig.liver_panel_tests for how a
+    study declares which tests it actually ran.
+    """
+    out = []
+    for usubjid in sorted(set(subjects)):
+        sub = lb[lb["USUBJID"] == usubjid]
+        for test in tests:
+            test_rows = sub[sub["LBTESTCD"] == test]
+            pairs = list(zip(test_rows["LBSTRESN"], test_rows["LBSTNRHI"]))
+            peak = peak_x_uln(pairs)
+            if peak is not None:
+                out.append({"usubjid": usubjid, "test": test, "peak_x_uln": round(peak, 4)})
+    return out

@@ -1,0 +1,24 @@
+{
+  "study_key": "metabolic_demo",
+  "display_name": "pharmaversesdtm metabolic-panel subset",
+  "source_repo": "https://github.com/pharmaverse/pharmaversesdtm",
+  "source_commit": "7ec53ea88dfe1c168f9efbef59233c4426813b89",
+  "license": "Apache-2.0",
+  "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject.",
+  "domains": [
+    {
+      "domain": "dm",
+      "file_stem": "dm_metabolic",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/7ec53ea88dfe1c168f9efbef59233c4426813b89/data/dm_metabolic.rda",
+      "bytes": 1106,
+      "sha256": "66aeb8561a5220689fc204009957a17c94a131ce3776e38f78bda85f704a4500"
+    },
+    {
+      "domain": "lb",
+      "file_stem": "lb_metabolic",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/7ec53ea88dfe1c168f9efbef59233c4426813b89/data/lb_metabolic.rda",
+      "bytes": 6356,
+      "sha256": "572c16de6838208c08493dda19780ac6839741b28582b86d5fc10fe9e80b7020"
+    }
+  ]
+}

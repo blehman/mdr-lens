@@ -1,6 +1,8 @@
 import math
 
-from mdrlens.uln import peak_x_uln, x_uln
+import pandas as pd
+
+from mdrlens.uln import peak_x_uln, peak_x_uln_by_test, x_uln
 
 
 def test_x_uln_basic():
@@ -57,3 +59,55 @@ def test_hand_checked_subject_01_705_1186_bili():
         (71.82, 21.0),
     ]
     assert math.isclose(peak_x_uln(records), 5.944285714285714)
+
+
+# --- peak_x_uln_by_test: the reusable primitive mdrlens.second_study plugs
+# a different study's LB domain into, generalized from the ALT/AST/BILI
+# triple above to an arbitrary list of LBTESTCD values ---
+
+
+def test_peak_x_uln_by_test_picks_peak_per_subject_per_test():
+    lb = pd.DataFrame(
+        [
+            {"USUBJID": "S1", "LBTESTCD": "AST", "LBSTRESN": 54.0, "LBSTNRHI": 34.0},
+            {"USUBJID": "S1", "LBTESTCD": "AST", "LBSTRESN": 135.0, "LBSTNRHI": 34.0},
+            {"USUBJID": "S1", "LBTESTCD": "ALP", "LBSTRESN": 100.0, "LBSTNRHI": 115.0},
+        ]
+    )
+    rows = peak_x_uln_by_test(lb, ["S1"], ["AST", "ALP"])
+    by_test = {r["test"]: r["peak_x_uln"] for r in rows}
+    # peak_x_uln_by_test rounds to 4 decimal places for the derived JSON
+    # (see its docstring); compare against the same rounding, not raw floats.
+    assert by_test["AST"] == round(135.0 / 34.0, 4)
+    assert by_test["ALP"] == round(100.0 / 115.0, 4)
+
+
+def test_peak_x_uln_by_test_omits_rows_for_a_test_never_run():
+    """A study whose LB domain never ran one of `tests` (e.g. no BILI draws
+    at all, like the second-study metabolic subset) yields no row for that
+    test -- never a fabricated zero or null row."""
+    lb = pd.DataFrame([{"USUBJID": "S1", "LBTESTCD": "AST", "LBSTRESN": 54.0, "LBSTNRHI": 34.0}])
+    rows = peak_x_uln_by_test(lb, ["S1"], ["AST", "BILI"])
+    assert {r["test"] for r in rows} == {"AST"}
+
+
+def test_peak_x_uln_by_test_covers_multiple_subjects_independently():
+    lb = pd.DataFrame(
+        [
+            {"USUBJID": "S1", "LBTESTCD": "AST", "LBSTRESN": 68.0, "LBSTNRHI": 34.0},
+            {"USUBJID": "S2", "LBTESTCD": "AST", "LBSTRESN": 34.0, "LBSTNRHI": 34.0},
+        ]
+    )
+    rows = peak_x_uln_by_test(lb, ["S1", "S2"], ["AST"])
+    by_subject = {r["usubjid"]: r["peak_x_uln"] for r in rows}
+    assert by_subject == {"S1": 2.0, "S2": 1.0}
+
+
+def test_hand_checked_against_second_study_metabolic_subject_01_701_1015_ast():
+    """Hand-checked against the real pharmaversesdtm metabolic subset
+    (data/raw/second_study/lb_metabolic.rda, same pinned commit as
+    scripts/fetch_data.py): subject 01-701-1015's single AST draw, 40 U/L
+    against a 34 U/L site ULN."""
+    lb = pd.DataFrame([{"USUBJID": "01-701-1015", "LBTESTCD": "AST", "LBSTRESN": 40.0, "LBSTNRHI": 34.0}])
+    rows = peak_x_uln_by_test(lb, ["01-701-1015"], ["AST"])
+    assert rows[0]["peak_x_uln"] == round(40.0 / 34.0, 4)

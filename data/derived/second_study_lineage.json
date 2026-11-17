@@ -1,0 +1,43 @@
+[
+  {
+    "metric_id": "metabolic_demo.summary",
+    "label": "Second-study demo summary (pharmaversesdtm metabolic-panel subset)",
+    "page_section": "template",
+    "domains": [
+      "dm",
+      "lb"
+    ],
+    "variables": [
+      "USUBJID",
+      "SITEID"
+    ],
+    "join": "DM.USUBJID is this study's primary key, same as the primary study's lineage entries.",
+    "notes": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject.",
+    "source_kinds": [
+      "CRF (site-entered)",
+      "non-CRF (central-lab feed)"
+    ]
+  },
+  {
+    "metric_id": "metabolic_demo.labs",
+    "label": "Peak x ULN by liver-panel test (AST, ALP, GGT)",
+    "page_section": "template",
+    "domains": [
+      "lb",
+      "dm"
+    ],
+    "variables": [
+      "USUBJID",
+      "LBTESTCD",
+      "LBSTRESN",
+      "LBSTNRHI",
+      "SITEID"
+    ],
+    "join": "LB.USUBJID -> DM.USUBJID to attach SITEID, same join shape as the primary study's eDISH entry -- computed by the identical mdrlens.uln.peak_x_uln_by_test primitive.",
+    "notes": "",
+    "source_kinds": [
+      "non-CRF (central-lab feed)",
+      "CRF (site-entered)"
+    ]
+  }
+]
