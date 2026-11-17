@@ -101,10 +101,28 @@ def test_new_ae_counts_sum_to_the_final_total():
 
 
 def test_current_cut_index_recomputes_independently(si):
+    """B2 fix: the auto-selected 'current' cut only cycles over the window
+    from the 25% enrollment milestone (cycle_start_index) through the last
+    cut (cycle_length cuts total) -- recomputed here from scratch, with no
+    shared helper from build.py beyond the generic current_cut_index."""
     run_date = dt.date.fromisoformat(si["run_date"])
-    independent_idx = current_cut_index(si["n_cuts"], run_date)
+    independent_cycle_idx = current_cut_index(si["cycle_length"], run_date)
+    independent_idx = si["cycle_start_index"] + independent_cycle_idx
     assert independent_idx == si["current_cut_index"]
     assert si["per_cut"][independent_idx]["cut"] == si["current_cut"]
+
+
+def test_current_cut_index_never_before_cycle_start(si):
+    """The auto-selected 'current' cut index must never be inside the
+    pre-25%-milestone window (cut 1 through cycle_start_index - 1)."""
+    assert si["current_cut_index"] >= si["cycle_start_index"]
+
+
+def test_current_cut_is_not_empty(si):
+    """B2 blocker: today's 'current' cut must not be the near-empty cut
+    right at First Patient In -- it must show real, non-zero enrollment."""
+    current = si["per_cut"][si["current_cut_index"]]
+    assert current["n_subjects"] > 0
 
 
 def test_review_meeting_cuts_reach_full_enrollment(si):

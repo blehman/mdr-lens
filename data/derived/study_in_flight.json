@@ -1,13 +1,15 @@
 {
-  "cycle_epoch": "2026-11-17",
+  "cycle_epoch": "2026-11-12",
   "run_date": "2026-11-17",
-  "last_refresh_utc": "2026-11-17T10:47:34.971872+00:00",
+  "last_refresh_utc": "2026-11-17T17:37:12.009695+00:00",
   "first_patient_in": "2012-07-09",
   "replay_window_end": "2015-03-05",
   "n_cuts": 34,
-  "current_cut_index": 0,
-  "current_cut": "2012-07-01",
-  "cycle_restarted": true,
+  "cycle_start_index": 7,
+  "cycle_length": 27,
+  "current_cut_index": 12,
+  "current_cut": "2013-07-01",
+  "cycle_restarted": false,
   "enrollment_curve": [
     {
       "cut": "2012-07-01",

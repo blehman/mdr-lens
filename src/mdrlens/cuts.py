@@ -9,8 +9,8 @@ safety data review committee meetings -- this module replays that
 finished study AS IF it were still enrolling: each monthly cut includes
 only the records dated on or before that cut's date, exactly as a live
 extract would have looked that month. Every screen built from this module
-says, on screen, that it is a completed public study replayed by data
-cut -- never a live study.
+labels itself plainly as a simulator built on one completed public study,
+replayed by data cut.
 
 Cut dates are derived straight from the SDTM dates actually present in the
 data: the earliest DM.RFSTDTC (reference start date) across all subjects
@@ -20,9 +20,16 @@ fall on the first of each month, FPI's month through the end month,
 inclusive.
 
 The "current" cut advances one step per day and cycles forever once the
-last cut is reached (CYCLE_EPOCH is cut index 0; shown on screen as the
-cycle's start date, per PA direction 11-17 -- no daily commit marks this,
-it is recomputed from the clock at build/render time).
+cycling window's last cut is reached. Per PA direction 2026-11-17 (blocker
+2): the cycling window does NOT start at cut 1 (First Patient In, with zero
+or near-zero subjects enrolled) -- it starts at the cut where cumulative
+enrollment first reaches the 25% milestone (see cycle_window_start_index
+below), so a first-time visitor never lands on an almost-empty cut. The
+full cut list (cut 1 through the last cut) is still reachable one at a time
+via the stepper; only the auto-selected "current" cut is restricted to the
+25%-to-end window. CYCLE_EPOCH is index 0 of THAT cycling window (shown on
+screen as "Cycle started") -- no daily commit marks this, it is recomputed
+from the clock at build/render time.
 """
 
 from __future__ import annotations
@@ -32,10 +39,13 @@ from dataclasses import dataclass
 
 import pandas as pd
 
-# Cut index 0 of the deterministic cycle. Fixed, not "today", so the cycle
-# is reproducible by anyone re-running this on any later date -- advancing
-# one cut per calendar day from this date, wrapping after the last cut.
-CYCLE_EPOCH = dt.date(2026, 11, 17)
+# Index 0 of the deterministic cycling window (see cycle_window_start_index),
+# not index 0 of the full cut list. Fixed, not "today", so the cycle is
+# reproducible by anyone re-running this on any later date -- advancing one
+# cut per calendar day from this date, wrapping after the window's last cut.
+# Chosen (PA direction 2026-11-17, blocker 2) so that the run date of
+# 2026-11-17 itself lands on the 50% enrollment-milestone cut.
+CYCLE_EPOCH = dt.date(2026, 11, 12)
 
 REVIEW_MEETING_THRESHOLDS = (0.25, 0.50, 0.75, 1.00)
 
@@ -179,6 +189,25 @@ def review_meeting_cuts(enrollment: list[dict], thresholds=REVIEW_MEETING_THRESH
                     seen_cuts.add(row["cut"])
                 break
     return picked
+
+
+def cycle_window_start_index(cuts: list[dt.date], reviews: list[dict], start_threshold: float = 0.25) -> int:
+    """Index into `cuts` where the deterministic "current cut" cycling
+    window begins (PA direction 2026-11-17, blocker 2): the first cut where
+    cumulative enrollment reaches `start_threshold` of final enrollment --
+    one of the thresholds in `reviews` (see review_meeting_cuts). This
+    keeps the auto-selected "current" cut from ever landing before the
+    study has meaningfully enrolled (cut 1 is First Patient In, with little
+    to no one enrolled yet). Falls back to 0 (the very first cut, i.e. no
+    restriction) if no review meeting at that threshold exists -- e.g. an
+    empty or single-cut study where cycle_window_start_index is moot.
+    """
+    for r in reviews:
+        if r["threshold"] == start_threshold:
+            for i, c in enumerate(cuts):
+                if c.isoformat() == r["cut"]:
+                    return i
+    return 0
 
 
 @dataclass

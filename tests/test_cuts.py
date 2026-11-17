@@ -13,6 +13,7 @@ import pytest
 from mdrlens.cuts import (
     build_cut_calendar,
     current_cut_index,
+    cycle_window_start_index,
     diff_ae,
     diff_hy_flags,
     diff_lab_excursions,
@@ -139,6 +140,24 @@ def test_review_meeting_cuts_hits_each_threshold_once():
     thresholds_seen = [r["threshold"] for r in reviews]
     assert thresholds_seen == sorted(thresholds_seen)
     assert reviews[-1]["cumulative_subjects"] == 3  # 100% threshold cut reaches full enrollment
+
+
+def test_cycle_window_start_index_finds_25pct_milestone_cut():
+    """B2 fix: the cycling window for the auto-selected 'current' cut
+    starts at the 25% enrollment milestone, not cut 1 (First Patient In,
+    near-zero enrollment)."""
+    cuts = [dt.date(2020, 1, 1), dt.date(2020, 3, 1), dt.date(2020, 6, 1), dt.date(2020, 9, 1)]
+    curve = enrollment_curve(_dm(), cuts)
+    reviews = review_meeting_cuts(curve)
+    idx = cycle_window_start_index(cuts, reviews)
+    assert cuts[idx].isoformat() == reviews[0]["cut"]
+    assert reviews[0]["threshold"] == 0.25
+    assert idx > 0  # not cut 1 -- the 25% milestone is strictly after First Patient In here
+
+
+def test_cycle_window_start_index_falls_back_to_zero_with_no_reviews():
+    cuts = [dt.date(2020, 1, 1)]
+    assert cycle_window_start_index(cuts, []) == 0
 
 
 def test_diff_ae_finds_only_new_keys():

@@ -22,6 +22,7 @@ from .cuts import (
     LAB_EXCURSION_X_ULN,
     build_cut_calendar,
     current_cut_index,
+    cycle_window_start_index,
     diff_ae,
     diff_hy_flags,
     diff_lab_excursions,
@@ -260,22 +261,31 @@ def build_study_in_flight(
     ds: pd.DataFrame,
     run_date: dt.date | None = None,
 ) -> dict:
-    """The "study in flight" replay: this completed public study (see
+    """The "live study simulator": this completed public study (see
     README), replayed by deterministic monthly data cuts to show the kind
     of screen a Real-Time Visual Analytics dashboard provides -- advancing
     to First Patient In, cohort-style milestones, and a "what changed
-    since the last cut" view. Never presented on screen as a live study;
-    every screen built from this says plainly it replays a completed
-    public study by data cut.
+    since the last cut" view. Labeled on screen plainly as a simulator
+    built on one completed public study, replayed by data cut.
+
+    Per PA direction 2026-11-17 (blocker 2), the full cut list (cut 1 =
+    First Patient In, through the final cut) is always built below and
+    stays fully reachable via the stepper, but the auto-selected "current"
+    cut only cycles over the window from the 25% enrollment milestone
+    through the final cut -- so the cut a first-time visitor actually
+    lands on is never the near-empty cut right at First Patient In.
     """
     if run_date is None:
         run_date = dt.datetime.now(dt.timezone.utc).date()
 
     cal = build_cut_calendar(dm, ae, lb, sv, ds)
     cuts = cal["cuts"]
-    idx = current_cut_index(len(cuts), run_date)
     enrollment = enrollment_curve(dm, cuts)
     reviews = review_meeting_cuts(enrollment)
+    cycle_start_index = cycle_window_start_index(cuts, reviews, start_threshold=0.25)
+    cycle_length = len(cuts) - cycle_start_index
+    cycle_index = current_cut_index(cycle_length, run_date)
+    idx = cycle_start_index + cycle_index
 
     per_cut = []
     prev_filtered = None
@@ -331,9 +341,11 @@ def build_study_in_flight(
         "first_patient_in": cal["first_patient_in"].isoformat(),
         "replay_window_end": cal["replay_window_end"].isoformat(),
         "n_cuts": len(cuts),
+        "cycle_start_index": cycle_start_index,
+        "cycle_length": cycle_length,
         "current_cut_index": idx,
         "current_cut": cuts[idx].isoformat(),
-        "cycle_restarted": idx == 0,
+        "cycle_restarted": cycle_index == 0,
         "enrollment_curve": enrollment,
         "review_meeting_cuts": reviews,
         "per_cut": per_cut,
