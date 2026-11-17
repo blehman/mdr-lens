@@ -24,6 +24,28 @@
   var LAB_TEST_COLOR_RANGE = [COLORS.blue, COLORS.orange, COLORS.aqua, COLORS.yellow, COLORS.magenta];
   var SEVERITY_COLOR = { MILD: COLORS.seq250, MODERATE: COLORS.seq450, SEVERE: COLORS.seq650 };
 
+  // Fix 4 (PA direction 2026-11-17): the registry's phase field is a raw
+  // enum (PHASE1 / PHASE2); a study registered in both is bucketed once by
+  // mdrlens.registry.phase_bucket_key as "PHASE1_PHASE2" server-side
+  // (never double-counted into both PHASE1 and PHASE2). This mirrors that
+  // same bucket->label mapping client-side so no screen ever shows a raw
+  // enum.
+  var PHASE_LABELS = { PHASE1: "Phase 1", PHASE2: "Phase 2", PHASE1_PHASE2: "Phase 1/2", UNKNOWN: "Unknown phase" };
+  var PHASE_ORDER = ["PHASE1", "PHASE1_PHASE2", "PHASE2"];
+  var PHASE_COLOR = { PHASE1: COLORS.blue, PHASE1_PHASE2: COLORS.orange, PHASE2: COLORS.aqua };
+  function phaseLabel(raw) { return PHASE_LABELS[raw] || raw; }
+  // Same bucketing as mdrlens.registry.phase_bucket_key, for a raw phases
+  // array straight off one study record (e.g. the timeline tooltip) rather
+  // than an already-bucketed server-side key.
+  function phasesLabel(phases) {
+    var set = {};
+    (phases || []).forEach(function (p) { set[p] = true; });
+    if (set.PHASE1 && set.PHASE2) return PHASE_LABELS.PHASE1_PHASE2;
+    if (set.PHASE1) return PHASE_LABELS.PHASE1;
+    if (set.PHASE2) return PHASE_LABELS.PHASE2;
+    return PHASE_LABELS.UNKNOWN;
+  }
+
   var fmtInt = d3.format(",");
   var fmtPct1 = d3.format(".1%");
   var fmtPct0 = d3.format(".0%");
@@ -75,18 +97,29 @@
     function fmtUtc(iso) { return iso.slice(0, 16).replace("T", " ") + " UTC"; }
     function metaBlock(k, v) { return '<div class="m"><div class="k">' + k + '</div><div class="v">' + v + '</div></div>'; }
 
+    // B2 fix (PA direction 2026-11-17): the cut this simulator lands on by
+    // default only cycles over cuts (cycle_start_index+1) through n_cuts --
+    // from the 25% enrollment milestone onward -- never the near-empty
+    // cuts right at First Patient In. The full cut 1..n_cuts range stays
+    // reachable one at a time via the stepper below.
+    var cycleFirstCutOfN = (SIF.cycle_start_index + 1) + " of " + SIF.n_cuts;
+
     var milestonesEl = document.getElementById("inflight-milestones");
     milestonesEl.innerHTML =
       metaBlock("First Patient In (FPI)", SIF.first_patient_in) +
-      metaBlock("Replay length", SIF.n_cuts + " monthly cuts") +
+      metaBlock("Full replay", SIF.n_cuts + " monthly cuts") +
+      metaBlock("Cycle window", "cut " + cycleFirstCutOfN + " onward") +
       metaBlock("Cycle started", SIF.cycle_epoch) +
       metaBlock("Last refresh", fmtUtc(SIF.last_refresh_utc));
 
     document.getElementById("inflight-cycle-note").textContent =
-      "The replay advances one cut per day and loops forever: after cut " + SIF.n_cuts +
-      " it restarts at cut 1, re-beginning the cycle on " + SIF.cycle_epoch + ". This build's " +
-      "current cut is #" + (SIF.current_cut_index + 1) + " of " + SIF.n_cuts + " (" + SIF.current_cut +
-      "), computed for run date " + SIF.run_date + ".";
+      "The simulator's current cut advances one cut per day and loops forever over cuts " +
+      cycleFirstCutOfN + " (from the 25% enrollment milestone onward, so it never lands on " +
+      "the near-empty cuts right at First Patient In): after cut " + SIF.n_cuts +
+      " it wraps back to cut " + (SIF.cycle_start_index + 1) + ", re-beginning the cycle on " +
+      SIF.cycle_epoch + ". This build's current cut is #" + (SIF.current_cut_index + 1) + " of " +
+      SIF.n_cuts + " (" + SIF.current_cut + "), computed for run date " + SIF.run_date +
+      ". Every cut from #1 is still reachable with the stepper below.";
 
     var enrollContainer = document.getElementById("inflight-enrollment-chart");
     function drawEnrollment() {
@@ -102,7 +135,11 @@
         marginTop: 22,
         marginBottom: 36,
         style: { fontFamily: "inherit", fontSize: "12px" },
-        x: { label: "Data cut", type: "utc" },
+        // Fix 6: Plot's default x-axis label position ("right", flush with
+        // the last tick) collided with the 2015 end-of-study tick. Centering
+        // the label under the axis keeps it clear of every tick regardless
+        // of chart width.
+        x: { label: "Data cut", type: "utc", labelAnchor: "center" },
         y: { label: "Cumulative subjects enrolled", grid: true },
         marks: [
           Plot.areaY(curve, { x: function (d) { return new Date(d.cut); }, y: "cumulative_subjects", fill: COLORS.grid, fillOpacity: 0.6, curve: "step-after" }),
@@ -155,8 +192,7 @@
       });
 
       if (!c.what_changed) {
-        changedBody.innerHTML = '<p class="caption">First cut of this replay cycle (cycle started ' + SIF.cycle_epoch +
-          ') — no earlier cut in this cycle to compare against.</p>';
+        changedBody.innerHTML = '<p class="caption">Cut 1 of this replay — First Patient In, with no earlier cut to compare against.</p>';
       } else {
         var wc = c.what_changed;
         function section(title, n, items, renderItem) {
@@ -209,7 +245,7 @@
     var statusPhaseRows = [];
     Object.keys(REG.status_phase_counts).forEach(function (status) {
       Object.keys(REG.status_phase_counts[status]).forEach(function (phase) {
-        statusPhaseRows.push({ status: status.replace(/_/g, " ").toLowerCase(), phase: phase, n: REG.status_phase_counts[status][phase] });
+        statusPhaseRows.push({ status: status.replace(/_/g, " ").toLowerCase(), phase: phaseLabel(phase), n: REG.status_phase_counts[status][phase] });
       });
     });
     var statusContainer = document.getElementById("registry-status-phase-chart");
@@ -226,7 +262,11 @@
         style: { fontFamily: "inherit", fontSize: "12px" },
         x: { label: "Studies", grid: true },
         y: { label: null },
-        color: { domain: ["PHASE1", "PHASE2"], range: [COLORS.blue, COLORS.aqua], legend: true },
+        color: {
+          domain: PHASE_ORDER.map(phaseLabel),
+          range: PHASE_ORDER.map(function (p) { return PHASE_COLOR[p]; }),
+          legend: true
+        },
         marks: [
           Plot.barX(statusPhaseRows, { x: "n", y: "status", fill: "phase", sort: { y: "x", reverse: true } }),
           Plot.ruleX([0], { stroke: COLORS.baseline })
@@ -237,9 +277,21 @@
     drawStatusPhase();
     onResize(drawStatusPhase);
 
-    var meshRows = Object.keys(REG.mesh_categories)
+    // Fix 5 (PA direction 2026-11-17): "No MeSH category" always sorts
+    // last, after every named category -- by count, highest first, like
+    // the rest -- rather than wherever its count happens to land it. Its
+    // own count still renders (the Plot.text label below), it is just
+    // never mixed in among the named categories.
+    var NO_MESH_LABEL = "No MeSH category";
+    var meshRowsNamed = Object.keys(REG.mesh_categories)
+      .filter(function (k) { return k !== NO_MESH_LABEL; })
       .map(function (k) { return { category: k, n: REG.mesh_categories[k] }; })
       .sort(function (a, b) { return b.n - a.n; });
+    var meshRowsNoCategory = Object.keys(REG.mesh_categories)
+      .filter(function (k) { return k === NO_MESH_LABEL; })
+      .map(function (k) { return { category: k, n: REG.mesh_categories[k] }; });
+    var meshRows = meshRowsNamed.concat(meshRowsNoCategory);
+    var meshCategoryOrder = meshRows.map(function (r) { return r.category; });
     var meshContainer = document.getElementById("registry-mesh-chart");
     function drawMesh() {
       clear(meshContainer);
@@ -253,9 +305,13 @@
         marginBottom: 30,
         style: { fontFamily: "inherit", fontSize: "12px" },
         x: { label: "Studies", grid: true },
-        y: { label: null },
+        // Explicit y domain in our own (named-categories-first, "No MeSH
+        // category" last) order -- NOT Plot's own by-value sort, which
+        // would otherwise reorder by count and could put "No MeSH
+        // category" anywhere among the named ones.
+        y: { label: null, domain: meshCategoryOrder },
         marks: [
-          Plot.barX(meshRows, { x: "n", y: "category", fill: COLORS.blue, sort: { y: "x", reverse: true } }),
+          Plot.barX(meshRows, { x: "n", y: "category", fill: COLORS.blue }),
           Plot.text(meshRows, { x: "n", y: "category", text: "n", dx: 6, textAnchor: "start", fill: COLORS.ink2, fontSize: 11 }),
           Plot.ruleX([0], { stroke: COLORS.baseline })
         ]
@@ -293,7 +349,7 @@
             stroke: function (d) { return STATUS_COLOR[d.overall_status] || COLORS.muted; },
             strokeWidth: 3,
             title: function (d) {
-              return d.nct_id + " — " + d.brief_title + "\n" + d.overall_status + " — " + (d.phases || []).join("/") +
+              return d.nct_id + " — " + d.brief_title + "\n" + d.overall_status + " — " + phasesLabel(d.phases) +
                 "\n" + d.start_date + " → " + d.primary_completion_date;
             }
           })
@@ -883,7 +939,7 @@
   // ================= GLOSSARY =================
   function renderGlossary() {
     var terms = [
-      ["RVA — Real-Time Visual Analytics", "the interactive, study-level dashboards this kind of role builds for ongoing trials, refreshed to milestones like First Patient In, cohort reviews, and safety data review committee meetings. §01 of this page replays that workflow on one completed public study, by data cut — never presented as a live study — and §02 adds a live public-registry fetch, both refreshed on a schedule (see Methods)."],
+      ["RVA — Real-Time Visual Analytics", "the interactive, study-level dashboards this kind of role builds for ongoing trials, refreshed to milestones like First Patient In, cohort reviews, and safety data review committee meetings. §01 of this page is a simulator built on that workflow: one completed public study, replayed by data cut — and §02 adds a live public-registry fetch, both refreshed on a schedule (see Methods)."],
       ["MDR — Medical Data Review", "the clinical review of incoming trial data for safety issues and data problems."],
       ["RBQM — Risk-Based Quality Management", "monitoring trial conduct by watching a handful of quantitative risk indicators continuously, instead of relying only on periodic full on-site reviews."],
       ["KRI — key risk indicator", "one of those quantitative metrics, e.g. the adverse-event reporting rate at a site."],

@@ -41,6 +41,34 @@ ACTIVE_STATUSES = [
 
 PHASES = ["PHASE1", "PHASE2"]
 
+# Fix 4 (PA direction 2026-11-17): the registry's own enum values are the
+# raw strings above. A study can be registered in BOTH Phase 1 and Phase 2
+# at once ("Phase 1/2" studies are common for early-phase oncology, for
+# example): phase_bucket_key() below folds that into one explicit bucket,
+# "PHASE1_PHASE2", counted once -- never double-counted across the PHASE1
+# and PHASE2 buckets, and never silently collapsed into just one of them.
+# PHASE_LABELS gives the plain-English legend text ("Phase 1" / "Phase 2" /
+# "Phase 1/2") so no screen ever shows a raw enum.
+PHASE_LABELS = {"PHASE1": "Phase 1", "PHASE2": "Phase 2", "PHASE1_PHASE2": "Phase 1/2"}
+
+
+def phase_bucket_key(phases: list[str]) -> str:
+    """One bucket key per study for the phase legend/chart: a study
+    registered in both Phase 1 and Phase 2 becomes "PHASE1_PHASE2" (counted
+    once, as "Phase 1/2"), never PHASE1 AND PHASE2 separately. A study
+    registered in neither (shouldn't happen given this project's own query
+    filters to Phase 1 or Phase 2 only, but handled rather than assumed
+    away) falls into "UNKNOWN".
+    """
+    present = set(phases or []) & {"PHASE1", "PHASE2"}
+    if present == {"PHASE1", "PHASE2"}:
+        return "PHASE1_PHASE2"
+    if present == {"PHASE1"}:
+        return "PHASE1"
+    if present == {"PHASE2"}:
+        return "PHASE2"
+    return "UNKNOWN"
+
 FIELDS = [
     "NCTId",
     "BriefTitle",
@@ -152,10 +180,9 @@ def aggregate(studies: list[dict]) -> dict:
 
     for s in studies:
         status = s.get("overall_status") or "UNKNOWN"
-        phases = s.get("phases") or ["UNKNOWN"]
+        phase_key = phase_bucket_key(s.get("phases"))
         bucket = status_phase_counts.setdefault(status, {})
-        for ph in phases:
-            bucket[ph] = bucket.get(ph, 0) + 1
+        bucket[phase_key] = bucket.get(phase_key, 0) + 1
 
         category = categorize_study(s)
         mesh_categories[category] = mesh_categories.get(category, 0) + 1
@@ -167,7 +194,7 @@ def aggregate(studies: list[dict]) -> dict:
                         "nct_id": s.get("nct_id"),
                         "brief_title": s.get("brief_title"),
                         "overall_status": status,
-                        "phases": phases,
+                        "phases": s.get("phases") or [],
                         "lead_sponsor": s.get("lead_sponsor"),
                         "start_date": s.get("start_date"),
                         "primary_completion_date": s.get("primary_completion_date"),

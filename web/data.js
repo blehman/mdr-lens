@@ -18560,15 +18560,17 @@ window.MDR_DATA = {
     "source": "pharmaverse/pharmaversesdtm CDISC pilot study (Apache-2.0)"
   },
   "study_in_flight": {
-    "cycle_epoch": "2026-11-17",
+    "cycle_epoch": "2026-11-12",
     "run_date": "2026-11-17",
-    "last_refresh_utc": "2026-11-17T10:47:34.971872+00:00",
+    "last_refresh_utc": "2026-11-17T17:37:12.009695+00:00",
     "first_patient_in": "2012-07-09",
     "replay_window_end": "2015-03-05",
     "n_cuts": 34,
-    "current_cut_index": 0,
-    "current_cut": "2012-07-01",
-    "cycle_restarted": true,
+    "cycle_start_index": 7,
+    "cycle_length": 27,
+    "current_cut_index": 12,
+    "current_cut": "2013-07-01",
+    "cycle_restarted": false,
     "enrollment_curve": [
       {
         "cut": "2012-07-01",
@@ -21744,35 +21746,35 @@ window.MDR_DATA = {
     "lab_excursion_x_uln_threshold": 3.0
   },
   "registry_summary": {
-    "total_studies": 125,
+    "total_studies": 123,
     "status_phase_counts": {
       "ACTIVE_NOT_RECRUITING": {
-        "PHASE2": 42,
-        "PHASE1": 39,
-        "PHASE3": 2
+        "PHASE2": 29,
+        "PHASE1": 26,
+        "PHASE1_PHASE2": 12
+      },
+      "RECRUITING": {
+        "PHASE2": 21,
+        "PHASE1": 17,
+        "PHASE1_PHASE2": 11
       },
       "NOT_YET_RECRUITING": {
         "PHASE1": 5,
         "PHASE2": 2
-      },
-      "RECRUITING": {
-        "PHASE2": 32,
-        "PHASE1": 28,
-        "PHASE3": 1
       }
     },
     "mesh_categories": {
-      "Neurology": 13,
-      "Oncology": 54,
       "Metabolic / Endocrine": 6,
-      "No MeSH category": 26,
+      "Oncology": 53,
+      "No MeSH category": 25,
       "Immunology": 15,
-      "Hematology": 2,
-      "Ophthalmology": 3,
+      "Neurology": 13,
       "Urogenital / Renal": 1,
-      "Respiratory": 1,
       "Other (MeSH present)": 1,
       "Gastroenterology": 2,
+      "Ophthalmology": 3,
+      "Hematology": 2,
+      "Respiratory": 1,
       "Cardiovascular": 1
     },
     "timeline_recruiting_or_active": [
@@ -21798,17 +21800,6 @@ window.MDR_DATA = {
         "lead_sponsor": "Hoffmann-La Roche",
         "start_date": "2015-04-01",
         "primary_completion_date": "2021-12-31"
-      },
-      {
-        "nct_id": "NCT02568267",
-        "brief_title": "Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)",
-        "overall_status": "ACTIVE_NOT_RECRUITING",
-        "phases": [
-          "PHASE2"
-        ],
-        "lead_sponsor": "Hoffmann-La Roche",
-        "start_date": "2015-11-19",
-        "primary_completion_date": "2027-06-30"
       },
       {
         "nct_id": "NCT02650401",
@@ -22833,17 +22824,6 @@ window.MDR_DATA = {
         "primary_completion_date": "2027-01-09"
       },
       {
-        "nct_id": "NCT07495813",
-        "brief_title": "A Study to See How RO7763505 Works and How Safe it is When Given to Healthy People and People With Stable Heart Disease",
-        "overall_status": "ACTIVE_NOT_RECRUITING",
-        "phases": [
-          "PHASE1"
-        ],
-        "lead_sponsor": "Hoffmann-La Roche",
-        "start_date": "2026-03-31",
-        "primary_completion_date": "2026-10-30"
-      },
-      {
         "nct_id": "NCT07405801",
         "brief_title": "A Phase II Study Evaluating the Efficacy and Safety of Inavolisib Plus Ribociclib Plus Fulvestrant Versus Placebo Plus Ribociclib Plus Fulvestrant in Participants With Advanced Breast Cancer",
         "overall_status": "RECRUITING",
@@ -22975,7 +22955,7 @@ window.MDR_DATA = {
         ],
         "lead_sponsor": "Genentech, Inc.",
         "start_date": "2026-08-28",
-        "primary_completion_date": "2027-06-08"
+        "primary_completion_date": "2027-06-15"
       },
       {
         "nct_id": "NCT07226206",
@@ -23068,17 +23048,6 @@ window.MDR_DATA = {
         "primary_completion_date": "2027-03-02"
       },
       {
-        "nct_id": "NCT07781657",
-        "brief_title": "Study to Test Effects and Safety of RO7568282 in Early Symptomatic Alzheimer's Disease",
-        "overall_status": "RECRUITING",
-        "phases": [
-          "PHASE2"
-        ],
-        "lead_sponsor": "Hoffmann-La Roche",
-        "start_date": "2026-11-10",
-        "primary_completion_date": "2029-11-01"
-      },
-      {
         "nct_id": "NCT07883577",
         "brief_title": "A Study of RO7821657 in Participants With Solid Tumors",
         "overall_status": "RECRUITING",
@@ -23088,6 +23057,17 @@ window.MDR_DATA = {
         "lead_sponsor": "Hoffmann-La Roche",
         "start_date": "2026-11-10",
         "primary_completion_date": "2030-05-31"
+      },
+      {
+        "nct_id": "NCT07781657",
+        "brief_title": "Study to Test Effects and Safety of RO7568282 in Early Symptomatic Alzheimer's Disease",
+        "overall_status": "RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-10",
+        "primary_completion_date": "2029-11-01"
       },
       {
         "nct_id": "NCT07781644",
@@ -23101,17 +23081,6 @@ window.MDR_DATA = {
         "primary_completion_date": "2028-12-15"
       },
       {
-        "nct_id": "NCT07589686",
-        "brief_title": "A Dose-Finding Study of Petrelintide With Enicepatide (RO7795068) in Adults With Obesity or Overweight",
-        "overall_status": "NOT_YET_RECRUITING",
-        "phases": [
-          "PHASE2"
-        ],
-        "lead_sponsor": "Hoffmann-La Roche",
-        "start_date": "2026-11-30",
-        "primary_completion_date": "2027-11-12"
-      },
-      {
         "nct_id": "NCT07748208",
         "brief_title": "A Study Evaluating the Safety of Inavolisib and Fulvestrant With or Without Palbociclib in Participants With Advanced Breast Cancer (ABC) and Type 2 Diabetes",
         "overall_status": "RECRUITING",
@@ -23121,6 +23090,17 @@ window.MDR_DATA = {
         "lead_sponsor": "Hoffmann-La Roche",
         "start_date": "2026-11-30",
         "primary_completion_date": "2029-06-15"
+      },
+      {
+        "nct_id": "NCT07589686",
+        "brief_title": "A Dose-Finding Study of Petrelintide With Enicepatide (RO7795068) in Adults With Obesity or Overweight",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phases": [
+          "PHASE2"
+        ],
+        "lead_sponsor": "Hoffmann-La Roche",
+        "start_date": "2026-11-30",
+        "primary_completion_date": "2027-11-12"
       },
       {
         "nct_id": "NCT07859085",
@@ -23178,14 +23158,14 @@ window.MDR_DATA = {
         "primary_completion_date": "2030-08-21"
       }
     ],
-    "fetched_at_utc": "2026-11-17T10:46:18.591118+00:00",
+    "fetched_at_utc": "2026-11-17T17:31:09.173234+00:00",
     "source_url": "https://clinicaltrials.gov/api/v2/studies",
     "lead_sponsors_queried": [
       "Hoffmann-La Roche",
       "Genentech"
     ],
     "per_sponsor_counts": {
-      "Hoffmann-La Roche": 92,
+      "Hoffmann-La Roche": 90,
       "Genentech": 33
     },
     "note": "Public ClinicalTrials.gov registry records as of the fetch time above. This reflects only what sponsors have posted to the public registry -- it is not, and does not represent, Roche's or Genentech's internal development pipeline."

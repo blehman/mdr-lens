@@ -8,11 +8,11 @@ interactive study-level dashboard that reviews ongoing early-phase trials agains
 milestones such as First Patient In, cohort reviews, and safety data review
 committee meetings) views, built two ways:
 
-1. **§01 Study in flight** — one completed public clinical trial, replayed by
-   deterministic monthly data cut, with a cut stepper, a "what changed since the
-   last cut" view, and an enrollment/milestone screen. Refreshed on a schedule
-   (see Live data below); presented on screen as exactly what it is — a completed
-   public study replayed by data cut, never a live study.
+1. **§01 Live study simulator** — one completed public clinical trial, replayed
+   by deterministic monthly data cut, with a cut stepper, a "what changed since
+   the last cut" view, and an enrollment/milestone screen. Refreshed on a
+   schedule (see Live data below); labeled on screen as exactly what it is — a
+   simulator built on one completed public study, replayed by data cut.
 2. **§02 Live registry** — a live fetch of the public ClinicalTrials.gov registry:
    every Phase 1/2 Roche or Genentech study in an actively enrolling-or-running
    status, grouped by status, phase, and MeSH (Medical Subject Headings) condition
@@ -33,9 +33,12 @@ real patient, and none of it is related to any employer's systems.
 
 ## Live data
 
-- **Study in flight (§01)**: `scripts/build.py` recomputes the "current" data cut
-  from the run date every time it runs (see `src/mdrlens/cuts.py`) — there is no
-  stored pointer, so nothing about this needs a daily commit.
+- **Live study simulator (§01)**: `scripts/build.py` recomputes the "current" data
+  cut from the run date every time it runs (see `src/mdrlens/cuts.py`) — there is
+  no stored pointer, so nothing about this needs a daily commit. The default
+  "current" cut only cycles over cuts from the 25% enrollment milestone onward
+  (never the near-empty cuts right at First Patient In); every cut from #1 stays
+  reachable one at a time with the on-page stepper.
 - **Registry (§02)**: `scripts/fetch_registry.py` talks to
   `https://clinicaltrials.gov/api/v2/studies` (public, no key) and writes
   `data/derived/registry_summary.json`. It fails loudly (non-zero exit) and leaves
@@ -52,11 +55,13 @@ real patient, and none of it is related to any employer's systems.
 
 ## Screenshots
 
-| One patient | The whole study (eDISH) |
+| Live study simulator (§01) | Live registry (§02) |
 |---|---|
-| ![One patient's liver-safety timeline](docs/screenshots/desktop_01_patient.jpg) | ![eDISH plot across all subjects](docs/screenshots/desktop_02_study_edish.jpg) |
+| ![Live study simulator: a completed public study replayed by data cut](docs/screenshots/desktop_01_inflight.jpg) | ![Roche & Genentech public registry snapshot](docs/screenshots/desktop_02_registry.jpg) |
+| **One patient** | **The whole study (eDISH)** |
+| ![One patient's liver-safety timeline](docs/screenshots/desktop_03_patient.jpg) | ![eDISH plot across all subjects](docs/screenshots/desktop_04_study_edish.jpg) |
 | **The sites (RBQM-style KRIs)** | **Data quality** |
-| ![Site key-risk-indicator funnel plots](docs/screenshots/desktop_03_sites.jpg) | ![Data quality by SDTM domain](docs/screenshots/desktop_04_quality.jpg) |
+| ![Site key-risk-indicator funnel plots](docs/screenshots/desktop_05_sites.jpg) | ![Data quality by SDTM domain](docs/screenshots/desktop_06_quality.jpg) |
 
 Phone layouts: `docs/screenshots/iphone14_0*.jpg`.
 
@@ -70,8 +75,8 @@ replay and the live registry, then one patient, then widens to the whole study,
 then to the 17 sites, then to the data itself — never a dashboard grid of
 unrelated tiles.
 
-1. **Study in flight** (§01) — the completed pilot study replayed by monthly data
-   cut: a cut stepper, First Patient In and an enrollment curve with
+1. **Live study simulator** (§01) — the completed pilot study replayed by monthly
+   data cut: a cut stepper, First Patient In and an enrollment curve with
    review-meeting-style milestones, and a "what changed since the last cut" view
    (new AEs, new ≥3× ULN lab excursions, newly flagged potential Hy's Law
    subjects, sites newly outside a funnel limit).
@@ -153,9 +158,9 @@ binomial/Poisson method or the multiplicity correction a real RBQM program (e.g.
 gsm) would use — see Limits below.
 
 §03–06 are a look back at **one already-completed pilot study**: those views do
-not change cut to cut, and the page says so. §01 replays that same completed
-study by data cut, refreshed on a schedule — it is presented on screen as a
-replay, never as a live study.
+not change cut to cut, and the page says so. §01 (the Live study simulator)
+replays that same completed study by data cut, refreshed on a schedule — labeled
+on screen plainly as a simulator and a replay, never as an ongoing trial.
 
 ## What a real trial would add
 

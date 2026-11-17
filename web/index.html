@@ -208,13 +208,13 @@
       data-quality checks.
     </p>
     <div class="warn">
-      §01 replays <strong>one completed public study by monthly data cut</strong> — it is not,
-      and is never presented as, a live study. §02 fetches the public ClinicalTrials.gov registry
+      §01 is a <strong>simulator: one completed public study, replayed by monthly data cut</strong>,
+      never an ongoing trial. §02 fetches the public ClinicalTrials.gov registry
       fresh at build time. See <a href="#methods">Data, limits &amp; what a real trial would add</a>.
       No data here comes from any real patient or any employer's systems.
     </div>
     <nav class="jumplist">
-      <a href="#inflight">01 · Study in flight</a>
+      <a href="#inflight">01 · Live study simulator</a>
       <a href="#registry">02 · Live registry</a>
       <a href="#patient">03 · One patient</a>
       <a href="#study">04 · Whole study</a>
@@ -232,15 +232,15 @@
   <section class="view" id="inflight">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">01 · replayed by data cut</div>
-        <h2>Study in flight: a completed public study, replayed by monthly data cut</h2>
+        <div class="eyebrow">01 · SIMULATED STUDY IN FLIGHT</div>
+        <h2>Live study simulator</h2>
+        <p class="dek">A completed public study (the CDISC pilot), advanced one data cut per day.</p>
         <p class="dek">
-          The CDISC pilot study below (see §03–06, and Methods) finished years ago. To show the
-          kind of screen a Real-Time Visual Analytics dashboard provides — one that advances
-          through milestone data cuts as a trial actually enrolls — every record here is replayed
-          <strong>as if</strong> it arrived on its own SDTM date (DM.RFSTDTC, AE.AESTDTC, LB.LBDTC,
-          SV.SVSTDTC, DS.DSSTDTC), one monthly cut at a time. This is a completed public study
-          replayed by data cut — <strong>never a live study</strong>, and never presented as one.
+          Every record below is released on its own SDTM date — DM.RFSTDTC, AE.AESTDTC,
+          LB.LBDTC, SV.SVSTDTC, DS.DSSTDTC — one monthly cut at a time, the same
+          milestone-driven refresh a Real-Time Visual Analytics dashboard uses for a trial that
+          is actually enrolling. See §03–06 and Methods for the underlying, already-finished
+          study this simulates.
         </p>
       </div>
 
@@ -254,9 +254,8 @@
         <h3>Enrollment curve, with review-meeting-style milestone cuts</h3>
         <p class="caption">
           First Patient In (FPI) is the earliest DM.RFSTDTC across all subjects. The four marked
-          cuts are where cumulative enrollment first reaches 25/50/75/100% of its final total — a
-          deterministic stand-in for cohort reviews / safety data review committee meetings, since
-          this public dataset does not publish a real review schedule.
+          cuts are where cumulative enrollment first reaches 25/50/75/100% of its final total,
+          standing in for cohort reviews and safety data review committee meetings.
         </p>
         <div class="chart-fig" id="inflight-enrollment-chart"></div>
       </div>
@@ -485,8 +484,9 @@
         <a href="https://github.com/pharmaverse/pharmaversesdtm" target="_blank" rel="noopener">pharmaverse/pharmaversesdtm</a>
         package (Apache-2.0 license). It is a synthetic/anonymized teaching dataset used
         across the industry for exactly this kind of tooling, with nothing from any employer's
-        systems. §01 replays that completed study by monthly data cut; §02 adds a live fetch of
-        the public ClinicalTrials.gov registry. Everything else (fetch scripts, metrics, tests,
+        systems. §01 (the live study simulator) replays that completed study by monthly data cut;
+        §02 adds a live fetch of the public ClinicalTrials.gov registry. Everything else (fetch
+        scripts, metrics, tests,
         and this page) rebuilds from public sources with one command, and the page runs offline —
         the only two things that ever reach the network are the pilot-data fetch and the registry
         fetch, both at build time, never while the page itself is open in a browser.
@@ -494,16 +494,20 @@
     </div>
 
     <div class="card">
-      <h3>How the study-in-flight replay works (§01)</h3>
+      <h3>How the Live study simulator works (§01)</h3>
       <ul class="limits-list">
         <li>Monthly data cuts run from First Patient In (FPI, the earliest DM.RFSTDTC across all
           subjects) through the latest date seen in any domain, plus that exact end date as a
           final cut. Each cut filters every domain to only the records dated on or before it —
-          exactly what a live extract would have shown that month.</li>
-        <li>The "current" cut advances one step per calendar day and cycles forever: once the
-          replay reaches its last cut, the next day's cut wraps back to cut 1 and the cycle
-          restarts on the date shown as "Cycle started" above. No commit or stored pointer marks
-          this — it is recomputed from the clock every time the page is built.</li>
+          exactly what a live extract would have shown that month. Every one of these cuts, from
+          cut 1 (First Patient In) onward, is reachable one at a time with the stepper below.</li>
+        <li>The "current" cut shown by default advances one step per calendar day and cycles
+          forever, but only over the cuts from the 25% enrollment milestone through the last cut
+          — never the near-empty cuts right at First Patient In, so a first-time visitor always
+          lands somewhere mid-study. Once the replay reaches its last cut, the next day's cut
+          wraps back to the 25%-milestone cut and the cycle restarts on the date shown as "Cycle
+          started" above. No commit or stored pointer marks this — it is recomputed from the
+          clock every time the page is built.</li>
         <li>"What changed" compares consecutive cuts: new adverse events, new lab results
           crossing ≥3× ULN (upper limit of normal), subjects newly meeting the potential Hy's Law
           pattern, and sites newly outside a funnel-plot limit (§05 method) — never re-litigating

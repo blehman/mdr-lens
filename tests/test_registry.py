@@ -11,11 +11,13 @@ from mdrlens.registry import (
     ACTIVE_STATUSES,
     NO_MESH_BUCKET,
     OTHER_MESH_BUCKET,
+    PHASE_LABELS,
     PHASES,
     aggregate,
     build_query_params,
     categorize_study,
     parse_study,
+    phase_bucket_key,
 )
 
 
@@ -126,6 +128,56 @@ def test_aggregate_status_phase_counts_and_mesh_categories():
     assert summary["mesh_categories"]["Oncology"] == 1
     assert summary["mesh_categories"][NO_MESH_BUCKET] == 1
     assert len(summary["timeline_recruiting_or_active"]) == 2
+
+
+def test_phase_bucket_key_single_phases():
+    assert phase_bucket_key(["PHASE1"]) == "PHASE1"
+    assert phase_bucket_key(["PHASE2"]) == "PHASE2"
+
+
+def test_phase_bucket_key_dual_phase_study_is_one_bucket_not_two():
+    """Fix 4 (PA direction 2026-11-17): a study registered in both Phase 1
+    and Phase 2 is counted once, as "PHASE1_PHASE2" ("Phase 1/2" in the
+    legend) -- never double-counted into PHASE1 and PHASE2 separately, and
+    never silently folded into just one of them."""
+    assert phase_bucket_key(["PHASE1", "PHASE2"]) == "PHASE1_PHASE2"
+    assert phase_bucket_key(["PHASE2", "PHASE1"]) == "PHASE1_PHASE2"
+
+
+def test_phase_bucket_key_unknown_when_neither_phase_present():
+    assert phase_bucket_key([]) == "UNKNOWN"
+    assert phase_bucket_key(None) == "UNKNOWN"
+
+
+def test_phase_labels_cover_every_bucket_key_with_plain_text():
+    for key in ("PHASE1", "PHASE2", "PHASE1_PHASE2"):
+        assert key in PHASE_LABELS
+        assert PHASE_LABELS[key][0].isupper()  # "Phase 1" / "Phase 2" / "Phase 1/2", never a raw enum
+
+
+def test_aggregate_dual_phase_study_counted_once_as_phase1_phase2():
+    studies = [
+        parse_study(
+            _study_fixture(
+                protocolSection={
+                    "identificationModule": {"nctId": "NCT00000004", "briefTitle": "D Study"},
+                    "statusModule": {
+                        "overallStatus": "RECRUITING",
+                        "startDateStruct": {"date": "2024-02-01"},
+                        "primaryCompletionDateStruct": {"date": "2026-02-01"},
+                    },
+                    "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Hoffmann-La Roche"}},
+                    "conditionsModule": {"conditions": ["Lymphoma"]},
+                    "designModule": {"phases": ["PHASE1", "PHASE2"]},
+                },
+            )
+        ),
+    ]
+    summary = aggregate(studies)
+    assert summary["total_studies"] == 1
+    assert summary["status_phase_counts"]["RECRUITING"] == {"PHASE1_PHASE2": 1}
+    assert "PHASE1" not in summary["status_phase_counts"]["RECRUITING"]
+    assert "PHASE2" not in summary["status_phase_counts"]["RECRUITING"]
 
 
 def test_aggregate_timeline_sorted_by_start_date():
