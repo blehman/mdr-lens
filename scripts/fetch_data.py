@@ -20,7 +20,14 @@ import sys
 import urllib.request
 from pathlib import Path
 
-BASE_URL = "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/main/data"
+# Fix 7 (PA direction 2026-11-17): pinned to a commit SHA, not the "main"
+# branch -- fetching "main" means any upstream change (a rename, a schema
+# change, a removed file) could break the daily scheduled job indefinitely
+# with no local change to explain why. Re-pin deliberately with:
+#   gh api repos/pharmaverse/pharmaversesdtm/commits/main --jq .sha
+# SHA below verified live 2026-11-17 (HTTP 200 on the pinned dm.rda URL).
+PHARMAVERSESDTM_COMMIT = "7ec53ea88dfe1c168f9efbef59233c4426813b89"
+BASE_URL = f"https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/{PHARMAVERSESDTM_COMMIT}/data"
 DOMAINS = ["dm", "ae", "lb", "sv", "ds"]
 
 ROOT = Path(__file__).resolve().parent.parent

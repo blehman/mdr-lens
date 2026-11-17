@@ -33,6 +33,8 @@ name: Refresh live views and redeploy demo page
 on:
   schedule:
     - cron: "17 6 * * *"
+  push:
+    branches: [main]   # the ONLY Pages deploy path: every deploy fetches fresh data and recomputes the cut
   workflow_dispatch:
 
 permissions:
@@ -42,7 +44,11 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Fix 7 (PA direction 2026-11-17): false, as GitHub's own Pages workflow
+  # does -- a deploy already in progress is never cancelled midway by a
+  # newer trigger (e.g. the new push trigger landing while the daily
+  # schedule run is still deploying); the newer run queues instead.
+  cancel-in-progress: false
 
 jobs:
   refresh:
