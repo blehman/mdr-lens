@@ -501,10 +501,9 @@
           final cut. Each cut filters every domain to only the records dated on or before it —
           exactly what a live extract would have shown that month. Every one of these cuts, from
           cut 1 (First Patient In) onward, is reachable one at a time with the stepper below.</li>
-        <li>The "current" cut shown by default advances one step per calendar day and cycles
-          forever, but only over the cuts from the 25% enrollment milestone through the last cut
-          — never the near-empty cuts right at First Patient In, so a first-time visitor always
-          lands somewhere mid-study. Once the replay reaches its last cut, the next day's cut
+        <li>The "current" cut shown by default advances one step per calendar day and loops
+          over the cuts from the 25% enrollment milestone through the last cut, so a first-time
+          visitor lands mid-study. Once the replay reaches its last cut, the next day's cut
           wraps back to the 25%-milestone cut and the cycle restarts on the date shown as "Cycle
           started" above. No commit or stored pointer marks this — it is recomputed from the
           clock every time the page is built.</li>

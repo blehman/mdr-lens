@@ -99,8 +99,7 @@
 
     // B2 fix (PA direction 2026-11-17): the cut this simulator lands on by
     // default only cycles over cuts (cycle_start_index+1) through n_cuts --
-    // from the 25% enrollment milestone onward -- never the near-empty
-    // cuts right at First Patient In. The full cut 1..n_cuts range stays
+    // from the 25% enrollment milestone. The full cut 1..n_cuts range stays
     // reachable one at a time via the stepper below.
     var cycleFirstCutOfN = (SIF.cycle_start_index + 1) + " of " + SIF.n_cuts;
 
@@ -113,10 +112,9 @@
       metaBlock("Last refresh", fmtUtc(SIF.last_refresh_utc));
 
     document.getElementById("inflight-cycle-note").textContent =
-      "The simulator's current cut advances one cut per day and loops forever over cuts " +
-      cycleFirstCutOfN + " (from the 25% enrollment milestone onward, so it never lands on " +
-      "the near-empty cuts right at First Patient In): after cut " + SIF.n_cuts +
-      " it wraps back to cut " + (SIF.cycle_start_index + 1) + ", re-beginning the cycle on " +
+      "The simulator's current cut advances one cut per day and loops over cuts " +
+      (SIF.cycle_start_index + 1) + "\u2013" + SIF.n_cuts + " (from the 25% enrollment milestone); after cut " +
+      SIF.n_cuts + " it wraps back to cut " + (SIF.cycle_start_index + 1) + ". The cycle started on " +
       SIF.cycle_epoch + ". This build's current cut is #" + (SIF.current_cut_index + 1) + " of " +
       SIF.n_cuts + " (" + SIF.current_cut + "), computed for run date " + SIF.run_date +
       ". Every cut from #1 is still reachable with the stepper below.";

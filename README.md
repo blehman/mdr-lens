@@ -36,8 +36,8 @@ real patient, and none of it is related to any employer's systems.
 - **Live study simulator (§01)**: `scripts/build.py` recomputes the "current" data
   cut from the run date every time it runs (see `src/mdrlens/cuts.py`) — there is
   no stored pointer, so nothing about this needs a daily commit. The default
-  "current" cut only cycles over cuts from the 25% enrollment milestone onward
-  (never the near-empty cuts right at First Patient In); every cut from #1 stays
+  "current" cut loops over the cuts from the 25% enrollment milestone to the last
+  cut; after the last cut it wraps back to the 25% cut. Every cut from #1 stays
   reachable one at a time with the on-page stepper.
 - **Registry (§02)**: `scripts/fetch_registry.py` talks to
   `https://clinicaltrials.gov/api/v2/studies` (public, no key) and writes
