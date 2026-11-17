@@ -1,12 +1,13 @@
 # mdr-lens
 
-A small portfolio project: Medical Data Review (MDR, the ongoing clinical
-review of incoming trial data for safety issues and data problems) views built on
-one public, already-finished clinical trial dataset. Built to show interest and
-some of the underlying skills for Real-Time Visual Analytics (RVA) / Medical Data
-Review roles that build dashboards for safety signal detection and Risk-Based
-Quality Management (RBQM) — not to claim real clinical-trial experience. It is a
-static, offline page built from one finished public study; nothing here is live data.
+**Live demo: https://blehman.github.io/mdr-lens/**
+
+Medical Data Review (MDR, the ongoing clinical review of incoming trial data for
+safety issues and data problems) views built on one public, already-finished
+clinical trial dataset: liver-safety screening (eDISH / Hy's Law), an adverse-event
+explorer with a single-patient timeline, Risk-Based Quality Management (RBQM)
+style site key risk indicators, and data-quality checks. It is a static, offline
+page built from one finished public study; nothing here is live data.
 
 Data: the long-standing CDISC (Clinical Data Interchange Standards Consortium)
 Pilot Project study, redistributed as SDTM (Study Data Tabulation Model) tables by
@@ -158,10 +159,10 @@ screenshots are in `docs/screenshots/`, zero browser console errors on either.
 ## Limits
 
 - Teaching dataset, not a live trial: nothing here is real-time, and the
-  "real-time" dashboards an RVA role actually builds would look structurally
+  "real-time" dashboards used on an ongoing trial would look structurally
   different (continuous refresh, query workflow, access control, validation).
 - The "required field" list per domain, the ±7-day visit window, and the KRI
   thresholds are reasonable choices for a demo, not a validated clinical
   monitoring plan.
-- No claim of real clinical-trial experience: this is a skills demonstration on
-  public data, built to close a specific gap, not a substitute for it.
+- Built on a public teaching dataset, so the views show method and design rather
+  than findings about any real therapy.
