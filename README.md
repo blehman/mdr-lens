@@ -22,6 +22,11 @@ committee meetings) views, built two ways:
    explorer with a single-patient timeline, Risk-Based Quality Management (RBQM)
    style site key risk indicators, and data-quality checks, all on the same
    completed study as §01.
+4. **§07–09** — a sample Medical Data Review plan built on public ICH/FDA/
+   TransCelerate guidance as its basis (`docs/MDR_PLAN.md`), a traceability view
+   tying every number above to its source SDTM domain and variables, and a
+   reusable study-config template proven on a second study's labs and
+   liver-panel view.
 
 Pilot data: the long-standing CDISC (Clinical Data Interchange Standards Consortium)
 Pilot Project study, redistributed as SDTM (Study Data Tabulation Model) tables by
@@ -62,6 +67,10 @@ real patient, and none of it is related to any employer's systems.
 | ![One patient's liver-safety timeline](docs/screenshots/desktop_03_patient.jpg) | ![eDISH plot across all subjects](docs/screenshots/desktop_04_study_edish.jpg) |
 | **The sites (RBQM-style KRIs)** | **Data quality** |
 | ![Site key-risk-indicator funnel plots](docs/screenshots/desktop_05_sites.jpg) | ![Data quality by SDTM domain](docs/screenshots/desktop_06_quality.jpg) |
+| **Sample MDR plan (§07)** | **Traceability / lineage (§08)** |
+| ![Sample Medical Data Review plan: CtQ factor to risk to view to threshold to milestone to reviewer](docs/screenshots/desktop_08_mdrplan.jpg) | ![Traceability table: page number to SDTM domain and variables](docs/screenshots/desktop_09_lineage.jpg) |
+| **Reusable template: a second study (§09)** | |
+| ![Reusable study-config template demonstrated on a second study's labs and liver-panel view](docs/screenshots/desktop_10_template.jpg) | |
 
 Phone layouts: `docs/screenshots/iphone14_0*.jpg`.
 
@@ -133,6 +142,34 @@ domains already carry that distinction (LB is lab, i.e. non-CRF data; AE is
 CRF-entered) but doesn't reconcile the two against each other end to end — a real
 EDC (Electronic Data Capture) system and query workflow would.
 
+## Medical Data Review plan, traceability & reusable template (§07–09)
+
+- **§07 Sample Medical Data Review plan** (`docs/MDR_PLAN.md`) — a sample plan
+  mapping critical-to-quality factor → the risk each existing view watches →
+  threshold → milestone (reusing §01's own 25/50/75/100% enrollment-milestone
+  cuts) → reviewer, built on four public documents as its basis: ICH E6(R3)
+  (Good Clinical Practice), ICH E8(R1) (General Considerations for Clinical
+  Studies), TransCelerate's Risk-Based Monitoring / Risk-Based Quality
+  Management toolkit, and FDA's 2013 risk-based monitoring guidance — each
+  fetched from its official hosting and dated in that document. It is a
+  sample, not a validated or regulatory-submitted plan, and claims no
+  compliance with or certification against any of those sources.
+- **§08 Traceability** — every number family on the page, mapped to its
+  source SDTM domain and variables, labeled CRF (site-entered) or non-CRF
+  (e.g. the LB central-lab feed), with the join that produces it. The same
+  mapping (`src/mdrlens/lineage.py`) is pinned by `tests/test_lineage.py` and
+  written machine-readable to `data/derived/lineage.json` at build time.
+- **§09 Reusable template** — a `StudyConfig` (`src/mdrlens/studyconfig.py`)
+  names which SDTM domains a study supplies, which liver-panel tests its LB
+  domain actually ran, and which domains are CRF vs. non-CRF. It plugs any
+  SDTM study into `mdrlens.uln.peak_x_uln_by_test` — the same arithmetic §04's
+  eDISH view uses — and is demonstrated here on a second study from
+  pharmaversesdtm: its "metabolic" demographics and labs subset (5 subjects),
+  rendering the labs and liver-panel view only (its available AST, ALP and
+  GGT liver-panel tests, by peak × ULN per subject). Fetch and build it with
+  `uv run python scripts/fetch_second_study.py && uv run python scripts/build_second_study.py`;
+  pinned by `tests/test_studyconfig.py` and `tests/test_second_study.py`.
+
 ## Prior art (read and cited; no code copied)
 
 - [Gilead-Public/gsm](https://github.com/Gilead-Public/gsm) (Good Statistical
@@ -200,13 +237,22 @@ and records the source URL and a sha256 of every file in `data/manifest.json`.
 `scripts/fetch_registry.py` fetches the live ClinicalTrials.gov registry snapshot
 to `data/derived/registry_summary.json`, failing loudly and leaving the last good
 file in place if anything goes wrong. `scripts/build.py` computes every number on
-the page (including the §01 cut replay) from those files and writes the small
-derived JSON in `data/derived/` plus `web/data.js` (the bundle the page loads).
+the page (including the §01 cut replay and the §08 traceability lineage) from
+those files and writes the small derived JSON in `data/derived/` plus
+`web/data.js` (the bundle the page loads).
+
+§09's reusable-template demo is a one-time proof, not part of the command above
+(see "Medical Data Review plan, traceability & reusable template" above): run
+`uv run python scripts/fetch_second_study.py && uv run python scripts/build_second_study.py`
+to regenerate it from the second study's own raw SDTM subset; its derived JSON
+is committed as a static demo, same as §03–06's look back at the primary study.
 
 ## QA
 
 `tests/` is plain pytest (`uv run pytest`), including hand-checked × ULN math
-against real values from one subject, and the independent recount above. The page
+against real values from one subject, the independent recount above, the
+§08 lineage mapping (`tests/test_lineage.py`), and the §09 reusable-template
+demo (`tests/test_studyconfig.py`, `tests/test_second_study.py`). The page
 was opened in Playwright under Chromium (1440×900) and WebKit/iPhone 14 (390×844);
 screenshots are in `docs/screenshots/`, zero browser console errors on either.
 

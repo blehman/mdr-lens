@@ -18562,7 +18562,7 @@ window.MDR_DATA = {
   "study_in_flight": {
     "cycle_epoch": "2026-11-12",
     "run_date": "2026-11-17",
-    "last_refresh_utc": "2026-11-17T17:37:12.009695+00:00",
+    "last_refresh_utc": "2026-11-17T18:04:09.093182+00:00",
     "first_patient_in": "2012-07-09",
     "replay_window_end": "2015-03-05",
     "n_cuts": 34,
@@ -21745,6 +21745,227 @@ window.MDR_DATA = {
     ],
     "lab_excursion_x_uln_threshold": 3.0
   },
+  "lineage": [
+    {
+      "metric_id": "hero.n_subjects",
+      "label": "Subjects / sites (hero stats, and every per-subject or per-site count below)",
+      "page_section": "hero",
+      "domains": [
+        "dm"
+      ],
+      "variables": [
+        "USUBJID",
+        "SITEID"
+      ],
+      "join": "DM.USUBJID is this project's primary key; DM.SITEID groups subjects into the 17 sites.",
+      "notes": "",
+      "source_kinds": [
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "ae_events",
+      "label": "Adverse events (hero stat, \u00a704 AE explorer, \u00a701 'what changed')",
+      "page_section": "study",
+      "domains": [
+        "ae",
+        "dm"
+      ],
+      "variables": [
+        "USUBJID",
+        "AESEQ",
+        "AETERM",
+        "AEBODSYS",
+        "AESEV",
+        "AESER",
+        "AEOUT",
+        "AESTDTC",
+        "AESTDY",
+        "AEENDY"
+      ],
+      "join": "AE.USUBJID -> DM.USUBJID (adds DM.SITEID for display); AESTDY is the study day already supplied on the SDTM record, relative to DM.RFSTDTC.",
+      "notes": "CRF-entered (see DOMAIN_SOURCE_KIND).",
+      "source_kinds": [
+        "CRF (site-entered)",
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "edish",
+      "label": "Liver-safety peaks & potential Hy's Law flag (\u00a704 eDISH)",
+      "page_section": "study",
+      "domains": [
+        "lb",
+        "dm"
+      ],
+      "variables": [
+        "USUBJID",
+        "LBTESTCD",
+        "LBSTRESN",
+        "LBSTNRHI",
+        "SITEID"
+      ],
+      "join": "Peak (ALT or AST) x ULN and peak BILI x ULN are computed per LB.USUBJID (mdrlens.hyslaw), then LB.USUBJID -> DM.USUBJID to attach SITEID for the chart tooltip.",
+      "notes": "LB is a central-lab (non-CRF) feed; the Hy's Law flag itself is a lab-pattern screen, not a diagnosis (see README).",
+      "source_kinds": [
+        "non-CRF (central-lab feed)",
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "patient_timeline",
+      "label": "One-patient timeline (\u00a703): AEs, lab spikes, visits, disposition on one axis",
+      "page_section": "patient",
+      "domains": [
+        "dm",
+        "ae",
+        "lb",
+        "sv",
+        "ds"
+      ],
+      "variables": [
+        "RFSTDTC",
+        "AESTDTC",
+        "LBDTC",
+        "LBDY",
+        "LBBLFL",
+        "SVSTDTC",
+        "VISITNUM",
+        "VISIT",
+        "DSDECOD",
+        "DSSTDTC",
+        "DSSTDY"
+      ],
+      "join": "Every domain's own date field (AESTDTC/LBDTC/SVSTDTC/DSSTDTC) is expressed as a study day by subtracting DM.RFSTDTC, for the one USUBJID selected as protagonist -- the CRF (AE/SV/DS) and non-CRF (LB) join this project's README describes, made concrete for one subject.",
+      "notes": "",
+      "source_kinds": [
+        "CRF (site-entered)",
+        "CRF (site-entered)",
+        "non-CRF (central-lab feed)",
+        "CRF (site-entered)",
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "site_kri",
+      "label": "Site key risk indicators (\u00a705): AE rate, missing-lab rate, visit out-of-window rate",
+      "page_section": "sites",
+      "domains": [
+        "dm",
+        "ae",
+        "lb",
+        "sv"
+      ],
+      "variables": [
+        "SITEID",
+        "RFSTDTC",
+        "RFENDTC",
+        "AESEQ",
+        "LBSTRESN",
+        "SVSTDTC",
+        "VISITNUM"
+      ],
+      "join": "AE, LB and SV each join to DM on USUBJID to attach SITEID before aggregating per site; exposure days are DM.RFENDTC - DM.RFSTDTC per subject.",
+      "notes": "Funnel-plot control limits (mdrlens.funnel) are a derived statistic, not a lineage join, so they are not listed as a variable here.",
+      "source_kinds": [
+        "CRF (site-entered)",
+        "CRF (site-entered)",
+        "non-CRF (central-lab feed)",
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "data_quality",
+      "label": "Data quality by domain (\u00a706): missing required fields, duplicates, visit windows",
+      "page_section": "quality",
+      "domains": [
+        "dm",
+        "ae",
+        "lb",
+        "sv",
+        "ds"
+      ],
+      "variables": [
+        "USUBJID",
+        "SITEID",
+        "ARM",
+        "AGE",
+        "SEX",
+        "RFSTDTC",
+        "AETERM",
+        "AESTDTC",
+        "AESEV",
+        "AESER",
+        "LBTESTCD",
+        "LBSTRESN",
+        "LBDTC",
+        "VISITNUM",
+        "SVSTDTC",
+        "DSDECOD",
+        "DSSTDTC"
+      ],
+      "join": "Each domain is checked against its own hand-picked required-field list (mdrlens.dataquality.REQUIRED_FIELDS) and its own key fields for duplicates; visit-out-of-window joins SV to DM on USUBJID for RFSTDTC.",
+      "notes": "",
+      "source_kinds": [
+        "CRF (site-entered)",
+        "CRF (site-entered)",
+        "non-CRF (central-lab feed)",
+        "CRF (site-entered)",
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "study_in_flight",
+      "label": "Live study simulator (\u00a701): per-cut counts and 'what changed since the last cut'",
+      "page_section": "inflight",
+      "domains": [
+        "dm",
+        "ae",
+        "lb",
+        "sv",
+        "ds"
+      ],
+      "variables": [
+        "RFSTDTC",
+        "AESTDTC",
+        "AESEQ",
+        "LBDTC",
+        "LBSEQ",
+        "LBSTRESN",
+        "LBSTNRHI",
+        "SVSTDTC",
+        "DSSTDTC"
+      ],
+      "join": "A subject is 'enrolled as of' a cut when DM.RFSTDTC <= that cut date; every other domain's own date field must also be <= the cut date for that record to appear in the cut. 'What changed' re-keys AE on (USUBJID, AESEQ) and LB excursions on (USUBJID, LBSEQ) between consecutive cuts.",
+      "notes": "",
+      "source_kinds": [
+        "CRF (site-entered)",
+        "CRF (site-entered)",
+        "non-CRF (central-lab feed)",
+        "CRF (site-entered)",
+        "CRF (site-entered)"
+      ]
+    },
+    {
+      "metric_id": "registry",
+      "label": "Live public registry (\u00a702): Roche & Genentech study counts, MeSH categories, timeline",
+      "page_section": "registry",
+      "domains": [],
+      "variables": [
+        "NCTId",
+        "OverallStatus",
+        "Phase",
+        "StartDate",
+        "PrimaryCompletionDate",
+        "LeadSponsorName",
+        "ConditionMeshTerm",
+        "ConditionAncestorTerm"
+      ],
+      "join": "NCT ID is the registry's own primary key. This is a live fetch of the public ClinicalTrials.gov API v2 (see mdrlens.registry) -- not an SDTM domain, so no SDTM join applies.",
+      "notes": "Public registry records only; makes no statement about Roche's or Genentech's internal pipeline (see README).",
+      "source_kinds": []
+    }
+  ],
   "registry_summary": {
     "total_studies": 123,
     "status_phase_counts": {
@@ -23169,5 +23390,158 @@ window.MDR_DATA = {
       "Genentech": 33
     },
     "note": "Public ClinicalTrials.gov registry records as of the fetch time above. This reflects only what sponsors have posted to the public registry -- it is not, and does not represent, Roche's or Genentech's internal development pipeline."
-  }
+  },
+  "second_study_summary": {
+    "study_key": "metabolic_demo",
+    "display_name": "pharmaversesdtm metabolic-panel subset",
+    "source_repo": "https://github.com/pharmaverse/pharmaversesdtm",
+    "source_commit": "7ec53ea88dfe1c168f9efbef59233c4426813b89",
+    "domains_used": {
+      "dm": "dm_metabolic",
+      "lb": "lb_metabolic"
+    },
+    "liver_panel_tests": [
+      "AST",
+      "ALP",
+      "GGT"
+    ],
+    "n_subjects": 5,
+    "n_lb": 309,
+    "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject."
+  },
+  "second_study_labs": [
+    {
+      "usubjid": "01-701-1015",
+      "test": "ALP",
+      "peak_x_uln": 0.4609,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1015",
+      "test": "AST",
+      "peak_x_uln": 1.1765,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1015",
+      "test": "GGT",
+      "peak_x_uln": 0.46,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1023",
+      "test": "ALP",
+      "peak_x_uln": 0.8609,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1023",
+      "test": "AST",
+      "peak_x_uln": 0.8333,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1023",
+      "test": "GGT",
+      "peak_x_uln": 0.44,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1028",
+      "test": "ALP",
+      "peak_x_uln": 0.4087,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1028",
+      "test": "AST",
+      "peak_x_uln": 0.7778,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1028",
+      "test": "GGT",
+      "peak_x_uln": 0.56,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1033",
+      "test": "ALP",
+      "peak_x_uln": 0.7739,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1033",
+      "test": "AST",
+      "peak_x_uln": 0.7222,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1033",
+      "test": "GGT",
+      "peak_x_uln": 0.52,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1034",
+      "test": "ALP",
+      "peak_x_uln": 0.3565,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1034",
+      "test": "AST",
+      "peak_x_uln": 0.7647,
+      "site": "701"
+    },
+    {
+      "usubjid": "01-701-1034",
+      "test": "GGT",
+      "peak_x_uln": 0.42,
+      "site": "701"
+    }
+  ],
+  "second_study_lineage": [
+    {
+      "metric_id": "metabolic_demo.summary",
+      "label": "Second-study demo summary (pharmaversesdtm metabolic-panel subset)",
+      "page_section": "template",
+      "domains": [
+        "dm",
+        "lb"
+      ],
+      "variables": [
+        "USUBJID",
+        "SITEID"
+      ],
+      "join": "DM.USUBJID is this study's primary key, same as the primary study's lineage entries.",
+      "notes": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject.",
+      "source_kinds": [
+        "CRF (site-entered)",
+        "non-CRF (central-lab feed)"
+      ]
+    },
+    {
+      "metric_id": "metabolic_demo.labs",
+      "label": "Peak x ULN by liver-panel test (AST, ALP, GGT)",
+      "page_section": "template",
+      "domains": [
+        "lb",
+        "dm"
+      ],
+      "variables": [
+        "USUBJID",
+        "LBTESTCD",
+        "LBSTRESN",
+        "LBSTNRHI",
+        "SITEID"
+      ],
+      "join": "LB.USUBJID -> DM.USUBJID to attach SITEID, same join shape as the primary study's eDISH entry -- computed by the identical mdrlens.uln.peak_x_uln_by_test primitive.",
+      "notes": "",
+      "source_kinds": [
+        "non-CRF (central-lab feed)",
+        "CRF (site-entered)"
+      ]
+    }
+  ]
 };

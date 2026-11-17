@@ -934,12 +934,172 @@
     card.innerHTML = html;
   }
 
+  // ================= 07 MDR PLAN =================
+  // Sample plan content, not derived data -- same reason the footer's
+  // "How the simulator works" lists are static prose, not JS over JSON:
+  // a plan is a claim about intent and basis (see docs/MDR_PLAN.md and
+  // the Basis card above), not a statistic computed from SDTM records.
+  var MDR_PLAN_ROWS = [
+    {
+      factor: "Protection of participant safety — serious hepatic injury",
+      risk: "A drug-induced liver-injury signal (Hy's Law pattern) goes unnoticed",
+      view: "§04 eDISH",
+      threshold: "peak transaminase (ALT or AST) ≥ 3× ULN and peak bilirubin ≥ 2× ULN",
+      milestone: "Every 25/50/75/100% enrollment-milestone cut, and any cut flagged by §01's \"what changed\"",
+      reviewer: "Medical monitor / safety reviewer; safety data review committee at milestone cuts"
+    },
+    {
+      factor: "Reliability of trial results — emerging signals between reviews",
+      risk: "A new adverse event or lab excursion is missed between scheduled reviews",
+      view: "§01 \"What changed since the last cut\"",
+      threshold: "New AE; new lab result ≥ 3× ULN; a subject newly meeting the potential-Hy's-Law pattern; a site newly outside its funnel limit",
+      milestone: "Every monthly data cut, with emphasis at the four milestone cuts",
+      reviewer: "MDR analyst every cut; safety data review committee at milestone cuts"
+    },
+    {
+      factor: "Integrity of systems and processes — site-level conduct",
+      risk: "A site under-reports AEs, under-collects labs, or drifts outside its visit schedule",
+      view: "§05 Site KRIs",
+      threshold: "Outside the ≈99.8% funnel-plot alarm band (z=3) for AE rate, missing-lab rate, or visit out-of-window rate",
+      milestone: "25/50/75/100% enrollment-milestone cuts",
+      reviewer: "RBQM / clinical operations lead, per flagged site"
+    },
+    {
+      factor: "Reliability of trial results — integrity of the records themselves",
+      risk: "Missing required fields or duplicate records undermine any view above",
+      view: "§06 Data quality",
+      threshold: "Hand-picked required-field list per SDTM domain; duplicate keys; visits outside a ±7-day window",
+      milestone: "Ongoing, reviewed at every cut",
+      reviewer: "Data management / MDR analyst"
+    },
+    {
+      factor: "Protection of participant safety — one subject's story must be internally consistent",
+      risk: "A severe lab abnormality with no matching AE entered (or vice versa) goes unreconciled",
+      view: "§03 One-patient timeline (CRF ↔ central-lab join)",
+      threshold: "Reviewer judgment — the join itself (USUBJID + study day) is documented at §08",
+      milestone: "Triggered by any flag above, not milestone-scheduled",
+      reviewer: "Medical monitor"
+    },
+    {
+      factor: "Study feasibility — enrollment pace",
+      risk: "Enrollment falls behind the pace needed to reach a planned review on schedule",
+      view: "§01 Enrollment curve",
+      threshold: "25/50/75/100% of final enrollment reached",
+      milestone: "Each threshold is itself the milestone",
+      reviewer: "Study team / sponsor oversight"
+    }
+  ];
+
+  function renderMdrPlan() {
+    var tbody = document.getElementById("mdrplan-table-body");
+    clear(tbody);
+    var frag = document.createDocumentFragment();
+    MDR_PLAN_ROWS.forEach(function (r) {
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        "<td>" + r.factor + "</td>" +
+        "<td>" + r.risk + "</td>" +
+        "<td>" + r.view + "</td>" +
+        "<td>" + r.threshold + "</td>" +
+        "<td>" + r.milestone + "</td>" +
+        "<td>" + r.reviewer + "</td>";
+      frag.appendChild(tr);
+    });
+    tbody.appendChild(frag);
+  }
+
+  // ================= 08 TRACEABILITY / LINEAGE =================
+  // badge class per source kind: non-CRF (central-lab feed) reuses the
+  // "flag-low" badge color, CRF (site-entered) reuses "flag-none" -- an
+  // informational distinction, not a data-quality flag, but the same
+  // pill styling already defined in index.html's CSS.
+  var SOURCE_KIND_BADGE_CLASS = { "non-CRF (central-lab feed)": "flag-low", "CRF (site-entered)": "flag-none" };
+  function renderLineageTable(tbodyId, rows, withSection) {
+    var tbody = document.getElementById(tbodyId);
+    clear(tbody);
+    var frag = document.createDocumentFragment();
+    rows.forEach(function (r) {
+      var domains = (r.domains.length ? r.domains.join(", ").toUpperCase() : "—");
+      var kinds = r.source_kinds && r.source_kinds.length
+        ? Array.from(new Set(r.source_kinds)).map(function (k) {
+            var cls = SOURCE_KIND_BADGE_CLASS[k] || "flag-none";
+            return '<span class="badge ' + cls + '">' + k + "</span>";
+          }).join(" ")
+        : "—";
+      var tr = document.createElement("tr");
+      var cells = "<td>" + r.label + "</td>";
+      if (withSection) cells += "<td>§" + r.page_section + "</td>";
+      cells +=
+        "<td>" + domains + "</td>" +
+        "<td>" + r.variables.join(", ") + "</td>";
+      if (withSection) cells += "<td>" + kinds + "</td>";
+      cells += "<td>" + r.join + "</td>";
+      tr.innerHTML = cells;
+      frag.appendChild(tr);
+    });
+    tbody.appendChild(frag);
+  }
+
+  function renderLineage() {
+    renderLineageTable("lineage-table-body", DATA.lineage, true);
+  }
+
+  // ================= 09 REUSABLE TEMPLATE: SECOND STUDY =================
+  function renderSecondStudy() {
+    var summaryCard = document.getElementById("template-summary-card");
+    var summary = DATA.second_study_summary;
+    if (!summary) {
+      summaryCard.innerHTML =
+        '<p class="caption">Second-study demo not generated for this build — run ' +
+        '<code>scripts/fetch_second_study.py</code> then <code>scripts/build_second_study.py</code>.</p>';
+      document.getElementById("template-labs-table-body").innerHTML = "";
+      document.getElementById("template-lineage-table-body").innerHTML = "";
+      return;
+    }
+    var domainsText = Object.keys(summary.domains_used).map(function (d) {
+      return d.toUpperCase() + " → " + summary.domains_used[d] + ".rda";
+    }).join(", ");
+    summaryCard.innerHTML =
+      '<h3>' + summary.display_name + '</h3>' +
+      '<p class="caption" style="margin-top:8px;">' + summary.enables + '</p>' +
+      '<div class="patient-meta" style="margin-top:12px;">' +
+      metaBlock("Subjects", fmtInt(summary.n_subjects)) +
+      metaBlock("Lab records", fmtInt(summary.n_lb)) +
+      metaBlock("Liver-panel tests run", summary.liver_panel_tests.join(", ")) +
+      metaBlock("Domains used", domainsText) +
+      '</div>' +
+      '<p class="figure-note" style="margin-top:10px;">Source: <a href="' + summary.source_repo +
+      '" target="_blank" rel="noopener">' + summary.source_repo + '</a>, commit ' +
+      '<code>' + summary.source_commit.slice(0, 12) + '</code> — the same pinned commit §01–06 use (see Methods).</p>';
+
+    function metaBlock(k, v) {
+      return '<div><div class="k">' + k + '</div><div class="v" style="font-size:13px;">' + v + '</div></div>';
+    }
+
+    var labsBody = document.getElementById("template-labs-table-body");
+    clear(labsBody);
+    var frag = document.createDocumentFragment();
+    (DATA.second_study_labs || []).forEach(function (r) {
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        "<td>" + r.usubjid + "</td>" +
+        "<td>" + r.site + "</td>" +
+        "<td>" + r.test + "</td>" +
+        '<td class="num">' + fmtX(r.peak_x_uln) + "</td>";
+      frag.appendChild(tr);
+    });
+    labsBody.appendChild(frag);
+
+    renderLineageTable("template-lineage-table-body", DATA.second_study_lineage || [], false);
+  }
+
   // ================= GLOSSARY =================
   function renderGlossary() {
     var terms = [
       ["RVA — Real-Time Visual Analytics", "the interactive, study-level dashboards this kind of role builds for ongoing trials, refreshed to milestones like First Patient In, cohort reviews, and safety data review committee meetings. §01 of this page is a simulator built on that workflow: one completed public study, replayed by data cut — and §02 adds a live public-registry fetch, both refreshed on a schedule (see Methods)."],
       ["MDR — Medical Data Review", "the clinical review of incoming trial data for safety issues and data problems."],
       ["RBQM — Risk-Based Quality Management", "monitoring trial conduct by watching a handful of quantitative risk indicators continuously, instead of relying only on periodic full on-site reviews."],
+      ["CtQ — critical-to-quality (factor)", "an attribute of a trial (per ICH E8(R1)) whose integrity is fundamental to participant protection and the reliability of trial results — the organizing idea behind §07's sample Medical Data Review plan."],
       ["KRI — key risk indicator", "one of those quantitative metrics, e.g. the adverse-event reporting rate at a site."],
       ["eDISH — evaluation of Drug-Induced Serious Hepatotoxicity", "the liver-safety scatterplot in section 02: peak transaminase vs. peak bilirubin, both in × ULN."],
       ["Hy's Law", "Hyman Zimmerman's clinical observation that a drug causing both liver-enzyme elevation and bilirubin elevation in the same patient predicts a serious risk of liver failure. “Potential Hy's Law” is the lab-only screening pattern used here to flag candidates for review."],
@@ -970,5 +1130,8 @@
   renderSiteFunnels();
   renderSiteTable();
   renderDataQuality();
+  renderMdrPlan();
+  renderLineage();
+  renderSecondStudy();
   renderGlossary();
 })();

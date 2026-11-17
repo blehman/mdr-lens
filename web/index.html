@@ -220,6 +220,9 @@
       <a href="#study">04 · Whole study</a>
       <a href="#sites">05 · Sites</a>
       <a href="#quality">06 · Data quality</a>
+      <a href="#mdrplan">07 · MDR plan</a>
+      <a href="#lineage">08 · Traceability</a>
+      <a href="#template">09 · Reusable template</a>
       <a href="#methods">Methods &amp; glossary</a>
     </nav>
     <div class="stat-row" id="hero-stats"></div>
@@ -465,6 +468,130 @@
           <div class="chart-fig" id="dq-chart"></div>
         </div>
         <div class="card" id="dq-summary-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 07 MDR PLAN ============== -->
+  <section class="view" id="mdrplan">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">07 · from guidance to a review cadence</div>
+        <h2>Sample Medical Data Review plan</h2>
+        <p class="dek">
+          A sample plan showing how the views above would be organized into a review
+          cadence: critical-to-quality (CtQ) factor → the risk each view watches → threshold
+          → milestone → reviewer. It reuses the same 25/50/75/100% enrollment-milestone cuts
+          §01 already computes, standing in for cohort reviews and safety data review
+          committee meetings.
+        </p>
+        <p class="dek">
+          <strong>Basis, not a compliance claim:</strong> built on four public documents,
+          fetched from their official hosting and dated below. This plan does not claim
+          compliance with, or certification against, any of them, and makes no statement
+          about any employer's internal Medical Data Review processes. Full plan:
+          <a href="https://github.com/blehman/mdr-lens/blob/main/docs/MDR_PLAN.md" target="_blank" rel="noopener">docs/MDR_PLAN.md</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Basis (fetched from official hosting, dated)</h3>
+        <ul class="limits-list">
+          <li><abbr title="International Council for Harmonisation">ICH</abbr> E6(R3), Good Clinical Practice — <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/e6r3-good-clinical-practice-gcp" target="_blank" rel="noopener">FDA-adopted final guidance, September 2025</a>. Fetched 2026-11-17.</li>
+          <li>ICH E8(R1), General Considerations for Clinical Studies — <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/e8r1-general-considerations-clinical-studies" target="_blank" rel="noopener">FDA-adopted final guidance, April 2022</a>. Fetched 2026-11-17.</li>
+          <li>TransCelerate BioPharma Inc., Risk-Based Monitoring initiative (the industry-consortium work behind what is commonly called Risk-Based Quality Management) — <a href="https://www.transceleratebiopharmainc.com/rbminteractiveguide/rbm-toolbox/" target="_blank" rel="noopener">RBM toolbox</a> (Risk Assessment and Categorization Tool, Risk Indicator Library). Fetched 2026-11-17.</li>
+          <li>FDA, "Oversight of Clinical Investigations — A Risk-Based Approach to Monitoring," Guidance for Industry, August 2013 — <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/oversight-clinical-investigations-risk-based-approach-monitoring" target="_blank" rel="noopener">guidance page</a>. Fetched 2026-11-17.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>The plan</h3>
+        <p class="table-scroll-hint">← scroll sideways for all columns →</p>
+        <div class="table-scroll">
+          <table id="mdrplan-table">
+            <thead>
+              <tr>
+                <th>Critical-to-quality factor</th><th>Risk</th><th>Existing view</th>
+                <th>Threshold</th><th>Milestone</th><th>Reviewer</th>
+              </tr>
+            </thead>
+            <tbody id="mdrplan-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 08 TRACEABILITY / LINEAGE ============== -->
+  <section class="view" id="lineage">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">08 · where every number comes from</div>
+        <h2>Traceability: page number → SDTM domain &amp; variables</h2>
+        <p class="dek">
+          Every number family on this page traces back to a named <abbr title="Study Data Tabulation Model">SDTM</abbr>
+          domain and variable, labeled CRF (case report form, site-entered) or non-CRF (e.g. the
+          LB central-lab feed), with the join that produces it — usually USUBJID, joined to a
+          visit or date. The same mapping is pinned by <code>tests/test_lineage.py</code> and
+          written machine-readable to <code>data/derived/lineage.json</code> at build time.
+        </p>
+      </div>
+      <div class="card">
+        <p class="table-scroll-hint">← scroll sideways for all columns →</p>
+        <div class="table-scroll">
+          <table id="lineage-table">
+            <thead>
+              <tr>
+                <th>Metric</th><th>Page section</th><th>SDTM domain(s)</th>
+                <th>Variables</th><th>CRF / non-CRF</th><th>Join</th>
+              </tr>
+            </thead>
+            <tbody id="lineage-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 09 REUSABLE TEMPLATE ============== -->
+  <section class="view" id="template">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">09 · the same method, a second study</div>
+        <h2>Reusable template: a second study plugs in</h2>
+        <p class="dek">
+          A <code>StudyConfig</code> (<code>src/mdrlens/studyconfig.py</code>) plugs any SDTM
+          study's domains into this project's methods. Demonstrated here on a second study from
+          the same pharmaverse/pharmaversesdtm source: its labs and liver-panel view only,
+          computed by the identical peak-×-ULN method §04's eDISH view uses on the primary
+          study.
+        </p>
+      </div>
+      <div class="card" id="template-summary-card"></div>
+      <div class="card" style="margin-top:14px;">
+        <h3>Liver-panel labs, by subject (peak × ULN)</h3>
+        <div class="table-scroll">
+          <table id="template-labs-table">
+            <thead>
+              <tr><th>Subject</th><th>Site</th><th>Test</th><th class="num">Peak × ULN</th></tr>
+            </thead>
+            <tbody id="template-labs-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h3>This demo's own lineage</h3>
+        <p class="caption">The same lineage schema §08 uses for the primary study, applied here — proving the schema, not just the labs arithmetic, plugs in.</p>
+        <div class="table-scroll">
+          <table id="template-lineage-table">
+            <thead>
+              <tr>
+                <th>Metric</th><th>SDTM domain(s)</th><th>Variables</th><th>Join</th>
+              </tr>
+            </thead>
+            <tbody id="template-lineage-table-body"></tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
