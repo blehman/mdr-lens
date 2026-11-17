@@ -1,0 +1,37 @@
+{
+  "source_repo": "https://github.com/pharmaverse/pharmaversesdtm",
+  "license": "Apache-2.0",
+  "description": "CDISC Pilot Project SDTM study (public, synthetic/anonymized teaching dataset), redistributed by the pharmaverse community.",
+  "domains": [
+    {
+      "domain": "dm",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/main/data/dm.rda",
+      "bytes": 8097,
+      "sha256": "36364acc1d1e16fc72d6b28d04a9677df2375f543a46abe75d609de9835176fb"
+    },
+    {
+      "domain": "ae",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/main/data/ae.rda",
+      "bytes": 22760,
+      "sha256": "dae58611f970a2bed9071999da3c390548c66d58a1e5430472a935aadc887c17"
+    },
+    {
+      "domain": "lb",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/main/data/lb.rda",
+      "bytes": 277542,
+      "sha256": "8232e53921256f4ec4f73ed61fbb65883197f8c87695ceb1635d392d36c6710d"
+    },
+    {
+      "domain": "sv",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/main/data/sv.rda",
+      "bytes": 10052,
+      "sha256": "ed6c6c53e3d97799c07cc3893b264842c5bca22ddb03179423681ef89dbf4f5d"
+    },
+    {
+      "domain": "ds",
+      "url": "https://raw.githubusercontent.com/pharmaverse/pharmaversesdtm/main/data/ds.rda",
+      "bytes": 8577,
+      "sha256": "130a453b53afe5cb43c1bc61f77149243c6ffdafd1c002911125ff3bedd47383"
+    }
+  ]
+}

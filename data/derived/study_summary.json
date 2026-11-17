@@ -1,0 +1,13 @@
+{
+  "n_subjects": 306,
+  "n_sites": 17,
+  "n_ae": 1191,
+  "n_lb": 59580,
+  "n_sv": 3559,
+  "n_ds": 850,
+  "n_potential_hys_law": 1,
+  "hys_law_transaminase_threshold_x_uln": 3.0,
+  "hys_law_bili_threshold_x_uln": 2.0,
+  "protagonist_usubjid": "01-705-1186",
+  "source": "pharmaverse/pharmaversesdtm CDISC pilot study (Apache-2.0)"
+}

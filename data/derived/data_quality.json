@@ -1,0 +1,71 @@
+{
+  "per_domain": {
+    "dm": {
+      "domain": "dm",
+      "n_records": 306,
+      "missing_required": {
+        "USUBJID": 0,
+        "SITEID": 0,
+        "ARM": 0,
+        "AGE": 0,
+        "SEX": 0,
+        "RFSTDTC": 52
+      },
+      "n_duplicates": 0,
+      "duplicate_keys": []
+    },
+    "ae": {
+      "domain": "ae",
+      "n_records": 1191,
+      "missing_required": {
+        "USUBJID": 0,
+        "AETERM": 0,
+        "AESTDTC": 0,
+        "AESEV": 0,
+        "AESER": 0
+      },
+      "n_duplicates": 0,
+      "duplicate_keys": []
+    },
+    "lb": {
+      "domain": "lb",
+      "n_records": 59580,
+      "missing_required": {
+        "USUBJID": 0,
+        "LBTESTCD": 0,
+        "LBSTRESN": 880,
+        "LBDTC": 0
+      },
+      "n_duplicates": 0,
+      "duplicate_keys": []
+    },
+    "sv": {
+      "domain": "sv",
+      "n_records": 3559,
+      "missing_required": {
+        "USUBJID": 0,
+        "VISITNUM": 0,
+        "SVSTDTC": 0
+      },
+      "n_duplicates": 0,
+      "duplicate_keys": []
+    },
+    "ds": {
+      "domain": "ds",
+      "n_records": 850,
+      "missing_required": {
+        "USUBJID": 0,
+        "DSDECOD": 0,
+        "DSSTDTC": 0
+      },
+      "n_duplicates": 0,
+      "duplicate_keys": []
+    }
+  },
+  "visit_out_of_window": {
+    "n_visits_evaluated": 3507,
+    "n_out_of_window": 322,
+    "rate": 0.09181636726546906,
+    "window_days": 7.0
+  }
+}

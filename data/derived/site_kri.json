@@ -1,0 +1,682 @@
+[
+  {
+    "site": "701",
+    "n_subjects": 51,
+    "n_ae": 238,
+    "exposure_days": 4934.0,
+    "ae_per_100_subject_days": 4.823672476692339,
+    "ae_limits": {
+      "n": 49,
+      "center": 3.90479000688502,
+      "watch_lower": 3.340203106657091,
+      "watch_upper": 4.469376907112949,
+      "alarm_lower": 3.057909656543127,
+      "alarm_upper": 4.751670357226913
+    },
+    "ae_flag": "high",
+    "n_lb_records": 9875,
+    "n_lb_missing": 151,
+    "missing_lab_rate": 0.015291139240506329,
+    "missing_lab_limits": {
+      "n": 9875,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.01234220997229413,
+      "watch_upper": 0.017197904159965017,
+      "alarm_lower": 0.011128286425376409,
+      "alarm_upper": 0.01841182770688274
+    },
+    "missing_lab_flag": null,
+    "n_visits": 575,
+    "n_visits_oow": 43,
+    "visit_oow_rate": 0.07478260869565218,
+    "visit_oow_limits": {
+      "n": 575,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.06773157184990282,
+      "watch_upper": 0.1159011626810353,
+      "alarm_lower": 0.055689174142119706,
+      "alarm_upper": 0.1279435603888184
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "702",
+    "n_subjects": 1,
+    "n_ae": 10,
+    "exposure_days": 114.0,
+    "ae_per_100_subject_days": 8.771929824561402,
+    "ae_limits": {
+      "n": 1,
+      "center": 3.90479000688502,
+      "watch_lower": 0.0,
+      "watch_upper": 7.856898308480521,
+      "alarm_lower": 0.0,
+      "alarm_upper": 9.832952459278271
+    },
+    "ae_flag": null,
+    "n_lb_records": 233,
+    "n_lb_missing": 4,
+    "missing_lab_rate": 0.017167381974248927,
+    "missing_lab_limits": {
+      "n": 233,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.0,
+      "watch_upper": 0.030575691135439304,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.03847850817009417
+    },
+    "missing_lab_flag": null,
+    "n_visits": 12,
+    "n_visits_oow": 5,
+    "visit_oow_rate": 0.4166666666666667,
+    "visit_oow_limits": {
+      "n": 12,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.0,
+      "watch_upper": 0.258535814209171,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.341895537681022
+    },
+    "visit_oow_flag": "high"
+  },
+  {
+    "site": "703",
+    "n_subjects": 19,
+    "n_ae": 61,
+    "exposure_days": 2017.0,
+    "ae_per_100_subject_days": 3.024293505205751,
+    "ae_limits": {
+      "n": 20,
+      "center": 3.90479000688502,
+      "watch_lower": 3.0210717252041417,
+      "watch_upper": 4.7885082885658985,
+      "alarm_lower": 2.5792125843637024,
+      "alarm_upper": 5.230367429406337
+    },
+    "ae_flag": null,
+    "n_lb_records": 3924,
+    "n_lb_missing": 57,
+    "missing_lab_rate": 0.01452599388379205,
+    "missing_lab_limits": {
+      "n": 3924,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.01091859713397876,
+      "watch_upper": 0.018621516998280387,
+      "alarm_lower": 0.008992867167903353,
+      "alarm_upper": 0.020547246964355795
+    },
+    "missing_lab_flag": null,
+    "n_visits": 241,
+    "n_visits_oow": 23,
+    "visit_oow_rate": 0.0954356846473029,
+    "visit_oow_limits": {
+      "n": 241,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.05461418958244631,
+      "watch_upper": 0.1290185449484918,
+      "alarm_lower": 0.03601310074093493,
+      "alarm_upper": 0.1476196337900032
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "704",
+    "n_subjects": 25,
+    "n_ae": 100,
+    "exposure_days": 2741.0,
+    "ae_per_100_subject_days": 3.6483035388544325,
+    "ae_limits": {
+      "n": 27,
+      "center": 3.90479000688502,
+      "watch_lower": 3.1442064096207805,
+      "watch_upper": 4.665373604149259,
+      "alarm_lower": 2.763914610988661,
+      "alarm_upper": 5.0456654027813785
+    },
+    "ae_flag": null,
+    "n_lb_records": 5451,
+    "n_lb_missing": 83,
+    "missing_lab_rate": 0.015226563933223261,
+    "missing_lab_limits": {
+      "n": 5451,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.011502284725415786,
+      "watch_upper": 0.018037829406843363,
+      "alarm_lower": 0.009868398555058892,
+      "alarm_upper": 0.019671715577200256
+    },
+    "missing_lab_flag": null,
+    "n_visits": 325,
+    "n_visits_oow": 30,
+    "visit_oow_rate": 0.09230769230769231,
+    "visit_oow_limits": {
+      "n": 325,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.059780594574468854,
+      "watch_upper": 0.12385213995646926,
+      "alarm_lower": 0.04376270822896875,
+      "alarm_upper": 0.13987002630196937
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "705",
+    "n_subjects": 21,
+    "n_ae": 27,
+    "exposure_days": 1866.0,
+    "ae_per_100_subject_days": 1.4469453376205788,
+    "ae_limits": {
+      "n": 19,
+      "center": 3.90479000688502,
+      "watch_lower": 2.9981141805385487,
+      "watch_upper": 4.811465833231491,
+      "alarm_lower": 2.5447762673653127,
+      "alarm_upper": 5.264803746404727
+    },
+    "ae_flag": "low",
+    "n_lb_records": 3493,
+    "n_lb_missing": 56,
+    "missing_lab_rate": 0.01603206412825651,
+    "missing_lab_limits": {
+      "n": 3493,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.010687891729012928,
+      "watch_upper": 0.01885222240324622,
+      "alarm_lower": 0.008646809060454605,
+      "alarm_upper": 0.020893305071804542
+    },
+    "missing_lab_flag": null,
+    "n_visits": 213,
+    "n_visits_oow": 28,
+    "visit_oow_rate": 0.13145539906103287,
+    "visit_oow_limits": {
+      "n": 213,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.052244450926067304,
+      "watch_upper": 0.13138828360487081,
+      "alarm_lower": 0.032458492756366426,
+      "alarm_upper": 0.1511742417745717
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "706",
+    "n_subjects": 3,
+    "n_ae": 21,
+    "exposure_days": 266.0,
+    "ae_per_100_subject_days": 7.894736842105263,
+    "ae_limits": {
+      "n": 3,
+      "center": 3.90479000688502,
+      "watch_lower": 1.6230392150923025,
+      "watch_upper": 6.186540798677737,
+      "alarm_lower": 0.48216381919594387,
+      "alarm_upper": 7.327416194574096
+    },
+    "ae_flag": "high",
+    "n_lb_records": 529,
+    "n_lb_missing": 8,
+    "missing_lab_rate": 0.015122873345935728,
+    "missing_lab_limits": {
+      "n": 529,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.004280381710014184,
+      "watch_upper": 0.02525973242224496,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.030504570100302657
+    },
+    "missing_lab_flag": null,
+    "n_visits": 34,
+    "n_visits_oow": 12,
+    "visit_oow_rate": 0.35294117647058826,
+    "visit_oow_limits": {
+      "n": 34,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.0,
+      "watch_upper": 0.19086247772011095,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.24038553294743192
+    },
+    "visit_oow_flag": "high"
+  },
+  {
+    "site": "707",
+    "n_subjects": 5,
+    "n_ae": 8,
+    "exposure_days": 200.0,
+    "ae_per_100_subject_days": 4.0,
+    "ae_limits": {
+      "n": 2,
+      "center": 3.90479000688502,
+      "watch_lower": 1.1102274268431915,
+      "watch_upper": 6.699352586926848,
+      "alarm_lower": 0.0,
+      "alarm_upper": 8.096633876947763
+    },
+    "ae_flag": null,
+    "n_lb_records": 394,
+    "n_lb_missing": 6,
+    "missing_lab_rate": 0.015228426395939087,
+    "missing_lab_limits": {
+      "n": 394,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.002615426238236693,
+      "watch_upper": 0.026924687894022456,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.033002003307968895
+    },
+    "missing_lab_flag": null,
+    "n_visits": 22,
+    "n_visits_oow": 0,
+    "visit_oow_rate": 0.0,
+    "visit_oow_limits": {
+      "n": 22,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.0,
+      "watch_upper": 0.21494683906276923,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.27651207496141933
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "708",
+    "n_subjects": 32,
+    "n_ae": 102,
+    "exposure_days": 2839.0,
+    "ae_per_100_subject_days": 3.592814371257485,
+    "ae_limits": {
+      "n": 28,
+      "center": 3.90479000688502,
+      "watch_lower": 3.157911741141052,
+      "watch_upper": 4.651668272628988,
+      "alarm_lower": 2.784472608269068,
+      "alarm_upper": 5.025107405500972
+    },
+    "ae_flag": null,
+    "n_lb_records": 5498,
+    "n_lb_missing": 82,
+    "missing_lab_rate": 0.014914514368861403,
+    "missing_lab_limits": {
+      "n": 5498,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.011516282082993464,
+      "watch_upper": 0.018023832049265685,
+      "alarm_lower": 0.009889394591425408,
+      "alarm_upper": 0.01965071954083374
+    },
+    "missing_lab_flag": null,
+    "n_visits": 325,
+    "n_visits_oow": 33,
+    "visit_oow_rate": 0.10153846153846154,
+    "visit_oow_limits": {
+      "n": 325,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.059780594574468854,
+      "watch_upper": 0.12385213995646926,
+      "alarm_lower": 0.04376270822896875,
+      "alarm_upper": 0.13987002630196937
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "709",
+    "n_subjects": 23,
+    "n_ae": 122,
+    "exposure_days": 2658.0,
+    "ae_per_100_subject_days": 4.5899172310007526,
+    "ae_limits": {
+      "n": 27,
+      "center": 3.90479000688502,
+      "watch_lower": 3.1442064096207805,
+      "watch_upper": 4.665373604149259,
+      "alarm_lower": 2.763914610988661,
+      "alarm_upper": 5.0456654027813785
+    },
+    "ae_flag": null,
+    "n_lb_records": 5103,
+    "n_lb_missing": 67,
+    "missing_lab_rate": 0.013129531648050167,
+    "missing_lab_limits": {
+      "n": 5103,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.011392699058193399,
+      "watch_upper": 0.018147415074065747,
+      "alarm_lower": 0.009704020054225312,
+      "alarm_upper": 0.019836094078033835
+    },
+    "missing_lab_flag": null,
+    "n_visits": 300,
+    "n_visits_oow": 12,
+    "visit_oow_rate": 0.04,
+    "visit_oow_limits": {
+      "n": 300,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.058472477876728664,
+      "watch_upper": 0.12516025665420946,
+      "alarm_lower": 0.04180053318235846,
+      "alarm_upper": 0.14183220134857966
+    },
+    "visit_oow_flag": "low"
+  },
+  {
+    "site": "710",
+    "n_subjects": 38,
+    "n_ae": 141,
+    "exposure_days": 3556.0,
+    "ae_per_100_subject_days": 3.965129358830146,
+    "ae_limits": {
+      "n": 36,
+      "center": 3.90479000688502,
+      "watch_lower": 3.2461052899524363,
+      "watch_upper": 4.563474723817603,
+      "alarm_lower": 2.9167629314861445,
+      "alarm_upper": 4.892817082283895
+    },
+    "ae_flag": null,
+    "n_lb_records": 7155,
+    "n_lb_missing": 111,
+    "missing_lab_rate": 0.01551362683438155,
+    "missing_lab_limits": {
+      "n": 7155,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.01191782364498585,
+      "watch_upper": 0.017622290487273297,
+      "alarm_lower": 0.01049170693441399,
+      "alarm_upper": 0.019048407197845157
+    },
+    "missing_lab_flag": null,
+    "n_visits": 432,
+    "n_visits_oow": 36,
+    "visit_oow_rate": 0.08333333333333333,
+    "visit_oow_limits": {
+      "n": 432,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.06402979277485207,
+      "watch_upper": 0.11960294175608605,
+      "alarm_lower": 0.050136505529543574,
+      "alarm_upper": 0.13349622900139455
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "711",
+    "n_subjects": 12,
+    "n_ae": 28,
+    "exposure_days": 294.0,
+    "ae_per_100_subject_days": 9.523809523809524,
+    "ae_limits": {
+      "n": 3,
+      "center": 3.90479000688502,
+      "watch_lower": 1.6230392150923025,
+      "watch_upper": 6.186540798677737,
+      "alarm_lower": 0.48216381919594387,
+      "alarm_upper": 7.327416194574096
+    },
+    "ae_flag": "high",
+    "n_lb_records": 759,
+    "n_lb_missing": 15,
+    "missing_lab_rate": 0.019762845849802372,
+    "missing_lab_limits": {
+      "n": 759,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.006012781910902187,
+      "watch_upper": 0.02352733222135696,
+      "alarm_lower": 0.0016341443332884946,
+      "alarm_upper": 0.027905969798970653
+    },
+    "missing_lab_flag": null,
+    "n_visits": 48,
+    "n_visits_oow": 8,
+    "visit_oow_rate": 0.16666666666666666,
+    "visit_oow_limits": {
+      "n": 48,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.008456643793618088,
+      "watch_upper": 0.17517609073732004,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.21685595247324552
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "713",
+    "n_subjects": 9,
+    "n_ae": 43,
+    "exposure_days": 1479.0,
+    "ae_per_100_subject_days": 2.9073698444895197,
+    "ae_limits": {
+      "n": 15,
+      "center": 3.90479000688502,
+      "watch_lower": 2.884360031252523,
+      "watch_upper": 4.9252199825175165,
+      "alarm_lower": 2.3741450434362745,
+      "alarm_upper": 5.435434970333765
+    },
+    "ae_flag": null,
+    "n_lb_records": 2719,
+    "n_lb_missing": 38,
+    "missing_lab_rate": 0.013975726369988967,
+    "missing_lab_limits": {
+      "n": 2719,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.010143208562373603,
+      "watch_upper": 0.019396905569885544,
+      "alarm_lower": 0.007829784310495618,
+      "alarm_upper": 0.02171032982176353
+    },
+    "missing_lab_flag": null,
+    "n_visits": 146,
+    "n_visits_oow": 10,
+    "visit_oow_rate": 0.0684931506849315,
+    "visit_oow_limits": {
+      "n": 146,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.0440193873735899,
+      "watch_upper": 0.13961334715734822,
+      "alarm_lower": 0.020120897427650317,
+      "alarm_upper": 0.16351183710328782
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "714",
+    "n_subjects": 6,
+    "n_ae": 40,
+    "exposure_days": 826.0,
+    "ae_per_100_subject_days": 4.842615012106537,
+    "ae_limits": {
+      "n": 8,
+      "center": 3.90479000688502,
+      "watch_lower": 2.5075087168641055,
+      "watch_upper": 5.302071296905934,
+      "alarm_lower": 1.8088680718536487,
+      "alarm_upper": 6.000711941916391
+    },
+    "ae_flag": null,
+    "n_lb_records": 1559,
+    "n_lb_missing": 20,
+    "missing_lab_rate": 0.012828736369467608,
+    "missing_lab_limits": {
+      "n": 1559,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.008659696674218773,
+      "watch_upper": 0.020880417458040375,
+      "alarm_lower": 0.00560451647826337,
+      "alarm_upper": 0.023935597653995777
+    },
+    "missing_lab_flag": null,
+    "n_visits": 86,
+    "n_visits_oow": 9,
+    "visit_oow_rate": 0.10465116279069768,
+    "visit_oow_limits": {
+      "n": 86,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.029539370889883287,
+      "watch_upper": 0.15409336364105483,
+      "alarm_lower": 0.0,
+      "alarm_upper": 0.1852318618288477
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "715",
+    "n_subjects": 12,
+    "n_ae": 15,
+    "exposure_days": 877.0,
+    "ae_per_100_subject_days": 1.7103762827822122,
+    "ae_limits": {
+      "n": 9,
+      "center": 3.90479000688502,
+      "watch_lower": 2.5874205730198527,
+      "watch_upper": 5.222159440750187,
+      "alarm_lower": 1.9287358560872692,
+      "alarm_upper": 5.880844157682771
+    },
+    "ae_flag": "low",
+    "n_lb_records": 1677,
+    "n_lb_missing": 26,
+    "missing_lab_rate": 0.015503875968992248,
+    "missing_lab_limits": {
+      "n": 1677,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.008878591384982343,
+      "watch_upper": 0.020661522747276805,
+      "alarm_lower": 0.005932858544408727,
+      "alarm_upper": 0.02360725558785042
+    },
+    "missing_lab_flag": null,
+    "n_visits": 98,
+    "n_visits_oow": 8,
+    "visit_oow_rate": 0.08163265306122448,
+    "visit_oow_limits": {
+      "n": 98,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.03347671366388589,
+      "watch_upper": 0.15015602086705224,
+      "alarm_lower": 0.0043068868630943,
+      "alarm_upper": 0.17932584766784382
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "716",
+    "n_subjects": 29,
+    "n_ae": 86,
+    "exposure_days": 3314.0,
+    "ae_per_100_subject_days": 2.595051297525649,
+    "ae_limits": {
+      "n": 33,
+      "center": 3.90479000688502,
+      "watch_lower": 3.216816257660221,
+      "watch_upper": 4.592763756109819,
+      "alarm_lower": 2.8728293830478213,
+      "alarm_upper": 4.936750630722218
+    },
+    "ae_flag": "low",
+    "n_lb_records": 6326,
+    "n_lb_missing": 86,
+    "missing_lab_rate": 0.013594688586784698,
+    "missing_lab_limits": {
+      "n": 6326,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.011736687747750463,
+      "watch_upper": 0.017803426384508686,
+      "alarm_lower": 0.010220003088560907,
+      "alarm_upper": 0.01932011104369824
+    },
+    "missing_lab_flag": null,
+    "n_visits": 365,
+    "n_visits_oow": 46,
+    "visit_oow_rate": 0.12602739726027398,
+    "visit_oow_limits": {
+      "n": 365,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.061586902918347716,
+      "watch_upper": 0.1220458316125904,
+      "alarm_lower": 0.04647217074478705,
+      "alarm_upper": 0.13716056378615107
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "717",
+    "n_subjects": 7,
+    "n_ae": 58,
+    "exposure_days": 1030.0,
+    "ae_per_100_subject_days": 5.631067961165048,
+    "ae_limits": {
+      "n": 10,
+      "center": 3.90479000688502,
+      "watch_lower": 2.6550236276148746,
+      "watch_upper": 5.154556386155165,
+      "alarm_lower": 2.0301404379798025,
+      "alarm_upper": 5.779439575790237
+    },
+    "ae_flag": null,
+    "n_lb_records": 1938,
+    "n_lb_missing": 27,
+    "missing_lab_rate": 0.01393188854489164,
+    "missing_lab_limits": {
+      "n": 1938,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.009289647734661776,
+      "watch_upper": 0.020250466397597373,
+      "alarm_lower": 0.006549443068927876,
+      "alarm_upper": 0.02299067106333127
+    },
+    "missing_lab_flag": null,
+    "n_visits": 110,
+    "n_visits_oow": 2,
+    "visit_oow_rate": 0.01818181818181818,
+    "visit_oow_limits": {
+      "n": 110,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.03675074625739227,
+      "watch_upper": 0.14688198827354584,
+      "alarm_lower": 0.009217935753353876,
+      "alarm_upper": 0.17441479877758426
+    },
+    "visit_oow_flag": null
+  },
+  {
+    "site": "718",
+    "n_subjects": 13,
+    "n_ae": 91,
+    "exposure_days": 1490.0,
+    "ae_per_100_subject_days": 6.10738255033557,
+    "ae_limits": {
+      "n": 15,
+      "center": 3.90479000688502,
+      "watch_lower": 2.884360031252523,
+      "watch_upper": 4.9252199825175165,
+      "alarm_lower": 2.3741450434362745,
+      "alarm_upper": 5.435434970333765
+    },
+    "ae_flag": "high",
+    "n_lb_records": 2947,
+    "n_lb_missing": 43,
+    "missing_lab_rate": 0.014591109602986088,
+    "missing_lab_limits": {
+      "n": 2947,
+      "center": 0.014770057066129574,
+      "watch_lower": 0.010325793410130405,
+      "watch_upper": 0.019214320722128742,
+      "alarm_lower": 0.008103661582130823,
+      "alarm_upper": 0.021436452550128327
+    },
+    "missing_lab_flag": null,
+    "n_visits": 175,
+    "n_visits_oow": 17,
+    "visit_oow_rate": 0.09714285714285714,
+    "visit_oow_limits": {
+      "n": 175,
+      "center": 0.09181636726546906,
+      "watch_lower": 0.04815896809742973,
+      "watch_upper": 0.1354737664335084,
+      "alarm_lower": 0.02633026851341007,
+      "alarm_upper": 0.15730246601752806
+    },
+    "visit_oow_flag": null
+  }
+]

@@ -1,0 +1,3062 @@
+[
+  {
+    "usubjid": "01-701-1015",
+    "site": "701",
+    "peak_alt_xuln": 1.2058823529411764,
+    "peak_ast_xuln": 1.1764705882352942,
+    "peak_transaminase_xuln": 1.2058823529411764,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1023",
+    "site": "701",
+    "peak_alt_xuln": 0.8837209302325582,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.8837209302325582,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1028",
+    "site": "701",
+    "peak_alt_xuln": 0.9428571428571428,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.9428571428571428,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1033",
+    "site": "701",
+    "peak_alt_xuln": 1.0,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 1.0,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1034",
+    "site": "701",
+    "peak_alt_xuln": 0.75,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1047",
+    "site": "701",
+    "peak_alt_xuln": 0.6875,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1057",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1097",
+    "site": "701",
+    "peak_alt_xuln": 0.5581395348837209,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.5833333333333334,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1111",
+    "site": "701",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1115",
+    "site": "701",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.7222222222222222,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1118",
+    "site": "701",
+    "peak_alt_xuln": 0.37209302325581395,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1130",
+    "site": "701",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.7222222222222222,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1133",
+    "site": "701",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.7941176470588235,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1145",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1146",
+    "site": "701",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1148",
+    "site": "701",
+    "peak_alt_xuln": 0.9534883720930233,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.9534883720930233,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1153",
+    "site": "701",
+    "peak_alt_xuln": 0.53125,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1162",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1176",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1180",
+    "site": "701",
+    "peak_alt_xuln": 0.6744186046511628,
+    "peak_ast_xuln": 0.6944444444444444,
+    "peak_transaminase_xuln": 0.6944444444444444,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1181",
+    "site": "701",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1188",
+    "site": "701",
+    "peak_alt_xuln": 0.8285714285714286,
+    "peak_ast_xuln": 0.5555555555555556,
+    "peak_transaminase_xuln": 0.8285714285714286,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1192",
+    "site": "701",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1203",
+    "site": "701",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1211",
+    "site": "701",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.65625,
+    "peak_bili_xuln": 1.2214285714285713,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1234",
+    "site": "701",
+    "peak_alt_xuln": 1.1428571428571428,
+    "peak_ast_xuln": 0.8888888888888888,
+    "peak_transaminase_xuln": 1.1428571428571428,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1239",
+    "site": "701",
+    "peak_alt_xuln": 1.6511627906976745,
+    "peak_ast_xuln": 1.1944444444444444,
+    "peak_transaminase_xuln": 1.6511627906976745,
+    "peak_bili_xuln": 1.8728571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1240",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1275",
+    "site": "701",
+    "peak_alt_xuln": 0.5116279069767442,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.8333333333333334,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1287",
+    "site": "701",
+    "peak_alt_xuln": 0.7941176470588235,
+    "peak_ast_xuln": 0.9705882352941176,
+    "peak_transaminase_xuln": 0.9705882352941176,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1294",
+    "site": "701",
+    "peak_alt_xuln": 0.6744186046511628,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.7777777777777778,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1302",
+    "site": "701",
+    "peak_alt_xuln": 1.441860465116279,
+    "peak_ast_xuln": 2.0277777777777777,
+    "peak_transaminase_xuln": 2.0277777777777777,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1307",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1317",
+    "site": "701",
+    "peak_alt_xuln": 0.32558139534883723,
+    "peak_ast_xuln": 0.5277777777777778,
+    "peak_transaminase_xuln": 0.5277777777777778,
+    "peak_bili_xuln": 1.547142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1324",
+    "site": "701",
+    "peak_alt_xuln": 0.42857142857142855,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.5833333333333334,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1341",
+    "site": "701",
+    "peak_alt_xuln": 1.3488372093023255,
+    "peak_ast_xuln": 1.4722222222222223,
+    "peak_transaminase_xuln": 1.4722222222222223,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1345",
+    "site": "701",
+    "peak_alt_xuln": 0.7352941176470589,
+    "peak_ast_xuln": 1.3529411764705883,
+    "peak_transaminase_xuln": 1.3529411764705883,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1356",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1360",
+    "site": "701",
+    "peak_alt_xuln": 0.4418604651162791,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1363",
+    "site": "701",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1369",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1383",
+    "site": "701",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1386",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1387",
+    "site": "701",
+    "peak_alt_xuln": 0.375,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1392",
+    "site": "701",
+    "peak_alt_xuln": 0.6571428571428571,
+    "peak_ast_xuln": 0.6944444444444444,
+    "peak_transaminase_xuln": 0.6944444444444444,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1411",
+    "site": "701",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1415",
+    "site": "701",
+    "peak_alt_xuln": 0.45714285714285713,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1429",
+    "site": "701",
+    "peak_alt_xuln": 0.875,
+    "peak_ast_xuln": 0.9117647058823529,
+    "peak_transaminase_xuln": 0.9117647058823529,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1440",
+    "site": "701",
+    "peak_alt_xuln": 0.7428571428571429,
+    "peak_ast_xuln": 0.8611111111111112,
+    "peak_transaminase_xuln": 0.8611111111111112,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1442",
+    "site": "701",
+    "peak_alt_xuln": 0.9705882352941176,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.9705882352941176,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-701-1444",
+    "site": "701",
+    "peak_alt_xuln": 0.5348837209302325,
+    "peak_ast_xuln": 0.5277777777777778,
+    "peak_transaminase_xuln": 0.5348837209302325,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-702-1082",
+    "site": "702",
+    "peak_alt_xuln": 1.15625,
+    "peak_ast_xuln": 1.2941176470588236,
+    "peak_transaminase_xuln": 1.2941176470588236,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1042",
+    "site": "703",
+    "peak_alt_xuln": 0.7209302325581395,
+    "peak_ast_xuln": 1.0555555555555556,
+    "peak_transaminase_xuln": 1.0555555555555556,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1076",
+    "site": "703",
+    "peak_alt_xuln": 0.7714285714285715,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.7714285714285715,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1086",
+    "site": "703",
+    "peak_alt_xuln": 0.8285714285714286,
+    "peak_ast_xuln": 1.1111111111111112,
+    "peak_transaminase_xuln": 1.1111111111111112,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1096",
+    "site": "703",
+    "peak_alt_xuln": 0.375,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1100",
+    "site": "703",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.9705882352941176,
+    "peak_transaminase_xuln": 0.9705882352941176,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1119",
+    "site": "703",
+    "peak_alt_xuln": 1.375,
+    "peak_ast_xuln": 1.411764705882353,
+    "peak_transaminase_xuln": 1.411764705882353,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1175",
+    "site": "703",
+    "peak_alt_xuln": 0.5428571428571428,
+    "peak_ast_xuln": 0.4722222222222222,
+    "peak_transaminase_xuln": 0.5428571428571428,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1182",
+    "site": "703",
+    "peak_alt_xuln": 0.5428571428571428,
+    "peak_ast_xuln": 0.6388888888888888,
+    "peak_transaminase_xuln": 0.6388888888888888,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1197",
+    "site": "703",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.6176470588235294,
+    "peak_transaminase_xuln": 0.6176470588235294,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1210",
+    "site": "703",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.8823529411764706,
+    "peak_transaminase_xuln": 0.8823529411764706,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1258",
+    "site": "703",
+    "peak_alt_xuln": 1.34375,
+    "peak_ast_xuln": 1.0588235294117647,
+    "peak_transaminase_xuln": 1.34375,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1279",
+    "site": "703",
+    "peak_alt_xuln": 0.34375,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1295",
+    "site": "703",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1299",
+    "site": "703",
+    "peak_alt_xuln": 0.40625,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.6470588235294118,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1335",
+    "site": "703",
+    "peak_alt_xuln": 0.7352941176470589,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1379",
+    "site": "703",
+    "peak_alt_xuln": 0.75,
+    "peak_ast_xuln": 1.088235294117647,
+    "peak_transaminase_xuln": 1.088235294117647,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1396",
+    "site": "703",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1403",
+    "site": "703",
+    "peak_alt_xuln": 0.9302325581395349,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.9302325581395349,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-703-1439",
+    "site": "703",
+    "peak_alt_xuln": 0.84375,
+    "peak_ast_xuln": 0.9117647058823529,
+    "peak_transaminase_xuln": 0.9117647058823529,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1008",
+    "site": "704",
+    "peak_alt_xuln": 0.78125,
+    "peak_ast_xuln": 0.8529411764705882,
+    "peak_transaminase_xuln": 0.8529411764705882,
+    "peak_bili_xuln": 1.0585714285714285,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1009",
+    "site": "704",
+    "peak_alt_xuln": 1.1142857142857143,
+    "peak_ast_xuln": 0.9722222222222222,
+    "peak_transaminase_xuln": 1.1142857142857143,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1010",
+    "site": "704",
+    "peak_alt_xuln": 0.4,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.5833333333333334,
+    "peak_bili_xuln": 1.0585714285714285,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1017",
+    "site": "704",
+    "peak_alt_xuln": 0.3142857142857143,
+    "peak_ast_xuln": 0.4722222222222222,
+    "peak_transaminase_xuln": 0.4722222222222222,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1025",
+    "site": "704",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 1.0294117647058822,
+    "peak_transaminase_xuln": 1.0294117647058822,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1065",
+    "site": "704",
+    "peak_alt_xuln": 0.5714285714285714,
+    "peak_ast_xuln": 0.8055555555555556,
+    "peak_transaminase_xuln": 0.8055555555555556,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1074",
+    "site": "704",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.7941176470588235,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1093",
+    "site": "704",
+    "peak_alt_xuln": 0.7428571428571429,
+    "peak_ast_xuln": 0.5555555555555556,
+    "peak_transaminase_xuln": 0.7428571428571429,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1114",
+    "site": "704",
+    "peak_alt_xuln": 0.6,
+    "peak_ast_xuln": 0.6388888888888888,
+    "peak_transaminase_xuln": 0.6388888888888888,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1120",
+    "site": "704",
+    "peak_alt_xuln": 1.03125,
+    "peak_ast_xuln": 0.9411764705882353,
+    "peak_transaminase_xuln": 1.03125,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1127",
+    "site": "704",
+    "peak_alt_xuln": 0.8125,
+    "peak_ast_xuln": 1.0588235294117647,
+    "peak_transaminase_xuln": 1.0588235294117647,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1135",
+    "site": "704",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.5588235294117647,
+    "peak_transaminase_xuln": 0.59375,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1164",
+    "site": "704",
+    "peak_alt_xuln": 0.38235294117647056,
+    "peak_ast_xuln": 0.5294117647058824,
+    "peak_transaminase_xuln": 0.5294117647058824,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1218",
+    "site": "704",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.71875,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1233",
+    "site": "704",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.6470588235294118,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1241",
+    "site": "704",
+    "peak_alt_xuln": 0.6571428571428571,
+    "peak_ast_xuln": 0.8888888888888888,
+    "peak_transaminase_xuln": 0.8888888888888888,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1260",
+    "site": "704",
+    "peak_alt_xuln": 0.6875,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1266",
+    "site": "704",
+    "peak_alt_xuln": 0.6,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.75,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1323",
+    "site": "704",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 1.7647058823529411,
+    "peak_transaminase_xuln": 1.7647058823529411,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1325",
+    "site": "704",
+    "peak_alt_xuln": 0.4857142857142857,
+    "peak_ast_xuln": 0.6666666666666666,
+    "peak_transaminase_xuln": 0.6666666666666666,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1332",
+    "site": "704",
+    "peak_alt_xuln": 0.45714285714285713,
+    "peak_ast_xuln": 1.0,
+    "peak_transaminase_xuln": 1.0,
+    "peak_bili_xuln": 1.3842857142857143,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1351",
+    "site": "704",
+    "peak_alt_xuln": 0.6,
+    "peak_ast_xuln": 0.6666666666666666,
+    "peak_transaminase_xuln": 0.6666666666666666,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1388",
+    "site": "704",
+    "peak_alt_xuln": 1.0285714285714285,
+    "peak_ast_xuln": 1.0555555555555556,
+    "peak_transaminase_xuln": 1.0555555555555556,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1435",
+    "site": "704",
+    "peak_alt_xuln": 0.4,
+    "peak_ast_xuln": 0.6388888888888888,
+    "peak_transaminase_xuln": 0.6388888888888888,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-704-1445",
+    "site": "704",
+    "peak_alt_xuln": 1.3714285714285714,
+    "peak_ast_xuln": 1.1111111111111112,
+    "peak_transaminase_xuln": 1.3714285714285714,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1011",
+    "site": "705",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1018",
+    "site": "705",
+    "peak_alt_xuln": 0.375,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1031",
+    "site": "705",
+    "peak_alt_xuln": 0.8235294117647058,
+    "peak_ast_xuln": 0.5588235294117647,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1058",
+    "site": "705",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1059",
+    "site": "705",
+    "peak_alt_xuln": 0.9411764705882353,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.9411764705882353,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1112",
+    "site": "705",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1186",
+    "site": "705",
+    "peak_alt_xuln": 3.34375,
+    "peak_ast_xuln": 3.9705882352941178,
+    "peak_transaminase_xuln": 3.9705882352941178,
+    "peak_bili_xuln": 5.944285714285714,
+    "hy_flag": true,
+    "protagonist": true
+  },
+  {
+    "usubjid": "01-705-1199",
+    "site": "705",
+    "peak_alt_xuln": 0.42857142857142855,
+    "peak_ast_xuln": 0.5277777777777778,
+    "peak_transaminase_xuln": 0.5277777777777778,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1243",
+    "site": "705",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1280",
+    "site": "705",
+    "peak_alt_xuln": 0.6176470588235294,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1281",
+    "site": "705",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1282",
+    "site": "705",
+    "peak_alt_xuln": 1.0,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 1.0,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1292",
+    "site": "705",
+    "peak_alt_xuln": 2.588235294117647,
+    "peak_ast_xuln": 3.676470588235294,
+    "peak_transaminase_xuln": 3.676470588235294,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1303",
+    "site": "705",
+    "peak_alt_xuln": 0.6285714285714286,
+    "peak_ast_xuln": 0.6111111111111112,
+    "peak_transaminase_xuln": 0.6285714285714286,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1310",
+    "site": "705",
+    "peak_alt_xuln": 4.03125,
+    "peak_ast_xuln": 3.3529411764705883,
+    "peak_transaminase_xuln": 4.03125,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1349",
+    "site": "705",
+    "peak_alt_xuln": 1.21875,
+    "peak_ast_xuln": 1.9705882352941178,
+    "peak_transaminase_xuln": 1.9705882352941178,
+    "peak_bili_xuln": 1.302857142857143,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1377",
+    "site": "705",
+    "peak_alt_xuln": 0.5882352941176471,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1382",
+    "site": "705",
+    "peak_alt_xuln": 0.37142857142857144,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.5833333333333334,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1393",
+    "site": "705",
+    "peak_alt_xuln": 0.375,
+    "peak_ast_xuln": 0.5588235294117647,
+    "peak_transaminase_xuln": 0.5588235294117647,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1421",
+    "site": "705",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-705-1431",
+    "site": "705",
+    "peak_alt_xuln": 0.6176470588235294,
+    "peak_ast_xuln": 0.8529411764705882,
+    "peak_transaminase_xuln": 0.8529411764705882,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-706-1041",
+    "site": "706",
+    "peak_alt_xuln": 0.7058823529411765,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-706-1049",
+    "site": "706",
+    "peak_alt_xuln": 0.7058823529411765,
+    "peak_ast_xuln": 0.8529411764705882,
+    "peak_transaminase_xuln": 0.8529411764705882,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-706-1384",
+    "site": "706",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-707-1037",
+    "site": "707",
+    "peak_alt_xuln": 0.21875,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-707-1206",
+    "site": "707",
+    "peak_alt_xuln": 0.6511627906976745,
+    "peak_ast_xuln": 1.3611111111111112,
+    "peak_transaminase_xuln": 1.3611111111111112,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-707-1276",
+    "site": "707",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-707-1430",
+    "site": "707",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-707-1434",
+    "site": "707",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1013",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1019",
+    "site": "708",
+    "peak_alt_xuln": 0.3488372093023256,
+    "peak_ast_xuln": 0.5277777777777778,
+    "peak_transaminase_xuln": 0.5277777777777778,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1032",
+    "site": "708",
+    "peak_alt_xuln": 0.6511627906976745,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.7777777777777778,
+    "peak_bili_xuln": 1.0585714285714285,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1054",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1067",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1084",
+    "site": "708",
+    "peak_alt_xuln": 0.40625,
+    "peak_ast_xuln": 0.47058823529411764,
+    "peak_transaminase_xuln": 0.47058823529411764,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1087",
+    "site": "708",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1104",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1158",
+    "site": "708",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.59375,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1171",
+    "site": "708",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1178",
+    "site": "708",
+    "peak_alt_xuln": 0.53125,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1184",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1213",
+    "site": "708",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.6176470588235294,
+    "peak_transaminase_xuln": 0.6176470588235294,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1216",
+    "site": "708",
+    "peak_alt_xuln": 0.8,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.8,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1236",
+    "site": "708",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.9705882352941176,
+    "peak_transaminase_xuln": 0.9705882352941176,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1242",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1253",
+    "site": "708",
+    "peak_alt_xuln": 0.5813953488372093,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.8333333333333334,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1272",
+    "site": "708",
+    "peak_alt_xuln": 0.8285714285714286,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.8285714285714286,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1286",
+    "site": "708",
+    "peak_alt_xuln": 3.875,
+    "peak_ast_xuln": 4.9411764705882355,
+    "peak_transaminase_xuln": 4.9411764705882355,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1296",
+    "site": "708",
+    "peak_alt_xuln": 0.5116279069767442,
+    "peak_ast_xuln": 1.0,
+    "peak_transaminase_xuln": 1.0,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1297",
+    "site": "708",
+    "peak_alt_xuln": 0.5581395348837209,
+    "peak_ast_xuln": 0.6111111111111112,
+    "peak_transaminase_xuln": 0.6111111111111112,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1316",
+    "site": "708",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1336",
+    "site": "708",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.5833333333333334,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1342",
+    "site": "708",
+    "peak_alt_xuln": 0.8235294117647058,
+    "peak_ast_xuln": 1.411764705882353,
+    "peak_transaminase_xuln": 1.411764705882353,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1347",
+    "site": "708",
+    "peak_alt_xuln": 0.6764705882352942,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1348",
+    "site": "708",
+    "peak_alt_xuln": 0.46875,
+    "peak_ast_xuln": 0.5294117647058824,
+    "peak_transaminase_xuln": 0.5294117647058824,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1352",
+    "site": "708",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1353",
+    "site": "708",
+    "peak_alt_xuln": 0.46875,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.7941176470588235,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1372",
+    "site": "708",
+    "peak_alt_xuln": 0.4,
+    "peak_ast_xuln": 0.3611111111111111,
+    "peak_transaminase_xuln": 0.4,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1378",
+    "site": "708",
+    "peak_alt_xuln": 0.4186046511627907,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.7222222222222222,
+    "peak_bili_xuln": 1.2214285714285713,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1406",
+    "site": "708",
+    "peak_alt_xuln": 0.625,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 1.302857142857143,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-708-1428",
+    "site": "708",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1001",
+    "site": "709",
+    "peak_alt_xuln": 1.0,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 1.0,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1007",
+    "site": "709",
+    "peak_alt_xuln": 0.6176470588235294,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1020",
+    "site": "709",
+    "peak_alt_xuln": 0.40625,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1029",
+    "site": "709",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.75,
+    "peak_bili_xuln": 2.524285714285714,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1081",
+    "site": "709",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.6176470588235294,
+    "peak_transaminase_xuln": 0.6176470588235294,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1088",
+    "site": "709",
+    "peak_alt_xuln": 0.5714285714285714,
+    "peak_ast_xuln": 0.5555555555555556,
+    "peak_transaminase_xuln": 0.5714285714285714,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1099",
+    "site": "709",
+    "peak_alt_xuln": 0.90625,
+    "peak_ast_xuln": 0.8823529411764706,
+    "peak_transaminase_xuln": 0.90625,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1102",
+    "site": "709",
+    "peak_alt_xuln": 2.75,
+    "peak_ast_xuln": 1.8235294117647058,
+    "peak_transaminase_xuln": 2.75,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1168",
+    "site": "709",
+    "peak_alt_xuln": 0.5625,
+    "peak_ast_xuln": 0.5588235294117647,
+    "peak_transaminase_xuln": 0.5625,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1217",
+    "site": "709",
+    "peak_alt_xuln": 0.6571428571428571,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.8333333333333334,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1224",
+    "site": "709",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1237",
+    "site": "709",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1238",
+    "site": "709",
+    "peak_alt_xuln": 0.9142857142857143,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.9142857142857143,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1259",
+    "site": "709",
+    "peak_alt_xuln": 0.6,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.6,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1285",
+    "site": "709",
+    "peak_alt_xuln": 0.4857142857142857,
+    "peak_ast_xuln": 0.6666666666666666,
+    "peak_transaminase_xuln": 0.6666666666666666,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1301",
+    "site": "709",
+    "peak_alt_xuln": 2.0294117647058822,
+    "peak_ast_xuln": 1.588235294117647,
+    "peak_transaminase_xuln": 2.0294117647058822,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1306",
+    "site": "709",
+    "peak_alt_xuln": 0.38235294117647056,
+    "peak_ast_xuln": 0.5294117647058824,
+    "peak_transaminase_xuln": 0.5294117647058824,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1309",
+    "site": "709",
+    "peak_alt_xuln": 0.9767441860465116,
+    "peak_ast_xuln": 0.8611111111111112,
+    "peak_transaminase_xuln": 0.9767441860465116,
+    "peak_bili_xuln": 1.7099999999999997,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1312",
+    "site": "709",
+    "peak_alt_xuln": 0.625,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 1.302857142857143,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1326",
+    "site": "709",
+    "peak_alt_xuln": 0.8125,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.8125,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1329",
+    "site": "709",
+    "peak_alt_xuln": 1.1714285714285715,
+    "peak_ast_xuln": 1.0833333333333333,
+    "peak_transaminase_xuln": 1.1714285714285715,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1339",
+    "site": "709",
+    "peak_alt_xuln": 0.8857142857142857,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.8857142857142857,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-709-1424",
+    "site": "709",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.7222222222222222,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1002",
+    "site": "710",
+    "peak_alt_xuln": 0.4857142857142857,
+    "peak_ast_xuln": 0.6111111111111112,
+    "peak_transaminase_xuln": 0.6111111111111112,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1006",
+    "site": "710",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 1.0277777777777777,
+    "peak_transaminase_xuln": 1.0277777777777777,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1021",
+    "site": "710",
+    "peak_alt_xuln": 0.8,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.8,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1027",
+    "site": "710",
+    "peak_alt_xuln": 0.45714285714285713,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.75,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1045",
+    "site": "710",
+    "peak_alt_xuln": 0.46875,
+    "peak_ast_xuln": 0.8823529411764706,
+    "peak_transaminase_xuln": 0.8823529411764706,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1053",
+    "site": "710",
+    "peak_alt_xuln": 0.6875,
+    "peak_ast_xuln": 0.9411764705882353,
+    "peak_transaminase_xuln": 0.9411764705882353,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1060",
+    "site": "710",
+    "peak_alt_xuln": 0.9142857142857143,
+    "peak_ast_xuln": 1.0555555555555556,
+    "peak_transaminase_xuln": 1.0555555555555556,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1070",
+    "site": "710",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1077",
+    "site": "710",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1078",
+    "site": "710",
+    "peak_alt_xuln": 0.6875,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1083",
+    "site": "710",
+    "peak_alt_xuln": 0.375,
+    "peak_ast_xuln": 0.5294117647058824,
+    "peak_transaminase_xuln": 0.5294117647058824,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1129",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1137",
+    "site": "710",
+    "peak_alt_xuln": 0.53125,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1142",
+    "site": "710",
+    "peak_alt_xuln": 0.8125,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.8125,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1149",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1154",
+    "site": "710",
+    "peak_alt_xuln": 0.6285714285714286,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.7777777777777778,
+    "peak_bili_xuln": 1.302857142857143,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1166",
+    "site": "710",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1183",
+    "site": "710",
+    "peak_alt_xuln": 0.25,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1187",
+    "site": "710",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1235",
+    "site": "710",
+    "peak_alt_xuln": 0.7941176470588235,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.7941176470588235,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1249",
+    "site": "710",
+    "peak_alt_xuln": 0.4,
+    "peak_ast_xuln": 0.5555555555555556,
+    "peak_transaminase_xuln": 0.5555555555555556,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1257",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1264",
+    "site": "710",
+    "peak_alt_xuln": 0.45714285714285713,
+    "peak_ast_xuln": 0.6388888888888888,
+    "peak_transaminase_xuln": 0.6388888888888888,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1270",
+    "site": "710",
+    "peak_alt_xuln": 0.75,
+    "peak_ast_xuln": 1.2647058823529411,
+    "peak_transaminase_xuln": 1.2647058823529411,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1271",
+    "site": "710",
+    "peak_alt_xuln": 0.40625,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1278",
+    "site": "710",
+    "peak_alt_xuln": 0.5714285714285714,
+    "peak_ast_xuln": 0.6944444444444444,
+    "peak_transaminase_xuln": 0.6944444444444444,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1300",
+    "site": "710",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.65625,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1314",
+    "site": "710",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1315",
+    "site": "710",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1337",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1354",
+    "site": "710",
+    "peak_alt_xuln": 1.0857142857142856,
+    "peak_ast_xuln": 1.0,
+    "peak_transaminase_xuln": 1.0857142857142856,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1358",
+    "site": "710",
+    "peak_alt_xuln": 0.5714285714285714,
+    "peak_ast_xuln": 0.8055555555555556,
+    "peak_transaminase_xuln": 0.8055555555555556,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1368",
+    "site": "710",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1376",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1380",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1385",
+    "site": "710",
+    "peak_alt_xuln": 1.2285714285714286,
+    "peak_ast_xuln": 1.1666666666666667,
+    "peak_transaminase_xuln": 1.2285714285714286,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1408",
+    "site": "710",
+    "peak_alt_xuln": 1.2571428571428571,
+    "peak_ast_xuln": 0.6388888888888888,
+    "peak_transaminase_xuln": 1.2571428571428571,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-710-1443",
+    "site": "710",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1012",
+    "site": "711",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1022",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1036",
+    "site": "711",
+    "peak_alt_xuln": 0.7142857142857143,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.75,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1143",
+    "site": "711",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.7941176470588235,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1163",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1173",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1226",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1251",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1283",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1284",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1290",
+    "site": "711",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-711-1433",
+    "site": "711",
+    "peak_alt_xuln": 0.40625,
+    "peak_ast_xuln": 0.6176470588235294,
+    "peak_transaminase_xuln": 0.6176470588235294,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1043",
+    "site": "713",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1073",
+    "site": "713",
+    "peak_alt_xuln": 0.625,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1106",
+    "site": "713",
+    "peak_alt_xuln": 1.0571428571428572,
+    "peak_ast_xuln": 1.0,
+    "peak_transaminase_xuln": 1.0571428571428572,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1141",
+    "site": "713",
+    "peak_alt_xuln": 0.8,
+    "peak_ast_xuln": 0.8611111111111112,
+    "peak_transaminase_xuln": 0.8611111111111112,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1179",
+    "site": "713",
+    "peak_alt_xuln": 0.8529411764705882,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8529411764705882,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1209",
+    "site": "713",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1256",
+    "site": "713",
+    "peak_alt_xuln": 0.42857142857142855,
+    "peak_ast_xuln": 0.6388888888888888,
+    "peak_transaminase_xuln": 0.6388888888888888,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1269",
+    "site": "713",
+    "peak_alt_xuln": 0.5428571428571428,
+    "peak_ast_xuln": 0.5,
+    "peak_transaminase_xuln": 0.5428571428571428,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-713-1448",
+    "site": "713",
+    "peak_alt_xuln": 0.6875,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-714-1035",
+    "site": "714",
+    "peak_alt_xuln": 1.15625,
+    "peak_ast_xuln": 0.9117647058823529,
+    "peak_transaminase_xuln": 1.15625,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-714-1068",
+    "site": "714",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.7352941176470589,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-714-1195",
+    "site": "714",
+    "peak_alt_xuln": 1.1142857142857143,
+    "peak_ast_xuln": 0.8611111111111112,
+    "peak_transaminase_xuln": 1.1142857142857143,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-714-1288",
+    "site": "714",
+    "peak_alt_xuln": 0.6857142857142857,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.8333333333333334,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-714-1375",
+    "site": "714",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.7647058823529411,
+    "peak_transaminase_xuln": 0.7647058823529411,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-714-1425",
+    "site": "714",
+    "peak_alt_xuln": 0.6285714285714286,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.7222222222222222,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1085",
+    "site": "715",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.6470588235294118,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1107",
+    "site": "715",
+    "peak_alt_xuln": 0.9069767441860465,
+    "peak_ast_xuln": 0.8333333333333334,
+    "peak_transaminase_xuln": 0.9069767441860465,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1134",
+    "site": "715",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1155",
+    "site": "715",
+    "peak_alt_xuln": 0.38235294117647056,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.6470588235294118,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1207",
+    "site": "715",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.7941176470588235,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1225",
+    "site": "715",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1319",
+    "site": "715",
+    "peak_alt_xuln": 0.3488372093023256,
+    "peak_ast_xuln": 0.4722222222222222,
+    "peak_transaminase_xuln": 0.4722222222222222,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1321",
+    "site": "715",
+    "peak_alt_xuln": 0.90625,
+    "peak_ast_xuln": 0.8823529411764706,
+    "peak_transaminase_xuln": 0.90625,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1333",
+    "site": "715",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1397",
+    "site": "715",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1405",
+    "site": "715",
+    "peak_alt_xuln": 0.5714285714285714,
+    "peak_ast_xuln": 0.6111111111111112,
+    "peak_transaminase_xuln": 0.6111111111111112,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-715-1407",
+    "site": "715",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1003",
+    "site": "716",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1024",
+    "site": "716",
+    "peak_alt_xuln": 0.53125,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1026",
+    "site": "716",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 0.6764705882352942,
+    "peak_transaminase_xuln": 0.6764705882352942,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1030",
+    "site": "716",
+    "peak_alt_xuln": 0.53125,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.6470588235294118,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1044",
+    "site": "716",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.8888888888888888,
+    "peak_transaminase_xuln": 0.8888888888888888,
+    "peak_bili_xuln": 1.4657142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1061",
+    "site": "716",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1063",
+    "site": "716",
+    "peak_alt_xuln": 0.6285714285714286,
+    "peak_ast_xuln": 1.0555555555555556,
+    "peak_transaminase_xuln": 1.0555555555555556,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1071",
+    "site": "716",
+    "peak_alt_xuln": 0.65625,
+    "peak_ast_xuln": 1.088235294117647,
+    "peak_transaminase_xuln": 1.088235294117647,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1094",
+    "site": "716",
+    "peak_alt_xuln": 0.6285714285714286,
+    "peak_ast_xuln": 0.6944444444444444,
+    "peak_transaminase_xuln": 0.6944444444444444,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1103",
+    "site": "716",
+    "peak_alt_xuln": 0.42857142857142855,
+    "peak_ast_xuln": 0.9166666666666666,
+    "peak_transaminase_xuln": 0.9166666666666666,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1108",
+    "site": "716",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.7058823529411765,
+    "peak_transaminase_xuln": 0.7058823529411765,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1151",
+    "site": "716",
+    "peak_alt_xuln": 1.25,
+    "peak_ast_xuln": 1.1470588235294117,
+    "peak_transaminase_xuln": 1.25,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1157",
+    "site": "716",
+    "peak_alt_xuln": 0.6,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.7777777777777778,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1160",
+    "site": "716",
+    "peak_alt_xuln": 0.8125,
+    "peak_ast_xuln": 0.7941176470588235,
+    "peak_transaminase_xuln": 0.8125,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1167",
+    "site": "716",
+    "peak_alt_xuln": 0.9069767441860465,
+    "peak_ast_xuln": 0.8888888888888888,
+    "peak_transaminase_xuln": 0.9069767441860465,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1177",
+    "site": "716",
+    "peak_alt_xuln": 0.4857142857142857,
+    "peak_ast_xuln": 0.5833333333333334,
+    "peak_transaminase_xuln": 0.5833333333333334,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1189",
+    "site": "716",
+    "peak_alt_xuln": 0.9428571428571428,
+    "peak_ast_xuln": 0.8611111111111112,
+    "peak_transaminase_xuln": 0.9428571428571428,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1229",
+    "site": "716",
+    "peak_alt_xuln": 1.1875,
+    "peak_ast_xuln": 0.8823529411764706,
+    "peak_transaminase_xuln": 1.1875,
+    "peak_bili_xuln": 0.24428571428571427,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1244",
+    "site": "716",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1298",
+    "site": "716",
+    "peak_alt_xuln": 0.46875,
+    "peak_ast_xuln": 0.5882352941176471,
+    "peak_transaminase_xuln": 0.5882352941176471,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1305",
+    "site": "716",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1308",
+    "site": "716",
+    "peak_alt_xuln": 0.4375,
+    "peak_ast_xuln": 0.6470588235294118,
+    "peak_transaminase_xuln": 0.6470588235294118,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1311",
+    "site": "716",
+    "peak_alt_xuln": 0.7428571428571429,
+    "peak_ast_xuln": 1.0277777777777777,
+    "peak_transaminase_xuln": 1.0277777777777777,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1331",
+    "site": "716",
+    "peak_alt_xuln": null,
+    "peak_ast_xuln": null,
+    "peak_transaminase_xuln": null,
+    "peak_bili_xuln": null,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1364",
+    "site": "716",
+    "peak_alt_xuln": 1.125,
+    "peak_ast_xuln": 1.4705882352941178,
+    "peak_transaminase_xuln": 1.4705882352941178,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1373",
+    "site": "716",
+    "peak_alt_xuln": 1.4285714285714286,
+    "peak_ast_xuln": 1.0,
+    "peak_transaminase_xuln": 1.4285714285714286,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1418",
+    "site": "716",
+    "peak_alt_xuln": 0.40625,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1441",
+    "site": "716",
+    "peak_alt_xuln": 0.5714285714285714,
+    "peak_ast_xuln": 0.8888888888888888,
+    "peak_transaminase_xuln": 0.8888888888888888,
+    "peak_bili_xuln": 0.8957142857142857,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-716-1447",
+    "site": "716",
+    "peak_alt_xuln": 0.84375,
+    "peak_ast_xuln": 1.3235294117647058,
+    "peak_transaminase_xuln": 1.3235294117647058,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1004",
+    "site": "717",
+    "peak_alt_xuln": 0.8125,
+    "peak_ast_xuln": 0.7352941176470589,
+    "peak_transaminase_xuln": 0.8125,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1109",
+    "site": "717",
+    "peak_alt_xuln": 0.8571428571428571,
+    "peak_ast_xuln": 0.7777777777777778,
+    "peak_transaminase_xuln": 0.8571428571428571,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1174",
+    "site": "717",
+    "peak_alt_xuln": 1.0571428571428572,
+    "peak_ast_xuln": 0.8055555555555556,
+    "peak_transaminase_xuln": 1.0571428571428572,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1201",
+    "site": "717",
+    "peak_alt_xuln": 0.71875,
+    "peak_ast_xuln": 0.9411764705882353,
+    "peak_transaminase_xuln": 0.9411764705882353,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1344",
+    "site": "717",
+    "peak_alt_xuln": 0.35294117647058826,
+    "peak_ast_xuln": 0.6176470588235294,
+    "peak_transaminase_xuln": 0.6176470588235294,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1357",
+    "site": "717",
+    "peak_alt_xuln": 0.6571428571428571,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.75,
+    "peak_bili_xuln": 0.9771428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-717-1446",
+    "site": "717",
+    "peak_alt_xuln": 1.28125,
+    "peak_ast_xuln": 1.3529411764705883,
+    "peak_transaminase_xuln": 1.3529411764705883,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1066",
+    "site": "718",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.8235294117647058,
+    "peak_transaminase_xuln": 0.8235294117647058,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1079",
+    "site": "718",
+    "peak_alt_xuln": 0.6764705882352942,
+    "peak_ast_xuln": 1.0588235294117647,
+    "peak_transaminase_xuln": 1.0588235294117647,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1101",
+    "site": "718",
+    "peak_alt_xuln": 0.4857142857142857,
+    "peak_ast_xuln": 0.6666666666666666,
+    "peak_transaminase_xuln": 0.6666666666666666,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1139",
+    "site": "718",
+    "peak_alt_xuln": 0.6,
+    "peak_ast_xuln": 0.75,
+    "peak_transaminase_xuln": 0.75,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1150",
+    "site": "718",
+    "peak_alt_xuln": 2.375,
+    "peak_ast_xuln": 1.7058823529411764,
+    "peak_transaminase_xuln": 2.375,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1170",
+    "site": "718",
+    "peak_alt_xuln": 0.53125,
+    "peak_ast_xuln": 0.5588235294117647,
+    "peak_transaminase_xuln": 0.5588235294117647,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1172",
+    "site": "718",
+    "peak_alt_xuln": 0.5142857142857142,
+    "peak_ast_xuln": 0.6111111111111112,
+    "peak_transaminase_xuln": 0.6111111111111112,
+    "peak_bili_xuln": 0.8142857142857144,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1250",
+    "site": "718",
+    "peak_alt_xuln": 0.59375,
+    "peak_ast_xuln": 0.8529411764705882,
+    "peak_transaminase_xuln": 0.8529411764705882,
+    "peak_bili_xuln": 0.32571428571428573,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1254",
+    "site": "718",
+    "peak_alt_xuln": 0.6285714285714286,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.7222222222222222,
+    "peak_bili_xuln": 0.57,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1328",
+    "site": "718",
+    "peak_alt_xuln": 0.8,
+    "peak_ast_xuln": 0.7222222222222222,
+    "peak_transaminase_xuln": 0.8,
+    "peak_bili_xuln": 0.6514285714285715,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1355",
+    "site": "718",
+    "peak_alt_xuln": 0.37142857142857144,
+    "peak_ast_xuln": 0.6944444444444444,
+    "peak_transaminase_xuln": 0.6944444444444444,
+    "peak_bili_xuln": 0.7328571428571428,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1371",
+    "site": "718",
+    "peak_alt_xuln": 0.9375,
+    "peak_ast_xuln": 0.9411764705882353,
+    "peak_transaminase_xuln": 0.9411764705882353,
+    "peak_bili_xuln": 0.4071428571428571,
+    "hy_flag": false,
+    "protagonist": false
+  },
+  {
+    "usubjid": "01-718-1427",
+    "site": "718",
+    "peak_alt_xuln": 0.5,
+    "peak_ast_xuln": 0.8823529411764706,
+    "peak_transaminase_xuln": 0.8823529411764706,
+    "peak_bili_xuln": 0.48857142857142855,
+    "hy_flag": false,
+    "protagonist": false
+  }
+]
