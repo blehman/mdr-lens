@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-"""Build the second-study demo's derived JSON from its raw SDTM domains
-(run scripts/fetch_second_study.py first). Proves mdrlens.studyconfig's
+"""Build the reusable-template demo's derived JSON from its raw SDTM
+domains (run scripts/fetch_second_study.py first). Proves mdrlens.studyconfig's
 StudyConfig template end to end: fetch -> build -> page section (§09),
 the same fetch-then-build shape scripts/fetch_data.py + scripts/build.py
 use for the primary study.
@@ -66,7 +66,7 @@ def main() -> None:
     ]:
         print(f"wrote {path.relative_to(ROOT)}")
 
-    print(f"second study: {summary['n_subjects']} subjects, {len(labs)} liver-panel lab peaks")
+    print(f"reusable-template demo: {summary['n_subjects']} subjects, {len(labs)} liver-panel lab peaks")
     pack_web_data()
 
 

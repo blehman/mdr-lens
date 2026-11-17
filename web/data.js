@@ -18562,7 +18562,7 @@ window.MDR_DATA = {
   "study_in_flight": {
     "cycle_epoch": "2026-11-12",
     "run_date": "2026-11-17",
-    "last_refresh_utc": "2026-11-17T18:04:09.093182+00:00",
+    "last_refresh_utc": "2026-11-17T18:18:07.068642+00:00",
     "first_patient_in": "2012-07-09",
     "replay_window_end": "2015-03-05",
     "n_cuts": 34,
@@ -23407,7 +23407,7 @@ window.MDR_DATA = {
     ],
     "n_subjects": 5,
     "n_lb": 309,
-    "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject."
+    "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated on pharmaversesdtm's separately packaged metabolic-panel dataset (5 CDISC pilot subjects with their own LB domain): its labs and liver-panel view, by the same peak-x-ULN method \u00a704's eDISH view uses."
   },
   "second_study_labs": [
     {
@@ -23504,7 +23504,7 @@ window.MDR_DATA = {
   "second_study_lineage": [
     {
       "metric_id": "metabolic_demo.summary",
-      "label": "Second-study demo summary (pharmaversesdtm metabolic-panel subset)",
+      "label": "Reusable-template demo summary (pharmaversesdtm metabolic-panel subset)",
       "page_section": "template",
       "domains": [
         "dm",
@@ -23515,7 +23515,7 @@ window.MDR_DATA = {
         "SITEID"
       ],
       "join": "DM.USUBJID is this study's primary key, same as the primary study's lineage entries.",
-      "notes": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject.",
+      "notes": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated on pharmaversesdtm's separately packaged metabolic-panel dataset (5 CDISC pilot subjects with their own LB domain): its labs and liver-panel view, by the same peak-x-ULN method \u00a704's eDISH view uses.",
       "source_kinds": [
         "CRF (site-entered)",
         "non-CRF (central-lab feed)"

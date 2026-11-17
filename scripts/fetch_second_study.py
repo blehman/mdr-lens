@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-"""Fetch the second-study demo's raw SDTM domains (DM + LB only), proving
-mdrlens.studyconfig.SECOND_STUDY's template on pharmaversesdtm's
-"metabolic" subset -- the same pinned commit scripts/fetch_data.py uses,
-redistributed by the same pharmaverse/pharmaversesdtm community source
-(Apache-2.0). See mdrlens.second_study for what this subset's demographics
-(DM) and labs (LB) domains are used for: the labs and liver-panel view
-only.
+"""Fetch the reusable-template demo's raw SDTM domains (DM + LB only),
+proving mdrlens.studyconfig.SECOND_STUDY's template on pharmaversesdtm's
+separately packaged "metabolic" dataset -- the same CDISC pilot subjects
+already fetched by scripts/fetch_data.py, same pinned commit, redistributed
+by the same pharmaverse/pharmaversesdtm community source (Apache-2.0). See
+mdrlens.second_study for what this dataset's demographics (DM) and labs (LB)
+domains are used for: the labs and liver-panel view only.
 
 Writes raw .rda files to data/raw/second_study/ (gitignored, same as
 data/raw/) and records the source URL + sha256 of every file in

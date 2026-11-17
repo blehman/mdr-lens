@@ -84,8 +84,8 @@ def test_peak_x_uln_by_test_picks_peak_per_subject_per_test():
 
 def test_peak_x_uln_by_test_omits_rows_for_a_test_never_run():
     """A study whose LB domain never ran one of `tests` (e.g. no BILI draws
-    at all, like the second-study metabolic subset) yields no row for that
-    test -- never a fabricated zero or null row."""
+    at all, like pharmaversesdtm's separately packaged metabolic dataset)
+    yields no row for that test -- never a fabricated zero or null row."""
     lb = pd.DataFrame([{"USUBJID": "S1", "LBTESTCD": "AST", "LBSTRESN": 54.0, "LBSTNRHI": 34.0}])
     rows = peak_x_uln_by_test(lb, ["S1"], ["AST", "BILI"])
     assert {r["test"] for r in rows} == {"AST"}

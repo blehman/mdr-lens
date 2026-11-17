@@ -25,7 +25,7 @@ committee meetings) views, built two ways:
 4. **§07–09** — a sample Medical Data Review plan built on public ICH/FDA/
    TransCelerate guidance as its basis (`docs/MDR_PLAN.md`), a traceability view
    tying every number above to its source SDTM domain and variables, and a
-   reusable study-config template proven on a second study's labs and
+   reusable study-config template proven on a second SDTM dataset's labs and
    liver-panel view.
 
 Pilot data: the long-standing CDISC (Clinical Data Interchange Standards Consortium)
@@ -69,8 +69,8 @@ real patient, and none of it is related to any employer's systems.
 | ![Site key-risk-indicator funnel plots](docs/screenshots/desktop_05_sites.jpg) | ![Data quality by SDTM domain](docs/screenshots/desktop_06_quality.jpg) |
 | **Sample MDR plan (§07)** | **Traceability / lineage (§08)** |
 | ![Sample Medical Data Review plan: CtQ factor to risk to view to threshold to milestone to reviewer](docs/screenshots/desktop_08_mdrplan.jpg) | ![Traceability table: page number to SDTM domain and variables](docs/screenshots/desktop_09_lineage.jpg) |
-| **Reusable template: a second study (§09)** | |
-| ![Reusable study-config template demonstrated on a second study's labs and liver-panel view](docs/screenshots/desktop_10_template.jpg) | |
+| **Reusable template: a second SDTM dataset (§09)** | |
+| ![Reusable study-config template demonstrated on pharmaversesdtm's separately packaged metabolic-panel dataset's labs and liver-panel view](docs/screenshots/desktop_10_template.jpg) | |
 
 Phone layouts: `docs/screenshots/iphone14_0*.jpg`.
 
@@ -163,10 +163,11 @@ EDC (Electronic Data Capture) system and query workflow would.
   names which SDTM domains a study supplies, which liver-panel tests its LB
   domain actually ran, and which domains are CRF vs. non-CRF. It plugs any
   SDTM study into `mdrlens.uln.peak_x_uln_by_test` — the same arithmetic §04's
-  eDISH view uses — and is demonstrated here on a second study from
-  pharmaversesdtm: its "metabolic" demographics and labs subset (5 subjects),
-  rendering the labs and liver-panel view only (its available AST, ALP and
-  GGT liver-panel tests, by peak × ULN per subject). Fetch and build it with
+  eDISH view uses — and is demonstrated on pharmaversesdtm's separately
+  packaged "metabolic" demographics and labs dataset (5 CDISC pilot subjects
+  with their own LB domain), rendering the labs and liver-panel view only
+  (its available AST, ALP and GGT liver-panel tests, by peak × ULN per
+  subject). Fetch and build it with
   `uv run python scripts/fetch_second_study.py && uv run python scripts/build_second_study.py`;
   pinned by `tests/test_studyconfig.py` and `tests/test_second_study.py`.
 
@@ -244,7 +245,7 @@ those files and writes the small derived JSON in `data/derived/` plus
 §09's reusable-template demo is a one-time proof, not part of the command above
 (see "Medical Data Review plan, traceability & reusable template" above): run
 `uv run python scripts/fetch_second_study.py && uv run python scripts/build_second_study.py`
-to regenerate it from the second study's own raw SDTM subset; its derived JSON
+to regenerate it from that separately packaged dataset's own raw SDTM files; its derived JSON
 is committed as a static demo, same as §03–06's look back at the primary study.
 
 ## QA

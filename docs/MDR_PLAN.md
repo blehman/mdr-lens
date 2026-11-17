@@ -34,7 +34,8 @@ statement about any employer's internal Medical Data Review processes.
    Risk-Based Quality Management (RBQM): the Risk Assessment and
    Categorization Tool (RACT) template/example and the Risk Indicator
    Library.
-   <https://transceleratebiopharmainc.com/?p=65> (initiative overview) and
+   <https://www.transceleratebiopharmainc.com/initiatives/risk-based-monitoring/>
+   (initiative overview) and
    <https://www.transceleratebiopharmainc.com/rbminteractiveguide/rbm-toolbox/>
    (toolbox listing the RACT and Risk Indicator Library).
    **Fetched 2026-11-17.**
@@ -43,6 +44,9 @@ statement about any employer's internal Medical Data Review processes.
    <https://www.fda.gov/media/116754/download>
    (guidance page: <https://www.fda.gov/regulatory-information/search-fda-guidance-documents/oversight-clinical-investigations-risk-based-approach-monitoring>).
    **Fetched 2026-11-17.**
+
+This sample plan cites these documents as its basis; it does not claim
+compliance or certification.
 
 These four public documents are this plan's **basis** — the language
 below (critical-to-quality factors, quality by design, risk-based

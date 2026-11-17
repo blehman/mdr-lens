@@ -1,8 +1,11 @@
-"""Second-study demo: proves mdrlens.studyconfig.SECOND_STUDY plugs a
-different SDTM (Study Data Tabulation Model) subset into this project's
-labs & liver-panel method -- the same mdrlens.uln.peak_x_uln_by_test
-primitive mdrlens.hyslaw uses for the primary study's eDISH view -- on a
-second study's DM (demographics) and LB (labs) domains only.
+"""Reusable-template demo: proves mdrlens.studyconfig.SECOND_STUDY plugs a
+separately packaged SDTM (Study Data Tabulation Model) dataset into this
+project's labs & liver-panel method -- the same mdrlens.uln.peak_x_uln_by_test
+primitive mdrlens.hyslaw uses for the primary study's eDISH view -- on that
+dataset's own DM (demographics) and LB (labs) domains only. SECOND_STUDY is
+pharmaversesdtm's "metabolic" subset: the same CDISC pilot study's own 5
+subjects already in the primary DM (same STUDYID, USUBJID, AGE/SEX/RFSTDTC),
+not a second study.
 
 Run via `scripts/fetch_second_study.py` then `scripts/build_second_study.py`
 (same two-step fetch-then-build shape as the primary study's
@@ -55,7 +58,7 @@ def build_second_study_lineage(config: StudyConfig) -> list[dict]:
     entries = (
         LineageEntry(
             metric_id=f"{config.study_key}.summary",
-            label=f"Second-study demo summary ({config.display_name})",
+            label=f"Reusable-template demo summary ({config.display_name})",
             page_section="template",
             domains=tuple(config.domain_files.keys()),
             variables=("USUBJID", "SITEID"),

@@ -1044,13 +1044,13 @@
     renderLineageTable("lineage-table-body", DATA.lineage, true);
   }
 
-  // ================= 09 REUSABLE TEMPLATE: SECOND STUDY =================
+  // ================= 09 REUSABLE TEMPLATE: SECOND SDTM DATASET =================
   function renderSecondStudy() {
     var summaryCard = document.getElementById("template-summary-card");
     var summary = DATA.second_study_summary;
     if (!summary) {
       summaryCard.innerHTML =
-        '<p class="caption">Second-study demo not generated for this build — run ' +
+        '<p class="caption">Reusable-template demo not generated for this build — run ' +
         '<code>scripts/fetch_second_study.py</code> then <code>scripts/build_second_study.py</code>.</p>';
       document.getElementById("template-labs-table-body").innerHTML = "";
       document.getElementById("template-lineage-table-body").innerHTML = "";

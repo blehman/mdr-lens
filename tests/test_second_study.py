@@ -108,8 +108,8 @@ def test_second_study_config_is_the_real_one_used_by_the_scripts():
     assert SECOND_STUDY.liver_panel_tests == ("AST", "ALP", "GGT")
 
 
-# --- independent recount against the committed raw + derived second-study
-# files, same pattern as tests/test_independent_recount.py ---
+# --- independent recount against the committed raw + derived
+# reusable-template-demo files, same pattern as tests/test_independent_recount.py ---
 
 _missing_raw = [f for f in ("dm_metabolic.rda", "lb_metabolic.rda") if not (RAW_DIR / f).exists()]
 _missing_derived = [
@@ -120,7 +120,7 @@ _missing_derived = [
 @pytest.mark.skipif(
     bool(_missing_raw or _missing_derived),
     reason=(
-        "Second-study independent recount needs both raw SDTM and derived JSON. Run: "
+        "Reusable-template demo independent recount needs both raw SDTM and derived JSON. Run: "
         "uv run python scripts/fetch_second_study.py && uv run python scripts/build_second_study.py "
         f"(missing raw={_missing_raw}, missing derived={_missing_derived})"
     ),

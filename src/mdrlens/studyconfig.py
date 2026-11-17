@@ -13,11 +13,13 @@ vs. non-CRF (e.g. a central-lab feed) -- the same distinction README's
 study.
 
 PRIMARY_STUDY describes this project's existing five-domain replay (§01-06).
-SECOND_STUDY proves the template on a second, smaller SDTM subset also
-redistributed by pharmaverse/pharmaversesdtm at the same pinned commit
-(see scripts/fetch_data.py): its "metabolic" demographics and labs tables.
-That subset plugs in DM (demographics) and LB (labs) only, enabling the
-labs and liver-panel view only -- see mdrlens.second_study.
+SECOND_STUDY proves the template on pharmaversesdtm's separately packaged
+metabolic-panel dataset: the same pinned commit's (see scripts/fetch_data.py)
+"metabolic" demographics and labs tables, for the same 5 subjects of the
+CDISC pilot study already in the primary DM (same STUDYID, same USUBJIDs,
+identical AGE/SEX/RFSTDTC), packaged with their own LB domain. That dataset
+plugs in DM (demographics) and LB (labs) only, enabling the labs and
+liver-panel view only -- see mdrlens.second_study.
 """
 
 from __future__ import annotations
@@ -68,12 +70,13 @@ PRIMARY_STUDY = StudyConfig(
     ),
 )
 
-# Proves the template on a second SDTM subset from the SAME pharmaverse
-# community source: pharmaversesdtm's "metabolic" demographics and labs
-# tables -- a smaller, 5-subject population with its own LB domain. That
-# LB domain carries AST, ALP and GGT from the liver panel (not ALT or
+# Proves the template on pharmaversesdtm's separately packaged metabolic-
+# panel dataset: the same 5 CDISC pilot subjects already in the primary
+# DM (identical STUDYID, USUBJID, AGE/SEX/RFSTDTC -- verified against
+# data/raw/dm.rda), repackaged by pharmaverse with their own LB domain.
+# That LB domain carries AST, ALP and GGT from the liver panel (not ALT or
 # BILI), so this config's liver_panel_tests is exactly that subset -- the
-# template reports peak x ULN for whichever liver-panel tests a study
+# template reports peak x ULN for whichever liver-panel tests a dataset
 # actually ran, never a fabricated value for one it didn't.
 SECOND_STUDY = StudyConfig(
     study_key="metabolic_demo",
@@ -88,8 +91,9 @@ SECOND_STUDY = StudyConfig(
         "This same template plugs any SDTM study's demographics (DM) and "
         "labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the "
         "identical arithmetic §04's eDISH view uses on the primary study. "
-        "Demonstrated here on a second study's labs and liver-panel view "
-        "only: its available liver-panel enzymes (AST, ALP, GGT), by peak "
-        "x ULN per subject."
+        "Demonstrated on pharmaversesdtm's separately packaged metabolic-"
+        "panel dataset (5 CDISC pilot subjects with their own LB domain): "
+        "its labs and liver-panel view, by the same peak-x-ULN method "
+        "§04's eDISH view uses."
     ),
 )

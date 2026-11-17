@@ -14,5 +14,5 @@
   ],
   "n_subjects": 5,
   "n_lb": 309,
-  "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated here on a second study's labs and liver-panel view only: its available liver-panel enzymes (AST, ALP, GGT), by peak x ULN per subject."
+  "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated on pharmaversesdtm's separately packaged metabolic-panel dataset (5 CDISC pilot subjects with their own LB domain): its labs and liver-panel view, by the same peak-x-ULN method \u00a704's eDISH view uses."
 }

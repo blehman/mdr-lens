@@ -436,7 +436,7 @@ def pack_web_data() -> Path:
         print(f"NOTE: {registry_path.relative_to(ROOT)} not found -- run scripts/fetch_registry.py. "
               "Bundling registry_summary=null so the page still builds.")
 
-    # Second-study template demo: written by scripts/build_second_study.py,
+    # Reusable-template demo: written by scripts/build_second_study.py,
     # a one-time proof of mdrlens.studyconfig's reusable template, not part
     # of the daily refresh (see that script's docstring). Bundled the same
     # optional way as the registry above: if a bare clone hasn't run it
