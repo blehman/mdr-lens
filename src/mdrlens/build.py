@@ -34,6 +34,7 @@ from .cuts import (
 from .dataquality import build_data_quality
 from .funnel import funnel_curve
 from .hyslaw import PHL_BILI_X_ULN, PHL_TRANSAMINASE_X_ULN, build_liver_profiles
+from .lineage import PRIMARY_LINEAGE, lineage_table
 from .site_kri import build_site_kris
 from .timeline import build_patient_timeline
 
@@ -368,6 +369,7 @@ def main() -> None:
     ae_events = build_ae_events(ae, dm)
     summary = build_study_summary(dm, ae, lb, sv, ds, liver_profiles, protagonist)
     study_in_flight = build_study_in_flight(dm, ae, lb, sv, ds)
+    lineage = lineage_table(PRIMARY_LINEAGE)
 
     written = [
         _write_json("edish.json", edish),
@@ -378,6 +380,7 @@ def main() -> None:
         _write_json("ae_events.json", ae_events),
         _write_json("study_summary.json", summary),
         _write_json("study_in_flight.json", study_in_flight),
+        _write_json("lineage.json", lineage),
     ]
     for p in written:
         print(f"wrote {p.relative_to(ROOT)}")
@@ -415,6 +418,7 @@ def pack_web_data() -> Path:
         "ae_events",
         "study_summary",
         "study_in_flight",
+        "lineage",
     ]:
         path = DERIVED_DIR / f"{name}.json"
         bundle[name] = json.loads(path.read_text())
@@ -431,6 +435,22 @@ def pack_web_data() -> Path:
         bundle["registry_summary"] = None
         print(f"NOTE: {registry_path.relative_to(ROOT)} not found -- run scripts/fetch_registry.py. "
               "Bundling registry_summary=null so the page still builds.")
+
+    # Second-study template demo: written by scripts/build_second_study.py,
+    # a one-time proof of mdrlens.studyconfig's reusable template, not part
+    # of the daily refresh (see that script's docstring). Bundled the same
+    # optional way as the registry above: if a bare clone hasn't run it
+    # yet, §09's own JS renders an explicit "not generated yet" state.
+    for name in ["second_study_summary", "second_study_labs", "second_study_lineage"]:
+        path = DERIVED_DIR / f"{name}.json"
+        if path.exists():
+            bundle[name] = json.loads(path.read_text())
+        else:
+            bundle[name] = None
+    if bundle["second_study_summary"] is None:
+        print("NOTE: data/derived/second_study_*.json not found -- run "
+              "scripts/fetch_second_study.py && scripts/build_second_study.py. "
+              "Bundling second_study_*=null so the page still builds.")
 
     WEB_DIR.mkdir(parents=True, exist_ok=True)
     out_path = WEB_DIR / "data.js"
