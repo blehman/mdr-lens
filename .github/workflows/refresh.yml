@@ -68,6 +68,9 @@ jobs:
       - name: Fetch pilot SDTM source (pharmaverse/pharmaversesdtm)
         run: uv run python scripts/fetch_data.py
 
+      - name: Fetch the reusable-template demo dataset (pharmaversesdtm metabolic-panel DM + LB, same pinned commit)
+        run: uv run python scripts/fetch_second_study.py
+
       - name: Fetch live ClinicalTrials.gov registry snapshot
         # Non-zero exit here fails the whole job -- the deploy steps below
         # never run, and Pages keeps serving the previous deployment.
@@ -75,6 +78,9 @@ jobs:
 
       - name: Build derived data + web/data.js (recomputes the current cut from today's date)
         run: uv run python scripts/build.py
+
+      - name: Build the reusable-template demo (recomputes its labs view so the recount test runs, not skips)
+        run: uv run python scripts/build_second_study.py
 
       - name: Run tests against the freshly built data
         run: uv run pytest

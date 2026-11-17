@@ -4,7 +4,7 @@
   "source_repo": "https://github.com/pharmaverse/pharmaversesdtm",
   "source_commit": "7ec53ea88dfe1c168f9efbef59233c4426813b89",
   "license": "Apache-2.0",
-  "enables": "This same template plugs any SDTM study's demographics (DM) and labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the identical arithmetic \u00a704's eDISH view uses on the primary study. Demonstrated on pharmaversesdtm's separately packaged metabolic-panel dataset (5 CDISC pilot subjects with their own LB domain): its labs and liver-panel view, by the same peak-x-ULN method \u00a704's eDISH view uses.",
+  "enables": "One config object \u2014 domain file names, liver-panel tests, and which domains are site-entered versus central-lab \u2014 is all a new dataset needs; the method code is unchanged.",
   "domains": [
     {
       "domain": "dm",

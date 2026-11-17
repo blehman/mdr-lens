@@ -88,12 +88,8 @@ SECOND_STUDY = StudyConfig(
     crf_domains=("dm",),
     non_crf_domains=("lb",),
     enables=(
-        "This same template plugs any SDTM study's demographics (DM) and "
-        "labs (LB) domains into mdrlens.uln's peak-x-ULN method -- the "
-        "identical arithmetic §04's eDISH view uses on the primary study. "
-        "Demonstrated on pharmaversesdtm's separately packaged metabolic-"
-        "panel dataset (5 CDISC pilot subjects with their own LB domain): "
-        "its labs and liver-panel view, by the same peak-x-ULN method "
-        "§04's eDISH view uses."
+        "One config object \u2014 domain file names, liver-panel tests, and "
+        "which domains are site-entered versus central-lab \u2014 is all a new "
+        "dataset needs; the method code is unchanged."
     ),
 )
