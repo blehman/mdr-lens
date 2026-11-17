@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 
 from mdrlens.timeline import build_patient_timeline
@@ -84,3 +86,53 @@ def test_visit_study_day_relative_to_ref_start():
 def test_unknown_subject_returns_none():
     dm, ae, lb, sv, ds = _frames()
     assert build_patient_timeline("NOPE", dm, ae, lb, sv, ds) is None
+
+
+def test_baseline_lab_included_even_below_spike_threshold():
+    # Mirrors the real subject 01-705-1186 case: a baseline (LBBLFL="Y")
+    # bilirubin draw at 1.22x ULN is below the 1.5x "spike" cutoff, but
+    # must still appear -- dropping a pre-dose value because it happens to
+    # read as unremarkable on its own would hide exactly the pre-existing
+    # vs. drug-induced context a reviewer needs.
+    dm, ae, lb, sv, ds = _frames()
+    lb = pd.concat(
+        [
+            lb,
+            pd.DataFrame(
+                [
+                    {
+                        "USUBJID": "S1", "LBTESTCD": "BILI", "LBSTRESN": 25.65,
+                        "LBSTNRHI": 21.0, "LBSTRESU": "umol/L", "LBDY": -5.0,
+                        "LBBLFL": "Y",
+                    }
+                ]
+            ),
+        ],
+        ignore_index=True,
+    )
+    tl = build_patient_timeline("S1", dm, ae, lb, sv, ds)
+    bili_days = {s["day"]: s for s in tl["lab_spikes"] if s["test"] == "BILI"}
+    assert -5.0 in bili_days
+    assert math.isclose(bili_days[-5.0]["x_uln"], 1.22, abs_tol=0.01)
+    assert bili_days[-5.0]["baseline"] is True
+
+
+def test_non_baseline_below_threshold_still_excluded():
+    dm, ae, lb, sv, ds = _frames()
+    lb = pd.concat(
+        [
+            lb,
+            pd.DataFrame(
+                [
+                    {
+                        "USUBJID": "S1", "LBTESTCD": "BILI", "LBSTRESN": 5.0,
+                        "LBSTNRHI": 21.0, "LBSTRESU": "umol/L", "LBDY": 40.0,
+                        "LBBLFL": float("nan"),
+                    }
+                ]
+            ),
+        ],
+        ignore_index=True,
+    )
+    tl = build_patient_timeline("S1", dm, ae, lb, sv, ds)
+    assert not any(s["test"] == "BILI" and s["day"] == 40.0 for s in tl["lab_spikes"])
