@@ -1,12 +1,12 @@
 # mdr-lens
 
-A small, local portfolio project: Medical Data Review (MDR, the ongoing clinical
+A small portfolio project: Medical Data Review (MDR, the ongoing clinical
 review of incoming trial data for safety issues and data problems) views built on
 one public, already-finished clinical trial dataset. Built to show interest and
 some of the underlying skills for Real-Time Visual Analytics (RVA) / Medical Data
 Review roles that build dashboards for safety signal detection and Risk-Based
-Quality Management (RBQM) — not to claim real clinical-trial experience. Everything
-here is local and was never deployed, pushed, or made public.
+Quality Management (RBQM) — not to claim real clinical-trial experience. It is a
+static, offline page built from one finished public study; nothing here is live data.
 
 Data: the long-standing CDISC (Clinical Data Interchange Standards Consortium)
 Pilot Project study, redistributed as SDTM (Study Data Tabulation Model) tables by
@@ -15,6 +15,17 @@ package (Apache-2.0 license). It is a public, synthetic/anonymized teaching data
 used across the industry for exactly this kind of tooling practice: 306 subjects,
 17 sites, 1,191 adverse events, 59,580 lab results. No data here comes from any
 real patient, and none of it is related to any employer's systems.
+
+
+## Screenshots
+
+| One patient | The whole study (eDISH) |
+|---|---|
+| ![One patient's liver-safety timeline](docs/screenshots/desktop_01_patient.jpg) | ![eDISH plot across all subjects](docs/screenshots/desktop_02_study_edish.jpg) |
+| **The sites (RBQM-style KRIs)** | **Data quality** |
+| ![Site key-risk-indicator funnel plots](docs/screenshots/desktop_03_sites.jpg) | ![Data quality by SDTM domain](docs/screenshots/desktop_04_quality.jpg) |
+
+Phone layouts: `docs/screenshots/iphone14_0*.jpg`.
 
 ## What it is
 
